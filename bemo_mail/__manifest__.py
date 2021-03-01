@@ -2,8 +2,8 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-	'name': 'BEMO WEB THEME',
-	'category': 'BEMO THEME',
+	'name': 'BEMO MAIL',
+	'category': 'BEMO MAIL',
 	'version': '1.0',
 	'description':
 		"""
@@ -12,7 +12,7 @@ Bemo Theme Web Client.
 
 This module modifies the web addon to provide Bemo design and responsiveness.
 		""",
-	'depends': ['web', 'web_enterprise'],
+	'depends': ['mail', 'web_enterprise'],
 	'auto_install': True,
 	'data': [
 		"views/templates.xml",
