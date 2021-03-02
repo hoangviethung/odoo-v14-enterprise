@@ -1,3 +1,83 @@
 .o_main_navbar {
-	background-color: $primary-color;
+	background-color: $bemo-primary-color;
+	height: $bemo-navbar-height;
+	> a,
+	> button {
+		height: auto;
+		padding: 0;
+		line-height: $bemo-line-height-default;
+		&:hover,
+		&:focus {
+			background-color: inherit;
+			color: inherit;
+		}
+	}
+	> ul {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		> li {
+			+ li {
+				padding-left: 16px;
+			}
+			> a,
+			> label {
+				color: $bemo-neutral-white;
+				height: auto;
+				line-height: $bemo-line-height-default;
+				padding: 0;
+				&:hover {
+					background-color: inherit;
+				}
+				&.o_menu_header_lvl_1 {
+					position: relative;
+					padding-right: 16px;
+					&:before {
+						content: "\f078";
+						font-size: 10px;
+						font-family: "FontAwesome";
+						position: absolute;
+						right: 0;
+						top: 45%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+		&.o_menu_systray {
+			margin-left: auto;
+		}
+	}
+	> .o_menu_toggle {
+		-ms-flex: 0 0 220px;
+		flex: 0 0 220px;
+		max-width: 220px;
+		text-align: left;
+		margin-right: 24px;
+	}
+	> .o_menu_brand {
+		color: $bemo-neutral-white;
+		line-height: $bemo-line-height-default;
+		margin-right: 32px;
+	}
+	.o_user_menu {
+		margin-left: 0;
+		> a {
+			position: relative;
+			&:before {
+				content: "\f078";
+				font-size: 10px;
+				font-family: "FontAwesome";
+				position: absolute;
+				right: 0;
+				top: 45%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+	.show {
+		.dropdown-toggle {
+			background-color: inherit;
+		}
+	}
 }

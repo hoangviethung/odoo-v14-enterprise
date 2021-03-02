@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- *  -->
+	<template id="_assets_primary_variables" inherit_id="web._assets_primary_variables">
+		<xpath expr="//link[last()]" position="after">
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/variables.scss"/>
+		</xpath>
+	</template>
+	<!-- *  -->
+	<template id="assets_backend" inherit_id="web.assets_backend">
+		<xpath expr="." position="inside">
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/mail__systray.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/mail__messaging_menu.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/web_enterprise__webclient.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/web_enterprise__webclient_layout.scss"/>
+		</xpath>
+	</template>
+	<!-- *  -->
+	<template id="assets_common" inherit_id="web.assets_common">
+		<xpath expr="." position="inside">
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/navbar.scss"/>
+		</xpath>
+	</template>
+</odoo>

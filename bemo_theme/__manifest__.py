@@ -1,24 +1,13 @@
-# -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-
 {
-	'name': 'BEMO WEB THEME',
-	'category': 'BEMO THEME',
+	'name': 'Bemo Theme',
 	'version': '1.0',
-	'description':
-		"""
-Bemo Theme Web Client.
-===========================
-
-This module modifies the web addon to provide Bemo design and responsiveness.
-		""",
+	'category': 'Themes/Bemo Theme',
+	'summary': 'This is module custom bemo theme.',
+	'description': 'This is module custom bemo theme.',
 	'depends': ['web', 'web_enterprise'],
-	'auto_install': True,
-	'data': [
-		"views/templates.xml",
-		"views/web.xml",
-	],
-	'qweb': [
-	],
+	'data': ["views/assets.xml", "views/web.xml",],
+	'qweb': [],
 	'license': 'LGPL-3',
+	'auto_install': True,
+	'application': True,
 }

@@ -1,0 +1,57 @@
+// Root Font Sizes
+$bemo-root-font-size: 12px;
+$bemo-font-size-default: 14rem * (1px / $bemo-root-font-size);
+$bemo-line-height-default: 1.5;
+$font-size-base: $bemo-font-size-default !default;
+
+// Root Primary Colors
+$bemo-primary-color: #0c3255;
+$bemo-primary-dark-color-01: #051423;
+$bemo-primary-dark-color-02: #081f36;
+$bemo-primary-blue-medium-color-01: #12497d;
+$bemo-primary-blue-medium-color-02: #175ea1;
+$bemo-primary-blue-medium-color-03: #1c73c4;
+$bemo-primary-blue-light-color-01: #2988e0;
+$bemo-primary-blue-light-color-02: #4c9ce6;
+$bemo-primary-blue-light-color-03: #70afeb;
+$bemo-primary-blue-light-color-04: #b8d7f5;
+$bemo-primary-blue-light-color-05: #dbebfa;
+$bemo-primary-blue-light-color-06: #f1f6f9;
+
+// Root Semantic Information Colors
+$bemo-semantic-information-color: #0e6eef;
+$bemo-semantic-information-light-color: #438eef;
+$bemo-semantic-information-lighter-color: #8ebbf5;
+$bemo-semantic-information-lightest-color: #ecf4fd;
+
+// Root Semantic Positive Colors
+$bemo-semantic-positive-color: #27ae60;
+$bemo-semantic-positive-light-color: #37d278;
+$bemo-semantic-positive-lighter-color: #8be5b0;
+$bemo-semantic-positive-lightest-color: #eefbf4;
+
+// Root Semantic Critical Colors
+$bemo-semantic-critical-color: #ffc52f;
+$bemo-semantic-critical-light-color: #f8ce62;
+$bemo-semantic-critical-lighter-color: #f8ce62;
+$bemo-semantic-critical-lightest-color: #fef9eb;
+
+// Root Semantic Negative Colors
+$bemo-semantic-negative-color: #eb5757;
+$bemo-semantic-negative-light-color: #ed6e6e;
+$bemo-semantic-negative-lighter-color: #f4a4a4;
+$bemo-semantic-negative-lightest-color: #fdeded;
+
+// Root Neutral  Colors
+$bemo-neutral-darkness-color: #141414;
+$bemo-neutral-darker-color: #373737;
+$bemo-neutral-dark-color: #474747;
+$bemo-neutral-medium-sub-color: #858585;
+$bemo-neutral-lightest-background-color: #858585;
+$bemo-neutral-lighter-border-color: #858585;
+$bemo-neutral-lighter-border-color: #858585;
+$bemo-neutral-light-disable-color: #858585;
+$bemo-neutral-white: #ffffff;
+
+// Root Navigation
+$bemo-navbar-height: 56px;
