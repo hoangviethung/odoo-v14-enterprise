@@ -1,11 +1,9 @@
 .o_main_navbar {
-	background-color: $bemo-primary-color;
-	height: $bemo-navbar-height;
 	> a,
 	> button {
 		height: auto;
 		padding: 0;
-		line-height: $bemo-line-height-default;
+		line-height: inherit;
 		&:hover,
 		&:focus {
 			background-color: inherit;
@@ -22,9 +20,8 @@
 			}
 			> a,
 			> label {
-				color: $bemo-neutral-white;
 				height: auto;
-				line-height: $bemo-line-height-default;
+				line-height: inherit;
 				padding: 0;
 				&:hover {
 					background-color: inherit;
@@ -54,16 +51,24 @@
 		max-width: 220px;
 		text-align: left;
 		margin-right: 24px;
+		img {
+			width: auto;
+			height: $bemo-navbar-height - $bemo-horizontal-padding -$bemo-vertical-padding;
+		}
+		&:before {
+			content: none;
+		}
 	}
 	> .o_menu_brand {
-		color: $bemo-neutral-white;
-		line-height: $bemo-line-height-default;
+		line-height: inherit;
 		margin-right: 32px;
 	}
-	.o_user_menu {
+	.o_user_menu,
+	.o_switch_company_menu {
 		margin-left: 0;
 		> a {
 			position: relative;
+			padding-right: 16px;
 			&:before {
 				content: "\f078";
 				font-size: 10px;

@@ -1,0 +1,18 @@
+.o_control_panel {
+	padding: 0px $bemo-horizontal-padding;
+	> div {
+		margin: $bemo-horizontal-margin 0px;
+		+ div {
+			margin-top: 0;
+		}
+	}
+
+	.o_cp_bottom_right {
+		nav[role="toolbar"] {
+			.btn {
+				width: $bemo-width-button-icon-only;
+				height: $bemo-height-button-icon-only;
+			}
+		}
+	}
+}

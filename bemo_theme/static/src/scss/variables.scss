@@ -2,7 +2,6 @@
 $bemo-root-font-size: 12px;
 $bemo-font-size-default: 14rem * (1px / $bemo-root-font-size);
 $bemo-line-height-default: 1.5;
-$font-size-base: $bemo-font-size-default !default;
 
 // Root Primary Colors
 $bemo-primary-color: #0c3255;
@@ -47,11 +46,36 @@ $bemo-neutral-darkness-color: #141414;
 $bemo-neutral-darker-color: #373737;
 $bemo-neutral-dark-color: #474747;
 $bemo-neutral-medium-sub-color: #858585;
-$bemo-neutral-lightest-background-color: #858585;
-$bemo-neutral-lighter-border-color: #858585;
-$bemo-neutral-lighter-border-color: #858585;
-$bemo-neutral-light-disable-color: #858585;
+$bemo-neutral-lightest-background-color: #f7f7f7;
+$bemo-neutral-lighter-border-color: #e0e0e0;
+$bemo-neutral-light-disable-color: #b8b8b8;
 $bemo-neutral-white: #ffffff;
+$bemo-neutral-black: #000000;
+
+//Root Transition
+$bemo-transition: 0.3s all ease-in-out;
+
+// Root BoxShadow
+$bemo-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+// Root Button Icon
+$bemo-width-button-icon-only: 36px;
+$bemo-height-button-icon-only: 36px;
 
 // Root Navigation
 $bemo-navbar-height: 56px;
+
+// Root Padding Margin
+$bemo-horizontal-padding: 16px;
+$bemo-vertical-padding: 8px;
+$bemo-horizontal-margin: 16px;
+$bemo-vertical-margin: 8px;
+
+// Change Root Odoo !!!!!!
+$font-size-base: $bemo-font-size-default !default;
+$o-line-height-base: $bemo-line-height-default;
+$o-main-text-color: $bemo-neutral-darker-color;
+$o-brand-odoo: $bemo-primary-color;
+$o-brand-primary: $bemo-primary-color;
+$o-navbar-height: $bemo-navbar-height;
+$o-btn-secondary-bg: $bemo-neutral-white;
