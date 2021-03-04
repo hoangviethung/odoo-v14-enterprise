@@ -1,7 +1,8 @@
 // Root Font Sizes
+$bemo-font-family: "Roboto", "Odoo Unicode Support Noto", sans-serif;
 $bemo-root-font-size: 12px;
 $bemo-font-size-default: 14rem * (1px / $bemo-root-font-size);
-$bemo-line-height-default: 1.5;
+$bemo-line-height-default: 1.6;
 
 // Root Primary Colors
 $bemo-primary-color: #0c3255;
@@ -66,10 +67,19 @@ $bemo-height-button-icon-only: 36px;
 $bemo-navbar-height: 56px;
 
 // Root Padding Margin
+$bemo-button-padding-top: 0.584rem;
+$bemo-button-padding-bottom: 0.5rem;
+$bemo-button-vertical-padding: 1.5rem;
+$bemo-button-padding: $bemo-button-padding-top $bemo-button-vertical-padding
+	$bemo-button-padding-bottom;
 $bemo-horizontal-padding: 16px;
 $bemo-vertical-padding: 8px;
 $bemo-horizontal-margin: 16px;
 $bemo-vertical-margin: 8px;
+
+//Root Border Radius
+$bemo-button-border-radius: 0.25rem;
+$bemo-border-radius-hight: 16px;
 
 // Change Root Odoo !!!!!!
 $font-size-base: $bemo-font-size-default !default;

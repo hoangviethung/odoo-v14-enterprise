@@ -40,9 +40,37 @@
 					}
 				}
 			}
+			&.o_extra_menu_items {
+				> a {
+					position: relative;
+					width: 24px;
+					height: 24px;
+					transition: 0.3s all ease-in-out;
+					border-radius: $bemo-button-border-radius;
+					i {
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+					}
+					&:hover {
+						background: $bemo-primary-dark-color-02;
+					}
+				}
+			}
 		}
 		&.o_menu_systray {
 			margin-left: auto;
+		}
+	}
+	> .o_menu_sections {
+		> li {
+			&:first-child {
+				margin-left: 56px;
+				&.o_extra_menu_items {
+					margin-left: 8px;
+				}
+			}
 		}
 	}
 	> .o_menu_toggle {
@@ -61,7 +89,7 @@
 	}
 	> .o_menu_brand {
 		line-height: inherit;
-		margin-right: 32px;
+		margin-right: 0;
 	}
 	.o_user_menu,
 	.o_switch_company_menu {

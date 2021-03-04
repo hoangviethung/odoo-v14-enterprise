@@ -1,8 +1,10 @@
-.btn-fill-primary,
-.btn-primary {
-	padding: 0.625rem 1.5rem 0.5rem;
-	border-radius: 0.25rem;
-	box-shadow: $bemo-box-shadow;
+.btn-secondary,
+.o_radio_hide_bullet label {
+	&:hover {
+		color: inherit;
+		background-color: transparent;
+		border-color: transparent;
+	}
 }
 
 .btn-secondary.fa:not(.fa-search),
@@ -33,13 +35,5 @@
 	color: $bemo-primary-color;
 	background-color: $bemo-primary-blue-light-color-05;
 	border-color: $bemo-primary-blue-light-color-05;
-}
-
-.btn-secondary,
-.o_radio_hide_bullet label {
-	&:hover {
-		color: $bemo-neutral-medium-sub-color;
-		background-color: $bemo-primary-blue-light-color-06;
-		border-color: $bemo-primary-blue-light-color-06;
-	}
+	border-radius: $bemo-button-border-radius;
 }

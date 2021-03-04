@@ -1,0 +1,9 @@
+.o_kanban_view {
+	&.o_kanban_ungrouped {
+		padding: $bemo-horizontal-padding - $bemo-vertical-padding / 2;
+		.o_kanban_record {
+			margin: $bemo-vertical-margin;
+			width: calc(20% - ($bemo-vertical-margin * 5));
+		}
+	}
+}
