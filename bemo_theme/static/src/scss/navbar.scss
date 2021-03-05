@@ -81,7 +81,7 @@
 		margin-right: 24px;
 		img {
 			width: auto;
-			height: $bemo-navbar-height - $bemo-horizontal-padding -$bemo-vertical-padding;
+			height: $bemo-navbar-height - $bemo-spacing-level-3 -$bemo-spacing-level-2;
 		}
 		&:before {
 			content: none;

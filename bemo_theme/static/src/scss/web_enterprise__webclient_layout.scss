@@ -2,8 +2,8 @@ html {
 	.o_web_client {
 		.o_main_navbar {
 			display: flex;
-			padding: $bemo-vertical-padding
-				$bemo-horizontal-padding;
+			padding: $bemo-spacing-level-2
+				$bemo-spacing-level-3;
 			align-items: center;
 			flex-wrap: wrap;
 		}
