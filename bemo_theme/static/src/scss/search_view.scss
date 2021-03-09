@@ -1,95 +1,55 @@
+/**********************************************************************************
+*
+*    Copyright (c) 2017-today MuK IT GmbH.
+*
+*    This file is part of MuK Grid Snippets
+*    (see https://mukit.at).
+*
+*    This program is free software: you can redistribute it and/or modify
+*    it under the terms of the GNU Lesser General Public License as published by
+*    the Free Software Foundation, either version 3 of the License, or
+*    (at your option) any later version.
+*
+*    This program is distributed in the hope that it will be useful,
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*    GNU Lesser General Public License for more details.
+*
+*    You should have received a copy of the GNU Lesser General Public License
+*    along with this program. If not, see <http://www.gnu.org/licenses/>.
+*
+**********************************************************************************/
+
 .o_searchview {
-	padding: 8px 32px 8px 8px;
-	background: $bemo-neutral-lightest-background-color;
-	border-radius: 4px;
-	transition: $bemo-transition;
-	@include media-breakpoint-up(md) {
-		border-bottom: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+	margin-bottom: 5px;
+	button {
+		background-color: $white;
+		border-color: $border-color;
+		color: $gray-600;
+		border: none;
 	}
-	.o_searchview_icon {
-		color: $bemo-neutral-medium-sub-color;
-		right: 8px;
-		top: 50%;
-		bottom: unset;
-		left: unset;
-		transform: translateY(-50%);
-		z-index: 10;
+	.o_enable_searchview {
+		float: right;
 	}
 	.o_searchview_input_container {
-		.o_searchview_input {
-			height: 24px;
-			background: inherit;
-			transition: $bemo-transition;
-			&::placeholder {
-				color: $bemo-neutral-medium-sub-color;
-			}
-			&:focus {
-				&::placeholder {
-					color: $bemo-primary-color;
-				}
-			}
-		}
-		.o_searchview_facet {
-			margin: 2px 4px 0 0;
-			border-radius: 4px;
-			outline: none;
-			transition: $bemo-transition;
-			.o_searchview_facet_label {
-				padding: 0 4px;
-				font-size: 12px;
-			}
-			.o_facet_values {
-				display: inline-flex;
-				align-items: center;
-				padding: 0 24px 0 4px;
-			}
-			.o_facet_remove {
-				transition: $bemo-transition;
-				&:before {
-					margin-bottom: 2px;
-				}
-				&:hover {
-					color: $bemo-primary-color;
-				}
-			}
-			&:focus {
-				border: 1px solid $bemo-primary-color;
-			}
-		}
-	}
-	.o_searchview_facet {
-		border: 1px solid $bemo-neutral-lighter-border-color;
+		border-bottom: 1px solid $o-brand-secondary;
 	}
 }
 
-.o_search_options {
-	.btn-secondary {
-		color: $bemo-neutral-medium-sub-color;
-		&:hover {
-			color: $bemo-primary-color;
-			border: 1px solid transparent;
-			background: transparent;
-		}
-	}
-	.o_dropdown_toggler_btn {
-		padding-right: 12px;
-		&:first-child {
-			margin-right: 16px;
-		}
-		&:before {
-			content: "\f078";
-			font-size: 10px;
-			font-family: "FontAwesome";
-			position: absolute;
-			right: 0;
-			top: 45%;
-			transform: translateY(-50%);
-		}
+.o_modal_header {
+	.o_searchview,
+	.o_pager {
+		display: inline-block;
 	}
 }
 
-.o_dropdown {
-	.o_dropdown_title {
-		padding: 0 4px;
+@include media-breakpoint-between(sm, lg, $o-extra-grid-breakpoints) {
+	.o_search_options {
+		.mk_dropdown_text {
+			display: none;
+		}
 	}
 }
