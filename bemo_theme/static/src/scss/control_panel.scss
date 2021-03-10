@@ -1,3 +1,83 @@
+.o_control_panel {
+	padding-top: 0;
+	padding-bottom: 0;
+	> div {
+		margin: $bemo-spacing-level-3 0px;
+		+ div {
+			margin-top: 0;
+		}
+	}
+	.o_cp_bottom_left {
+		button {
+			padding: $bemo-button-padding;
+			border-radius: $bemo-button-border-radius;
+			margin-right: 16px;
+			&.btn-secondary {
+				color: $bemo-primary-color;
+				border: 1px solid $bemo-primary-color;
+			}
+		}
+	}
+	.o_cp_bottom_right {
+		flex-wrap: wrap;
+		nav[role="toolbar"] {
+			.btn {
+				width: $bemo-width-button-icon-only;
+				height: $bemo-height-button-icon-only;
+				&:hover {
+					background: $bemo-primary-blue-light-color-06;
+				}
+			}
+		}
+		.o_search_options {
+			@media (max-width: 1199.98px) {
+				-ms-flex: 0 0 70%;
+				flex: 0 0 70%;
+				max-width: 70%;
+			}
+		}
+		> .o_cp_pager {
+			padding-left: 8px;
+			.btn {
+				width: $bemo-width-button-icon-only;
+				height: $bemo-height-button-icon-only;
+				&:hover {
+					color: $bemo-neutral-medium-sub-color;
+					background-color: $bemo-primary-blue-light-color-06;
+					border-color: $bemo-primary-blue-light-color-06;
+				}
+			}
+			@media (max-width: 1199.98px) {
+				-ms-flex: 0 0 30%;
+				flex: 0 0 30%;
+				max-width: 30%;
+			}
+			.o_pager {
+				@media (max-width: 1199.98px) {
+					justify-content: flex-end;
+				}
+			}
+		}
+	}
+	.o_form_buttons_view,
+	.o_form_buttons_edit {
+		button {
+			padding: $bemo-button-padding;
+			border-radius: $bemo-button-border-radius;
+			margin-right: 16px;
+			&.btn-secondary {
+				border: 1px solid $bemo-primary-color;
+			}
+		}
+	}
+}
+
+span.o_pager_value {
+	&:focus {
+		outline: none;
+	}
+}
+
 @include media-breakpoint-down(sm) {
 	.o_control_panel {
 		padding-left: $o-horizontal-padding / 2;

@@ -1,20 +1,20 @@
 //----------------------------------------------------------
 // Fonts
 //----------------------------------------------------------
-
 $font-family-sans-serif: "Inter", "Roboto", "Noto";
+$bemo-root-font-size: 12px;
+$bemo-font-size-default: 14rem * (1px / $bemo-root-font-size);
+$bemo-line-height-default: 1.6;
 
 //----------------------------------------------------------
 // AppBarMenu
 //----------------------------------------------------------
-
 $bemo-sidebar-large-width: 240px;
 $bemo-sidebar-small-width: 46px;
 
 //----------------------------------------------------------
 // Sided Chatter
 //----------------------------------------------------------
-
 $bemo-form-min-width: 835px;
 $bemo-chatter-min-width: 550px;
 $bemo-chatter-max-width: 600px;
@@ -44,7 +44,7 @@ $bemo-navbar-height: 56px;
 // Root Padding Button
 //----------------------------------------------------------
 $bemo-button-padding-top: 0.584rem;
-$bemo-button-padding-bottom: 0.5rem;
+$bemo-button-padding-bottom: 0.8rem;
 $bemo-button-vertical-padding: 1.5rem;
 $bemo-button-padding: $bemo-button-padding-top $bemo-button-vertical-padding
 	$bemo-button-padding-bottom;

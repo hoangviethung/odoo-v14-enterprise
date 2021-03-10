@@ -1,14 +1,14 @@
 {
-	"name": "MuK Backend Theme", 
-	"summary": "Odoo Community Backend Theme",
+	"name": "Bemo Theme", 
+	"summary": "This is module custom Bemo Theme.",
 	"version": "14.0.1.0.0", 
-	"category": "Themes/Backend", 
+	"category": "Themes/Bemo Theme", 
 	"license": "LGPL-3", 
-	"author": "MuK IT",
-	"website": "http://www.mukit.at",
+	"author": "B.A.P Ventures",
+	"website": "https://bap-software.net/en/",
 	'live_test_url': 'https://mukit.at/r/SgN',
 	"contributors": [
-		"Mathias Markl <mathias.markl@mukit.at>",
+		"BAP Ventures",
 	],
 	"depends": [
 		"web_editor",
@@ -27,16 +27,13 @@
 		"static/src/components/control_panel.xml",
 		"static/src/xml/*.xml",
 	],
-	"images": [
-		'static/description/banner.png',
-		'static/description/theme_screenshot.png'
-	],
+	"images": [],
 	"external_dependencies": {
 		"python": [],
 		"bin": [],
 	},
-	"application": False,
+	"application": True,
 	"installable": True,
-	"auto_install": False,
+	"auto_install": True,
 	"uninstall_hook": "_uninstall_reset_changes",
 }

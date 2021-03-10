@@ -1,4 +1,11 @@
 $o-brand-odoo: $bemo-primary-color;
 $o-brand-primary: $bemo-primary-color;
-$o-navbar-height: 58px;
-// $o-extra-grid-breakpoints: $bemo-extra-grid-breakpoints;
+$o-navbar-height: $bemo-navbar-height;
+$o-extra-grid-breakpoints: $bemo-extra-grid-breakpoints;
+$font-size-base: $bemo-font-size-default !default;
+$o-line-height-base: $bemo-line-height-default;
+$o-main-text-color: $bemo-neutral-darker-color;
+$o-view-background-color: $bemo-neutral-white;
+$o-main-color-muted: $bemo-neutral-light-disable-color;
+$o-navbar-inverse-link-hover-bg: $bemo-primary-dark-color-01;
+$o-enterprise-primary-color: $bemo-semantic-negative-color;
