@@ -27,7 +27,6 @@
 
 	<template id="assets_backend" name="Backend Assets" inherit_id="web.assets_backend">
 		<xpath expr="//link[last()]" position="after">
-			<link rel="stylesheet" type="text/css" href="/bemo_theme/static/libs/fontawesome-pro/css/all.css" />
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/libs/simplebar/simplebar.scss" />
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/layout.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/navbar.scss"/>

@@ -1,6 +1,13 @@
 .o_main_navbar {
 	padding-right: $bemo-spacing-level-3;
 	border-bottom: 0;
+	> a,
+	button {
+		&:hover,
+		&:focus {
+			background: inherit;
+		}
+	}
 	> ul {
 		display: flex;
 		align-items: center;
@@ -12,6 +19,16 @@
 			&.o_debug_manager,
 			&.o_MessagingMenu,
 			&.o_mail_systray_item {
+				.fa-clock-o {
+					&:before {
+						content: "\f0f3";
+					}
+				}
+				.fa-comments {
+					&:before {
+						content: "\f0e0";
+					}
+				}
 				> a {
 					&:hover {
 						background: inherit;
@@ -21,7 +38,6 @@
 			> a,
 			> label {
 				padding: 0 $bemo-spacing-level-2;
-				transition: $bemo-transition;
 				&.o_menu_header_lvl_1 {
 					position: relative;
 					padding-right: $bemo-spacing-level-4;
@@ -34,6 +50,9 @@
 						top: 50%;
 						transform: translateY(-50%);
 					}
+				}
+				&:hover {
+					background: inherit;
 				}
 			}
 			&.o_extra_menu_items {

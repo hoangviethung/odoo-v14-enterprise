@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--
-
-	Copyright (c) 2017-today MuK IT GmbH.
-
-	This file is part of MuK Grid Snippets
-	(see https://mukit.at).
-
-	This program is free software: you can redistribute it and/or modify
-	it under the terms of the GNU Lesser General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
-
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU Lesser General Public License for more details.
-
-	You should have received a copy of the GNU Lesser General Public License
-	along with this program. If not, see <http://www.gnu.org/licenses/>.
-
-  -->
-
 <templates id="template" xml:space="preserve">
-
 	<t t-extend="AppsMenu">
 		<t t-jquery=".o_app" t-operation="attributes">
 			<attribute name="t-attf-href">#menu_id=#{app.menuID}&amp;action_id=#{app.actionID}</attribute>
@@ -31,8 +8,8 @@
 		<t t-jquery=".full" t-operation="attributes">
 			<attribute name="accesskey">h</attribute>
 		</t>
-		<t t-jquery=".full &gt; i" t-operation="attributes">
-			<attribute name="class">fa fa-th</attribute>
+		<t t-jquery=".full &gt; i" t-operation="replace">
+			<i class="fa fa-th"></i>
 		</t>
 		<t t-jquery="[t-as=app]" t-operation="before">
 			<div class="mk_search_container form-row align-items-center mb-4 col-12">
