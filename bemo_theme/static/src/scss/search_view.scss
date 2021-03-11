@@ -1,55 +1,74 @@
-/**********************************************************************************
-*
-*    Copyright (c) 2017-today MuK IT GmbH.
-*
-*    This file is part of MuK Grid Snippets
-*    (see https://mukit.at).
-*
-*    This program is free software: you can redistribute it and/or modify
-*    it under the terms of the GNU Lesser General Public License as published by
-*    the Free Software Foundation, either version 3 of the License, or
-*    (at your option) any later version.
-*
-*    This program is distributed in the hope that it will be useful,
-*    but WITHOUT ANY WARRANTY; without even the implied warranty of
-*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*    GNU Lesser General Public License for more details.
-*
-*    You should have received a copy of the GNU Lesser General Public License
-*    along with this program. If not, see <http://www.gnu.org/licenses/>.
-*
-**********************************************************************************/
-
 .o_searchview {
-	padding: 0;
-	border: none;
-	width: 100%;
-	margin-bottom: 5px;
-	button {
-		background-color: $white;
-		border-color: $border-color;
-		color: $gray-600;
-		border: none;
-	}
-	.o_enable_searchview {
-		float: right;
+	padding: 8px 32px 8px 8px;
+	background: $bemo-neutral-lightest-background-color;
+	border-radius: $bemo-border-radius-low;
+	border: 0;
+	.o_searchview_icon {
+		color: $bemo-neutral-medium-sub-color;
+		right: 8px;
+		top: 50%;
+		bottom: unset;
+		left: unset;
+		transform: translateY(-50%);
+		z-index: 10;
 	}
 	.o_searchview_input_container {
-		border-bottom: 1px solid $o-brand-secondary;
-	}
-}
-
-.o_modal_header {
-	.o_searchview,
-	.o_pager {
-		display: inline-block;
-	}
-}
-
-@include media-breakpoint-between(sm, lg, $o-extra-grid-breakpoints) {
-	.o_search_options {
-		.mk_dropdown_text {
-			display: none;
+		.o_searchview_input {
+			height: 24px;
+			background: inherit;
+			padding: 0;
+			&::placeholder {
+				color: $bemo-neutral-medium-sub-color;
+				transition: $bemo-transition;
+			}
+			&:focus {
+				&::placeholder {
+					color: $bemo-primary-color;
+				}
+			}
 		}
+		.o_searchview_facet {
+			margin: 0 $bemo-spacing-level-2 0 0;
+			border-radius: $bemo-border-radius-low;
+			outline: none;
+			transition: $bemo-transition;
+			background: $bemo-neutral-white;
+			overflow: hidden;
+			.o_searchview_facet_label {
+				padding: 0 $bemo-spacing-level-2 $bemo-spacing-level-1 / 2
+					$bemo-spacing-level-2;
+				font-size: 12px;
+				background: $bemo-primary-blue-medium-color-01;
+				&.fa {
+					padding: 0 $bemo-spacing-level-2;
+				}
+			}
+			.o_facet_values {
+				display: inline-flex;
+				align-items: center;
+				padding: 0 $bemo-spacing-level-4 0 $bemo-spacing-level-1;
+			}
+			.o_facet_remove {
+				transition: $bemo-transition;
+				&:before {
+					margin-bottom: 2px;
+				}
+				&:hover {
+					color: $bemo-primary-color;
+				}
+			}
+			&:focus {
+				border: 1px solid $bemo-primary-blue-medium-color-01;
+			}
+		}
+	}
+	.o_searchview_facet {
+		border: 1px solid $bemo-neutral-lighter-border-color;
+	}
+}
+
+.o_dropdown {
+	.o_dropdown_title {
+		padding: 0 4px;
 	}
 }

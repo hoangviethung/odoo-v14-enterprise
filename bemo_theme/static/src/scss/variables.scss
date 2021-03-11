@@ -43,11 +43,8 @@ $bemo-navbar-height: 56px;
 //----------------------------------------------------------
 // Root Padding Button
 //----------------------------------------------------------
-$bemo-button-padding-top: 0.584rem;
-$bemo-button-padding-bottom: 0.8rem;
-$bemo-button-vertical-padding: 1.5rem;
-$bemo-button-padding: $bemo-button-padding-top $bemo-button-vertical-padding
-	$bemo-button-padding-bottom;
+$bemo-button-vertical-padding: 16px;
+$bemo-button-height: 40px;
 
 //----------------------------------------------------------
 // Root Bemo Spacing
@@ -57,12 +54,12 @@ $bemo-spacing-level-2: 8px;
 $bemo-spacing-level-3: 16px;
 $bemo-spacing-level-4: 24px;
 $bemo-spacing-level-5: 32px;
-$bemo-spacing-level-5: 40px;
-$bemo-spacing-level-5: 56px;
-$bemo-spacing-level-6: 72px;
-$bemo-spacing-level-7: 80px;
-$bemo-spacing-level-8: 96px;
-$bemo-spacing-level-9: 120px;
+$bemo-spacing-level-6: 40px;
+$bemo-spacing-level-7: 56px;
+$bemo-spacing-level-8: 72px;
+$bemo-spacing-level-9: 80px;
+$bemo-spacing-level-10: 96px;
+$bemo-spacing-level-11: 120px;
 
 //----------------------------------------------------------
 // Root Breakpoints Media
@@ -80,7 +77,8 @@ $bemo-extra-grid-breakpoints: (
 //----------------------------------------------------------
 // Root Border Radius
 //----------------------------------------------------------
-$bemo-button-border-radius: 0.25rem;
+$bemo-button-border-radius: 0.667rem;
+$bemo-border-radius-low: 4px;
 $bemo-border-radius-hight: 16px;
 
 //----------------------------------------------------------
@@ -92,3 +90,7 @@ $bemo-view-5: 20%;
 // Root Card Kanban
 //----------------------------------------------------------
 $bemo-kanban-view-5: calc(#{$bemo-view-5} - #{$bemo-spacing-level-2} * 5);
+
+//Root Size Icon And Avatar Small
+$width-icon-small: 24px;
+$height-icon-small: 24px;

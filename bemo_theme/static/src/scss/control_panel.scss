@@ -7,44 +7,85 @@
 			margin-top: 0;
 		}
 	}
+	button {
+		&:focus {
+			box-shadow: unset;
+		}
+	}
+	.breadcrumb {
+		font-size: 1.33333333rem;
+		padding: 7.5px 0;
+	}
 	.o_cp_bottom_left {
-		button {
-			padding: $bemo-button-padding;
-			border-radius: $bemo-button-border-radius;
-			margin-right: 16px;
-			&.btn-secondary {
-				color: $bemo-primary-color;
-				border: 1px solid $bemo-primary-color;
+		.o_cp_buttons {
+			button {
+				text-transform: uppercase;
+				font-weight: 700;
+				padding: 0 $bemo-button-vertical-padding;
+				border-radius: $bemo-button-border-radius;
+				margin-right: $bemo-spacing-level-2;
+				height: $bemo-button-height;
+				&.btn-secondary {
+					color: $bemo-primary-color;
+					border: 1px solid $bemo-primary-color;
+				}
 			}
 		}
 	}
 	.o_cp_bottom_right {
 		flex-wrap: wrap;
-		nav[role="toolbar"] {
-			.btn {
-				width: $bemo-width-button-icon-only;
-				height: $bemo-height-button-icon-only;
-				&:hover {
-					background: $bemo-primary-blue-light-color-06;
-				}
-			}
-		}
-		.o_search_options {
+		> .o_search_options {
+			margin: auto 0;
 			@media (max-width: 1199.98px) {
 				-ms-flex: 0 0 70%;
 				flex: 0 0 70%;
 				max-width: 70%;
 			}
+			.o_dropdown_toggler_btn {
+				color: $bemo-neutral-darker-color;
+				border: 0;
+				padding: 0 $bemo-spacing-level-3 0 0;
+				&:hover {
+					background: inherit;
+				}
+				i {
+					margin-right: $bemo-spacing-level-1;
+				}
+				&:first-child {
+					margin-right: $bemo-spacing-level-4;
+				}
+				&:before {
+					content: "\f078";
+					color: $bemo-neutral-medium-sub-color;
+					font-size: 10px;
+					font-family: "FontAwesome";
+					position: absolute;
+					right: 0;
+					top: 49%;
+					line-height: 1;
+					transform: translateY(-50%);
+				}
+			}
 		}
 		> .o_cp_pager {
-			padding-left: 8px;
+			padding-left: 0;
+			margin: auto 0 auto auto;
 			.btn {
-				width: $bemo-width-button-icon-only;
-				height: $bemo-height-button-icon-only;
+				font-size: 10px;
+				color: $bemo-neutral-darker-color;
+				width: $width-icon-small;
+				height: $width-icon-small;
+				padding: 0;
 				&:hover {
 					color: $bemo-neutral-medium-sub-color;
 					background-color: $bemo-primary-blue-light-color-06;
 					border-color: $bemo-primary-blue-light-color-06;
+				}
+				&:before {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
 				}
 			}
 			@media (max-width: 1199.98px) {
@@ -58,15 +99,42 @@
 				}
 			}
 		}
-	}
-	.o_form_buttons_view,
-	.o_form_buttons_edit {
-		button {
-			padding: $bemo-button-padding;
-			border-radius: $bemo-button-border-radius;
-			margin-right: 16px;
-			&.btn-secondary {
-				border: 1px solid $bemo-primary-color;
+		> .o_cp_switch_buttons {
+			margin: auto 0;
+			border-radius: $bemo-border-radius-low;
+			> .btn:not(:last-child):not(.dropdown-toggle),
+			.btn-group > .btn-group:not(:last-child) > .btn {
+				border-top-right-radius: $bemo-border-radius-low;
+				border-bottom-right-radius: $bemo-border-radius-low;
+			}
+			> .btn:not(:first-child),
+			.btn-group > .btn-group:not(:first-child) > .btn {
+				border-top-left-radius: $bemo-border-radius-low;
+				border-bottom-left-radius: $bemo-border-radius-low;
+			}
+			.o_switch_view {
+				color: $bemo-neutral-darker-color;
+				width: $width-icon-small;
+				height: $width-icon-small;
+				border: 0;
+				padding: 0;
+				line-height: 1;
+				&.active {
+					color: $bemo-primary-color;
+				}
+				&:hover,
+				&.active {
+					background: $bemo-primary-blue-light-color-06;
+				}
+				&:before {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+				+ .o_switch_view {
+					margin-left: 8px;
+				}
 			}
 		}
 	}
