@@ -1,0 +1,15 @@
+.custom-control.custom-checkbox {
+	.custom-control-input:not(:checked):not(:indeterminate) {
+		~ .custom-control-label:before {
+			outline: none;
+		}
+	}
+}
+
+.custom-control-label {
+	&:before,
+	&:after {
+		width: 16px;
+		height: 16px;
+	}
+}

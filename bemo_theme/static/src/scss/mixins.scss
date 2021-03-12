@@ -1,20 +1,20 @@
-@mixin mk-full-screen-sections {
+@mixin bemo-full-screen-sections {
 	width: 100vw;
-	z-index: 1002;
+	z-index: 999;
 	display: flex;
-	flex-direction: column;
 	height: calc(100vh - #{$o-navbar-height});
 	max-height: calc(100vh - #{$o-navbar-height});
-	top: $o-navbar-height !important;
-	transform: none !important;
-	position: fixed !important;
+	top: $o-navbar-height;
+	transform: none;
+	position: fixed;
 	overflow-x: hidden;
 	overflow-y: auto;
 	box-shadow: none;
 	border: none;
+	border-radius: 0;
 }
 
-@mixin mk-container-widths(
+@mixin bemo-container-widths(
 	$max-widths: $container-max-widths,
 	$breakpoints: $grid-breakpoints
 ) {

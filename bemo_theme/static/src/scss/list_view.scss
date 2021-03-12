@@ -1,3 +1,22 @@
+.table {
+	thead {
+		th {
+			border-bottom: 0;
+		}
+	}
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: $bemo-neutral-lightest-background-color;
+}
+
+.table-hover tbody tr {
+	transition: $bemo-transition;
+	&:hover {
+		background: $bemo-primary-blue-light-color-05;
+	}
+}
+
 .o_list_view {
 	table {
 		overflow-x: hidden;
@@ -7,24 +26,62 @@
 	tfoot,
 	td,
 	th {
-		border: none !important;
+		border: none;
+		transition: $bemo-transition;
+	}
+	th,
+	td {
+		line-height: 24px;
+		padding: $bemo-spacing-level-3 $bemo-spacing-level-2;
+		outline: none;
+	}
+	.o_list_table {
+		thead {
+			color: $bemo-neutral-white;
+			border-bottom: 0;
+			th:focus-within,
+			.o_list_view
+				.o_list_table
+				tbody.o_keyboard_navigation
+				td:focus-within {
+				background: inherit;
+			}
+		}
+		tfoot {
+			color: $bemo-primary-color;
+			background: $bemo-neutral-lightest-background-color;
+			border-top: 0;
+			border-bottom: 0;
+		}
+		tr:focus-within,
+		.o_list_view .o_list_table.table-striped tr:focus-within {
+			background: inherit !important;
+		}
 	}
 	thead {
-		background-color: white;
+		background-color: $bemo-primary-color;
 		th.o_column_sortable:hover {
-			background-color: white;
+			background-color: $bemo-primary-dark-color-01;
 		}
 	}
 	tfoot {
-		color: white !important;
+		color: white;
 		cursor: default;
 		font-weight: normal;
+	}
+	.o_optional_columns_dropdown_toggle,
+	.o_optional_columns {
+		color: $bemo-neutral-white;
+		line-height: 56px;
+	}
+	.o_list_table thead > tr > th:not(.o_list_record_selector) {
+		border-left: 0;
 	}
 }
 
 .o_list_table_grouped.table tbody tr {
 	&:nth-of-type(2n + 1) {
-		background-color: white;
+		background-color: $bemo-neutral-lightest-background-color;
 	}
 	&.o_group_header {
 		background-image: none;

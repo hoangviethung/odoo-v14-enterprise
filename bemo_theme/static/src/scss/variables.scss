@@ -9,7 +9,7 @@ $bemo-line-height-default: 1.6;
 //----------------------------------------------------------
 // AppBarMenu
 //----------------------------------------------------------
-$bemo-sidebar-large-width: 240px;
+$bemo-sidebar-large-width: 220px;
 $bemo-sidebar-small-width: 46px;
 
 //----------------------------------------------------------
@@ -27,7 +27,7 @@ $bemo-transition: 0.3s all ease-in-out;
 //----------------------------------------------------------
 // Root BoxShadow
 //----------------------------------------------------------
-$bemo-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+$bemo-box-shadow: 0px 0px 12px rgba(12, 50, 85, 0.06);
 
 //----------------------------------------------------------
 // Root Button Icon
@@ -79,6 +79,7 @@ $bemo-extra-grid-breakpoints: (
 //----------------------------------------------------------
 $bemo-button-border-radius: 0.667rem;
 $bemo-border-radius-low: 4px;
+$bemo-border-radius-medium: 8px;
 $bemo-border-radius-hight: 16px;
 
 //----------------------------------------------------------
@@ -92,5 +93,5 @@ $bemo-view-5: 20%;
 $bemo-kanban-view-5: calc(#{$bemo-view-5} - #{$bemo-spacing-level-2} * 5);
 
 //Root Size Icon And Avatar Small
-$width-icon-small: 24px;
-$height-icon-small: 24px;
+$width-icon-small: 32px;
+$height-icon-small: 32px;

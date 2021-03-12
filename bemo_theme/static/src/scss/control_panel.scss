@@ -1,6 +1,8 @@
 .o_control_panel {
 	padding-top: 0;
 	padding-bottom: 0;
+	border-bottom: 1px solid $bemo-neutral-lighter-border-color;
+
 	> div {
 		margin: $bemo-spacing-level-3 0px;
 		+ div {
@@ -45,8 +47,13 @@
 				color: $bemo-neutral-darker-color;
 				border: 0;
 				padding: 0 $bemo-spacing-level-3 0 0;
+				transition: $bemo-transition;
 				&:hover {
 					background: inherit;
+					color: $bemo-primary-color;
+					&:before {
+						color: $bemo-primary-color;
+					}
 				}
 				i {
 					margin-right: $bemo-spacing-level-1;
@@ -64,18 +71,22 @@
 					top: 49%;
 					line-height: 1;
 					transform: translateY(-50%);
+					transition: $bemo-transition;
 				}
 			}
 		}
 		> .o_cp_pager {
 			padding-left: 0;
 			margin: auto 0 auto auto;
-			.btn {
+			.o_pager_previous,
+			.o_pager_next {
+				cursor: pointer;
 				font-size: 10px;
 				color: $bemo-neutral-darker-color;
 				width: $width-icon-small;
 				height: $width-icon-small;
 				padding: 0;
+				border: 0;
 				&:hover {
 					color: $bemo-neutral-medium-sub-color;
 					background-color: $bemo-primary-blue-light-color-06;
@@ -87,16 +98,24 @@
 					left: 50%;
 					transform: translate(-50%, -50%);
 				}
+				&:disabled {
+					color: $bemo-neutral-light-disable-color;
+					cursor: not-allowed;
+				}
 			}
+			.o_pager {
+				.o_pager_counter {
+					margin-right: $bemo-spacing-level-2;
+				}
+				@media (max-width: 1199.98px) {
+					justify-content: flex-end;
+				}
+			}
+
 			@media (max-width: 1199.98px) {
 				-ms-flex: 0 0 30%;
 				flex: 0 0 30%;
 				max-width: 30%;
-			}
-			.o_pager {
-				@media (max-width: 1199.98px) {
-					justify-content: flex-end;
-				}
 			}
 		}
 		> .o_cp_switch_buttons {
