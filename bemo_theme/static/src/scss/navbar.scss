@@ -12,6 +12,7 @@
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
+		height: 100%;
 		> li {
 			+ li {
 				margin-left: $bemo-spacing-level-3;
@@ -190,6 +191,31 @@
 			}
 		}
 	}
+	.o_switch_company_menu {
+		> a {
+			.oe_topbar_name {
+				max-width: 120px;
+				@media (max-width: 1599.98px) {
+					display: none;
+				}
+			}
+			&:after {
+				content: "\f1ad";
+				width: 24px;
+				height: 24px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				display: inline-block;
+				margin-left: 0;
+				vertical-align: unset;
+				border-top: 0;
+				border-right: 0;
+				border-left: 0;
+				font-family: "FontAwesome";
+			}
+		}
+	}
 	.o_user_menu {
 		margin-left: 24px;
 		.oe_topbar_avatar {
@@ -239,6 +265,17 @@
 				&::before {
 					content: "\f011";
 				}
+			}
+		}
+		.oe_topbar_name {
+			display: inline-block;
+			max-width: 120px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			vertical-align: top;
+			@media (max-width: 1599.98px) {
+				display: none;
 			}
 		}
 	}

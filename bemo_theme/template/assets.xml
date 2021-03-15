@@ -39,10 +39,12 @@
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/list_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/messaging_menu.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/dropdown.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/web.zoomodoo.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/kanban_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/activity_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/form_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/fields.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/fields_extra.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/notification.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/settings.scss"/>
 		</xpath>

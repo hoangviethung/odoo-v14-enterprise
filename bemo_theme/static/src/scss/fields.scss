@@ -2,6 +2,22 @@
 	&.o_field_many2one .o_external_button {
 		color: $o-brand-odoo;
 	}
+	&.o_field_image {
+		position: absolute;
+		.o_form_image_controls {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			border-radius: 50%;
+			background: transparent;
+			background: rgba($color: $bemo-primary-color, $alpha: 0.8);
+			button {
+				color: $bemo-neutral-white;
+			}
+		}
+	}
 }
 
 .custom-control-input {

@@ -1,19 +1,22 @@
 * {
 	/* width */
 	&::-webkit-scrollbar {
-		width: 4px;
+		width: 6px;
 	}
 
 	/* Track */
 	&::-webkit-scrollbar-track {
-		background: $bemo-primary-blue-light-color-05;
+		background: rgba(
+			$color: $bemo-primary-blue-light-color-05,
+			$alpha: 0.7
+		);
 	}
 
 	/* Handle */
 	&::-webkit-scrollbar-thumb {
 		background: $bemo-primary-blue-light-color-04;
 		transition: $bemo-transition;
-		border-radius: 2px;
+		border-radius: 3px;
 		&:hover {
 			background: $bemo-primary-blue-light-color-03;
 		}
