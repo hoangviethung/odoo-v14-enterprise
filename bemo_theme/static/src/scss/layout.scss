@@ -1,7 +1,7 @@
 * {
 	/* width */
 	&::-webkit-scrollbar {
-		width: 8px;
+		width: 4px;
 	}
 
 	/* Track */
@@ -13,6 +13,7 @@
 	&::-webkit-scrollbar-thumb {
 		background: $bemo-primary-blue-light-color-04;
 		transition: $bemo-transition;
+		border-radius: 2px;
 		&:hover {
 			background: $bemo-primary-blue-light-color-03;
 		}

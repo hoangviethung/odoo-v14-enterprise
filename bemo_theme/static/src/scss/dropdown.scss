@@ -1,0 +1,61 @@
+%dropdown-li-a-padding {
+	padding: $bemo-spacing-level-1 $o-dropdown-hpadding;
+}
+.dropdown-item {
+	cursor: pointer;
+	transition: $bemo-transition;
+	&:hover {
+		color: $bemo-primary-color;
+		background: $bemo-primary-blue-light-color-05;
+	}
+}
+
+@mixin dropdown-menu-mixin {
+	.show .dropdown-menu {
+		.dropdown-item {
+			&[data-menu] {
+				padding-left: 40px;
+				&:before {
+					position: absolute;
+					left: 16px;
+					top: 50%;
+					transform: translateY(-50%);
+					line-height: 1;
+					font-family: "FontAwesome";
+				}
+			}
+			&[data-menu="documentation"] {
+				&::before {
+					content: "\f15c";
+				}
+			}
+			&[data-menu="support"] {
+				&::before {
+					content: "\f059";
+				}
+			}
+			&[data-menu="shortcuts"] {
+				&::before {
+					content: "\f11c";
+				}
+			}
+			&[data-menu="settings"] {
+				&::before {
+					content: "\f007";
+				}
+			}
+			&[data-menu="account"] {
+				&::before {
+					content: "\f0c2";
+				}
+			}
+			&[data-menu="logout"] {
+				&::before {
+					content: "\f011";
+				}
+			}
+		}
+	}
+}
+
+@include dropdown-menu-mixin;
