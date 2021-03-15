@@ -86,11 +86,17 @@ $bemo-border-radius-hight: 16px;
 // % Width View Item
 //----------------------------------------------------------
 $bemo-view-5: 20%;
+$bemo-view-4: 25%;
+$bemo-view-3: 33.333333%;
+$bemo-view-2: 50%;
 
 //----------------------------------------------------------
 // Root Card Kanban
 //----------------------------------------------------------
 $bemo-kanban-view-5: calc(#{$bemo-view-5} - #{$bemo-spacing-level-2} * 5);
+$bemo-kanban-view-4: calc(#{$bemo-view-4} - #{$bemo-spacing-level-2} * 4);
+$bemo-kanban-view-3: calc(#{$bemo-view-3} - #{$bemo-spacing-level-2} * 3);
+$bemo-kanban-view-2: calc(#{$bemo-view-2} - #{$bemo-spacing-level-2} * 2);
 
 //Root Size Icon And Avatar Small
 $width-icon-small: 32px;
