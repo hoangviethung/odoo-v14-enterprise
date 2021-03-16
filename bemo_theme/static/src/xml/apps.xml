@@ -10,6 +10,7 @@
 		</t>
 		<t t-jquery=".full &gt; i" t-operation="replace">
 			<i class="fa fa-th"></i>
+			<img class="logo" src="/bemo_theme/static/src/images/logo.svg" alt="BEMO-CLOUD"/>
 		</t>
 		<t t-jquery="[t-as=app]" t-operation="before">
 			<div class="mk_search_container form-row align-items-center mb-4 col-12">
