@@ -1,0 +1,22 @@
+.nav-tabs {
+	.nav-link {
+		transition: $bemo-transition;
+		&:not(.active) {
+			color: $bemo-neutral-medium-sub-color;
+			&:hover {
+				color: $bemo-primary-color;
+				border-color: transparent;
+			}
+		}
+	}
+}
+
+.tab-content {
+	> .tab-pane {
+		opacity: 0;
+		transition: $bemo-transition;
+	}
+	> .active {
+		opacity: 1;
+	}
+}

@@ -31,6 +31,7 @@
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/libs/simplebar/simplebar.scss" />
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/layout.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/navbar.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/_nav.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/apps.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/appsbar.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/control_panel.scss"/>
@@ -40,6 +41,7 @@
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/messaging_menu.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/dropdown.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/web.zoomodoo.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/webclient_extra.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/kanban_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/activity_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/form_view.scss"/>

@@ -82,6 +82,16 @@
 	box-shadow: unset;
 }
 
+.o_field_widget.o_field_many2one,
+.o_field_widget.o_field_radio,
+.o_field_widget.o_field_many2manytags,
+.o_field_widget.o_field_percent_pie,
+.o_field_widget.o_field_monetary,
+.o_field_widget.o_field_binary_file,
+.o_field_widget.o_field_float_percentage {
+	display: flex;
+}
+
 .o_kanban_view .oe_kanban_card .o_field_many2manytags .o_tag span,
 .o_kanban_view .oe_kanban_card .o_kanban_tags .o_tag span,
 .o_kanban_view .o_kanban_record .o_field_many2manytags .o_tag span,

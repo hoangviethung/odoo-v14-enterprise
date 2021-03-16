@@ -1,0 +1,22 @@
+.o_input {
+	color: $bemo-neutral-darker-color;
+	position: relative;
+	border-width: 1px;
+	border-style: solid;
+	border-bottom-color: $bemo-neutral-lighter-border-color;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0;
+	transition: $bemo-transition;
+	&:focus {
+		border-bottom-color: $bemo-primary-color;
+	}
+	&::placeholder {
+		color: $bemo-neutral-medium-sub-color;
+	}
+	.o_input {
+		border: 0;
+		padding: 0;
+	}
+}
