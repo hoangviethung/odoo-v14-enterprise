@@ -151,4 +151,10 @@ class ResConfigSettings(models.TransientModel):
             'theme_color_appbar_background': colors['mk-appbar-background'],
             'theme_background_blend_mode': params.get_param('bemo_theme.background_blend_mode', 'normal'),
         })
+
+        for rec in self:
+            users = self.env['res.users'].search([])
+            print(users, '==========')
+            for user in users:
+                user.sidebar_type = rec.theme_default_sidebar_preference
         return res
