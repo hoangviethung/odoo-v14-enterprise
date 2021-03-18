@@ -15,18 +15,11 @@
 			<img class="logo logo_bemo_sidebar_type_invisible" src="/bemo_theme/static/src/images/logo_bemo_sidebar_type_invisible.svg" alt="BEMO-CLOUD"/>
 		</t>
 		<t t-jquery="[t-as=app]" t-operation="before">
-			<div class="bemo_search_container form-row align-items-center mb-4 col-12">
-				<div class="bemo_search_input col-md-10 ml-auto mr-auto mb-2">
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<div class="input-group-text">
-								<i class="fa fa-search"/>
-							</div>
-						</div>
-						<input type="text" placeholder="Search menus..." class="form-control"/>
-					</div>
+			<div class="bemo_search_container">
+				<div class="bemo_search_input">
+					<input type="text" placeholder="Search menus..." class="form-control"/>
 				</div>
-				<div class="bemo_search_results col-md-10 ml-auto mr-auto"/>
+				<div class="bemo_search_results"/>
 			</div>
 		</t>
 		<t t-jquery=".o_app &gt; t" t-operation="replace">

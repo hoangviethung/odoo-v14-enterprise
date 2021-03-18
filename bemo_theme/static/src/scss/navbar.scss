@@ -109,10 +109,10 @@
 			background: $bemo-primary-color;
 			.o_app {
 				display: flex;
-				margin-top: 20px;
+				margin-bottom: $bemo-spacing-level-5;
 				align-items: center;
 				flex-direction: column;
-				justify-content: flex-start;
+				justify-content: center;
 				width: percentage(1/6);
 				transition: $bemo-transition;
 				background: none;
@@ -153,21 +153,34 @@
 				width: 100%;
 			}
 			.bemo_search_container {
-				margin-top: 25px;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%;
+				margin-bottom: $bemo-spacing-level-8;
 				.bemo_search_input {
-					input:focus {
-						box-shadow: none;
-						border: 1px solid $gray-400;
+					input {
+						max-width: 350px;
+						width: 100%;
+						margin: 0 auto;
+						color: $bemo-neutral-white;
+						background: transparent;
+						&::placeholder {
+							color: $bemo-neutral-white;
+						}
 					}
 				}
 				&.has-results {
-					height: 100%;
-					.bemo_search_input {
-						height: 3em;
-					}
+					height: 100vh;
 					.bemo_search_results {
-						height: calc(100% - 3em);
+						height: 100%;
+						max-height: 50%;
+						overflow-y: auto;
+						margin-top: $bemo-spacing-level-4;
 						.bemo_menu_search_result {
+							max-width: 350px;
+							width: 100%;
+							margin: 0 auto;
+							color: $bemo-neutral-white;
 							display: block;
 							cursor: pointer;
 							align-items: center;
@@ -205,7 +218,9 @@
 			}
 			@include media-breakpoint-up(lg) {
 				padding: {
+					top: 4vh;
 					left: 20vw;
+					bottom: 4vh;
 					right: 20vw;
 				}
 			}
