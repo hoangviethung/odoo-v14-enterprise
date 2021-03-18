@@ -10,7 +10,8 @@ $bemo-line-height-default: 1.6;
 // AppBarMenu
 //----------------------------------------------------------
 $bemo-sidebar-large-width: 220px;
-$bemo-sidebar-small-width: 46px;
+$bemo-sidebar-small-width: 64px;
+$bemo-sidebar-invisible-width: 64px;
 
 //----------------------------------------------------------
 // Sided Chatter
@@ -101,3 +102,6 @@ $bemo-kanban-view-2: calc(#{$bemo-view-2} - #{$bemo-spacing-level-2} * 2);
 //Root Size Icon And Avatar Small
 $width-icon-small: 32px;
 $height-icon-small: 32px;
+
+// Browser
+$bemo-height-tab-browser: 56px;

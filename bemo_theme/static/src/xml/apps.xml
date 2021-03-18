@@ -10,11 +10,13 @@
 		</t>
 		<t t-jquery=".full &gt; i" t-operation="replace">
 			<i class="fa fa-th"></i>
-			<img class="logo" src="/bemo_theme/static/src/images/logo.svg" alt="BEMO-CLOUD"/>
+			<img class="logo logo_bemo_sidebar_type_large" src="/bemo_theme/static/src/images/logo_bemo_sidebar_type_large.svg" alt="BEMO-CLOUD"/>
+			<img class="logo logo_bemo_sidebar_type_small" src="/bemo_theme/static/src/images/logo_bemo_sidebar_type_small.svg" alt="BEMO-CLOUD"/>
+			<img class="logo logo_bemo_sidebar_type_invisible" src="/bemo_theme/static/src/images/logo_bemo_sidebar_type_invisible.svg" alt="BEMO-CLOUD"/>
 		</t>
 		<t t-jquery="[t-as=app]" t-operation="before">
-			<div class="mk_search_container form-row align-items-center mb-4 col-12">
-				<div class="mk_search_input col-md-10 ml-auto mr-auto mb-2">
+			<div class="bemo_search_container form-row align-items-center mb-4 col-12">
+				<div class="bemo_search_input col-md-10 ml-auto mr-auto mb-2">
 					<div class="input-group">
 						<div class="input-group-prepend">
 							<div class="input-group-text">
@@ -24,7 +26,7 @@
 						<input type="text" placeholder="Search menus..." class="form-control"/>
 					</div>
 				</div>
-				<div class="mk_search_results col-md-10 ml-auto mr-auto"/>
+				<div class="bemo_search_results col-md-10 ml-auto mr-auto"/>
 			</div>
 		</t>
 		<t t-jquery=".o_app &gt; t" t-operation="replace">
@@ -42,7 +44,7 @@
 	<t t-name="bemo_theme.MenuSearchResults">
 		<t t-foreach="results" t-as="result">
 			<t t-set="menu" t-value="widget._menuInfo(result.original)"/>
-			<a t-attf-class="mk_menu_search_result dropdown-item col-12 ml-auto mr-auto #{result_first ? 'active' : ''}" t-attf-style="background-image: #{menu.web_icon_data ? 'url(data:image/png;base64,' + menu.web_icon_data + ')' : 'none'}" t-attf-href="#menu_id=#{menu.id}&amp;action_id=#{menu.action_id}" t-att-data-menu-id="menu.id" t-att-data-action-id="menu.action_id" t-att-data-parent-id="menu.parent_id[0]" t-raw="result.string"/>
+			<a t-attf-class="bemo_menu_search_result dropdown-item col-12 ml-auto mr-auto #{result_first ? 'active' : ''}" t-attf-style="background-image: #{menu.web_icon_data ? 'url(data:image/png;base64,' + menu.web_icon_data + ')' : 'none'}" t-attf-href="#menu_id=#{menu.id}&amp;action_id=#{menu.action_id}" t-att-data-menu-id="menu.id" t-att-data-action-id="menu.action_id" t-att-data-parent-id="menu.parent_id[0]" t-raw="result.string"/>
 		</t>
 	</t>
 </templates>

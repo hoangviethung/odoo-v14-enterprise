@@ -3,12 +3,12 @@
 <templates id="template" xml:space="preserve">
 	<t t-extend="Menu">
 		<t t-jquery=".o_menu_systray" t-operation="after">
-			<button class="mk_menu_sections_toggle d-md-none" data-toggle="collapse" data-target=".o_main_navbar > .o_menu_sections">
+			<button class="bemo_menu_sections_toggle d-md-none" data-toggle="collapse" data-target=".o_main_navbar > .o_menu_sections">
 				<i class="fa fa-bars"/>
 			</button>
 		</t>
 		<t t-jquery=".o_menu_systray" t-operation="after">
-			<div class="mk_apps_sidebar_panel" />
+			<div class="bemo_apps_sidebar_panel" />
 		</t>
 	</t>
 
@@ -24,7 +24,7 @@
 			</li>
 		</t>
 		<t t-else="">
-			<li class="mk_menu_mobile_section clearfix">
+			<li class="bemo_menu_mobile_section clearfix">
 				<a role="button" href="#" t-attf-class="dropdown-toggle o-no-caret o_menu_header_lvl_#{depth}" t-att-data-menu-xmlid="menu.xmlid" data-toggle="dropdown" aria-expanded="false">
 					<span>
 						<t t-esc="menu.name"/>

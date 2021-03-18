@@ -84,18 +84,20 @@
 			margin-left: auto;
 		}
 	}
+	.logo {
+		display: none;
+		width: 100%;
+		height: auto;
+	}
 	> .o_menu_apps {
-		width: $bemo-sidebar-large-width;
 		background: $bemo-primary-dark-color-02;
 		padding: 0 $bemo-spacing-level-3;
 		.full {
+			display: flex;
+			align-items: center;
 			padding: 0;
 			i {
 				display: none;
-			}
-			.logo {
-				width: 100%;
-				height: auto;
 			}
 		}
 		.dropdown-menu.show {
@@ -104,32 +106,30 @@
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: flex-start;
-			@include media-breakpoint-up(lg) {
-				padding: {
-					left: 20vw;
-					right: 20vw;
-				}
-			}
 			.o_app {
 				display: flex;
 				margin-top: 20px;
 				align-items: center;
 				flex-direction: column;
 				justify-content: flex-start;
-				width: percentage(1/3);
-				@include media-breakpoint-up(sm) {
+				width: percentage(1/6);
+				transition: $bemo-transition;
+				background: none;
+				@media (max-width: 1439.98px) {
+					width: percentage(1/5);
+				}
+				@media (max-width: 1199.98px) {
 					width: percentage(1/4);
 				}
-				@include media-breakpoint-up(md) {
-					width: percentage(1/6);
+				@media (max-width: 575.98px) {
+					width: percentage(1/2);
 				}
 				&:hover,
 				&:focus,
 				&:active,
 				&.active {
-					background: none;
 					.o-app-icon {
-						box-shadow: 0 8px 15px -10px black;
+						box-shadow: 0 8px 15px -10px $bemo-neutral-black;
 						transform: translateY(-1px);
 					}
 				}
@@ -142,13 +142,18 @@
 				max-width: 7rem;
 				width: 100%;
 				flex-basis: 0;
+				transition: $bemo-transition;
+			}
+			.o-app-name {
+				color: $bemo-neutral-white;
+				margin-top: $bemo-spacing-level-2;
 			}
 			.form-row {
 				width: 100%;
 			}
-			.mk_search_container {
+			.bemo_search_container {
 				margin-top: 25px;
-				.mk_search_input {
+				.bemo_search_input {
 					input:focus {
 						box-shadow: none;
 						border: 1px solid $gray-400;
@@ -156,12 +161,12 @@
 				}
 				&.has-results {
 					height: 100%;
-					.mk_search_input {
+					.bemo_search_input {
 						height: 3em;
 					}
-					.mk_search_results {
+					.bemo_search_results {
 						height: calc(100% - 3em);
-						.mk_menu_search_result {
+						.bemo_menu_search_result {
 							display: block;
 							cursor: pointer;
 							align-items: center;
@@ -183,6 +188,24 @@
 				}
 				@include media-breakpoint-down(md) {
 					padding-right: 5px;
+				}
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background: var(--url-background);
+				background-size: cover;
+				z-index: -10;
+				pointer-events: none;
+			}
+			@include media-breakpoint-up(lg) {
+				padding: {
+					left: 20vw;
+					right: 20vw;
 				}
 			}
 		}

@@ -1,103 +1,110 @@
-.mk_apps_sidebar_panel {
-	height: calc(100% - #{$o-navbar-height});
+.bemo_apps_sidebar_panel {
+	height: calc(100% - #{$bemo-navbar-height});
 	position: fixed;
 	overflow-y: auto;
-	top: $o-navbar-height;
-	&::-webkit-scrollbar {
-		display: none;
-	}
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-	.mk_apps_sidebar {
+	top: $bemo-navbar-height;
+	background: $bemo-primary-color;
+	.bemo_apps_sidebar {
 		padding: 0;
 		white-space: nowrap;
-		.mk_apps_sidebar_menu {
+		.bemo_apps_sidebar_menu {
 			list-style: none;
-			margin: 0;
 			padding: 0;
 			> li {
-				margin: 0;
-				padding: 0;
-				border: 0px;
-				display: block;
 				> a {
-					margin: 0;
-					border: 0px;
-					display: block;
-					cursor: pointer;
-					font-size: 13px;
-					font-weight: 300;
-					overflow: hidden;
-					padding: 8px 11px;
+					color: $bemo-neutral-white;
 					position: relative;
-					text-decoration: none;
+					cursor: pointer;
+					overflow: hidden;
 					text-overflow: ellipsis;
-					.mk_apps_sidebar_icon {
-						width: 22px;
-						height: 22px;
-						margin-right: 5px;
+					padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
+					transition: $bemo-transition;
+					.bemo_apps_sidebar_icon {
+						width: $width-icon-small;
+						height: $width-icon-small;
+						margin-right: $bemo-spacing-level-2;
 					}
 				}
-			}
-			> li:hover > a {
-				background: $o-brand-primary;
 			}
 		}
 	}
 }
 
 @include media-breakpoint-up(lg) {
-	.mk_sidebar_type_large {
-		.mk_apps_sidebar_panel {
+	.bemo_sidebar_type_large {
+		.bemo_apps_sidebar_panel,
+		.o_menu_apps {
 			width: $bemo-sidebar-large-width;
+		}
+		.logo_bemo_sidebar_type_large {
+			display: block;
 		}
 		.o_action_manager {
 			padding-left: $bemo-sidebar-large-width;
 		}
+		.nav-item {
+			> a {
+				&:hover {
+					transform: translateX($bemo-spacing-level-2);
+				}
+			}
+		}
 	}
-	.mk_sidebar_type_small {
-		.mk_apps_sidebar_panel {
+	.bemo_sidebar_type_small {
+		.bemo_apps_sidebar_panel,
+		.o_menu_apps {
 			width: $bemo-sidebar-small-width;
-			.mk_apps_sidebar_name {
+			.bemo_apps_sidebar_name {
 				display: none;
 			}
-			.mk_apps_sidebar_icon {
-				margin-right: 0 !important;
+			.bemo_apps_sidebar {
+				.bemo_apps_sidebar_menu {
+					> li {
+						> a {
+							.bemo_apps_sidebar_icon {
+								margin-right: 0;
+							}
+						}
+					}
+				}
 			}
+		}
+		.logo_bemo_sidebar_type_small {
+			display: block;
 		}
 		.o_action_manager {
 			padding-left: $bemo-sidebar-small-width;
 		}
-	}
-
-	.mk_sidebar_type_invisible {
-		.mk_apps_sidebar_panel {
-			display: none;
+		.nav-item {
+			> a {
+				&:hover {
+					transform: scale(1.08);
+				}
+			}
 		}
 	}
-
-	//.sidebar_padding_invisible {
-	//	margin-left: $sidebar-invisible;
-	//}
-	//
-	//.sidebar_padding_small {
-	//	margin-left: $sidebar-small;
-	//}
-	//
-	//.sidebar_padding_large {
-	//	margin-left: $sidebar-large;
-	//}
+	.bemo_sidebar_type_invisible {
+		.bemo_apps_sidebar_panel {
+			display: none;
+		}
+		.o_menu_apps {
+			width: $bemo-sidebar-invisible-width;
+		}
+		.logo_bemo_sidebar_type_invisible {
+			display: block;
+		}
+	}
 }
 
 @include media-breakpoint-only(md) {
-	.mk_sidebar_type_large,
-	.mk_sidebar_type_small {
-		.mk_apps_sidebar_panel {
+	.bemo_sidebar_type_large,
+	.bemo_sidebar_type_small {
+		.bemo_apps_sidebar_panel {
 			width: $bemo-sidebar-small-width;
-			.mk_apps_sidebar_name {
+			.bemo_apps_sidebar_name {
 				display: none;
 			}
-			.mk_apps_sidebar_icon {
+			.bemo_apps_sidebar_icon {
 				margin-right: 0 !important;
 			}
 		}
@@ -106,47 +113,24 @@
 		}
 	}
 
-	.mk_sidebar_type_invisible {
-		.mk_apps_sidebar_panel {
+	.bemo_sidebar_type_invisible {
+		.bemo_apps_sidebar_panel {
 			display: none;
 		}
 	}
-	//.sidebar_padding_invisible {
-	//	margin-left: $sidebar-invisible;
-	//}
-	//
-	//.sidebar_padding_small {
-	//	margin-left: $sidebar-invisible;
-	//}
-	//
-	//.sidebar_padding_large {
-	//	margin-left: $sidebar-invisible;
-	//}
 }
 
 @include media-breakpoint-down(sm) {
-	.mk_apps_sidebar_panel {
+	.bemo_apps_sidebar_panel {
 		display: none;
 	}
 	.o_action_manager {
 		padding-left: 0;
 	}
-
-	//.sidebar_padding_invisible {
-	//	margin-left: $sidebar-invisible;
-	//}
-	//
-	//.sidebar_padding_small {
-	//	margin-left: $sidebar-invisible;
-	//}
-	//
-	//.sidebar_padding_large {
-	//	margin-left: $sidebar-invisible;
-	//}
 }
 
 .o_fullscreen {
-	.mk_apps_sidebar_panel {
+	.bemo_apps_sidebar_panel {
 		display: none;
 	}
 	.o_action_manager {

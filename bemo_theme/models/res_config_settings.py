@@ -154,7 +154,6 @@ class ResConfigSettings(models.TransientModel):
 
         for rec in self:
             users = self.env['res.users'].search([])
-            print(users, '==========')
             for user in users:
                 user.sidebar_type = rec.theme_default_sidebar_preference
         return res

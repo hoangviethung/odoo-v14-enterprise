@@ -9,7 +9,7 @@ odoo.define("bemo_theme.Menu", function (require) {
 	Menu.include({
 		events: _.extend({}, Menu.prototype.events, {
 			"click .o_menu_apps a[data-toggle=dropdown]": "_onAppsMenuClick",
-			"click .mk_menu_mobile_section": "_onMobileSectionClick",
+			"click .bemo_menu_mobile_section": "_onMobileSectionClick",
 			"click .o_menu_sections [role=menuitem]": "_hideMobileSubmenus",
 			"show.bs.dropdown .o_menu_systray, .o_menu_apps":
 				"_hideMobileSubmenus",
@@ -19,8 +19,8 @@ odoo.define("bemo_theme.Menu", function (require) {
 			: Menu.prototype.menusTemplate,
 		start() {
 			const res = this._super(...arguments);
-			this.$menu_toggle = this.$(".mk_menu_sections_toggle");
-			this.$menu_apps_sidebar = this.$(".mk_apps_sidebar_panel");
+			this.$menu_toggle = this.$(".bemo_menu_sections_toggle");
+			this.$menu_apps_sidebar = this.$(".bemo_apps_sidebar_panel");
 			this._appsBar = new AppsBar(this, this.menu_data);
 			const appsBarProm = this._appsBar.appendTo(this.$menu_apps_sidebar);
 			appsBarProm.then(() => {

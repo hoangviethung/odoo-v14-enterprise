@@ -1,10 +1,9 @@
 @mixin bemo-full-screen-sections {
 	width: 100vw;
-	z-index: 999;
 	display: flex;
-	height: calc(100vh - #{$o-navbar-height});
-	max-height: calc(100vh - #{$o-navbar-height});
-	top: $o-navbar-height;
+	height: 100vh;
+	max-height: 100vh;
+	top: 0;
 	transform: none;
 	position: fixed;
 	overflow-x: hidden;

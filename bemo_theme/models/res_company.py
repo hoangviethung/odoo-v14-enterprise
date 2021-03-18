@@ -80,10 +80,8 @@ class ResCompany(models.Model):
 
 	def write(self, vals):
 		res = super(ResCompany, self).write(vals)
-		print('ddggyghhhhhhh')
 		for rec in self:
 			users = self.env['res.users'].search([('company_id', '=', rec.id)])
-			print(users, '==========')
 			for user in users:
 				user.sidebar_type = rec.default_sidebar_preference
 		return res

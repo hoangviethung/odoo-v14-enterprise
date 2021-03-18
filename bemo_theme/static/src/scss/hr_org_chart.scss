@@ -1,0 +1,73 @@
+// SMALL DESKTOP LAYOUT
+@include media-breakpoint-up(md) {
+	#o_work_employee_main {
+		-ms-flex: 0 0 60%;
+		flex: 0 0 60%;
+		max-width: 60%;
+	}
+	#o_employee_right {
+		-ms-flex: 0 0 30%;
+		flex: 0 0 30%;
+		max-width: 30%;
+		margin-left: 10%;
+		padding-left: 0;
+		border-left: 0;
+		margin-top: $bemo-spacing-level-3;
+		.o_org_chart_title {
+			color: $bemo-primary-color;
+		}
+		.o_org_chart_entry {
+			.o_media_object {
+				transition: $bemo-transition;
+				box-shadow: 0 0 0 2px $bemo-neutral-lighter-border-color;
+			}
+			.media-body {
+				.badge {
+					color: $bemo-neutral-medium-sub-color;
+					border: 1px solid $bemo-neutral-lighter-border-color;
+				}
+				strong {
+					font-size: 12px;
+					font-weight: 400;
+				}
+			}
+			&.o_org_chart_entry_manager,
+			&.o_org_chart_entry_sub {
+				.media-body > a {
+					.o_media_heading,
+					strong {
+						color: $bemo-neutral-medium-sub-color;
+						transition: $bemo-transition;
+					}
+					.o_media_heading {
+						color: $bemo-neutral-darker-color;
+						font-size: $bemo-font-size-default;
+					}
+				}
+			}
+			&.o_org_chart_entry_self {
+				strong {
+					color: $bemo-neutral-medium-sub-color;
+				}
+			}
+		}
+		.o_org_chart_group_up {
+			&:before {
+				border-color: $bemo-neutral-lighter-border-color;
+			}
+			.o_org_chart_entry {
+				&:last-of-type {
+					&:before {
+						border-color: $bemo-neutral-lighter-border-color;
+					}
+				}
+			}
+			+ .o_org_chart_entry_self {
+				.o_media_heading {
+					color: $bemo-primary-color;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

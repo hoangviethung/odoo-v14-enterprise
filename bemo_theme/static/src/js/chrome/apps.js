@@ -10,8 +10,8 @@ odoo.define("bemo_theme.AppsMenu", function (require) {
 	AppsMenu.include(
 		_.extend({}, MenuSearchMixin, {
 			events: _.extend({}, AppsMenu.prototype.events, {
-				"keydown .mk_search_input input": "_onSearchResultsNavigate",
-				"click .mk_menu_search_result": "_onSearchResultChosen",
+				"keydown .bemo_search_input input": "_onSearchResultsNavigate",
+				"click .bemo_menu_search_result": "_onSearchResultChosen",
 				"shown.bs.dropdown": "_onMenuShown",
 				"hidden.bs.dropdown": "_onMenuHidden",
 				"hide.bs.dropdown": "_onMenuHide",
@@ -31,9 +31,9 @@ odoo.define("bemo_theme.AppsMenu", function (require) {
 			},
 			start() {
 				this._setBackgroundImage();
-				this.$search_container = this.$(".mk_search_container");
-				this.$search_input = this.$(".mk_search_input input");
-				this.$search_results = this.$(".mk_search_results");
+				this.$search_container = this.$(".bemo_search_container");
+				this.$search_input = this.$(".bemo_search_input input");
+				this.$search_results = this.$(".bemo_search_results");
 				return this._super(...arguments);
 			},
 			_onSearchResultChosen(event) {
@@ -64,8 +64,7 @@ odoo.define("bemo_theme.AppsMenu", function (require) {
 					field: "background_image",
 				});
 				this.$(".dropdown-menu").css({
-					"background-size": "cover",
-					"background-image": "url(" + url + ")",
+					"--url-background": "url(" + url + ")",
 				});
 				if (session.bemo_theme_background_blend_mode) {
 					this.$(".o-app-name").css({

@@ -3,18 +3,47 @@
 		color: $o-brand-odoo;
 	}
 	&.o_field_image {
-		position: absolute;
 		.o_form_image_controls {
 			position: absolute;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			height: 100%;
-			border-radius: 50%;
-			background: transparent;
 			background: rgba($color: $bemo-primary-color, $alpha: 0.8);
 			button {
-				color: $bemo-neutral-white;
+				&.fa {
+					width: $bemo-width-button-icon-only;
+					height: $bemo-width-button-icon-only;
+					color: $bemo-neutral-white;
+					margin: $bemo-spacing-level-1;
+					transition: $bemo-transition;
+					border-radius: 50%;
+					&:hover {
+						background: $bemo-primary-blue-light-color-02;
+					}
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+		}
+		&[name="theme_favicon"] {
+			background: $bemo-neutral-darker-color;
+			height: $bemo-height-tab-browser;
+			border-radius: $bemo-border-radius-medium $bemo-border-radius-medium
+				0 0;
+			padding: $bemo-spacing-level-2;
+			> img {
+				max-width: 16px;
+				max-height: 16px;
+			}
+			.o_form_image_controls {
+				background: transparent;
+			}
+		}
+		&:hover {
+			.o_form_image_controls {
+				opacity: 1;
 			}
 		}
 	}
@@ -31,6 +60,11 @@
 			&:focus {
 				box-shadow: unset;
 			}
+		}
+	}
+	> .o_field_color {
+		&:focus {
+			outline: none;
 		}
 	}
 	.o_input_dropdown {
@@ -86,12 +120,5 @@
 	&:after {
 		top: 50%;
 		transform: translateY(-50%);
-	}
-}
-
-@include media-breakpoint-down(sm) {
-	.o_form_view .mk_mobile_add {
-		margin-left: 0 !important;
-		margin-bottom: 10px !important;
 	}
 }
