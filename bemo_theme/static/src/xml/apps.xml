@@ -14,16 +14,22 @@
 			<img class="logo logo_bemo_sidebar_type_small" src="/bemo_theme/static/src/images/logo_bemo_sidebar_type_small.svg" alt="BEMO-CLOUD"/>
 			<img class="logo logo_bemo_sidebar_type_invisible" src="/bemo_theme/static/src/images/logo_bemo_sidebar_type_invisible.svg" alt="BEMO-CLOUD"/>
 		</t>
-		<t t-jquery="[t-as=app]" t-operation="before">
-			<div class="bemo_search_container">
-				<div class="bemo_search_input">
-					<input type="text" placeholder="Search menus..." class="form-control"/>
+		<t t-jquery=".dropdown-menu" t-operation="replace">
+			<div class="dropdown-menu" role="menu">
+				<div class="bemo_search_container">
+					<div class="bemo_search_input">
+						<input type="text" placeholder="Search menus..." class="form-control"/>
+					</div>
+					<div class="bemo_search_results"/>
 				</div>
-				<div class="bemo_search_results"/>
+				<div class="bemo_apps">
+					<t t-foreach="widget.getApps()" t-as="app">
+						<a role="menuitem" t-attf-href="#menu_id=#{app.menuID}" class="dropdown-item o_app" t-att-data-menu-id="app.menuID" t-att-data-menu-xmlid="app.xmlID" t-att-data-action-id="app.actionID">
+							<t t-call="bemo_theme.AppIcon"/>
+						</a>
+					</t>
+				</div>
 			</div>
-		</t>
-		<t t-jquery=".o_app &gt; t" t-operation="replace">
-			<t t-call="bemo_theme.AppIcon"/>
 		</t>
 	</t>
 

@@ -102,10 +102,6 @@
 		}
 		.dropdown-menu.show {
 			@include bemo-full-screen-sections();
-			align-content: flex-start;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: flex-start;
 			background: $bemo-primary-color;
 			.o_app {
 				display: flex;
@@ -203,6 +199,14 @@
 				@include media-breakpoint-down(md) {
 					padding-right: 5px;
 				}
+			}
+			.bemo_apps {
+				display: flex;
+				flex-wrap: wrap;
+				margin-right: -16px;
+				margin-left: -16px;
+				max-height: 80vh;
+				overflow-y: auto;
 			}
 			&:after {
 				content: "";
