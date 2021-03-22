@@ -1,11 +1,12 @@
 .o_searchview {
-	padding: 8px 32px 8px 8px;
+	padding: $bemo-spacing-level-2 $bemo-spacing-level-5 $bemo-spacing-level-2
+		$bemo-spacing-level-2;
 	background: $bemo-neutral-lightest-background-color;
 	border-radius: $bemo-border-radius-low;
 	border: 0;
 	.o_searchview_icon {
 		color: $bemo-neutral-medium-sub-color;
-		right: 8px;
+		right: $bemo-spacing-level-2;
 		top: 50%;
 		bottom: unset;
 		left: unset;
@@ -116,5 +117,13 @@
 	}
 	.o_add_filter_menu {
 		margin-top: $bemo-spacing-level-3;
+		.btn {
+			> i {
+				margin-right: $bemo-spacing-level-1;
+			}
+			+ .btn {
+				margin-left: $bemo-spacing-level-2;
+			}
+		}
 	}
 }
