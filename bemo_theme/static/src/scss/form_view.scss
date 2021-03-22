@@ -12,8 +12,8 @@
 			border: 0;
 			.oe_avatar {
 				position: absolute;
-				right: 16px;
-				top: 24px;
+				right: $bemo-spacing-level-3;
+				top: $bemo-height-form-statusbar + $bemo-height-oe-button-box;
 				img {
 					min-width: 100px;
 					min-height: 100px;
@@ -36,23 +36,33 @@
 			top: 0;
 			border-bottom: 1px solid $bemo-neutral-lighter-border-color;
 			padding-right: $bemo-spacing-level-3;
+			height: $bemo-height-form-statusbar;
+			overflow: hidden;
 			> .o_statusbar_buttons {
 				> .btn {
-					margin: $bemo-spacing-level-2 $bemo-spacing-level-4
-						$bemo-spacing-level-2 0;
+					margin: 0 $bemo-spacing-level-4 0 0;
 					padding: 0;
-					&.btn-secondary {
+					background: transparent;
+					border: 0;
+					font-weight: 700;
+					text-transform: uppercase;
+					min-height: unset;
+					&.btn-primary {
 						color: $bemo-primary-color;
-						font-weight: 700;
-						border: 0;
-						text-transform: uppercase;
-						&:hover {
-							background: none;
-						}
+					}
+					&.btn-secondary {
+						color: $bemo-neutral-medium-sub-color;
+					}
+					&:hover {
+						background: none;
+					}
+					&:focus {
+						box-shadow: unset;
 					}
 				}
 			}
 		}
+
 		.oe_button_box {
 			.btn.oe_stat_button > .o_button_icon {
 				color: $o-brand-odoo;
@@ -60,7 +70,8 @@
 		}
 		.oe_title {
 			max-width: 50%;
-			width: initial;
+			width: 100%;
+			margin-bottom: $bemo-spacing-level-7;
 			span.o_field_widget {
 				max-width: 100%;
 				text-overflow: ellipsis;
@@ -164,6 +175,10 @@
 	.o_horizontal_separator {
 		font-size: 1.4rem;
 		margin: 0;
+	}
+	.oe_button_box {
+		height: $bemo-height-oe-button-box;
+		overflow: hidden;
 	}
 	@include media-breakpoint-down(sm) {
 		.o_form_sheet {

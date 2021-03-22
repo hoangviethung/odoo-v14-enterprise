@@ -172,6 +172,12 @@
 						max-height: 50%;
 						overflow-y: auto;
 						margin-top: $bemo-spacing-level-4;
+						&::-webkit-scrollbar-track {
+							background: rgba(
+								$color: $bemo-primary-blue-light-color-05,
+								$alpha: 0.1
+							);
+						}
 						.bemo_menu_search_result {
 							max-width: 350px;
 							width: 100%;
@@ -207,6 +213,12 @@
 				margin-left: -16px;
 				max-height: 80vh;
 				overflow-y: auto;
+				&::-webkit-scrollbar-track {
+					background: rgba(
+						$color: $bemo-primary-blue-light-color-05,
+						$alpha: 0.1
+					);
+				}
 			}
 			&:after {
 				content: "";
