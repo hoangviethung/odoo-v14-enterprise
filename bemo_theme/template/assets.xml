@@ -27,6 +27,7 @@
 
 	<template id="assets_backend" name="Backend Assets" inherit_id="web.assets_backend">
 		<xpath expr="//link[last()]" position="after">
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/activity_box.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/ui.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/libs/simplebar/simplebar.scss" />
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/layout.scss"/>
@@ -39,9 +40,11 @@
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/search_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/list_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/messaging_menu.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/chatter.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/dropdown.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/web.zoomodoo.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/hr_org_chart.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/message_list.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/webclient_extra.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/kanban_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/activity_view.scss"/>

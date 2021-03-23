@@ -1,0 +1,94 @@
+.o_ChatterTopbar_button {
+	color: $bemo-neutral-darker-color;
+	font-weight: 500;
+	border-bottom: 2px solid transparent;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	&.o_ChatterTopbar_buttonSendMessage {
+		&:before {
+			content: "\f086";
+			font-family: "FontAwesome";
+		}
+	}
+	&.o_ChatterTopbar_buttonLogNote {
+		&:before {
+			content: "\f249";
+			font-family: "FontAwesome";
+		}
+	}
+	+ .o_ChatterTopbar_button {
+		margin-left: $bemo-spacing-level-2;
+	}
+	&:hover {
+		background: transparent;
+	}
+	&.o-active {
+		background-color: transparent;
+		border-bottom: 2px solid $bemo-primary-color;
+		&:hover {
+			background-color: transparent;
+		}
+	}
+	@media (max-width: 1599.98px) {
+		&:first-child {
+			margin-left: $bemo-spacing-level-2;
+		}
+	}
+	@media (max-width: 1439.98px) {
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.o_ChatterTopbar_actions {
+	padding: $bemo-spacing-level-1 $bemo-spacing-level-2;
+	&.o-has-active-button {
+		border-color: transparent;
+	}
+	@media (max-width: 1599.98px) {
+		padding: 0;
+	}
+	@media (max-width: 1439.98px) {
+		padding: $bemo-spacing-level-1 $bemo-spacing-level-2;
+	}
+}
+
+.o_Chatter_composer {
+	background: $bemo-neutral-lightest-background-color;
+	margin: $bemo-spacing-level-2;
+	&.o-bordered {
+		border: 0;
+	}
+}
+
+.o_ChatterTopbar_rightSection {
+	@media (max-width: 1599.98px) {
+		background: $bemo-primary-blue-light-color-05;
+		padding: 0 $bemo-spacing-level-2;
+		margin-bottom: $bemo-spacing-level-2;
+	}
+	@media (max-width: 1439.98px) {
+		background: transparent;
+		padding: 0;
+		margin-bottom: 0;
+	}
+}
+
+.o_Composer_actionButtons {
+	&:not(.o-composer-is-compact) {
+		text-align: right;
+	}
+	.btn {
+		color: $bemo-primary-color;
+		background: transparent;
+		border: 0;
+		font-weight: 700;
+		&:after {
+			content: "\f1d8";
+			font-family: "FontAwesome";
+			margin-left: $bemo-spacing-level-2;
+		}
+	}
+}

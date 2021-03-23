@@ -1,6 +1,6 @@
 .o_form_view {
-	border-radius: $bemo-border-radius-medium;
 	overflow: hidden;
+	background: $bemo-primary-blue-light-color-06;
 	.o_form_sheet_bg {
 		background: $bemo-neutral-white;
 		border-bottom: 0;
@@ -62,7 +62,6 @@
 				}
 			}
 		}
-
 		.oe_button_box {
 			.btn.oe_stat_button > .o_button_icon {
 				color: $o-brand-odoo;
@@ -89,9 +88,6 @@
 				.nav-item {
 					white-space: nowrap;
 				}
-			}
-			> .tab-content > .tab-pane > :first-child {
-				margin-top: 0;
 			}
 		}
 	}
@@ -169,7 +165,7 @@
 	}
 	.oe_avatar {
 		> img {
-			border: 0;
+			border: 5px solid $bemo-neutral-lighter-border-color;
 		}
 	}
 	.o_horizontal_separator {
@@ -180,88 +176,59 @@
 		height: $bemo-height-oe-button-box;
 		overflow: hidden;
 	}
-	@include media-breakpoint-down(sm) {
-		.o_form_sheet {
-			min-width: 100%;
-			max-width: 100%;
-			margin-top: 15px;
-		}
-		.o_group {
-			@for $i from 1 through $o-form-group-cols {
-				.o_group_col_#{$i} {
-					width: 100%;
-				}
-			}
-			.o_field_widget.o_text_overflow {
-				width: auto;
-			}
-		}
-		.o_statusbar_buttons_dropdown {
-			border: {
-				bottom: 0;
-				radius: 0;
-				top: 0;
-			}
-			height: 100%;
-		}
-		.o_statusbar_buttons > .btn {
-			border-radius: 0;
-			border: 0;
-			width: 100%;
-			margin-bottom: 0.2rem;
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-		.o_statusbar_status {
-			.o_arrow_button:first-child::before {
-				content: none;
-				display: none;
-			}
-		}
-		.app_settings_block {
-			.row {
-				margin: 0;
-			}
-		}
-		.o_notebook .nav-tabs {
-			&::-webkit-scrollbar {
-				display: none;
-			}
-		}
-		.o_cp_buttons {
-			width: 100%;
-			div,
-			.o-kanban-button-new {
-				width: 100%;
+	select {
+		&.o_field_widget {
+			&.o_input {
+				padding: 3px 0 4px;
 			}
 		}
 	}
-	@include media-breakpoint-down(xs) {
-		.oe_title {
-			width: 100%;
-			max-width: 100%;
-		}
+	@media (max-width: 1439.98px) {
+		overflow-y: auto;
 	}
 }
 
 .bemo_chatter_position_sided {
-	@include media-breakpoint-up(xxl, $o-extra-grid-breakpoints) {
-		.o_form_view:not(.o_form_nosheet) {
-			display: flex;
-			flex-flow: row nowrap;
-			height: 100%;
-			.o_form_sheet_bg {
-				min-width: $bemo-form-min-width;
-				flex: 1 1 auto;
-				overflow: auto;
+	.o_form_view:not(.o_form_nosheet) {
+		display: flex;
+		flex-wrap: wrap;
+		height: 100%;
+		.o_form_sheet_bg {
+			-ms-flex-preferred-size: 0;
+			flex-basis: 0;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			max-width: 100%;
+			overflow-y: auto;
+			max-height: 100%;
+			margin-right: $bemo-spacing-level-3;
+			border-radius: $bemo-border-radius-medium;
+			@media (max-width: 1439.98px) {
+				margin-right: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%;
+				overflow-y: hidden;
+				max-height: unset;
 			}
-			> .o_FormRenderer_chatterContainer {
-				flex: 1 1 auto;
-				overflow: auto;
-				min-width: $bemo-chatter-min-width;
-				max-width: $bemo-chatter-max-width;
-				border-left: 1px solid gray("400");
+		}
+		> .o_FormRenderer_chatterContainer {
+			-ms-flex: 0 0 $bemo-chatter-position-sided-width;
+			flex: 0 0 $bemo-chatter-position-sided-width;
+			max-width: $bemo-chatter-position-sided-width;
+			overflow-y: auto;
+			background: $bemo-neutral-white;
+			border-radius: $bemo-border-radius-medium;
+			padding: 0;
+			@media (max-width: 1599.98px) {
+				-ms-flex: 0 0 30%;
+				flex: 0 0 30%;
+				max-width: 30%;
+			}
+			@media (max-width: 1439.98px) {
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%;
 			}
 		}
 	}
@@ -303,7 +270,6 @@
 				}
 			}
 		}
-
 		.o_group_header {
 			&:first-child {
 				> .o_group_name {
@@ -322,6 +288,9 @@
 						content: "\f067";
 						font-family: "FontAweSome";
 						font-size: 10px;
+					}
+					&:focus {
+						box-shadow: unset;
 					}
 				}
 			}
