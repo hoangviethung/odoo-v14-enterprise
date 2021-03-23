@@ -29,6 +29,10 @@
 					}
 				}
 			}
+			@media (min-width: 992px) and (max-width: 1533.98px) {
+				padding-right: 16px;
+				padding-left: 16px;
+			}
 		}
 		.o_form_statusbar {
 			position: sticky;
@@ -183,6 +187,10 @@
 	.oe_button_box {
 		height: $bemo-height-oe-button-box;
 		overflow: hidden;
+		@media (min-width: 992px) and (max-width: 1533.98px) {
+			margin-right: -16px;
+			margin-left: -16px;
+		}
 	}
 	select {
 		&.o_field_widget {
