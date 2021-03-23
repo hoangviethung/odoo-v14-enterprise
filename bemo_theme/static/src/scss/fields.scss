@@ -101,17 +101,40 @@
 	width: 100%;
 	height: 100%;
 	transform: translate(-50%, -50%);
+	&:focus {
+		&:not(:checked) {
+			~ .custom-control-label {
+				&:before {
+					border-color: $bemo-primary-color;
+				}
+			}
+		}
+		~ .custom-control-label {
+			&:before {
+				box-shadow: unset;
+			}
+		}
+	}
 }
 
-.custom-control.custom-checkbox {
-	.custom-control-input:not(:checked):not(:indeterminate) {
-		~ .custom-control-label:before {
-			background: $bemo-neutral-white;
+.custom-control {
+	&.custom-checkbox {
+		.custom-control-input {
+			&:not(:checked) {
+				&:not(:indeterminate) {
+					~ .custom-control-label {
+						&:before {
+							background: $bemo-neutral-white;
+						}
+					}
+				}
+			}
 		}
 	}
 }
 
 .custom-control-label {
+	padding-left: $bemo-spacing-level-1;
 	&:before {
 		border: 1px solid $bemo-primary-color;
 		background: $bemo-neutral-white;
@@ -120,5 +143,8 @@
 	&:after {
 		top: 50%;
 		transform: translateY(-50%);
+	}
+	i {
+		margin-left: $bemo-spacing-level-2;
 	}
 }
