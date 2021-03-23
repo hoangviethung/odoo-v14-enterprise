@@ -41,12 +41,18 @@
 		}
 	}
 }
+.o_FollowButton_unfollow {
+	&.o-following {
+		color: $bemo-semantic-positive-color;
+	}
+	&.o-unfollow {
+		color: $bemo-semantic-negative-color;
+	}
+}
 
 .o_ChatterTopbar_actions {
 	padding: $bemo-spacing-level-1 $bemo-spacing-level-2;
-	&.o-has-active-button {
-		border-color: transparent;
-	}
+	border-color: $bemo-neutral-lighter-border-color;
 	@media (max-width: 1599.98px) {
 		padding: 0;
 	}
@@ -81,14 +87,26 @@
 		text-align: right;
 	}
 	.btn {
-		color: $bemo-primary-color;
-		background: transparent;
-		border: 0;
-		font-weight: 700;
-		&:after {
-			content: "\f1d8";
-			font-family: "FontAwesome";
-			margin-left: $bemo-spacing-level-2;
+		&.btn-primary {
+			color: $bemo-primary-color;
+			background: transparent;
+			border: 0;
+			font-weight: 700;
+			&:after {
+				content: "\f1d8";
+				font-family: "FontAwesome";
+				margin-left: $bemo-spacing-level-2;
+			}
+			&:focus {
+				box-shadow: unset;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				box-shadow: unset;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background: transparent;
+				color: $bemo-primary-color;
+			}
 		}
 	}
 }

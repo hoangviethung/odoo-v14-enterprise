@@ -63,8 +63,16 @@
 			}
 		}
 		.oe_button_box {
-			.btn.oe_stat_button > .o_button_icon {
-				color: $o-brand-odoo;
+			.btn.oe_stat_button {
+				height: $bemo-height-oe-button-box;
+				> .o_button_icon {
+					color: $bemo-primary-color;
+					height: $bemo-height-oe-button-box;
+				}
+				> .o_stat_info,
+				> span {
+					font-size: 12px;
+				}
 			}
 		}
 		.oe_title {
@@ -183,9 +191,6 @@
 			}
 		}
 	}
-	@media (max-width: 1439.98px) {
-		overflow-y: auto;
-	}
 }
 
 .bemo_chatter_position_sided {
@@ -208,8 +213,6 @@
 				-ms-flex: 0 0 100%;
 				flex: 0 0 100%;
 				max-width: 100%;
-				overflow-y: hidden;
-				max-height: unset;
 			}
 		}
 		> .o_FormRenderer_chatterContainer {
@@ -220,6 +223,8 @@
 			background: $bemo-neutral-white;
 			border-radius: $bemo-border-radius-medium;
 			padding: 0;
+			max-height: 100%;
+			padding-bottom: $bemo-spacing-level-3;
 			@media (max-width: 1599.98px) {
 				-ms-flex: 0 0 30%;
 				flex: 0 0 30%;
@@ -229,7 +234,11 @@
 				-ms-flex: 0 0 100%;
 				flex: 0 0 100%;
 				max-width: 100%;
+				margin-top: $bemo-spacing-level-4;
 			}
+		}
+		@media (max-width: 1439.98px) {
+			height: auto;
 		}
 	}
 }

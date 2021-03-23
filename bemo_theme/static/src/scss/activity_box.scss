@@ -46,3 +46,30 @@
 		color: $bemo-semantic-negative-color;
 	}
 }
+
+.o_Activity_dueDateText {
+	&.o-overdue {
+		color: $bemo-semantic-negative-color;
+	}
+}
+
+.o_Activity_summary {
+	color: $bemo-neutral-darker-color;
+}
+
+.o_Activity_userName {
+	color: $bemo-neutral-medium-sub-color;
+	font-size: 12px;
+}
+
+.o_Activity_details {
+	color: $bemo-neutral-dark-color;
+}
+
+a:not([href]):not([tabindex]).o_Activity_detailsButton {
+	color: $bemo-semantic-information-color;
+	opacity: 1;
+	&:hover {
+		color: $bemo-semantic-information-color;
+	}
+}
