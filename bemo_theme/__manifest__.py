@@ -11,6 +11,7 @@
 		"BAP Ventures",
 	],
 	"depends": [
+		"sale",
 		"web_editor",
 	],
 	"excludes": [

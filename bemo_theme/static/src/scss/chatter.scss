@@ -1,7 +1,6 @@
 .o_ChatterTopbar_button {
 	color: $bemo-neutral-darker-color;
 	font-weight: 500;
-	border-bottom: 2px solid transparent;
 	border-left: 0;
 	border-right: 0;
 	border-top: 0;
@@ -17,15 +16,11 @@
 			font-family: "FontAwesome";
 		}
 	}
-	+ .o_ChatterTopbar_button {
-		margin-left: $bemo-spacing-level-2;
-	}
 	&:hover {
 		background: transparent;
 	}
 	&.o-active {
 		background-color: transparent;
-		border-bottom: 2px solid $bemo-primary-color;
 		&:hover {
 			background-color: transparent;
 		}

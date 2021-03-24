@@ -1,3 +1,17 @@
+.o_view_controller {
+	> .o_content {
+		> .o_list_view {
+			> .table-responsive {
+				overflow: auto;
+				max-height: 100%;
+				border-radius: $bemo-border-radius-medium;
+				box-shadow: $bemo-box-shadow;
+				background: $bemo-neutral-white;
+			}
+		}
+	}
+}
+
 .table {
 	thead {
 		th {
@@ -19,6 +33,7 @@
 
 .o_list_view {
 	table {
+		position: relative;
 		overflow-x: hidden;
 	}
 	table,
@@ -31,7 +46,6 @@
 	}
 	th,
 	td {
-		line-height: 24px;
 		padding: $bemo-spacing-level-3 $bemo-spacing-level-2;
 		outline: none;
 	}
@@ -39,19 +53,35 @@
 		thead {
 			color: $bemo-neutral-white;
 			border-bottom: 0;
-			th:focus-within,
-			.o_list_view
-				.o_list_table
-				tbody.o_keyboard_navigation
-				td:focus-within {
-				background: inherit;
+			th {
+				position: sticky;
+				top: 0;
+				background: $bemo-primary-color;
+				z-index: 100;
+				&.o_column_sortable:not(.o_handle_cell) {
+					position: sticky;
+					top: 0;
+					background: $bemo-primary-color;
+				}
+				&:focus-within {
+					background: inherit;
+				}
 			}
 		}
 		tfoot {
 			color: $bemo-primary-color;
-			background: $bemo-neutral-lightest-background-color;
+			background-color: $bemo-primary-blue-light-color-05;
 			border-top: 0;
 			border-bottom: 0;
+		}
+		tbody {
+			&.o_keyboard_navigation {
+				td {
+					&:focus-within {
+						background: inherit;
+					}
+				}
+			}
 		}
 		tr:focus-within,
 		.o_list_view .o_list_table.table-striped tr:focus-within {
@@ -59,15 +89,12 @@
 		}
 	}
 	thead {
+		color: $bemo-neutral-white;
+		border-bottom: 0;
 		background-color: $bemo-primary-color;
 		th.o_column_sortable:hover {
 			background-color: $bemo-primary-dark-color-01;
 		}
-	}
-	tfoot {
-		color: white;
-		cursor: default;
-		font-weight: normal;
 	}
 	.o_optional_columns_dropdown_toggle {
 		color: $bemo-neutral-white;
@@ -95,12 +122,11 @@
 .o_content,
 .modal-content {
 	> div > .table-responsive {
-		overflow-x: initial;
 		> .o_list_view {
 			thead,
 			thead tr:nth-child(1) th {
 				border-bottom: solid 1px gray("300");
-				background-color: white;
+				background-color: $bemo-neutral-white;
 				position: sticky;
 				z-index: 1;
 				top: 0;
@@ -110,6 +136,14 @@
 				position: sticky;
 				bottom: 0;
 			}
+		}
+	}
+}
+
+.o_list_view .o_list_table {
+	.o_data_row.o_selected_row {
+		> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier):not(.o_remaining_days_cell) {
+			padding: $bemo-spacing-level-3 $bemo-spacing-level-2;
 		}
 	}
 }
