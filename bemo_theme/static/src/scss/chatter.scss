@@ -1,9 +1,27 @@
 .o_ChatterTopbar_button {
-	color: $bemo-neutral-darker-color;
+	color: $bemo-neutral-medium-sub-color;
 	font-weight: 500;
 	border-left: 0;
 	border-right: 0;
 	border-top: 0;
+	&.o_ChatterTopbar_buttonSendMessage,
+	&.o_ChatterTopbar_buttonLogNote,
+	&.o_ChatterTopbar_buttonScheduleActivity {
+		@media (max-width: 1599.98px) {
+			font-size: 0;
+			i,
+			&:before {
+				font-size: $bemo-font-size-default;
+			}
+		}
+		@media (max-width: 1439.98px) {
+			font-size: $bemo-font-size-default;
+			i,
+			&:before {
+				font-size: inherit;
+			}
+		}
+	}
 	&.o_ChatterTopbar_buttonSendMessage {
 		&:before {
 			content: "\f086";
@@ -25,16 +43,6 @@
 			background-color: transparent;
 		}
 	}
-	@media (max-width: 1599.98px) {
-		&:first-child {
-			margin-left: $bemo-spacing-level-2;
-		}
-	}
-	@media (max-width: 1439.98px) {
-		&:first-child {
-			margin-left: 0;
-		}
-	}
 }
 .o_FollowButton_unfollow {
 	&.o-following {
@@ -45,15 +53,16 @@
 	}
 }
 
+.o_Follower_details,
+.o_Follower_button {
+	&:hover {
+		background: $bemo-primary-blue-light-color-04;
+	}
+}
+
 .o_ChatterTopbar_actions {
 	padding: $bemo-spacing-level-1 $bemo-spacing-level-2;
 	border-color: $bemo-neutral-lighter-border-color;
-	@media (max-width: 1599.98px) {
-		padding: 0;
-	}
-	@media (max-width: 1439.98px) {
-		padding: $bemo-spacing-level-1 $bemo-spacing-level-2;
-	}
 }
 
 .o_Chatter_composer {
@@ -61,19 +70,6 @@
 	margin: $bemo-spacing-level-2;
 	&.o-bordered {
 		border: 0;
-	}
-}
-
-.o_ChatterTopbar_rightSection {
-	@media (max-width: 1599.98px) {
-		background: $bemo-primary-blue-light-color-05;
-		padding: 0 $bemo-spacing-level-2;
-		margin-bottom: $bemo-spacing-level-2;
-	}
-	@media (max-width: 1439.98px) {
-		background: transparent;
-		padding: 0;
-		margin-bottom: 0;
 	}
 }
 

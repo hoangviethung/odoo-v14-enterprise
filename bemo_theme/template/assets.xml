@@ -28,6 +28,7 @@
 
 	<template id="assets_backend" name="Backend Assets" inherit_id="web.assets_backend">
 		<xpath expr="//link[last()]" position="after">
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/attachment.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/activity_box.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/ui.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/libs/simplebar/simplebar.scss" />

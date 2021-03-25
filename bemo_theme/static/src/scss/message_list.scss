@@ -7,3 +7,19 @@
 .o_MessageList_separatorLine {
 	border-color: $bemo-neutral-lighter-border-color;
 }
+
+.o_Message_sidebar {
+	justify-content: flex-start;
+}
+
+.o_Message_authorAvatarContainer {
+	margin-left: 0;
+}
+
+.o_Message {
+	padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
+	&.o-not-discussion {
+		background: $bemo-neutral-lightest-background-color;
+		border-bottom: 1px solid $bemo-neutral-lighter-border-color;
+	}
+}

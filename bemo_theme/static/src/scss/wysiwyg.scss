@@ -5,4 +5,18 @@
 	.panel-heading.note-toolbar {
 		padding: 0;
 	}
+	.note-popover .popover .popover-body > .btn-group,
+	.panel-heading.note-toolbar > .btn-group {
+		margin-right: 0;
+	}
+	.note-popover .popover .popover-body,
+	.panel-heading.note-toolbar {
+		.btn {
+			border-left: 0;
+			border-right: 0;
+			&:hover {
+				background: $bemo-primary-blue-medium-color-01;
+			}
+		}
+	}
 }

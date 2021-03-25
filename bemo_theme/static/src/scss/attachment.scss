@@ -1,0 +1,120 @@
+.o_AttachmentBox_content {
+	padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
+}
+
+.o_AttachmentList_partialListNonImages {
+	display: grid;
+	width: 100%;
+	margin: 0;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-gap: $bemo-spacing-level-2;
+	.o_Attachment {
+		margin: 0;
+		padding: $bemo-spacing-level-1;
+	}
+	@media (max-width: 1439.98px) {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+	@media (max-width: 1199.98px) {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+	@media (max-width: 767.98px) {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+.o_AttachmentList_partialListImages {
+	display: grid;
+	width: 100%;
+	margin: 0;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-gap: $bemo-spacing-level-2;
+	.o_Attachment {
+		margin: 0;
+		overflow: hidden;
+	}
+	.o_Attachment_image {
+		width: 100%;
+		height: 100%;
+	}
+	@media (max-width: 1599.98px) {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+	@media (max-width: 1439.98px) {
+		grid-template-columns: repeat(9, minmax(0, 1fr));
+	}
+	@media (max-width: 1199.98px) {
+		grid-template-columns: repeat(7, minmax(0, 1fr));
+	}
+	@media (max-width: 1024.98px) {
+		grid-template-columns: repeat(6, minmax(0, 1fr));
+	}
+	@media (max-width: 767.98px) {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+	@media (max-width: 575.98px) {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.o_Attachment_aside {
+	&.o-has-multiple-action {
+		margin-left: auto;
+		.o_Attachment_asideItem {
+			+ .o_Attachment_asideItem {
+				margin-top: $bemo-spacing-level-2;
+			}
+		}
+	}
+}
+
+.o_Attachment_asideItemUnlink,
+.o_Attachment_asideItemDownload {
+	color: $bemo-neutral-medium-sub-color;
+	transition: $bemo-transition;
+	&[title="Remove"] {
+		color: $bemo-semantic-negative-lighter-color;
+		i {
+			&:before {
+				content: "\f1f8";
+			}
+		}
+		&:hover {
+			color: $bemo-semantic-negative-color;
+		}
+	}
+	&[title="Download"] {
+		color: $bemo-semantic-information-lighter-color;
+		&:hover {
+			color: $bemo-semantic-information-color;
+		}
+	}
+	&:not(.o-pretty):hover {
+		background-color: transparent;
+	}
+}
+
+.o_Attachment {
+	&.o-has-card-details {
+		background-color: $bemo-primary-blue-light-color-05;
+		border-radius: $bemo-border-radius-low;
+	}
+}
+
+.o_AttachmentBox_buttonAdd {
+	margin-top: $bemo-spacing-level-3;
+}
+
+.o_Attachment_image {
+	margin: 0;
+}
+
+.o_Attachment_filename {
+	font-size: 12px;
+}
+
+.o_AttachmentList_partialList {
+	+ .o_AttachmentList_partialList {
+		margin-top: $bemo-spacing-level-3;
+	}
+}

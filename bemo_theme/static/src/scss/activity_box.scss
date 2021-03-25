@@ -1,3 +1,16 @@
+.o_Activity {
+	padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
+}
+
+.o_Activity_user {
+	margin-left: 0;
+}
+
+.o_Activity_sidebar {
+	flex: 0 0 50px;
+	margin-right: 0.5rem;
+}
+
 .o_ActivityBox_title {
 	padding: $bemo-spacing-level-3 0;
 	margin-top: 0;
