@@ -95,6 +95,23 @@
 			}
 		}
 	}
+	&.o_field_many2manytags {
+		> div {
+			margin-top: $bemo-spacing-level-2;
+			+ div {
+				margin-left: $bemo-spacing-level-2;
+			}
+		}
+		.o_tag_color_0 {
+			color: $bemo-primary-dark-color-01;
+			background: $bemo-primary-blue-light-color-04;
+			box-shadow: unset;
+		}
+		.badge {
+			padding: $bemo-spacing-level-1 $bemo-spacing-level-2;
+			border-radius: $bemo-border-radius-medium;
+		}
+	}
 }
 
 .o_field_invalid.o_input,
