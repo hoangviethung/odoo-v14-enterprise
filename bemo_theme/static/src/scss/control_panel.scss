@@ -14,8 +14,17 @@
 		}
 	}
 	.breadcrumb {
-		font-size: 1.33333333rem;
-		padding: 7.5px 0;
+		font-size: 16px;
+		> li {
+			color: $bemo-neutral-medium-sub-color;
+			> a {
+				color: $bemo-neutral-medium-sub-color;
+			}
+			&.active {
+				font-weight: 700;
+				color: $bemo-primary-color;
+			}
+		}
 	}
 	.o_cp_bottom_left {
 		.o_cp_buttons {
@@ -29,6 +38,27 @@
 				&.btn-secondary {
 					color: $bemo-primary-color;
 					border: 1px solid $bemo-primary-color;
+				}
+			}
+			.btn-group {
+				button {
+					color: $bemo-primary-color;
+					background-color: $bemo-semantic-information-lightest-color;
+					height: 32px;
+					border-radius: $bemo-border-radius-medium;
+					text-transform: none;
+					border: 1px solid transparent;
+					font-weight: 400;
+					&.active {
+						background-color: $bemo-primary-blue-light-color-04;
+					}
+					&.dropdown-toggle {
+						color: $bemo-primary-color;
+						background-color: $bemo-primary-blue-light-color-05;
+						&:focus {
+							box-shadow: unset;
+						}
+					}
 				}
 			}
 		}
@@ -49,6 +79,34 @@
 						&:before {
 							content: "\f142";
 						}
+					}
+				}
+			}
+		}
+		.o_calendar_buttons {
+			.o_calendar_navigation_buttons,
+			.o_calendar_scale_buttons {
+				display: inline-flex;
+			}
+			.o_calendar_scale_buttons {
+				margin-left: $bemo-spacing-level-2;
+			}
+			button {
+				&.btn-primary {
+					color: $bemo-primary-color;
+					text-transform: none;
+					background-color: $bemo-primary-blue-light-color-05;
+					border: 1px solid transparent;
+					height: 32px;
+					border-radius: 0;
+					margin-right: 0;
+					&.o_calendar_button_prev {
+						border-top-left-radius: $bemo-border-radius-medium;
+						border-bottom-left-radius: $bemo-border-radius-medium;
+					}
+					&.o_calendar_button_next {
+						border-top-right-radius: $bemo-border-radius-medium;
+						border-bottom-right-radius: $bemo-border-radius-medium;
 					}
 				}
 			}

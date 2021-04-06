@@ -140,37 +140,40 @@
 			}
 		}
 		.o_kanban_card_content {
-			.o_kanban_card_upper_content {
-				.o_kanban_primary_left,
-				.o_kanban_primary_right {
+			> .row {
+				> [class*="col-"] {
 					-ms-flex: 0 0 100%;
 					flex: 0 0 100%;
 					max-width: 100%;
 				}
-				.o_kanban_primary_left {
-					.btn-primary {
-						color: $bemo-primary-color;
-						background-color: transparent;
-						border-color: transparent;
-						font-weight: 700;
-						padding: 0;
-						&:after {
-							content: "\f061";
-							font-family: "FontAweSome";
-							margin-left: $bemo-spacing-level-2;
-						}
+			}
+
+			.oe_kanban_action_button {
+				&.btn-primary {
+					color: $bemo-primary-color;
+					background-color: transparent;
+					border-color: transparent;
+					font-weight: 700;
+					padding: 0;
+					&:after {
+						content: "\f061";
+						font-family: "FontAweSome";
+						margin-left: $bemo-spacing-level-2;
+					}
+					&:focus {
+						box-shadow: unset;
 					}
 				}
-				.o_kanban_primary_right {
-					margin-top: $bemo-spacing-level-4;
-					.text-right,
-					span {
-						color: $bemo-semantic-information-color;
-					}
-					.row {
-						margin-left: -16px !important;
-						margin-bottom: $bemo-spacing-level-1;
-					}
+			}
+			.o_kanban_primary_right {
+				margin-top: $bemo-spacing-level-4;
+				.text-right,
+				span {
+					color: $bemo-semantic-information-color;
+				}
+				.row {
+					margin-left: -16px !important;
+					margin-bottom: $bemo-spacing-level-1;
 				}
 			}
 		}
@@ -208,6 +211,26 @@
 								}
 							}
 						}
+					}
+				}
+			}
+			.o_primary {
+				&[class*="col-"] {
+					padding-left: $bemo-spacing-level-4;
+				}
+			}
+			.o_favorite {
+				top: $bemo-spacing-level-2;
+				left: 12px;
+				padding: 4px;
+				line-height: 1;
+			}
+		}
+		&.o_hr_recruitment_kanban {
+			&.o_kanban_ungrouped {
+				.o_kanban_record {
+					&:not(.o_kanban_ghost) {
+						height: auto !important;
 					}
 				}
 			}
@@ -259,4 +282,15 @@
 	align-items: center;
 	font-size: 10px;
 	margin-right: 8px;
+}
+
+.o_kanban_view .oe_kanban_card.oe_kanban_global_click:focus,
+.o_kanban_view .oe_kanban_card.oe_kanban_global_click:focus-within,
+.o_kanban_view .oe_kanban_card.oe_kanban_global_click_edit:focus,
+.o_kanban_view .oe_kanban_card.oe_kanban_global_click_edit:focus-within,
+.o_kanban_view .o_kanban_record.oe_kanban_global_click:focus,
+.o_kanban_view .o_kanban_record.oe_kanban_global_click:focus-within,
+.o_kanban_view .o_kanban_record.oe_kanban_global_click_edit:focus,
+.o_kanban_view .o_kanban_record.oe_kanban_global_click_edit:focus-within {
+	box-shadow: none;
 }

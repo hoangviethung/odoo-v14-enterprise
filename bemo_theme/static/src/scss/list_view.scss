@@ -55,8 +55,13 @@
 	}
 	th,
 	td {
-		padding: $bemo-spacing-level-3 $bemo-spacing-level-2;
 		outline: none;
+	}
+	th {
+		padding: $bemo-spacing-level-3 $bemo-spacing-level-2;
+	}
+	td {
+		padding: $bemo-spacing-level-3;
 	}
 	.o_list_table {
 		thead {

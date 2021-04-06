@@ -20,6 +20,8 @@
 					max-height: 100px;
 					max-width: 100px;
 					border-radius: 50%;
+					object-fit: cover;
+					object-position: center center;
 				}
 			}
 			.o_field_widget {
@@ -173,6 +175,11 @@
 			.o_group_name {
 				background: transparent;
 			}
+			.o_list_record_remove {
+				> button {
+					transition: $bemo-transition;
+				}
+			}
 		}
 	}
 	.oe_avatar {
@@ -248,6 +255,12 @@
 		@media (max-width: 1439.98px) {
 			height: auto;
 		}
+	}
+}
+
+.o-kanban-button-new {
+	&:focus {
+		box-shadow: none;
 	}
 }
 
@@ -340,4 +353,17 @@
 			}
 		}
 	}
+}
+
+.modal-body {
+	.o_form_view {
+		background: $bemo-neutral-white;
+	}
+}
+
+.o_form_view .oe_inline.o_inner_group,
+.o_form_view .o_inner_group.oe_left,
+.o_form_view .o_inner_group.oe_right,
+.o_form_view .o_inner_group.o_group.oe_subtotal_footer {
+	width: 33% !important;
 }

@@ -1,0 +1,13 @@
+.o_pivot {
+	background-color: $bemo-neutral-white;
+	height: 100%;
+	border-radius: $bemo-border-radius-medium;
+	table {
+		width: 100%;
+		td,
+		th {
+			padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
+			border: 1px solid $bemo-neutral-lighter-border-color;
+		}
+	}
+}
