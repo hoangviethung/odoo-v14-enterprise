@@ -140,14 +140,20 @@
 			}
 		}
 		.o_kanban_card_content {
-			> .row {
+			> .row:not(.bottom_block) {
 				> [class*="col-"] {
 					-ms-flex: 0 0 100%;
 					flex: 0 0 100%;
 					max-width: 100%;
+					+ [class*="col-"] {
+						margin-top: $bemo-spacing-level-4;
+					}
+					.row {
+						margin-left: -16px !important;
+						margin-bottom: $bemo-spacing-level-1;
+					}
 				}
 			}
-
 			.oe_kanban_action_button {
 				&.btn-primary {
 					color: $bemo-primary-color;
@@ -159,21 +165,16 @@
 						content: "\f061";
 						font-family: "FontAweSome";
 						margin-left: $bemo-spacing-level-2;
+						transition: $bemo-transition;
 					}
 					&:focus {
 						box-shadow: unset;
 					}
-				}
-			}
-			.o_kanban_primary_right {
-				margin-top: $bemo-spacing-level-4;
-				.text-right,
-				span {
-					color: $bemo-semantic-information-color;
-				}
-				.row {
-					margin-left: -16px !important;
-					margin-bottom: $bemo-spacing-level-1;
+					&:hover {
+						&::after {
+							margin-left: $bemo-spacing-level-2 + 4px;
+						}
+					}
 				}
 			}
 		}
@@ -203,10 +204,21 @@
 								background-color: $bemo-primary-blue-light-color-05;
 								border-bottom-right-radius: $bemo-border-radius-medium;
 								border-bottom-left-radius: $bemo-border-radius-medium;
+								padding-left: 0 !important;
+								padding-right: 0 !important;
 								.o_progressbar {
 									.o_progress {
 										height: 16px;
 										border-radius: $bemo-border-radius-medium;
+									}
+								}
+								> [class*="col-"] {
+									span {
+										display: flex;
+										flex-direction: column;
+										> a {
+											margin-bottom: $bemo-spacing-level-2;
+										}
 									}
 								}
 							}

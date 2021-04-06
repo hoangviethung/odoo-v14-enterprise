@@ -19,7 +19,23 @@
 .o_Message {
 	padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
 	&.o-not-discussion {
-		background: $bemo-neutral-lightest-background-color;
-		border-bottom: 1px solid $bemo-neutral-lighter-border-color;
+		background: $bemo-neutral-white;
+		border-bottom: 0;
+	}
+}
+
+.o_Message_commands:not(.o-mobile) {
+	transition: $bemo-transition;
+}
+
+.o_Message_commandStar {
+	transition: $bemo-transition;
+}
+
+.o_MessageList_item {
+	&.o-starred {
+		.o_Message_commands:not(.o-mobile) {
+			opacity: 1;
+		}
 	}
 }

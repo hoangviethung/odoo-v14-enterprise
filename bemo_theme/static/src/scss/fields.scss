@@ -97,7 +97,6 @@
 	}
 	&.o_field_many2manytags {
 		> div {
-			margin-top: $bemo-spacing-level-2;
 			+ div {
 				margin-left: $bemo-spacing-level-2;
 			}
@@ -110,6 +109,26 @@
 		.badge {
 			padding: $bemo-spacing-level-1 $bemo-spacing-level-2;
 			border-radius: $bemo-border-radius-medium;
+		}
+	}
+	&.o_favorite {
+		i.fa-star-o {
+			transition: $bemo-transition;
+		}
+	}
+	&.o_field_text,
+	&.oe_form_field_text .oe_form_text_content {
+		border: 1px solid $bemo-neutral-lighter-border-color;
+		padding: 8px;
+		border-radius: $bemo-border-radius-medium;
+		min-height: 10rem;
+		&:focus {
+			border: 1px solid $bemo-primary-color;
+		}
+	}
+	&.o_priority {
+		> .o_priority_star {
+			transition: $bemo-transition;
 		}
 	}
 }
@@ -160,10 +179,13 @@
 			}
 		}
 	}
+	.custom-control-label {
+		cursor: pointer;
+		padding-left: $bemo-spacing-level-1;
+	}
 }
 
 .custom-control-label {
-	padding-left: $bemo-spacing-level-1;
 	&:before {
 		border: 1px solid $bemo-primary-color;
 		background: $bemo-neutral-white;

@@ -70,13 +70,18 @@
 		}
 		.oe_button_box {
 			.btn.oe_stat_button {
-				height: $bemo-height-oe-button-box;
+				border-top: 0;
+				border-bottom: 0;
 				> .o_button_icon {
 					color: $bemo-primary-color;
 					height: $bemo-height-oe-button-box;
+					display: inline-flex;
+					justify-content: center;
+					align-items: center;
 				}
 				> .o_stat_info,
 				> span {
+					color: $bemo-primary-color;
 					font-size: 12px;
 				}
 			}
@@ -107,6 +112,11 @@
 	}
 	.o_field_widget {
 		margin-bottom: $bemo-spacing-level-3;
+		&.o_priority {
+			> .o_priority_star {
+				margin: $bemo-spacing-level-2 0;
+			}
+		}
 	}
 	.o_group {
 		display: flex;
@@ -140,9 +150,6 @@
 				padding-right: $bemo-spacing-level-5;
 				padding-left: $bemo-spacing-level-8;
 			}
-		}
-		.o_horizontal_separator {
-			margin-bottom: $bemo-spacing-level-3;
 		}
 	}
 	&.o_form_readonly {
@@ -190,6 +197,7 @@
 	.o_horizontal_separator {
 		font-size: 1.4rem;
 		margin: 0;
+		margin-bottom: $bemo-spacing-level-3;
 	}
 	.oe_button_box {
 		height: $bemo-height-oe-button-box;
@@ -352,12 +360,6 @@
 				}
 			}
 		}
-	}
-}
-
-.modal-body {
-	.o_form_view {
-		background: $bemo-neutral-white;
 	}
 }
 

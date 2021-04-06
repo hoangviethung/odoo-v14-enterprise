@@ -116,9 +116,14 @@
 	}
 
 	.o_optional_columns_dropdown_toggle {
+		font-size: 16px;
 		color: $bemo-neutral-white;
 		line-height: 56px;
 		z-index: 200;
+	}
+	.o_optional_columns_dropdown_toggle,
+	.o_list_view .o_optional_columns {
+		right: $bemo-spacing-level-1;
 	}
 	.o_list_table thead > tr > th:not(.o_list_record_selector) {
 		border-left: 0;

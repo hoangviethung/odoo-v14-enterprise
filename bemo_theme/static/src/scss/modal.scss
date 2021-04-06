@@ -1,5 +1,24 @@
+.modal {
+	&.o_technical_modal {
+		.modal-content {
+			border-radius: $bemo-border-radius-medium;
+		}
+	}
+}
+
 .modal-content {
+	border: 0;
 	.modal-body {
+		.o_form_view {
+			background: $bemo-neutral-white;
+			.o_group {
+				&.o_inner_group {
+					&:not(.o_group_col_6) {
+						padding-right: $bemo-spacing-level-5;
+					}
+				}
+			}
+		}
 		.o_form_view:not(.o_form_nosheet) {
 			.o_form_sheet_bg {
 				margin-right: 0;
