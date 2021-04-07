@@ -44,6 +44,8 @@
 			.o_form_image_controls {
 				background: transparent;
 			}
+		}
+		&.theme_favicon {
 			&_light {
 				background: $bemo-neutral-lightest-background-color;
 				.o_form_image_controls {
