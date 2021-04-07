@@ -39,7 +39,8 @@
 							</div>
 							<div class="content-group">
 								<div class="mt16 row">
-									<field name="theme_favicon" widget="image" class="ml-4 oe_avatar" required="1"/>
+									<field name="theme_favicon" widget="image" class="oe_avatar theme_favicon theme_favicon_dark" required="1"/>
+									<field name="theme_favicon" widget="image" class="oe_avatar theme_favicon theme_favicon_light" required="1"/>
 								</div>
 							</div>
 						</div>
@@ -102,7 +103,7 @@
 							</div>
 							<div class="content-group">
 								<div class="mt16 row">
-									<field name="theme_background_image" widget="image" class="ml-4" required="1"/>
+									<field name="theme_background_image" widget="image" required="1"/>
 								</div>
 							</div>
 						</div>

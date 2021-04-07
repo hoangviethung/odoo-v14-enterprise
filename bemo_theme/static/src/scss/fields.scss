@@ -1,6 +1,7 @@
 .o_field_widget {
 	&.o_field_many2one .o_external_button {
 		color: $bemo-primary-color;
+		padding: 0 $bemo-spacing-level-2;
 	}
 	&.o_field_image {
 		.o_form_image_controls {
@@ -27,18 +28,32 @@
 				}
 			}
 		}
-		&[name="theme_favicon"] {
-			background: $bemo-neutral-darker-color;
+		&.theme_favicon,
+		&[name="favicon"] {
 			height: $bemo-height-tab-browser;
 			border-radius: $bemo-border-radius-medium $bemo-border-radius-medium
 				0 0;
 			padding: $bemo-spacing-level-2;
+			max-width: 200px;
+			background: $bemo-neutral-darker-color;
 			> img {
 				max-width: 16px;
 				max-height: 16px;
+				border: 0;
 			}
 			.o_form_image_controls {
 				background: transparent;
+			}
+			&_light {
+				background: $bemo-neutral-lightest-background-color;
+				.o_form_image_controls {
+					button {
+						color: $bemo-neutral-darker-color;
+						&:hover {
+							color: $bemo-neutral-white;
+						}
+					}
+				}
 			}
 		}
 		&:hover {
