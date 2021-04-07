@@ -44,6 +44,7 @@
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/messaging_menu.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/chatter.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/dropdown.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/dropdown_menu.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/web.zoomodoo.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/hr_org_chart.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/message_list.scss"/>

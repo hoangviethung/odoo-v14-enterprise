@@ -33,6 +33,8 @@
 }
 
 .o_list_view {
+	background: $bemo-neutral-white;
+	border-radius: $bemo-border-radius-medium;
 	table {
 		position: relative;
 		overflow-x: hidden;

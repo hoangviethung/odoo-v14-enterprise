@@ -103,6 +103,7 @@
 		.dropdown-menu.show {
 			@include bemo-full-screen-sections();
 			background: $bemo-primary-color;
+			cursor: not-allowed;
 			.o_app {
 				display: flex;
 				margin-bottom: $bemo-spacing-level-5;
