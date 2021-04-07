@@ -117,6 +117,9 @@
 				margin: $bemo-spacing-level-2 0;
 			}
 		}
+		&.o_field_boolean {
+			margin-top: 12px;
+		}
 	}
 	.o_group {
 		display: flex;
@@ -133,6 +136,9 @@
 						padding: 0;
 						&.o_td_label {
 							padding: 0 $bemo-spacing-level-3 0 0;
+						}
+						&[style="width: 50%;"] {
+							padding: 0 $bemo-spacing-level-6 0 0;
 						}
 					}
 				}

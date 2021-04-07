@@ -167,10 +167,15 @@
 	}
 }
 
-.o_list_view .o_list_table {
-	.o_data_row.o_selected_row {
-		> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier):not(.o_remaining_days_cell) {
-			padding: $bemo-spacing-level-3 $bemo-spacing-level-2;
+.o_list_view {
+	.o_list_table {
+		.o_data_row.o_selected_row {
+			> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier):not(.o_remaining_days_cell) {
+				padding: $bemo-spacing-level-3 $bemo-spacing-level-2;
+				&.o_list_button {
+					padding: $bemo-spacing-level-3;
+				}
+			}
 		}
 	}
 }
