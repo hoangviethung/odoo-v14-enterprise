@@ -262,6 +262,11 @@
 		.o_form_label {
 			margin-bottom: $bemo-spacing-level-2;
 		}
+		.o_group {
+			&.o_inner_group {
+				padding-right: $bemo-spacing-level-5;
+			}
+		}
 	}
 }
 
