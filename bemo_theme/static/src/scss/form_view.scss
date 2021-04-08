@@ -89,6 +89,9 @@
 			max-width: 50%;
 			width: 100%;
 			margin-bottom: $bemo-spacing-level-7;
+			h1 {
+				display: flex;
+			}
 			span.o_field_widget {
 				max-width: 100%;
 				text-overflow: ellipsis;
