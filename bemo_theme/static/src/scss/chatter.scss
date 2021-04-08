@@ -67,7 +67,7 @@
 
 .o_Chatter_composer {
 	background: $bemo-neutral-lightest-background-color;
-	margin: $bemo-spacing-level-2;
+	margin: $bemo-spacing-level-3;
 	&.o-bordered {
 		border: 0;
 	}
@@ -98,6 +98,59 @@
 				background: transparent;
 				color: $bemo-primary-color;
 			}
+		}
+	}
+}
+
+.o_Chatter {
+	.o_AttachmentList_partialListImages {
+		display: grid;
+		width: 100%;
+		margin: 0;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		grid-gap: $bemo-spacing-level-2;
+		.o_Attachment {
+			margin: 0;
+			overflow: hidden;
+		}
+		.o_Attachment_image {
+			width: 100%;
+			height: 100%;
+		}
+		@media (max-width: 1599.98px) {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+		@media (max-width: 1439.98px) {
+			grid-template-columns: repeat(9, minmax(0, 1fr));
+		}
+		@media (max-width: 1199.98px) {
+			grid-template-columns: repeat(7, minmax(0, 1fr));
+		}
+		@media (max-width: 1024.98px) {
+			grid-template-columns: repeat(6, minmax(0, 1fr));
+		}
+		@media (max-width: 767.98px) {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+		@media (max-width: 575.98px) {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
+	.o_AttachmentList_partialListNonImages {
+		display: grid;
+		width: 100%;
+		margin: 0;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-gap: $bemo-spacing-level-2;
+
+		@media (max-width: 1439.98px) {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+		@media (max-width: 1199.98px) {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+		@media (max-width: 767.98px) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 	}
 }

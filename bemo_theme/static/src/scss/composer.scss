@@ -1,0 +1,41 @@
+.o_Composer {
+	background-color: $bemo-primary-blue-light-color-06;
+	box-shadow: $bemo-box-shadow;
+	&.o-has-current-partner-avatar {
+		padding: $bemo-spacing-level-4 $bemo-spacing-level-3;
+		border-radius: $bemo-border-radius-medium;
+		&:not(.o-has-header) {
+			padding-top: $bemo-spacing-level-4;
+		}
+	}
+}
+
+.o_Composer_actionButtons {
+	&.o-composer-is-compact {
+		background-color: $bemo-neutral-white;
+		border: 1px solid $bemo-neutral-lighter-border-color;
+		border-left: 0;
+		&::before {
+			content: "";
+			border-left: 1px solid $bemo-neutral-lighter-border-color;
+			margin-top: 0.75rem;
+			margin-bottom: 0.75rem;
+		}
+	}
+}
+
+.o_Composer_textInput {
+	&.o-has-current-partner-avatar {
+		&.o-composer-is-compact {
+			border-radius: $bemo-border-radius-low 0 0 $bemo-border-radius-low;
+		}
+	}
+}
+
+.o_ThreadView {
+	background-color: $bemo-neutral-white;
+}
+
+.o_Composer_coreFooter {
+	margin-top: $bemo-spacing-level-2;
+}

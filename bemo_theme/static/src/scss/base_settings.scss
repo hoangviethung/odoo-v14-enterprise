@@ -61,10 +61,26 @@
 			box-shadow: $bemo-box-shadow;
 			background: $bemo-neutral-white;
 			.tab {
+				font-size: $bemo-font-size-default;
 				color: $bemo-neutral-darker-color;
 				margin-bottom: $bemo-spacing-level-2;
 				background-color: $bemo-neutral-white;
 				transition: $bemo-transition;
+				.icon {
+					width: 24px;
+					min-width: 24px;
+				}
+				.icon,
+				.app_name {
+					transition: $bemo-transition;
+				}
+				&:hover {
+					background-color: $bemo-primary-blue-light-color-06;
+					.icon,
+					.app_name {
+						transform: translateX($bemo-spacing-level-2);
+					}
+				}
 			}
 			.selected {
 				background-color: $bemo-primary-blue-light-color-05;

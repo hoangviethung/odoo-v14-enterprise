@@ -28,11 +28,12 @@
 
 	<template id="assets_backend" name="Backend Assets" inherit_id="web.assets_backend">
 		<xpath expr="//link[last()]" position="after">
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/libs/simplebar/simplebar.scss" />
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/attachment.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/activity_box.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/ui.scss"/>
-			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/libs/simplebar/simplebar.scss" />
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/base_settings.scss" />
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/discuss.scss" />
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/layout.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/navbar.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/_nav.scss"/>
@@ -53,9 +54,11 @@
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/webclient.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/kanban_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/activity_view.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/composer.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/pivot_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/form_view.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/fields.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/message.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/fields_extra.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/web_calendar.scss"/>
 			<link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/modal.scss"/>
