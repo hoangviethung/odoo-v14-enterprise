@@ -148,6 +148,10 @@
 		&.o_field_boolean {
 			margin-top: 12px;
 		}
+		&.o_form_uri {
+			margin-bottom: 0;
+			margin-top: $bemo-spacing-level-2;
+		}
 	}
 	.o_group {
 		display: flex;
@@ -254,6 +258,11 @@
 			}
 		}
 	}
+	.tab-pane {
+		.o_form_label {
+			margin-bottom: $bemo-spacing-level-2;
+		}
+	}
 }
 
 .bemo_chatter_position_sided {
@@ -316,6 +325,7 @@
 	.o_hr_skills_group {
 		.o_list_view {
 			.o_list_table {
+				border: 0;
 				.o_resume_group_header {
 					vertical-align: middle;
 					.o_group_name {
@@ -379,6 +389,7 @@
 				border-top-right-radius: $bemo-border-radius-medium;
 				border-bottom-right-radius: $bemo-border-radius-medium;
 				padding: $bemo-spacing-level-1;
+				margin-bottom: 0;
 			}
 			.o_skill_cell {
 				padding: 6px 0;

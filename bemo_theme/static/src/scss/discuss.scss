@@ -41,7 +41,7 @@
 
 .o_DiscussSidebar_groupHeader {
 	font-size: $bemo-font-size-default;
-	margin: $bemo-spacing-level-2 0;
+	margin: $bemo-spacing-level-2 0 $bemo-spacing-level-3;
 	.o_DiscussSidebar_groupTitle.o-clickable:not(:hover),
 	.o_DiscussSidebar_groupTitle:not(.o-clickable),
 	.o_DiscussSidebar_groupHeaderItemAdd:not(:hover) {

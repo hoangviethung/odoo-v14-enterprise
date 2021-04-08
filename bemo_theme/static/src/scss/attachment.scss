@@ -67,6 +67,11 @@
 .o_Attachment_image {
 	margin: 0;
 	border-radius: $bemo-border-radius-low;
+	&.o-details-overlay {
+		&.o-medium {
+			background-size: contain !important;
+		}
+	}
 }
 
 .o_Attachment_filename {
