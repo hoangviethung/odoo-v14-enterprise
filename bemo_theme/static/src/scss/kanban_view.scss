@@ -142,8 +142,19 @@
 				position: sticky;
 				top: -$bemo-spacing-level-3;
 				z-index: 50;
+				margin-bottom: $bemo-spacing-level-3;
 				.o_kanban_header_title {
 					margin-top: 0;
+				}
+			}
+		}
+		&.o_kanban_group_show_danger {
+			.oe_kanban_card_danger {
+				margin-bottom: $bemo-spacing-level-2;
+			}
+			.progress-bar {
+				&.bg-danger-full {
+					border: 0;
 				}
 			}
 		}
@@ -221,6 +232,7 @@
 			border-radius: $bemo-border-radius-medium;
 			margin-bottom: $bemo-spacing-level-2;
 			box-shadow: $bemo-box-shadow;
+			transition: $bemo-transition;
 		}
 	}
 	&.o_kanban_dashboard {

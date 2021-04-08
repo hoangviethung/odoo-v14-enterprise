@@ -34,7 +34,6 @@
 
 .o_list_view {
 	background: $bemo-neutral-white;
-	border-radius: $bemo-border-radius-medium;
 	table {
 		position: relative;
 		overflow-x: hidden;
@@ -165,7 +164,6 @@
 			}
 		}
 	}
-	
 }
 
 .o_list_table_grouped.table tbody tr {
