@@ -16,17 +16,35 @@
 		</t>
 		<t t-jquery=".dropdown-menu" t-operation="replace">
 			<div class="dropdown-menu" role="menu">
+				<div class="bemo_logo_company">
+					<img src="/bemo_theme/static/src/images/logo_bemo_company_default.png" alt="LOGO-COMPANY"/>
+				</div>
 				<div class="bemo_search_container">
 					<div class="bemo_search_input">
 						<input type="text" placeholder="Search menus..." class="form-control"/>
 					</div>
 					<div class="bemo_search_results"/>
 				</div>
-				<div class="bemo_apps">
-					<t t-foreach="widget.getApps()" t-as="app">
-						<a role="menuitem" t-attf-href="#menu_id=#{app.menuID}" class="dropdown-item o_app" t-att-data-menu-id="app.menuID" t-att-data-menu-xmlid="app.xmlID" t-att-data-action-id="app.actionID">
-							<t t-call="bemo_theme.AppIcon"/>
-						</a>
+				<t t-set="number_module" t-value="5" />
+				<div class="bemo_apps_wrapper">
+					<t t-foreach="[1, 2, 3, 4, 5]" t-as="number">
+						<t t-set="abcd" t-value="0" />
+						<div class="bemo_apps_group">
+							<div class="bemo_app_title">
+								<h3>Quản lý nhân viên</h3>
+							</div>
+							<div class="bemo_apps">
+								<t t-foreach="widget.getApps()" t-as="app">
+									<t t-set="abcd" t-value="abcd+1" />
+									<t t-if="abcd &lt; 11">
+										<a role="menuitem" t-attf-href="#menu_id=#{app.menuID}" class="dropdown-item o_app" t-att-data-menu-id="app.menuID" t-att-data-menu-xmlid="app.xmlID" t-att-data-action-id="app.actionID">
+											<t t-call="bemo_theme.AppIcon"/>
+										</a>
+									</t>
+									<t t-else=""></t>
+								</t>
+							</div>
+						</div>
 					</t>
 				</div>
 			</div>

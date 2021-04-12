@@ -101,16 +101,18 @@
 			}
 		}
 		.dropdown-menu.show {
+			--url-background: url("/bemo_theme/static/src/images/background_bemo_apps_default.png");
 			@include bemo-full-screen-sections();
-			background: $bemo-primary-color;
+			background-color: $bemo-primary-color;
 			cursor: not-allowed;
+			padding: 2vh 20vw 2vh 20vw;
 			.o_app {
 				display: flex;
-				margin-bottom: $bemo-spacing-level-5;
+				margin-bottom: $bemo-spacing-level-4;
 				align-items: center;
 				flex-direction: column;
 				justify-content: center;
-				width: percentage(1/6);
+				width: percentage(1/8);
 				transition: $bemo-transition;
 				background: none;
 				@media (max-width: 1439.98px) {
@@ -127,8 +129,7 @@
 				&:active,
 				&.active {
 					.o-app-icon {
-						box-shadow: 0 8px 15px -10px $bemo-neutral-black;
-						transform: translateY(-1px);
+						transform: translateY(-2px);
 					}
 				}
 			}
@@ -137,10 +138,11 @@
 			}
 			.o-app-icon {
 				height: auto;
-				max-width: 7rem;
+				max-width: 72px;
 				width: 100%;
 				flex-basis: 0;
 				transition: $bemo-transition;
+				box-shadow: 0px 0px 20px rgba($color: #b1d4ff, $alpha: 0.6);
 			}
 			.o-app-name {
 				color: $bemo-neutral-white;
@@ -153,7 +155,7 @@
 				-ms-flex: 0 0 100%;
 				flex: 0 0 100%;
 				max-width: 100%;
-				margin-bottom: $bemo-spacing-level-8;
+				margin-bottom: $bemo-spacing-level-5;
 				.bemo_search_input {
 					input {
 						max-width: 350px;
@@ -207,19 +209,66 @@
 					padding-right: 5px;
 				}
 			}
-			.bemo_apps {
-				display: flex;
-				flex-wrap: wrap;
-				margin-right: -16px;
-				margin-left: -16px;
-				max-height: 80vh;
+			.bemo_logo_company {
+				margin-bottom: $bemo-spacing-level-5;
+				img {
+					display: block;
+					max-width: 200px;
+					height: auto;
+					margin: 0 auto;
+				}
+			}
+			.bemo_apps_wrapper {
+				max-height: 78.3vh;
 				overflow-y: auto;
+				padding-right: $bemo-spacing-level-3;
 				&::-webkit-scrollbar-track {
 					background: rgba(
 						$color: $bemo-primary-blue-light-color-05,
 						$alpha: 0.1
 					);
 				}
+			}
+			.bemo_apps_group {
+				padding: 0 $bemo-spacing-level-3;
+				background-color: rgba(
+					$color: $bemo-neutral-white,
+					$alpha: 0.2
+				);
+				border-radius: $bemo-border-radius-hight;
+				padding-top: $bemo-spacing-level-3;
+				+ .bemo_apps_group {
+					margin-top: $bemo-spacing-level-4;
+				}
+			}
+			.bemo_app_title {
+				margin-bottom: $bemo-spacing-level-3;
+				padding: 0 $bemo-spacing-level-3;
+				h3 {
+					display: inline-block;
+					position: relative;
+					font-size: 1.8rem;
+					font-weight: 700;
+					color: $bemo-neutral-white;
+					margin-bottom: 0;
+					padding-bottom: $bemo-spacing-level-2;
+					&:after {
+						content: "";
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 60%;
+						height: 2px;
+						background-color: $bemo-neutral-white;
+						border-radius: 2px;
+					}
+				}
+			}
+			.bemo_apps {
+				display: flex;
+				flex-wrap: wrap;
+				margin-right: -$bemo-spacing-level-3;
+				margin-left: -$bemo-spacing-level-3;
 			}
 			&:after {
 				content: "";
@@ -228,18 +277,10 @@
 				height: 100%;
 				top: 0;
 				left: 0;
-				background: var(--url-background);
+				background-image: var(--url-background);
 				background-size: cover;
 				z-index: -10;
 				pointer-events: none;
-			}
-			@include media-breakpoint-up(lg) {
-				padding: {
-					top: 4vh;
-					left: 20vw;
-					bottom: 4vh;
-					right: 20vw;
-				}
 			}
 		}
 	}
