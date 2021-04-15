@@ -24,12 +24,12 @@ odoo.define("bemo_theme.AppsBar", function (require) {
 		},
 
 		getAppsCategory() {
-            const category = [];
-            for (var item in this._apps) {
-                          category.push(item.category_name);
-                  }
-            return category;
-        },
+			const category = [];
+			for (var item in this._apps) {
+				category.push(item.category_name);
+			}
+			return category;
+		},
 
 		_openApp(app) {
 			this.trigger_up("app_clicked", {
