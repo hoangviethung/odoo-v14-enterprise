@@ -143,6 +143,7 @@
 				flex-basis: 0;
 				transition: $bemo-transition;
 				box-shadow: 0px 0px 20px rgba($color: #b1d4ff, $alpha: 0.6);
+				border-radius: $bemo-border-radius-hight;
 			}
 			.o-app-name {
 				color: $bemo-neutral-white;
