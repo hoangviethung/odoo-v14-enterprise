@@ -43,18 +43,17 @@ var AppsMenu = Widget.extend({
         const category = [];
         const category_check_ids = [];
         for (let n in this._apps) {
-                debugger;
-
                 if (this._apps[n].ir_ui_menu_category_id)
                 {
-                    if (!(this._apps[n].ir_ui_menu_category_id[0] in category_check_ids)){
-                        category_check_ids.push(this._apps[n].ir_ui_menu_category_id[0]);
-                        category.push(this._apps[n].ir_ui_menu_category_id);
+                    if (!category_check_ids.includes(this._apps[n].ir_ui_menu_category_id[0])){
+                    category_check_ids.push(this._apps[n].ir_ui_menu_category_id[0]);
+
+                    category.push(this._apps[n].ir_ui_menu_category_id);
                     }
                 }
               }
-
-        return category.sort();
+        category.sort()
+        return category.reverse();;
     },
     /**
      * Open the first app in the list of apps
