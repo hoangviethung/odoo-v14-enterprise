@@ -11,3 +11,4 @@
 	- Bước 9: Kết nối với database => dựa theo user mặc định
 	- Bước 10: python odoo-bin -c ../odoo_conf/odoo14.conf
 	- Bước 10.1: python odoo-bin -c ../odoo_conf/odoo14.conf -d odoo14 -u bemo_theme --dev xml
+- Note khi sử dụng git nếu push không được thì gõ "rm -rf"
