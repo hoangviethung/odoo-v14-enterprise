@@ -8,3 +8,7 @@
 	- Bước 6: Tạo user mặc định cho Odoo
 	- Bước 7: Tạo file config cho Odoo => Vào thư mục debian => Copy nội dung của odoo.conf
 	- Bước 8: Vào file config vừa tạo paste vào chỉnh lại thông số
+	- Bước 9: Kết nối với database => dựa theo user mặc định
+	- Bước 10: python odoo-bin -c ../odoo_conf/odoo14.conf
+	- Bước 10.1: python odoo-bin -c ../odoo_conf/odoo14.conf -d odoo14 -u bemo_theme --dev xml
+- Note khi sử dụng git nếu push không được thì gõ "rm -rf"

@@ -104,7 +104,7 @@
 			--url-background: url("/bemo_theme/static/src/images/background_bemo_apps_default.png");
 			@include bemo-full-screen-sections();
 			background-color: $bemo-primary-color;
-			cursor: url("/bemo_theme/static/src/icons/home.svg"), auto;
+			cursor: url("/bemo_theme/static/src/icons/home.png"), auto;
 			padding: 2vh 20vw 2vh 20vw;
 			.o_app {
 				display: flex;
