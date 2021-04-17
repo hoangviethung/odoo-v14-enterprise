@@ -36,7 +36,7 @@
 							<div class="bemo_apps">
 								<t t-foreach="widget.getApps()" t-as="app">
 									<t t-set="abcd" t-value="abcd+1" />
-									<t t-if="abcd &lt; 11">
+									<t t-if="abcd &lt; 20">
 										<a role="menuitem" t-attf-href="#menu_id=#{app.menuID}" class="dropdown-item o_app" t-att-data-menu-id="app.menuID" t-att-data-menu-xmlid="app.xmlID" t-att-data-action-id="app.actionID">
 											<t t-call="bemo_theme.AppIcon"/>
 										</a>

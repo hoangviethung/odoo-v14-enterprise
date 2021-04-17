@@ -2,6 +2,6 @@
 
 <odoo noupdate="1">
 	<record id="base.main_company" model="res.company">
-		<field name="background_image" type="base64" file="bemo_theme/static/src/images/background.png" />
+		<field name="background_image" type="base64" file="bemo_theme/static/src/images/background_bemo_apps_default.png" />
 	</record>
 </odoo>
