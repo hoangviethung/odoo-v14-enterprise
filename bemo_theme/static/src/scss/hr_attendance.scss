@@ -4,7 +4,7 @@
 	}
 
 	.o_hr_attendance_kiosk_mode {
-		max-width: 936px;
+		max-width: 650px;
 		background-color: $bemo-neutral-white;
 		border-radius: $bemo-border-radius-higher $bemo-border-radius-higher;
 		overflow: hidden;
@@ -71,6 +71,11 @@
 		a:not([href]):not([tabindex]):focus {
 			color: $bemo-neutral-white;
 			transform: translateY(-10px);
+		}
+		img {
+			&.o_hr_attendance_kiosk_company_image {
+				width: auto;
+			}
 		}
 	}
 }
