@@ -100,6 +100,9 @@
 					height: 32px;
 					border-radius: 0;
 					margin-right: 0;
+					&.btn-time-off {
+						border-radius: $bemo-border-radius-medium;
+					}
 					&.o_calendar_button_prev {
 						border-top-left-radius: $bemo-border-radius-medium;
 						border-bottom-left-radius: $bemo-border-radius-medium;
@@ -107,6 +110,14 @@
 					&.o_calendar_button_next {
 						border-top-right-radius: $bemo-border-radius-medium;
 						border-bottom-right-radius: $bemo-border-radius-medium;
+					}
+				}
+				&.btn-allocation {
+					height: 32px;
+					text-transform: unset;
+					margin-left: $bemo-spacing-level-2;
+					&:hover {
+						background-color: $bemo-primary-blue-light-color-05;
 					}
 				}
 			}
