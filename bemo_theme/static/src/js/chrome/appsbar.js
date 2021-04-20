@@ -14,6 +14,7 @@ odoo.define("bemo_theme.AppsBar", function (require) {
 				actionID: parseInt(app.action.split(",")[1]),
 				web_icon_data: app.web_icon_data,
 				menuID: app.id,
+				category_name: app.ir_ui_menu_category_id,
 				name: app.name,
 				xmlID: app.xmlid,
 			}));
@@ -21,6 +22,15 @@ odoo.define("bemo_theme.AppsBar", function (require) {
 		getApps() {
 			return this._apps;
 		},
+
+		getAppsCategory() {
+            const category = [];
+            for (var item in this._apps) {
+                          category.push(item.category_name);
+                  }
+            return category;
+        },
+
 		_openApp(app) {
 			this.trigger_up("app_clicked", {
 				action_id: app.actionID,
