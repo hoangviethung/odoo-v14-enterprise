@@ -1,25 +1,3 @@
-/**********************************************************************************
- *
- *    Copyright (c) 2017-today MuK IT GmbH.
- *
- *    This file is part of MuK Grid Snippets
- *    (see https://mukit.at).
- *
- *    This program is free software: you can redistribute it and/or modify
- *    it under the terms of the GNU Lesser General Public License as published by
- *    the Free Software Foundation, either version 3 of the License, or
- *    (at your option) any later version.
- *
- *    This program is distributed in the hope that it will be useful,
- *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *    GNU Lesser General Public License for more details.
- *
- *    You should have received a copy of the GNU Lesser General Public License
- *    along with this program. If not, see <http://www.gnu.org/licenses/>.
- *
- **********************************************************************************/
-
 odoo.define("bemo_theme.KanbanRenderer", function (require) {
 	"use strict";
 
@@ -41,7 +19,7 @@ odoo.define("bemo_theme.KanbanRenderer", function (require) {
 			KanbanRenderer.prototype.custom_events || {},
 			{
 				quick_create_column_created: "_onColumnAdded",
-			}
+			},
 		),
 		events: _.extend({}, KanbanRenderer.prototype.events, {
 			"click .o_kanban_mobile_tab": "_onMobileTabClicked",
@@ -106,33 +84,33 @@ odoo.define("bemo_theme.KanbanRenderer", function (require) {
 				this.$(".o_kanban_group").show();
 				const $columnAfter = this._toNode(
 					this.widgets.filter(
-						(widget, index) => index > this.activeColumnIndex
-					)
+						(widget, index) => index > this.activeColumnIndex,
+					),
 				);
 				const promiseAfter = this._updateColumnCss(
 					$columnAfter,
 					rtl ? { right: "100%" } : { left: "100%" },
-					animate
+					animate,
 				);
 				const $columnBefore = this._toNode(
 					this.widgets.filter(
-						(widget, index) => index < this.activeColumnIndex
-					)
+						(widget, index) => index < this.activeColumnIndex,
+					),
 				);
 				const promiseBefore = this._updateColumnCss(
 					$columnBefore,
 					rtl ? { right: "-100%" } : { left: "-100%" },
-					animate
+					animate,
 				);
 				const $columnCurrent = this._toNode(
 					this.widgets.filter(
-						(widget, index) => index === this.activeColumnIndex
-					)
+						(widget, index) => index === this.activeColumnIndex,
+					),
 				);
 				const promiseCurrent = this._updateColumnCss(
 					$columnCurrent,
 					rtl ? { right: "0%" } : { left: "0%" },
-					animate
+					animate,
 				);
 				promiseAfter
 					.then(promiseBefore)
@@ -151,7 +129,7 @@ odoo.define("bemo_theme.KanbanRenderer", function (require) {
 				}
 				var columnID = column.id || column.db_id;
 				this.$(
-					".o_kanban_mobile_tab.o_current, .o_kanban_group.o_current"
+					".o_kanban_mobile_tab.o_current, .o_kanban_group.o_current",
 				).removeClass("o_current");
 				this.$(
 					'.o_kanban_group[data-id="' +
@@ -159,7 +137,7 @@ odoo.define("bemo_theme.KanbanRenderer", function (require) {
 						'"], ' +
 						'.o_kanban_mobile_tab[data-id="' +
 						columnID +
-						'"]'
+						'"]',
 				).addClass("o_current");
 			}
 		},
@@ -196,7 +174,7 @@ odoo.define("bemo_theme.KanbanRenderer", function (require) {
 				var $tabs = this.$(".o_kanban_mobile_tabs");
 				$tabs.toggleClass(
 					"justify-content-between",
-					$tabs.outerWidth() >= widthChilds
+					$tabs.outerWidth() >= widthChilds,
 				);
 			}
 		},
@@ -222,7 +200,7 @@ odoo.define("bemo_theme.KanbanRenderer", function (require) {
 		_getTabWidth(column) {
 			var columnID = column.id || column.db_id;
 			return this.$(
-				'.o_kanban_mobile_tab[data-id="' + columnID + '"]'
+				'.o_kanban_mobile_tab[data-id="' + columnID + '"]',
 			).outerWidth();
 		},
 		_layoutUpdate(animate) {
@@ -268,7 +246,7 @@ odoo.define("bemo_theme.KanbanRenderer", function (require) {
 
 					var kanbanColumnContainer = document.createElement("div");
 					kanbanColumnContainer.classList.add(
-						"o_kanban_columns_content"
+						"o_kanban_columns_content",
 					);
 					kanbanColumnContainer.appendChild(newFragment);
 					fragment.appendChild(kanbanColumnContainer);
@@ -276,9 +254,9 @@ odoo.define("bemo_theme.KanbanRenderer", function (require) {
 						qweb.render("KanbanView.MobileTabs", {
 							data: data,
 							quickCreateEnabled: self._canCreateColumn(),
-						})
+						}),
 					).prependTo(fragment);
-				})
+				}),
 			);
 		},
 		_renderView() {
@@ -300,7 +278,7 @@ odoo.define("bemo_theme.KanbanRenderer", function (require) {
 					(widget) =>
 						'.o_kanban_group[data-id="' +
 						(widget.id || widget.db_id) +
-						'"]'
+						'"]',
 				)
 				.join(", ");
 			return this.$(selectorCss);
@@ -308,7 +286,7 @@ odoo.define("bemo_theme.KanbanRenderer", function (require) {
 		_updateColumnCss($column, cssProperties, animate) {
 			if (animate) {
 				return new Promise((resolve) =>
-					$column.animate(cssProperties, "fast", resolve)
+					$column.animate(cssProperties, "fast", resolve),
 				);
 			} else {
 				$column.css(cssProperties);

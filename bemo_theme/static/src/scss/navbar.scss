@@ -223,7 +223,6 @@
 				max-height: 78.3vh;
 				overflow-y: auto;
 				padding-right: $bemo-spacing-level-3;
-				cursor: pointer;
 				&::-webkit-scrollbar-track {
 					background: rgba(
 						$color: $bemo-primary-blue-light-color-05,
@@ -232,6 +231,7 @@
 				}
 			}
 			.bemo_apps_group {
+				cursor: pointer;
 				padding: 0 $bemo-spacing-level-3;
 				background-color: rgba(
 					$color: $bemo-neutral-white,
@@ -259,7 +259,7 @@
 						position: absolute;
 						bottom: 0;
 						left: 0;
-						width: 60%;
+						width: 100%;
 						height: 2px;
 						background-color: $bemo-neutral-white;
 						border-radius: 2px;
