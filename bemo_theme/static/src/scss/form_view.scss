@@ -145,12 +145,8 @@
 				margin: $bemo-spacing-level-2 0;
 			}
 		}
-		&.o_field_boolean {
-			margin-top: 12px;
-		}
 		&.o_form_uri {
 			margin-bottom: 0;
-			margin-top: $bemo-spacing-level-2;
 		}
 	}
 	.o_group {
@@ -199,6 +195,9 @@
 		.o_td_label {
 			.o_form_label {
 				padding: 0 0 $bemo-spacing-level-3 0;
+				&.o_status {
+					padding: 0;
+				}
 			}
 		}
 	}
@@ -228,6 +227,26 @@
 			.o_list_record_remove {
 				> button {
 					transition: $bemo-transition;
+				}
+			}
+		}
+		.o_field_widget {
+			&.o_field_boolean {
+				padding-top: $bemo-spacing-level-2;
+			}
+		}
+		.o_address_format {
+			.o_address_city {
+				width: 100%;
+			}
+			div {
+				&.o_address_state {
+					width: 100%;
+				}
+			}
+			input {
+				&.o_address_zip {
+					width: 100%;
 				}
 			}
 		}
@@ -424,4 +443,9 @@
 .o_form_view .o_inner_group.oe_right,
 .o_form_view .o_inner_group.o_group.oe_subtotal_footer {
 	width: 33% !important;
+}
+
+.o_form_view.o_form_readonly .o_row:not(.o_row_readonly),
+.o_form_view.o_form_readonly .o_row:not(.o_row_readonly) > div {
+	display: inline-flex;
 }
