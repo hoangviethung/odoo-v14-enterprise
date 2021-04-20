@@ -21,6 +21,8 @@ odoo.define("bemo_theme.AppsMenu", function (require) {
 				for (let n in this._apps) {
 					this._apps[n].web_icon_data =
 						menuData.children[n].web_icon_data;
+					this._apps[n].ir_ui_menu_category_id =
+	                    menuData.children[n].ir_ui_menu_category_id;
 				}
 				this._searchableMenus = _.reduce(
 					menuData.children,
