@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <template id="bap_menu_custom" inherit_id="web.assets_backend" name="BAP Menu Apps Category">
-        <xpath expr="script[last()]" position="after">
-            <script type="text/javascript" src="/menu_custom/static/src/js/apps_menu.js"></script>
-        </xpath>
-    </template>
-</odoo>
