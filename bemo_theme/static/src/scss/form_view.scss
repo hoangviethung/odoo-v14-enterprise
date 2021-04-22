@@ -330,10 +330,8 @@
 			max-width: 100%;
 			overflow-y: auto;
 			max-height: 100%;
-			margin-right: $bemo-spacing-level-3;
 			border-radius: $bemo-border-radius-medium;
 			@media (max-width: 1439.98px) {
-				margin-right: 0;
 				-ms-flex: 0 0 100%;
 				flex: 0 0 100%;
 				max-width: 100%;
@@ -349,6 +347,7 @@
 			padding: 0;
 			max-height: 100%;
 			padding-bottom: $bemo-spacing-level-3;
+			margin-left: $bemo-spacing-level-3;
 			@media (max-width: 1599.98px) {
 				-ms-flex: 0 0 30%;
 				flex: 0 0 30%;
@@ -359,6 +358,7 @@
 				flex: 0 0 100%;
 				max-width: 100%;
 				margin-top: $bemo-spacing-level-4;
+				margin-left: 0;
 			}
 		}
 		@media (max-width: 1439.98px) {

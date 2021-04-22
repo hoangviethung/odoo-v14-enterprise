@@ -5,6 +5,7 @@
 				overflow-x: hidden;
 				overflow-y: auto;
 				max-height: 100%;
+				height: 100%;
 				border-radius: $bemo-border-radius-medium;
 				box-shadow: $bemo-box-shadow;
 				background: $bemo-neutral-white;
@@ -59,6 +60,7 @@
 		outline: none;
 		padding: ($bemo-spacing-level-2 + $bemo-spacing-level-1)
 			$bemo-spacing-level-2;
+		border-bottom: 1px solid $bemo-neutral-lighter-border-color;
 	}
 	.o_list_table {
 		thead {
@@ -159,10 +161,12 @@
 	.o_list_view {
 		table {
 			border: 1px solid $bemo-neutral-lighter-border-color;
+			border-bottom: 0;
 			th,
 			td {
 				font-size: 12px;
-				padding: 8px;
+				padding: $bemo-spacing-level-2;
+				border-bottom: 1px solid $bemo-neutral-lighter-border-color;
 			}
 			.o_optional_columns_dropdown_toggle {
 				font-size: 12px;
