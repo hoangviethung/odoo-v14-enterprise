@@ -98,6 +98,14 @@
 				white-space: nowrap;
 				overflow: hidden;
 				width: initial;
+				margin-top: 0;
+			}
+		}
+		.oe_edit_only {
+			small {
+				display: inline-flex;
+				align-items: center;
+				margin-top: 0;
 			}
 		}
 		.o_notebook {
@@ -148,6 +156,12 @@
 		&.o_form_uri {
 			margin-bottom: 0;
 		}
+		&.o_readonly_modifier {
+			margin-bottom: 0;
+			&.oe_subtotal_footer_separator {
+				margin-top: 0;
+			}
+		}
 	}
 	.o_group {
 		display: flex;
@@ -167,6 +181,17 @@
 						}
 						&[style="width: 50%;"] {
 							padding: 0 $bemo-spacing-level-6 0 0;
+						}
+					}
+				}
+			}
+			&.oe_subtotal_footer {
+				> tbody {
+					> tr {
+						> td {
+							&.o_td_label {
+								padding: 0;
+							}
 						}
 					}
 				}
@@ -284,6 +309,9 @@
 		.o_group {
 			&.o_inner_group {
 				padding-right: $bemo-spacing-level-5;
+				&.oe_subtotal_footer {
+					padding-right: 0;
+				}
 			}
 		}
 	}

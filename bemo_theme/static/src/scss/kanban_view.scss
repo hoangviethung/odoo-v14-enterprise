@@ -98,6 +98,8 @@
 		border-radius: $bemo-border-radius-medium;
 		transition: $bemo-transition;
 		.o_kanban_header {
+			background: $bemo-primary-blue-light-color-05;
+			transition: $bemo-transition;
 			.o_kanban_counter {
 				.bg-muted-full {
 					background-color: $bemo-neutral-white;
@@ -155,7 +157,7 @@
 				margin-left: -$bemo-spacing-level-3;
 				margin-right: -$bemo-spacing-level-3;
 				padding: $bemo-spacing-level-3;
-				background: $bemo-primary-blue-light-color-05;
+
 				position: sticky;
 				top: -$bemo-spacing-level-3;
 				z-index: 50;
@@ -168,6 +170,9 @@
 		&.o_kanban_group_show_danger {
 			.oe_kanban_card_danger {
 				margin-bottom: $bemo-spacing-level-2;
+				~ .oe_kanban_card_danger {
+					margin-top: 0;
+				}
 			}
 			.progress-bar {
 				&.bg-danger-full {
@@ -249,8 +254,21 @@
 			border-radius: $bemo-border-radius-medium;
 			margin-bottom: $bemo-spacing-level-2;
 			box-shadow: $bemo-box-shadow;
+			padding: $bemo-spacing-level-2 $bemo-spacing-level-2
+				$bemo-spacing-level-2 $bemo-spacing-level-3;
+			transition: 0.3s opacity ease-in-out;
 			.o_form_view {
 				background: $bemo-neutral-white;
+			}
+		}
+		.o_kanban_record {
+			.o_kanban_record_title {
+				font-size: $bemo-font-size-default;
+			}
+			div {
+				span {
+					font-size: 12px;
+				}
 			}
 		}
 	}
@@ -381,7 +399,6 @@
 		}
 	}
 }
-
 .tab-pane {
 	.o_kanban_view {
 		&.o_kanban_ungrouped {

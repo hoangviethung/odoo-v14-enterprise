@@ -73,6 +73,11 @@
 					position: sticky;
 					top: 0;
 					background: $bemo-primary-color;
+					&.o_color_picker_cell {
+						padding: ($bemo-spacing-level-2 + $bemo-spacing-level-1)
+							$bemo-spacing-level-4 $bemo-spacing-level-2
+							$bemo-spacing-level-2;
+					}
 				}
 				&:focus-within {
 					background: inherit;

@@ -5,20 +5,31 @@
 			span {
 				padding: $bemo-spacing-level-2 0;
 			}
-			&.ui-datepicker-today a {
-				color: $bemo-primary-color;
-				background: mix(
-					$bemo-primary-blue-light-color-04,
-					$bemo-neutral-white,
-					80%
-				);
-				padding: 0.4em;
-				width: 32px;
-				height: 32px;
+			&.ui-datepicker-today {
+				a {
+					color: $bemo-primary-color;
+					background: mix(
+						$bemo-primary-blue-light-color-04,
+						$bemo-neutral-white,
+						80%
+					);
+					width: 32px;
+					height: 32px;
+					padding: 0.4em;
+				}
 			}
 
 			&.ui-datepicker-current-day.ui-datepicker-today a {
 				background: $bemo-primary-blue-light-color-04;
+			}
+			&.ui-datepicker-current-day {
+				a {
+					padding: 0.4em;
+					width: 32px;
+					height: 32px;
+					margin: 0 auto;
+					border-radius: 50%;
+				}
 			}
 		}
 		.ui-datepicker-prev {
