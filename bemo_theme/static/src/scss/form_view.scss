@@ -302,6 +302,12 @@
 			}
 		}
 	}
+	input,
+	textarea {
+		&.o_field_translate {
+			padding-right: $bemo-spacing-level-5;
+		}
+	}
 	.tab-pane {
 		.o_form_label {
 			margin-bottom: $bemo-spacing-level-2;
@@ -313,6 +319,11 @@
 					padding-right: 0;
 				}
 			}
+		}
+	}
+	span {
+		&.o_field_translate {
+			padding: $bemo-spacing-level-1 $bemo-spacing-level-2 !important;
 		}
 	}
 }
@@ -407,6 +418,9 @@
 					&:hover {
 						background: transparent;
 					}
+				}
+				td {
+					border-bottom: 0;
 				}
 			}
 		}

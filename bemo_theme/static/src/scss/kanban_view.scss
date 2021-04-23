@@ -180,6 +180,14 @@
 				}
 			}
 		}
+		&.o_column_folded {
+			.o_kanban_header {
+				background-color: transparent;
+			}
+		}
+		&.ui-sortable-helper {
+			box-shadow: $bemo-box-shadow;
+		}
 	}
 	.o_kanban_record {
 		&:after {
@@ -325,6 +333,11 @@
 				padding: 4px;
 				line-height: 1;
 			}
+			&.o_has_icon {
+				.o_primary {
+					padding-left: $bemo-spacing-level-4;
+				}
+			}
 		}
 		&.o_hr_recruitment_kanban {
 			.o_kanban_record {
@@ -339,6 +352,24 @@
 				.o_kanban_record {
 					&:not(.o_kanban_ghost) {
 						height: auto !important;
+					}
+				}
+			}
+		}
+	}
+	&.ui-sortable {
+		.o_kanban_header_title {
+			.o_column_title {
+				cursor: e-resize;
+			}
+		}
+	}
+	.o_kanban_quick_create {
+		.o_form_view {
+			.o_group {
+				.o_td_label {
+					.o_form_label {
+						padding: 0;
 					}
 				}
 			}
@@ -367,11 +398,16 @@
 						$bemo-border-radius-low;
 					border: 1px solid $bemo-neutral-lighter-border-color;
 					transition: $bemo-transition;
+					box-shadow: unset;
 				}
 				.o_discard_msg {
 					font-size: 12px;
 					font-style: italic;
 					float: unset !important;
+					margin-top: $bemo-spacing-level-1;
+				}
+				.o_kanban_examples {
+					font-size: 12px;
 					margin-top: $bemo-spacing-level-1;
 				}
 			}
@@ -473,4 +509,27 @@
 
 .o_kanban_counter {
 	margin-bottom: 0;
+}
+
+.o_kanban_examples {
+	padding: 0;
+}
+
+.o_form_view .o_group.o_inner_group > tbody > tr > td span.o_field_widget,
+.o_form_view
+	.o_group.o_inner_group
+	> tbody
+	> tr
+	> td
+	.o_field_boolean.o_field_widget,
+.o_form_view .o_group.o_inner_group > tbody > tr > td .oe_avatar.o_field_widget,
+.o_form_view
+	.o_group.o_inner_group
+	> tbody
+	> tr
+	> td
+	.o_form_uri.o_field_widget {
+	padding: 0;
+	border: 0;
+	height: auto;
 }

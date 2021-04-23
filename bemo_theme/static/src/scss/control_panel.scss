@@ -90,8 +90,23 @@
 			}
 			.o_calendar_scale_buttons {
 				margin-left: $bemo-spacing-level-2;
+				.btn-group {
+					button {
+						margin-right: 0;
+						border-radius: 0;
+						&:first-child {
+							border-top-left-radius: $bemo-border-radius-medium;
+							border-bottom-left-radius: $bemo-border-radius-medium;
+						}
+						&:last-child {
+							border-top-right-radius: $bemo-border-radius-medium;
+							border-bottom-right-radius: $bemo-border-radius-medium;
+						}
+					}
+				}
 			}
 			button {
+				padding: 0 $bemo-spacing-level-2;
 				&.btn-primary {
 					color: $bemo-primary-color;
 					text-transform: none;
@@ -102,6 +117,7 @@
 					margin-right: 0;
 					&.btn-time-off {
 						border-radius: $bemo-border-radius-medium;
+						margin-left: $bemo-spacing-level-2;
 					}
 					&.o_calendar_button_prev {
 						border-top-left-radius: $bemo-border-radius-medium;
@@ -119,6 +135,9 @@
 					&:hover {
 						background-color: $bemo-primary-blue-light-color-05;
 					}
+				}
+				@media (max-width: 1299.98px) {
+					font-size: 12px;
 				}
 			}
 		}
