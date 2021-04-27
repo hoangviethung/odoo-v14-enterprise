@@ -1,0 +1,29 @@
+:root {
+	font-size: 12px;
+}
+
+.btn-fill-primary,
+.btn-primary {
+	color: $bemo-neutral-white;
+	background-color: $bemo-primary-color;
+	border-color: $bemo-primary-color;
+	&:hover {
+		background-color: $bemo-primary-blue-medium-color-01;
+		border-color: $bemo-primary-blue-medium-color-01;
+	}
+}
+
+.form-control {
+	height: 40px;
+	border: 1px solid $bemo-neutral-lighter-border-color;
+	&:focus {
+		box-shadow: unset;
+		border-color: $bemo-primary-color;
+	}
+	&::placeholder {
+		color: $bemo-neutral-medium-sub-color;
+	}
+	&::selection {
+		background: $bemo-primary-blue-light-color-04;
+	}
+}

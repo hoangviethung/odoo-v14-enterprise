@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- LAYOUT HOMEPAGE -->
+	<template id="homepage" inherit_id="website.homepage" name="BAP: Home Inherit">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<h1>hello</h1>
+		</xpath>
+	</template>
+</odoo>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="0">
+		<record id="login_form_disable_footer" model="ir.config_parameter">
+			<field name="key">login_form_disable_footer</field>
+			<field name="value">False</field>
+		</record>
+
+		<record id="login_form_disable_database_manager" model="ir.config_parameter">
+			<field name="key">login_form_disable_database_manager</field>
+			<field name="value">False</field>
+		</record>
+
+		<record id="login_form_background_default" model="ir.config_parameter">
+			<field name="key">login_form_background_default</field>
+			<field name="value">/bap_website_login/static/description/images/bg-login.png</field>
+		</record>
+
+		<record id="login_form_background_in_form_login" model="ir.config_parameter">
+			<field name="key">login_form_background_in_form_login</field>
+			<field name="value">/bap_website_login/static/description/images/bg-lgoin-say-hi.png</field>
+		</record>
+	</data>
+</odoo>
