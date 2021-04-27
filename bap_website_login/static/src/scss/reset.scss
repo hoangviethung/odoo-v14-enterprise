@@ -1,29 +1,64 @@
 :root {
 	font-size: 12px;
 }
-
-.btn-fill-primary,
-.btn-primary {
-	color: $bemo-neutral-white;
-	background-color: $bemo-primary-color;
-	border-color: $bemo-primary-color;
-	&:hover {
-		background-color: $bemo-primary-blue-medium-color-01;
-		border-color: $bemo-primary-blue-medium-color-01;
-	}
+::selection {
+	background: $bemo-primary-blue-light-color-04;
 }
 
-.form-control {
-	height: 40px;
-	border: 1px solid $bemo-neutral-lighter-border-color;
-	&:focus {
-		box-shadow: unset;
-		border-color: $bemo-primary-color;
-	}
-	&::placeholder {
-		color: $bemo-neutral-medium-sub-color;
-	}
-	&::selection {
-		background: $bemo-primary-blue-light-color-04;
-	}
+ol,
+ul,
+dl {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+	border-style: none;
+	max-width: 100%;
+	height: auto;
+}
+
+.o_cc5 .btn-outline-secondary:focus,
+.o_footer .btn-outline-secondary:focus,
+.o_cc5 .btn-outline-secondary.focus,
+.o_footer .btn-outline-secondary.focus,
+.o_colored_level .o_cc5 .btn-outline-secondary:focus,
+.o_colored_level .o_footer .btn-outline-secondary:focus,
+.o_colored_level .o_cc5 .btn-outline-secondary.focus,
+.o_colored_level .o_footer .btn-outline-secondary.focus {
+	box-shadow: unset;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-secondary.dropdown-toggle:focus {
+	box-shadow: unset;
+}
+
+.o_cc5 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.o_footer .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.o_cc5 .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.o_footer .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .o_cc5 .btn-outline-secondary.dropdown-toggle:focus,
+.show > .o_footer .btn-outline-secondary.dropdown-toggle:focus,
+.o_colored_level
+	.o_cc5
+	.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.o_colored_level
+	.o_footer
+	.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.o_colored_level
+	.o_cc5
+	.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.o_colored_level
+	.o_footer
+	.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .o_colored_level .o_cc5 .btn-outline-secondary.dropdown-toggle:focus,
+.show
+	> .o_colored_level
+	.o_footer
+	.btn-outline-secondary.dropdown-toggle:focus {
+	box-shadow: unset;
 }

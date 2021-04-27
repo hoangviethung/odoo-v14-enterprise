@@ -23,6 +23,7 @@
 		'data/ir_config_parameter.xml',
 		# Templates
 		'templates/assets.xml',
+		'templates/footer.xml',
 		'templates/home.xml',
 		'templates/login.xml',
 	],

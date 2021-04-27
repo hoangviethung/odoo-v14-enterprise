@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- LAYOUT HOMEPAGE -->
+	<template id="footer" inherit_id="website.footer_custom" name="BAP: Footer Inherit">
+		<xpath expr="//div[@id='footer']" position="replace">
+			<!-- *** FOOTER *** //-->
+			<footer class="bemo-main-footer">
+				<div class="container">
+					<a class="bemo-logo-main-footer" href="index.html">
+						<img src="/bap_website_login/static/src/images/logo_bemo_company_default.png" alt="LOGO-BEMO"/>
+					</a>
+					<div class="row">
+						<div class="col-12 col-lg-7 col-xl-6">
+							<div class="row">
+								<div class="col-12 col-md-4">
+									<div class="row">
+										<div class="col-6 col-md-12">
+											<h3 class="bemo-footer-title">CỘNG ĐỒNG</h3>
+											<ul class="bemo-footer-links">
+												<li>
+													<a href="#">Tutorial</a>
+												</li>
+												<li>
+													<a href="#">Tài liệu</a>
+												</li>
+												<li>
+													<a href="#">Diễn đàn</a>
+												</li>
+												<li>
+													<a href="#">Danh sách gửi thư</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-6 col-md-12">
+											<h3 class="bemo-footer-title">OPEN SOURCE</h3>
+											<ul class="bemo-footer-links">
+												<li>
+													<a href="#">Tutorial</a>
+												</li>
+												<li>
+													<a href="#">Tài liệu</a>
+												</li>
+												<li>
+													<a href="#">Diễn đàn</a>
+												</li>
+												<li>
+													<a href="#">Danh sách gửi thư</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-md-4">
+									<h3 class="bemo-footer-title">DỊCH VỤ</h3>
+									<ul class="bemo-footer-links">
+										<li>
+											<a href="#">Bemo.sh Hosting</a>
+										</li>
+										<li>
+											<a href="#">Hỗ trợ</a>
+										</li>
+										<li>
+											<a href="#">Nâng cấp</a>
+										</li>
+										<li>
+											<a href="#">Giáo dục</a>
+										</li>
+										<li>
+											<a href="#">Find an Accountant</a>
+										</li>
+										<li>
+											<a href="#">Tìm một đối tác</a>
+										</li>
+										<li>
+											<a href="#">Trở thành một đối tác</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-6 col-md-4">
+									<h3 class="bemo-footer-title">VỀ CHÚNG TÔI</h3>
+									<ul class="bemo-footer-links">
+										<li>
+											<a href="#">Công ty của chúng tôi</a>
+										</li>
+										<li>
+											<a href="#">Liên hệ với chúng tôi</a>
+										</li>
+										<li>
+											<a href="#">Công việc</a>
+										</li>
+										<li>
+											<a href="#">Sự kiện</a>
+										</li>
+										<li>
+											<a href="#">Blog</a>
+										</li>
+										<li>
+											<a href="#">Khách hàng</a>
+										</li>
+										<li>
+											<a href="#">Những đối tác</a>
+										</li>
+										<li>
+											<a href="#">Hợp pháp</a>
+										</li>
+										<li>
+											<a href="#">Riêng tư</a>
+										</li>
+										<li>
+											<a href="#">Bảo mật</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-5 col-xl-5 offset-xl-1">
+							<t id="language_selector_call" t-call="portal.language_selector">
+								<t t-set="_div_classes" t-value="(_div_classes or '') + ' dropup'"/>
+							</t>
+							<p class="bemo-desc-footer">Bemo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.</p>
+							<p class="bemo-desc-footer">Bemo's unique value proposition is to be at the same time very easy to use and fully integrated.</p>
+							<ul class="bemo-socials">
+								<li>
+									<a target="_blank" rel="noopener" href="https://www.facebook.com/bap32">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a target="_blank" rel="noopener" href="https://www.facebook.com/bap32">
+										<i class="fa fa-youtube"></i>
+									</a>
+								</li>
+								<li>
+									<a target="_blank" rel="noopener" href="https://www.facebook.com/bap32">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</xpath>
+	</template>
+</odoo>
