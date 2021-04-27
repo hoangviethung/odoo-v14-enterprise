@@ -1,25 +1,21 @@
 # -*- coding: utf-8 -*-
 {
-	'name': 'BAP Website Login',
+	'name': "Bemo Theme Frontend",
+	'summary': 'This is module custom Bemo Theme Frontend.',
 	'version': '14.0.0.1.0',
-	'category': 'BAP Modules/Login Page',
-	'summary': 'This module will be upgrading the new template for Login Page.',
-	'author': 'PhatDM <phatdm@bap-ventures.com>',
 	'license': 'LGPL-3',
+	'category': 'Bemo Modules/Menu Theme Frontend',
+	'author': 'BAP Odoo Developer',
 	'company': 'BAP Ventures',
 	'maintainer': 'BAP Ventures',
 	'support': 'service@bap.jp',
-	'website': 'https://bap-ventures.com/vi/',
+	'website': 'https://index.bemo.cloud/',
 	'depends': [
 		# Odoo
 		'website',
-
-		# Bap
-		'bap_website',
 	],
-	'live_test_url': '',
 	'data': [
-		# Data
+		# Datas
 		'data/ir_config_parameter.xml',
 		# Templates
 		'templates/assets.xml',
@@ -27,10 +23,8 @@
 		'templates/home.xml',
 		'templates/login.xml',
 	],
-	'demo': [],
 	'qweb': [],
-	'images': [],
 	'installable': True,
 	'application': True,
-	'auto_install': False
+	'auto_install': True,
 }

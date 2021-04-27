@@ -1,41 +1,39 @@
 {
-	"name": "Bemo Theme", 
-	"summary": "This is module custom Bemo Theme.",
-	"version": "14.0.1.0.0", 
-	"category": "Themes/Bemo Theme", 
-	"license": "LGPL-3", 
-	"author": "B.A.P Ventures",
-	"website": "https://bap-software.net/en/",
-	'live_test_url': 'https://mukit.at/r/SgN',
-	"contributors": [
-		"BAP Ventures",
+	'name': 'Bemo Theme Backend',
+	'summary': 'This is module custom Bemo Theme Backend.',
+	'version': '14.0.1.0.0', 
+	'license': 'LGPL-3',
+	'category': 'Bemo Modules/Bemo Theme Backend',
+	'author': 'BAP Odoo Developer',
+	'company': 'BAP Ventures',
+	'maintainer': 'BAP Ventures',
+	'support': 'service@bap.jp',
+	'website': 'https://index.bemo.cloud/',
+	'depends': [
+		# Odoo
+		'base',
+		'web',
+		'web_editor',
 	],
-	"depends": [
-		"base",
-		"web",
-		"web_editor",
+	'data': [
+		# Views
+		'template/assets.xml',
+		'template/web.xml',
+		'views/res_users.xml',
+		'views/res_config_settings_view.xml',
+		# Datas
+		'data/res_company.xml',
 	],
-	"excludes": [
-		"web_enterprise",
+	'qweb': [
+		'static/src/components/control_panel.xml',
+		'static/src/xml/*.xml',
 	],
-	"data": [
-		"template/assets.xml",
-		"template/web.xml",
-		"views/res_users.xml",
-		"views/res_config_settings_view.xml",
-		"data/res_company.xml",
-	],
-	"qweb": [
-		"static/src/components/control_panel.xml",
-		"static/src/xml/*.xml",
-	],
-	"images": [],
-	"external_dependencies": {
-		"python": [],
-		"bin": [],
+	'external_dependencies': {
+		'python': [],
+		'bin': [],
 	},
-	"application": True,
-	"installable": True,
-	"auto_install": True,
-	"uninstall_hook": "_uninstall_reset_changes",
+	'application': True,
+	'installable': True,
+	'auto_install': True,
+	'uninstall_hook': '_uninstall_reset_changes',
 }
