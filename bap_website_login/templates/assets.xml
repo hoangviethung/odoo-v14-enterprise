@@ -7,6 +7,7 @@
             <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/utilities.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/widgets.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/forms.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/header.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/footer.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/login.scss"/>
         </xpath>

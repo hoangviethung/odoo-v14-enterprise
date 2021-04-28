@@ -1,0 +1,111 @@
+.bemo-main-header {
+	background-color: $bemo-primary-color;
+	color: $bemo-neutral-white;
+	transition: $bemo-transition;
+	.bemo-main-header-main {
+		a {
+			&:not(.btn) {
+				color: inherit;
+			}
+		}
+	}
+}
+
+.bemo-main-header-main {
+	height: $bemo-navbar-height;
+}
+
+.bemo-logo-main-header {
+	display: inline-flex;
+	height: 100%;
+	float: left;
+	img {
+		height: 36px;
+		width: auto;
+		margin: auto 0;
+		transition: 0.3s all ease-in-out;
+		filter: brightness(0) invert(1);
+	}
+}
+
+.bemo-header-login-wrapper {
+	float: right;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	.btn {
+		+ .btn {
+			margin-left: $bemo-spacing-level-3;
+		}
+	}
+	.account {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		padding: $bemo-spacing-level-1 $bemo-spacing-level-4
+			$bemo-spacing-level-1 $bemo-spacing-level-2;
+		background: rgba($color: $bemo-primary-dark-color-01, $alpha: 0.5);
+		border-radius: $bemo-border-radius-hight;
+		.account_avatar {
+			width: 24px;
+			height: 24px;
+			border: 2px solid $bemo-neutral-white;
+			border-radius: 50%;
+		}
+		.account_name {
+			margin-left: $bemo-spacing-level-1;
+		}
+		.dropdown-toggle {
+			display: inline-flex;
+			align-items: center;
+			height: 100%;
+			&:after {
+				content: "\f078";
+				font-size: 10px;
+				font-family: "FontAwesome";
+				font-size: 8px;
+				position: absolute;
+				right: 12px;
+				top: 50%;
+				margin-left: 0;
+				vertical-align: 0;
+				transform: translateY(-50%);
+				border-left: 0;
+				border-top: 0;
+				border-right: 0;
+			}
+		}
+	}
+}
+
+.bemo-primary-nav {
+	height: 100%;
+	ul {
+		height: 100%;
+		li {
+			display: inline-flex;
+			align-items: center;
+			&:first-child {
+				margin-left: 32px;
+			}
+			+ li {
+				margin-left: 24px;
+			}
+			> a {
+				line-height: $bemo-navbar-height;
+				&:not(.btn) {
+					font-weight: 600;
+				}
+			}
+			&.has-sub {
+				&:after {
+					content: "\f078";
+					font-size: 8px;
+					font-family: "FontAwesome";
+					margin-left: 8px;
+				}
+			}
+		}
+	}
+}

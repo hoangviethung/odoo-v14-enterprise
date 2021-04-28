@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- LAYOUT HOMEPAGE -->
+    <template id="header" inherit_id="website.layout" name="Custom Header">
+        <!-- Add an element after the top menu  -->
+        <xpath expr="//header" position="replace">
+            <!-- *** HEADER *** //-->
+            <header class="bemo-main-header">
+                <div class="container">
+                    <div class="bemo-main-header-main">
+                        <a class="bemo-logo-main-header" href="/web">
+                            <img src="/bap_website_login/static/src/images/logo_bemo_company_default.png" alt="LOGO-BAP"/>
+                        </a>
+                        <div class="bemo-header-login-wrapper">
+                            <t t-set="is_connected" t-value="not user_id._is_public()"/>
+                            <t t-if="is_connected">
+                                <div t-attf-class="account">
+                                    <a role="button" data-toggle="dropdown" t-attf-class="dropdown-toggle">
+                                        <img t-att-src="'/bap_website_login/static/src/images/avatar_user_default.jpg'" t-attf-class="account_avatar"/>
+                                        <span t-attf-class="account_name">Tài khoản của bạn</span>
+                                    </a>
+                                    <div t-attf-class="dropdown-menu js_usermenu" role="menu">
+                                        <div id="o_logout_divider" class="dropdown-divider"/>
+                                        <a t-attf-href="/web/session/logout?redirect=/" role="menuitem" id="o_logout" class="dropdown-item">Logout</a>
+                                    </div>
+                                </div>
+                            </t>
+                            <t t-else="">
+                                <a t-attf-class="btn btn-light" t-attf-href="/web/login">
+                                    <span>Đăng nhập</span>
+                                </a>
+                            </t>
+                        </div>
+                        <nav class="bemo-primary-nav">
+                            <ul>
+                                <li class="has-sub">
+                                    <a href="#">Ứng dụng</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a href="#">Cộng đồng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Giá cả</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </xpath>
+    </template>
+</odoo>

@@ -47,6 +47,9 @@
 	display: inline-block;
 	max-width: 120px;
 	margin-bottom: $bemo-spacing-level-4;
+	img {
+		filter: brightness(0) invert(1);
+	}
 }
 
 .bemo-footer-title {
