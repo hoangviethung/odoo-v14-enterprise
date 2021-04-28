@@ -1,0 +1,15 @@
+.o_main_navbar {
+	border-bottom: 0;
+	> ul {
+		> li {
+			> a,
+			> label {
+				&:hover {
+					background-color: inherit;
+				}
+			}
+		}
+	}
+}
+
+

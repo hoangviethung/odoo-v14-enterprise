@@ -66,3 +66,78 @@ img {
 	.btn-outline-secondary.dropdown-toggle:focus {
 	box-shadow: unset;
 }
+
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="edit"]:focus,
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="edit"].focus,
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="translate"]:focus,
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="translate"].focus,
+#oe_main_menu_navbar .o_menu_systray > li > a.css_edit_dynamic:focus,
+#oe_main_menu_navbar .o_menu_systray > li > a.css_edit_dynamic.focus {
+	box-shadow: unset;
+}
+
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="edit"]:not(:disabled):not(.disabled):active:focus,
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="edit"]:not(:disabled):not(.disabled).active:focus,
+.show
+	> #oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="edit"].dropdown-toggle:focus,
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="translate"]:not(:disabled):not(.disabled):active:focus,
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="translate"]:not(:disabled):not(.disabled).active:focus,
+.show
+	> #oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="translate"].dropdown-toggle:focus,
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a.css_edit_dynamic:not(:disabled):not(.disabled):active:focus,
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a.css_edit_dynamic:not(:disabled):not(.disabled).active:focus,
+.show
+	> #oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a.css_edit_dynamic.dropdown-toggle:focus {
+	box-shadow: unset;
+}
+
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="edit"]:hover,
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="translate"]:hover,
+#oe_main_menu_navbar .o_menu_systray > li > a.css_edit_dynamic:hover {
+	background-color: inherit;
+}
+
+.o_we_website_top_actions .btn.btn-primary:focus,
+.o_we_website_top_actions .btn.btn-primary.focus {
+	box-shadow: unset !important;
+}
+
+.o_we_website_top_actions .btn.btn-secondary:focus,
+.o_we_website_top_actions .btn.btn-secondary.focus {
+	box-shadow: unset !important;
+}
+
+.o_we_website_top_actions
+	.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
+.o_we_website_top_actions
+	.btn.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .o_we_website_top_actions .btn.btn-primary.dropdown-toggle:focus {
+	box-shadow: unset !important;
+}
