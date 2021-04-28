@@ -51,6 +51,7 @@
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/web.zoomodoo.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/hr_org_chart.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/message_list.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/systray.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/webclient_extra.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/webclient.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/kanban_view.scss"/>
