@@ -141,3 +141,8 @@ img {
 .show > .o_we_website_top_actions .btn.btn-primary.dropdown-toggle:focus {
 	box-shadow: unset !important;
 }
+
+body .modal.o_technical_modal .btn:not(.o_btn_preview).btn-primary:focus,
+body .modal.o_technical_modal .btn:not(.o_btn_preview).btn-primary.focus {
+	box-shadow: unset;
+}

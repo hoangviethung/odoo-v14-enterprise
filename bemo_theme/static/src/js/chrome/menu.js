@@ -20,12 +20,7 @@ odoo.define("bemo_theme.Menu", function (require) {
 		start() {
 			const res = this._super(...arguments);
 			this.$menu_toggle = this.$(".bemo_menu_sections_toggle");
-			this.$menu_apps_sidebar = this.$(".bemo_apps_sidebar_panel");
 			this._appsBar = new AppsBar(this, this.menu_data);
-			const appsBarProm = this._appsBar.appendTo(this.$menu_apps_sidebar);
-			appsBarProm.then(() => {
-				this.$menu_apps_sidebar.renderScrollBar();
-			});
 			if (config.device.isMobile) {
 				const menu_ids = _.keys(this.$menu_sections);
 				for (let i = 0; i < menu_ids.length; i++) {
@@ -35,7 +30,7 @@ odoo.define("bemo_theme.Menu", function (require) {
 					});
 				}
 			}
-			return Promise.all([res, appsBarProm]);
+			return Promise.all([res]);
 		},
 		_hideMobileSubmenus() {
 			if (

@@ -23,7 +23,7 @@ odoo.define("bemo_theme.MenuSearchMixin", function (require) {
 				{
 					action_id: parseInt(original.action.split(",")[1], 10),
 				},
-				original
+				original,
 			);
 		},
 		_searchFocus() {
@@ -57,13 +57,13 @@ odoo.define("bemo_theme.MenuSearchMixin", function (require) {
 			});
 			this.$search_container.toggleClass(
 				"has-results",
-				Boolean(results.length)
+				Boolean(results.length),
 			);
 			this.$search_results.html(
 				QWeb.render("bemo_theme.MenuSearchResults", {
 					results: results,
 					widget: this,
-				})
+				}),
 			);
 		},
 		_onSearchResultsNavigate(event) {

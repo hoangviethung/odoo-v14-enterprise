@@ -28,7 +28,6 @@
 
     <template id="assets_backend" name="Backend Assets" inherit_id="web.assets_backend">
         <xpath expr="//link[last()]" position="after">
-            <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/libs/simplebar/simplebar.scss" />
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/attachment.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/activity_box.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/ui.scss"/>
@@ -68,9 +67,6 @@
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/settings.scss"/>
         </xpath>
         <xpath expr="//script[last()]" position="after">
-            <script type="text/javascript" src="/web/static/lib/jquery.touchSwipe/jquery.touchSwipe.js" />
-            <script type="text/javascript" src="/bemo_theme/static/libs/simplebar/simplebar.js" />
-            <script type="text/javascript" src="/bemo_theme/static/src/js/libs/scrollbar.js" />
             <script type="text/javascript" src="/bemo_theme/static/src/js/chrome/actions.js" />
             <script type="text/javascript" src="/bemo_theme/static/src/js/chrome/menu.js" />
             <script type="text/javascript" src="/bemo_theme/static/src/js/chrome/apps.js" />

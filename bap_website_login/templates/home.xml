@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- LAYOUT HOMEPAGE -->
-    <template id="homepage" inherit_id="website.homepage" name="BEMO: Home Inherit">
-        <xpath expr="//div[@id='wrap']" position="inside">
-            <h1>hello</h1>
-        </xpath>
-    </template>
+	<!-- LAYOUT HOMEPAGE -->
+	<template id="homepage" inherit_id="website.homepage" name="BEMO: Home Inherit">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<section class="bemo-hero-banner">
+			</section>
+		</xpath>
+	</template>
 </odoo>
