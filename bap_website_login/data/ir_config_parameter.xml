@@ -13,12 +13,12 @@
 
         <record id="login_form_background_default" model="ir.config_parameter">
             <field name="key">login_form_background_default</field>
-            <field name="value">/bap_website_login/static/src/images/bg-login.png</field>
+            <field name="value">/bap_website_login/static/src/images/bg_login.png</field>
         </record>
 
         <record id="login_form_background_in_form_login" model="ir.config_parameter">
             <field name="key">login_form_background_in_form_login</field>
-            <field name="value">/bap_website_login/static/src/images/bg-lgoin-say-hi.png</field>
+            <field name="value">/bap_website_login/static/src/images/bg_lgoin_say_hi.png</field>
         </record>
     </data>
 </odoo>

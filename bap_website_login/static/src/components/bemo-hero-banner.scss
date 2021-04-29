@@ -1,0 +1,77 @@
+// map-get($o-theme-color-palette, primary);
+// map-get($o-theme-color-palette, secondary);
+// map-get($o-theme-color-palette, light);
+// map-get($o-theme-color-palette, dark);
+
+section.bemo-hero-banner {
+	.item-hero-banner {
+		position: relative;
+	}
+	.hero-banner-img {
+		height: 80vh;
+		overflow: hidden;
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.hero-banner-content-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		.container,
+		.hero-banner-content-wrapper {
+			height: 100%;
+		}
+		.hero-banner-content-wrapper {
+			position: relative;
+		}
+	}
+	.hero-banner-content {
+		position: absolute;
+		left: 0;
+		top: 35%;
+		transform: translateY(-50%);
+		max-width: 50%;
+	}
+	.contents {
+		color: map-get($o-theme-color-palette, light);
+		h2 {
+			font-size: 6.8rem;
+			font-weight: 900;
+			margin-bottom: $bemo-spacing-level-4;
+		}
+		p {
+			font-size: 1.5rem;
+			letter-spacing: 0.06rem;
+		}
+	}
+	.call-to-actions {
+		display: inline-flex;
+	}
+	.btn-hero-banner {
+		color: map-get($o-theme-color-palette, light);
+		padding: $bemo-spacing-level-3 $bemo-spacing-level-6;
+		border-radius: $bemo-border-radius-higher;
+		+ .btn-hero-banner {
+			margin-left: $bemo-spacing-level-4;
+		}
+		&.dark {
+			color: map-get($o-theme-color-palette, dark);
+		}
+		&:hover {
+			color: map-get($o-theme-color-palette, primary);
+			background-color: map-get($o-theme-color-palette, light);
+			transition: $bemo-transition;
+		}
+	}
+	.btn-primary-hero-banner {
+		background-color: map-get($o-theme-color-palette, primary);
+	}
+	.btn-secondary-hero-banner {
+		background-color: rgba($color: $bemo-neutral-white, $alpha: 0.2);
+	}
+}

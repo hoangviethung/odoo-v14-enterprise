@@ -34,6 +34,24 @@
 			}
 		}
 	}
+	.bemo-socials {
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			> a {
+				&:not(.btn) {
+					font-size: 24px;
+					color: $bemo-neutral-white;
+					&:hover {
+						color: $bemo-neutral-white;
+					}
+				}
+			}
+			+ li {
+				margin-left: $bemo-spacing-level-3;
+			}
+		}
+	}
 }
 
 .bemo-desc-footer {
