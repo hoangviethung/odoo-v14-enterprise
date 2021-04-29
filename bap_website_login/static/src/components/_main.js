@@ -39,4 +39,15 @@ odoo.define("bap_website_login", function (require) {
 			spaceBetween: 40,
 		},
 	);
+
+	// BEMO HOME NEWS
+	const bemoHomeNews = new Swiper(".bemo-home-news .swiper-container", {
+		speed: 1000,
+		autoplay: true,
+		autoplay: {
+			delay: 5000,
+		},
+		slidesPerView: 3,
+		spaceBetween: 13,
+	});
 });

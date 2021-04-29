@@ -6,6 +6,7 @@
             <t t-call="bap_website_login.bemo_hero_banner"/>
             <t t-call="bap_website_login.bemo_notification"/>
             <t t-call="bap_website_login.bemo_company_intention"/>
+            <t t-call="bap_website_login.bemo_home_news"/>
         </xpath>
     </template>
 </odoo>

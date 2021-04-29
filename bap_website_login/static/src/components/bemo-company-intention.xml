@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <img t-att-src="'/bap_website_login/static/src/images/bemo-company-intention.png'"/>
+                        <img t-att-src="'/bap_website_login/static/src/images/bemo_company_intention.png'"/>
                     </div>
                 </div>
             </div>

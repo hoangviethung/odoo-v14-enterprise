@@ -13,6 +13,7 @@
             <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/components/bemo-hero-banner.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/components/bemo-notification.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/components/bemo-company-intention.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/components/bemo-home-news.scss"/>
         </xpath>
         <xpath expr="//script[last()]" position="after">
             <script type="text/javascript" src="/bap_website_login/static/src/components/_main.js"/>
