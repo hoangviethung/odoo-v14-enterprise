@@ -17,6 +17,9 @@
 	'data': [
 		# Datas
 		'data/ir_config_parameter.xml',
+		#Components
+		'static/src/components/bemo-hero-banner.xml',
+		'static/src/components/bemo-notification.xml',
 		# Templates
 		'templates/assets.xml',
 		'templates/header.xml',

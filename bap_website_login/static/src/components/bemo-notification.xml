@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="bemo_notification" name="BEMO: Notification">
+		<section class="bemo-notification">
+			<div class="container">
+				<div class="swiper-container">
+					<h2 class="bemo-title">Thông báo</h2>
+					<div class="bemo-notification-count">
+						<span class="txt">Hiển thị:</span>
+						<div class="bemo-notification-pagination"></div>
+					</div>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="item-notification">
+								<div class="notification_head">
+									<span class="notification_badge">Mới</span>
+									<span class="notification_time">01.12.2016</span>
+								</div>
+								<h3 class="notification_title">Thông tin chuyến đi Đà Nẵng</h3>
+								<p class="notification_description lcl lcl-4">Vel deserunt pertinax tincidunt an, ex eos lobortis neglegentur. Idque tritani an his. Commune albucius legendos ne eam, vix eu nihil numquam. Propriae accumsan copiosae id sed. Vulputate assueverit</p>
+								<div class="author">
+									<img t-att-src="'/bap_website_login/static/src/images/avatar_user_default.jpg'" t-attf-class="author_avatar"/>
+									<span class="author_name">Nguyễn Trung Quân</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide">
+								<div class="item-notification">
+									<div class="notification_head">
+										<span class="notification_time">01.12.2016</span>
+									</div>
+									<h3 class="notification_title">Cập nhật hồ sơ cá nhân</h3>
+									<p class="notification_description lcl lcl-4">Vel deserunt pertinax tincidunt an, ex eos lobortis neglegentur. Idque tritani an his. Commune albucius legendos ne eam, vix eu nihil numquam. Propriae accumsan copiosae id sed. Vulputate assueverit</p>
+									<div class="author">
+										<img t-att-src="'/bap_website_login/static/src/images/avatar_user_default.jpg'" t-attf-class="author_avatar"/>
+										<span class="author_name lcl lcl-1">Nguyễn Trung Quân</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide">
+								<div class="item-notification">
+									<div class="notification_head">
+										<span class="notification_badge">Mới</span>
+										<span class="notification_time">01.12.2016</span>
+									</div>
+									<h3 class="notification_title">Thông tin chuyến đi Đà Nẵng</h3>
+									<p class="notification_description lcl lcl-4">Vel deserunt pertinax tincidunt an, ex eos lobortis neglegentur. Idque tritani an his. Commune albucius legendos ne eam, vix eu nihil numquam. Propriae accumsan copiosae id sed. Vulputate assueverit</p>
+									<div class="author">
+										<img t-att-src="'/bap_website_login/static/src/images/avatar_user_default.jpg'" t-attf-class="author_avatar"/>
+										<span class="author_name lcl lcl-1">Nguyễn Trung Quân</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide">
+								<div class="item-notification">
+									<div class="notification_head">
+										<span class="notification_badge">Mới</span>
+										<span class="notification_time">01.12.2016</span>
+									</div>
+									<h3 class="notification_title">Thông tin chuyến đi Đà Nẵng</h3>
+									<p class="notification_description lcl lcl-4">Vel deserunt pertinax tincidunt an, ex eos lobortis neglegentur. Idque tritani an his. Commune albucius legendos ne eam, vix eu nihil numquam. Propriae accumsan copiosae id sed. Vulputate assueverit</p>
+									<div class="author">
+										<img t-att-src="'/bap_website_login/static/src/images/avatar_user_default.jpg'" t-attf-class="author_avatar"/>
+										<span class="author_name lcl lcl-1">Nguyễn Trung Quân</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+</odoo>

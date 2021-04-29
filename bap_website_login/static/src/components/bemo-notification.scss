@@ -1,0 +1,55 @@
+section.bemo-notification {
+	padding: $bemo-spacing-level-8 0;
+	.notification_title {
+		font-size: 1.8rem;
+	}
+	.author_avatar {
+		width: $width-icon-small;
+		height: $width-icon-small;
+		border-radius: 50%;
+		border: 2px solid map-get($o-theme-color-palette, primary);
+	}
+	.notification_head {
+		display: inline-flex;
+		align-items: center;
+		margin-bottom: $bemo-spacing-level-2;
+	}
+	.notification_badge {
+		font-size: 12px;
+		font-weight: 400;
+		padding: 2px 8px;
+		color: $bemo-neutral-white;
+		background-color: $bemo-semantic-negative-color;
+		border-radius: $bemo-spacing-level-1;
+		margin-right: $bemo-spacing-level-2;
+	}
+	.notification_time {
+		color: $bemo-neutral-medium-sub-color;
+		font-size: 1.4rem;
+		display: inline-flex;
+	}
+	.notification_title {
+		margin-bottom: $bemo-spacing-level-3;
+	}
+	.notification_description {
+		margin-bottom: $bemo-spacing-level-3;
+	}
+	.author {
+		display: inline-flex;
+		align-items: center;
+	}
+	.author_name {
+		margin-left: $bemo-spacing-level-2;
+	}
+	.bemo-notification-count {
+		color: $bemo-neutral-medium-sub-color;
+		font-size: 12px;
+		display: inline-flex;
+		align-items: center;
+		margin-bottom: $bemo-spacing-level-4;
+	}
+	.bemo-notification-pagination {
+		width: unset;
+		margin-left: $bemo-spacing-level-1;
+	}
+}

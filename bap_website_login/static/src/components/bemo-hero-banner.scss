@@ -33,12 +33,15 @@ section.bemo-hero-banner {
 	.hero-banner-content {
 		position: absolute;
 		left: 0;
-		top: 35%;
+		top: 40%;
 		transform: translateY(-50%);
 		max-width: 50%;
 	}
 	.contents {
-		color: map-get($o-theme-color-palette, light);
+		h2,
+		p {
+			color: $bemo-neutral-white;
+		}
 		h2 {
 			font-size: 6.8rem;
 			font-weight: 900;
@@ -47,13 +50,14 @@ section.bemo-hero-banner {
 		p {
 			font-size: 1.5rem;
 			letter-spacing: 0.06rem;
+			margin-bottom: $bemo-spacing-level-4;
 		}
 	}
 	.call-to-actions {
 		display: inline-flex;
 	}
 	.btn-hero-banner {
-		color: map-get($o-theme-color-palette, light);
+		color: $bemo-neutral-white;
 		padding: $bemo-spacing-level-3 $bemo-spacing-level-6;
 		border-radius: $bemo-border-radius-higher;
 		+ .btn-hero-banner {
@@ -73,5 +77,30 @@ section.bemo-hero-banner {
 	}
 	.btn-secondary-hero-banner {
 		background-color: rgba($color: $bemo-neutral-white, $alpha: 0.2);
+	}
+	.swiper-slide {
+		.hero-banner-content {
+			h2,
+			p,
+			.call-to-actions {
+				transform: translateX(-32px);
+				opacity: 0;
+			}
+		}
+		&.swiper-slide-active {
+			h2,
+			p,
+			.call-to-actions {
+				transform: translateX(0);
+				opacity: 1;
+				transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+			}
+			p {
+				transition-delay: 0.4s;
+			}
+			.call-to-actions {
+				transition-delay: 0.8s;
+			}
+		}
 	}
 }

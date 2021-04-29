@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="bemo_hero_banner" name="BEMO: Hero Banner">
+        <section class="bemo-hero-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item-hero-banner">
+                            <div class="hero-banner-img">
+                                <img src="/bap_website_login/static/src/images/hero_banner_demo_01.jpeg" alt="HERO-BANNER-BEMO"/>
+                            </div>
+                            <div class="hero-banner-content-container">
+                                <div class="container">
+                                    <div class="hero-banner-content-wrapper">
+                                        <div class="hero-banner-content">
+                                            <div class="contents">
+                                                <h2>Think Outside The Box</h2>
+                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ittis sem nibh id elit. sDuis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                                            </div>
+                                            <div class="call-to-actions">
+                                                <a class="btn-hero-banner btn-primary-hero-banner" href="#">Purchase</a>
+                                                <a class="btn-hero-banner btn-secondary-hero-banner" href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item-hero-banner">
+                            <div class="hero-banner-img">
+                                <img src="/bap_website_login/static/src/images/hero_banner_demo_02.jpeg" alt="HERO-BANNER-BEMO"/>
+                            </div>
+                            <div class="hero-banner-content-container">
+                                <div class="container">
+                                    <div class="hero-banner-content-wrapper">
+                                        <div class="hero-banner-content">
+                                            <div class="contents">
+                                                <h2>Think Outside The Box</h2>
+                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ittis sem nibh id elit. sDuis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                                            </div>
+                                            <div class="call-to-actions">
+                                                <a class="btn-hero-banner btn-primary-hero-banner" href="#">Purchase</a>
+                                                <a class="btn-hero-banner btn-secondary-hero-banner" href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item-hero-banner">
+                            <div class="hero-banner-img">
+                                <img src="/bap_website_login/static/src/images/hero_banner_demo_03.jpeg" alt="HERO-BANNER-BEMO"/>
+                            </div>
+                            <div class="hero-banner-content-container">
+                                <div class="container">
+                                    <div class="hero-banner-content-wrapper">
+                                        <div class="hero-banner-content">
+                                            <div class="contents">
+                                                <h2>Think Outside The Box</h2>
+                                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ittis sem nibh id elit. sDuis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                                            </div>
+                                            <div class="call-to-actions">
+                                                <a class="btn-hero-banner btn-primary-hero-banner" href="#">Purchase</a>
+                                                <a class="btn-hero-banner btn-secondary-hero-banner" href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>
