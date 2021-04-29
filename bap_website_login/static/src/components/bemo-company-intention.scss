@@ -1,0 +1,38 @@
+.bemo-company-intention {
+	padding: $bemo-spacing-level-8 0;
+	background-color: $bemo-primary-blue-light-color-06;
+	.bemo-title {
+		margin-bottom: $bemo-spacing-level-5;
+	}
+	.row {
+		align-items: center;
+	}
+	.block-content {
+		h4 {
+			font-size: 1.4rem;
+			font-weight: 800;
+			text-transform: uppercase;
+			margin: $bemo-spacing-level-4 0 $bemo-spacing-level-2;
+			i {
+				font-size: 1.6rem;
+				color: $bemo-primary-blue-light-color-01;
+				margin-right: $bemo-spacing-level-2;
+			}
+		}
+		ul {
+			padding-left: $bemo-spacing-level-5;
+			li {
+				position: relative;
+				&:before {
+					color: $bemo-primary-blue-light-color-01;
+					content: "\f00c";
+					font-family: "FontAwesome";
+					margin-right: $bemo-spacing-level-1;
+				}
+				+ li {
+					margin-top: $bemo-spacing-level-1;
+				}
+			}
+		}
+	}
+}

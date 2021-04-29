@@ -5,6 +5,7 @@
         <xpath expr="//div[@id='wrap']" position="inside">
             <t t-call="bap_website_login.bemo_hero_banner"/>
             <t t-call="bap_website_login.bemo_notification"/>
+            <t t-call="bap_website_login.bemo_company_intention"/>
         </xpath>
     </template>
 </odoo>

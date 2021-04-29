@@ -37,6 +37,7 @@
 	.bemo-socials {
 		display: flex;
 		flex-wrap: wrap;
+		margin-top: $bemo-spacing-level-3;
 		li {
 			> a {
 				&:not(.btn) {

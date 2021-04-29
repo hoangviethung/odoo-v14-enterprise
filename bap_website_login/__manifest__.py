@@ -20,6 +20,7 @@
 		#Components
 		'static/src/components/bemo-hero-banner.xml',
 		'static/src/components/bemo-notification.xml',
+		'static/src/components/bemo-company-intention.xml',
 		# Templates
 		'templates/assets.xml',
 		'templates/header.xml',
