@@ -41,12 +41,15 @@ section.bemo-notification {
 	.author_name {
 		margin-left: $bemo-spacing-level-2;
 	}
+	.bemo-notification-title {
+		margin-bottom: $bemo-spacing-level-5;
+		text-align: center;
+	}
 	.bemo-notification-count {
 		color: $bemo-neutral-medium-sub-color;
 		font-size: 12px;
 		display: inline-flex;
 		align-items: center;
-		margin-bottom: $bemo-spacing-level-4;
 	}
 	.bemo-notification-pagination {
 		width: unset;

@@ -4,10 +4,12 @@
 		<section class="bemo-notification">
 			<div class="container">
 				<div class="swiper-container">
-					<h2 class="bemo-title">Thông báo</h2>
-					<div class="bemo-notification-count">
-						<span class="txt">Hiển thị:</span>
-						<div class="bemo-notification-pagination"></div>
+					<div class="bemo-notification-title">
+						<h2 class="bemo-title">Thông báo</h2>
+						<div class="bemo-notification-count">
+							<span class="txt">Hiển thị:</span>
+							<div class="bemo-notification-pagination"></div>
+						</div>
 					</div>
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
