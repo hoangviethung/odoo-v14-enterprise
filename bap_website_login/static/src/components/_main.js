@@ -4,10 +4,10 @@ odoo.define("bap_website_login", function (require) {
 	// BEMO HERO BANNER
 	const bemoHeroBanner = new Swiper(".bemo-hero-banner .swiper-container", {
 		speed: 1000,
-		// autoplay: true,
-		// autoplay: {
-		// 	delay: 5000,
-		// },
+		autoplay: true,
+		autoplay: {
+			delay: 5000,
+		},
 		loop: true,
 		effect: "fade",
 		pagination: {
