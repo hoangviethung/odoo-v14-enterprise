@@ -114,9 +114,6 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-5 col-xl-5 offset-xl-1">
-                            <t id="language_selector_call" t-call="portal.language_selector">
-                                <t t-set="_div_classes" t-value="(_div_classes or '') + ' dropup'"/>
-                            </t>
                             <p class="bemo-desc-footer">Bemo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.</p>
                             <p class="bemo-desc-footer">Bemo's unique value proposition is to be at the same time very easy to use and fully integrated.</p>
                             <ul class="bemo-socials">

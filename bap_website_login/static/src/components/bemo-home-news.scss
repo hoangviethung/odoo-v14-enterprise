@@ -4,6 +4,8 @@ section.bemo-home-news {
 		margin-bottom: $bemo-spacing-level-5;
 	}
 	.item-home-news {
+		display: block;
+		height: 100%;
 		border-radius: $bemo-border-radius-hight;
 		overflow: hidden;
 		border: 1px solid $bemo-neutral-lighter-border-color;
@@ -28,5 +30,13 @@ section.bemo-home-news {
 	}
 	.home-news-content {
 		padding: $bemo-spacing-level-3;
+	}
+	.bemo-button-navigation-slider {
+		&.next-slider {
+			right: -$bemo-spacing-level-5;
+		}
+		&.prev-slider {
+			left: -$bemo-spacing-level-5;
+		}
 	}
 }

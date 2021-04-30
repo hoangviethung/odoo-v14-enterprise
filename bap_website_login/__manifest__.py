@@ -22,6 +22,7 @@
 		'static/src/components/bemo-notification.xml',
 		'static/src/components/bemo-company-intention.xml',
 		'static/src/components/bemo-home-news.xml',
+		'static/src/components/employees-feedback.xml',
 		# Templates
 		'templates/assets.xml',
 		'templates/header.xml',

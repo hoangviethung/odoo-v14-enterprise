@@ -10,14 +10,17 @@ odoo.define("bap_website_login", function (require) {
 		},
 		loop: true,
 		effect: "fade",
+		simulateTouch: false,
 		pagination: {
 			el: ".bemo-hero-banner .swiper-pagination",
 			type: "bullets",
 			clickable: true,
 		},
 		navigation: {
-			nextEl: ".bemo-hero-banner .button-navigation-slider.next",
-			prevEl: ".bemo-hero-banner .button-navigation-slider.prev",
+			nextEl:
+				".bemo-hero-banner .bemo-button-navigation-slider.next-slider",
+			prevEl:
+				".bemo-hero-banner .bemo-button-navigation-slider.prev-slider",
 		},
 	});
 
@@ -26,10 +29,6 @@ odoo.define("bap_website_login", function (require) {
 		".bemo-notification .swiper-container",
 		{
 			speed: 1000,
-			autoplay: true,
-			autoplay: {
-				delay: 5000,
-			},
 			pagination: {
 				el: ".bemo-notification-pagination",
 				type: "fraction",
@@ -37,6 +36,12 @@ odoo.define("bap_website_login", function (require) {
 			simulateTouch: false,
 			slidesPerView: 3,
 			spaceBetween: 40,
+			navigation: {
+				nextEl:
+					".bemo-notification .bemo-button-navigation-slider.next-slider",
+				prevEl:
+					".bemo-notification .bemo-button-navigation-slider.prev-slider",
+			},
 		},
 	);
 
@@ -48,6 +53,12 @@ odoo.define("bap_website_login", function (require) {
 			delay: 5000,
 		},
 		slidesPerView: 3,
-		spaceBetween: 13,
+		spaceBetween: 16,
+		navigation: {
+			nextEl:
+				".bemo-home-news .bemo-button-navigation-slider.next-slider",
+			prevEl:
+				".bemo-home-news .bemo-button-navigation-slider.prev-slider",
+		},
 	});
 });

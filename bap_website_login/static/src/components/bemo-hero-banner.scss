@@ -103,4 +103,12 @@ section.bemo-hero-banner {
 			}
 		}
 	}
+	.bemo-button-navigation-slider {
+		&.next-slider {
+			right: $bemo-spacing-level-5;
+		}
+		&.prev-slider {
+			left: $bemo-spacing-level-5;
+		}
+	}
 }

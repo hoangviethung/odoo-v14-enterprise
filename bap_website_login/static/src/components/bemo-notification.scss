@@ -34,13 +34,6 @@ section.bemo-notification {
 	.notification_description {
 		margin-bottom: $bemo-spacing-level-3;
 	}
-	.author {
-		display: inline-flex;
-		align-items: center;
-	}
-	.author_name {
-		margin-left: $bemo-spacing-level-2;
-	}
 	.bemo-notification-title {
 		margin-bottom: $bemo-spacing-level-5;
 		text-align: center;
@@ -54,5 +47,13 @@ section.bemo-notification {
 	.bemo-notification-pagination {
 		width: unset;
 		margin-left: $bemo-spacing-level-1;
+	}
+	.bemo-button-navigation-slider {
+		&.next-slider {
+			right: -$bemo-spacing-level-5;
+		}
+		&.prev-slider {
+			left: -$bemo-spacing-level-5;
+		}
 	}
 }

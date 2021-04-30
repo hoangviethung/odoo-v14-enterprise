@@ -74,6 +74,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="bemo-button-navigation-slider next-slider offsetY-center button-light button-large">
+                    <div class="icon">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="bemo-button-navigation-slider prev-slider offsetY-center button-light button-large">
+                    <div class="icon">
+                        <i class="fa fa-angle-left"></i>
+                    </div>
+                </div>
             </div>
         </section>
     </template>
