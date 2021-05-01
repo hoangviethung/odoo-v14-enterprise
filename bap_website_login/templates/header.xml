@@ -8,6 +8,31 @@
             <header class="bemo-main-header">
                 <div class="container">
                     <div class="bemo-main-header-main">
+                        <div class="button-open-nav-sidebar-wrapper">
+                            <div class="button-open-nav-sidebar">
+                                <i class="fa fa-bars"></i>
+                                <span class="txt">Menu</span>
+                            </div>
+                        </div>
+                        <nav class="bemo-primary-nav">
+                            <div class="button-close-nav-sidebar-wrapper">
+                                <div class="button-close-nav-sidebar">
+                                    <span class="txt">Đóng</span>
+                                    <i class="fa fa-times"></i>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="has-sub">
+                                    <a href="#">Ứng dụng</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a href="#">Cộng đồng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Giá cả</a>
+                                </li>
+                            </ul>
+                        </nav>
                         <a class="bemo-logo-main-header" href="/web">
                             <img src="/bap_website_login/static/src/images/logo_bemo_company_default.png" alt="LOGO-BAP"/>
                         </a>
@@ -26,24 +51,11 @@
                                 </div>
                             </t>
                             <t t-else="">
-                                <a t-attf-class="btn btn-light" t-attf-href="/web/login">
+                                <a t-attf-class="btn btn-login" t-attf-href="/web/login">
                                     <span>Đăng nhập</span>
                                 </a>
                             </t>
                         </div>
-                        <nav class="bemo-primary-nav">
-                            <ul>
-                                <li class="has-sub">
-                                    <a href="#">Ứng dụng</a>
-                                </li>
-                                <li class="has-sub">
-                                    <a href="#">Cộng đồng</a>
-                                </li>
-                                <li>
-                                    <a href="#">Giá cả</a>
-                                </li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
             </header>
