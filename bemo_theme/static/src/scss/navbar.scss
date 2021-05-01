@@ -104,7 +104,6 @@
 			--url-background: url("/bemo_theme/static/src/images/background_bemo_apps_default.png");
 			@include bemo-full-screen-sections();
 			background-color: $bemo-primary-color;
-			cursor: url("/bemo_theme/static/src/icons/close.png"), auto;
 			padding: 2vh 20vw 2vh 20vw;
 			.o_app {
 				display: flex;
@@ -228,6 +227,9 @@
 						$color: $bemo-primary-blue-light-color-05,
 						$alpha: 0.1
 					);
+				}
+				@media (max-width: 1599.98px) {
+					max-height: 70%;
 				}
 			}
 			.bemo_apps_group {
