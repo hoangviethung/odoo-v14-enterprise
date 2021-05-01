@@ -75,8 +75,16 @@ const initSliderBemoNotification = () => {
 				type: "fraction",
 			},
 			simulateTouch: false,
-			slidesPerView: 3,
+			slidesPerView: 1,
 			spaceBetween: 40,
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+				},
+				1025: {
+					slidesPerView: 3,
+				},
+			},
 			navigation: {
 				nextEl:
 					".bemo-notification .bemo-button-navigation-slider.next-slider",
@@ -94,8 +102,16 @@ const initSliderBemoHomeNews = () => {
 		autoplay: {
 			delay: 5000,
 		},
-		slidesPerView: 3,
+		slidesPerView: 1,
 		spaceBetween: 16,
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			1025: {
+				slidesPerView: 3,
+			},
+		},
 		navigation: {
 			nextEl:
 				".bemo-home-news .bemo-button-navigation-slider.next-slider",
@@ -120,6 +136,10 @@ odoo.define("bap_website_login", function (require) {
 	})();
 
 	BemoWebsite.addEventListener("scroll", (e) => {
+		fixedBemoHeader(BemoWebsite);
+	});
+
+	window.addEventListener("resize", (e) => {
 		fixedBemoHeader(BemoWebsite);
 	});
 });

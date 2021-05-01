@@ -8,6 +8,12 @@ body {
 		section.bemo-hero-banner {
 			.hero-banner-img {
 				height: calc(100vh - #{$bemo-navbar-height});
+				@media (max-width: 1024.98px) {
+					height: calc(
+						100vh - #{$bemo-navbar-height +
+							$bemo-navbar-website-client-height-sticky}
+					);
+				}
 			}
 		}
 	}
@@ -58,6 +64,9 @@ section.bemo-hero-banner {
 			);
 			pointer-events: none;
 		}
+		@media (max-width: 1024.98px) {
+			height: calc(100vh - #{$bemo-navbar-website-client-height-sticky});
+		}
 	}
 	.hero-banner-content-container {
 		position: absolute;
@@ -79,6 +88,9 @@ section.bemo-hero-banner {
 		top: 50%;
 		transform: translateY(-50%);
 		max-width: 50%;
+		@media (max-width: 1024.98px) {
+			max-width: 80%;
+		}
 	}
 	.contents {
 		h2,
@@ -89,11 +101,26 @@ section.bemo-hero-banner {
 			font-size: 6.8rem;
 			font-weight: 900;
 			margin-bottom: $bemo-spacing-level-4;
+			@media (max-width: 1199.98px) {
+				font-size: 6rem;
+			}
+			@media (max-width: 767.98px) {
+				font-size: 4.8rem;
+			}
+			@media (max-width: 575.98px) {
+				font-size: 3.2rem;
+			}
+			@media (max-width: 320.98px) {
+				font-size: 2.8rem;
+			}
 		}
 		p {
 			font-size: 1.5rem;
 			letter-spacing: 0.06rem;
 			margin-bottom: $bemo-spacing-level-4;
+			@media (max-width: 575.98px) {
+				font-size: 1rem;
+			}
 		}
 	}
 	.call-to-actions {
@@ -105,6 +132,9 @@ section.bemo-hero-banner {
 		border-radius: $bemo-border-radius-higher;
 		+ .btn-hero-banner {
 			margin-left: $bemo-spacing-level-4;
+			@media (max-width: 575.98px) {
+				margin-left: $bemo-spacing-level-2;
+			}
 		}
 		&.dark {
 			color: map-get($o-theme-color-palette, dark);
@@ -113,6 +143,10 @@ section.bemo-hero-banner {
 			color: map-get($o-theme-color-palette, primary);
 			background-color: map-get($o-theme-color-palette, light);
 			transition: $bemo-transition;
+		}
+		@media (max-width: 575.98px) {
+			font-size: 1rem;
+			padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
 		}
 	}
 	.btn-primary-hero-banner {

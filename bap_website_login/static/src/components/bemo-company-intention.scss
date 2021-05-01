@@ -40,4 +40,19 @@
 			}
 		}
 	}
+	.img-content {
+		@media (max-width: 1024.98px) {
+			display: block;
+			max-width: 350px;
+			width: 100%;
+			margin-top: $bemo-spacing-level-6;
+			margin-left: auto;
+		}
+	}
+	@media (max-width: 1024.98px) {
+		padding: $bemo-spacing-level-7 0;
+	}
+	@media (max-width: 575.98px) {
+		padding: $bemo-spacing-level-6 0;
+	}
 }

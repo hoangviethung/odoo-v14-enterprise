@@ -44,4 +44,10 @@ section.bemo-home-news {
 			left: -$bemo-spacing-level-5;
 		}
 	}
+	@media (max-width: 1024.98px) {
+		padding: $bemo-spacing-level-7 0;
+	}
+	@media (max-width: 575.98px) {
+		padding: $bemo-spacing-level-6 0;
+	}
 }

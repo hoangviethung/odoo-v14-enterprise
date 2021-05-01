@@ -8,4 +8,15 @@ section.employees-feedback {
 	.bemo-title {
 		margin-bottom: $bemo-spacing-level-5;
 	}
+	@media (max-width: 1024.98px) {
+		padding: $bemo-spacing-level-4 0 $bemo-spacing-level-7;
+	}
+	@media (max-width: 575.98px) {
+		padding: $bemo-spacing-level-4 0 $bemo-spacing-level-6;
+	}
+	@media (max-width: 1024.98px) {
+		.block-form {
+			margin-top: $bemo-spacing-level-4;
+		}
+	}
 }

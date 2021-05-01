@@ -14,7 +14,7 @@
                             <div class="row">
                                 <div class="col-12 col-md-4">
                                     <div class="row">
-                                        <div class="col-6 col-md-12">
+                                        <div class="col-sm-6 col-md-12">
                                             <h3 class="bemo-footer-title">CỘNG ĐỒNG</h3>
                                             <ul class="bemo-footer-links">
                                                 <li>
@@ -31,7 +31,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="col-6 col-md-12">
+                                        <div class="col-sm-6 col-md-12">
                                             <h3 class="bemo-footer-title">OPEN SOURCE</h3>
                                             <ul class="bemo-footer-links">
                                                 <li>
@@ -50,7 +50,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-4">
+                                <div class="col-sm-6 col-md-4">
                                     <h3 class="bemo-footer-title">DỊCH VỤ</h3>
                                     <ul class="bemo-footer-links">
                                         <li>
@@ -76,7 +76,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-6 col-md-4">
+                                <div class="col-sm-6 col-md-4">
                                     <h3 class="bemo-footer-title">VỀ CHÚNG TÔI</h3>
                                     <ul class="bemo-footer-links">
                                         <li>
