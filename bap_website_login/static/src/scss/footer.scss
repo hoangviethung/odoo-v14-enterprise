@@ -92,3 +92,25 @@
 		}
 	}
 }
+
+.o_footer {
+	.o_footer_copyright {
+		background-color: $bemo-primary-dark-color-02;
+	}
+}
+
+.o_footer_copyright {
+	.js_language_selector {
+		display: none;
+	}
+	.o_footer_copyright_name {
+		margin-left: 0.5rem;
+	}
+	.row {
+		> div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
