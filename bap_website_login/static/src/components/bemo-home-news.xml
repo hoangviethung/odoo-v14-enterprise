@@ -11,6 +11,8 @@
                                 <a href="#" class="item-home-news">
                                     <div class="home-news-thumbnail">
                                         <img t-att-src="'/bap_website_login/static/src/images/home_news_01.jpg'"/>
+                                        <span>Xem thêm<i class="fa fa-search"></i>
+                                        </span>
                                     </div>
                                     <div class="home-news-content">
                                         <h3 class="home-news-title lcl lcl-2">The reason lab type development is recommended</h3>
@@ -22,6 +24,8 @@
                                 <a href="#" class="item-home-news">
                                     <div class="home-news-thumbnail">
                                         <img t-att-src="'/bap_website_login/static/src/images/home_news_01.jpg'"/>
+                                        <span>Xem thêm<i class="fa fa-search"></i>
+                                        </span>
                                     </div>
                                     <div class="home-news-content">
                                         <h3 class="home-news-title lcl lcl-2">The reason lab type development is recommended</h3>
@@ -33,6 +37,8 @@
                                 <a href="#" class="item-home-news">
                                     <div class="home-news-thumbnail">
                                         <img t-att-src="'/bap_website_login/static/src/images/home_news_01.jpg'"/>
+                                        <span>Xem thêm<i class="fa fa-search"></i>
+                                        </span>
                                     </div>
                                     <div class="home-news-content">
                                         <h3 class="home-news-title lcl lcl-2">The reason lab type development is recommended</h3>
@@ -44,6 +50,8 @@
                                 <a href="#" class="item-home-news">
                                     <div class="home-news-thumbnail">
                                         <img t-att-src="'/bap_website_login/static/src/images/home_news_01.jpg'"/>
+                                        <span>Xem thêm<i class="fa fa-search"></i>
+                                        </span>
                                     </div>
                                     <div class="home-news-content">
                                         <h3 class="home-news-title lcl lcl-2">The reason lab type development is recommended</h3>

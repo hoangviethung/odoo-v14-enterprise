@@ -14,6 +14,18 @@ section.bemo-home-news {
 		border-radius: $bemo-border-radius-hight;
 		overflow: hidden;
 		border: 1px solid $bemo-neutral-lighter-border-color;
+		&:hover {
+			.home-news-thumbnail {
+				img {
+					transform: scale(1.1);
+				}
+				span,
+				&:after {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
 	}
 	.home-news-thumbnail {
 		overflow: hidden;
@@ -26,6 +38,33 @@ section.bemo-home-news {
 			position: absolute;
 			top: 0;
 			left: 0;
+			transition: $bemo-transition;
+		}
+		span,
+		&:after {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			pointer-events: none;
+			visibility: hidden;
+			transition: $bemo-transition;
+		}
+		span {
+			display: inline-flex;
+			align-items: center;
+			color: $bemo-neutral-white;
+			z-index: 10;
+			> i {
+				margin-left: 0.5rem;
+			}
+		}
+		&:after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color: $bemo-neutral-black, $alpha: 0.5);
 		}
 	}
 	.home-news-title {

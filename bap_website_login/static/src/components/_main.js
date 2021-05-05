@@ -97,7 +97,7 @@ const initSliderBemoNotification = () => {
 
 const initSliderBemoHomeNews = () => {
 	const BemoSliderHomeNews = new Swiper(".bemo-home-news .swiper-container", {
-		speed: 1000,
+		speed: 1500,
 		autoplay: true,
 		autoplay: {
 			delay: 5000,
