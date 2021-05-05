@@ -22,12 +22,12 @@ odoo.define("bemo_theme.AppsMenu", function (require) {
 					this._apps[n].web_icon_data =
 						menuData.children[n].web_icon_data;
 					this._apps[n].ir_ui_menu_category_id =
-	                    menuData.children[n].ir_ui_menu_category_id;
+						menuData.children[n].ir_ui_menu_category_id;
 				}
 				this._searchableMenus = _.reduce(
 					menuData.children,
 					this._findNames.bind(this),
-					{}
+					{},
 				);
 				this._search_def = $.Deferred();
 			},
@@ -51,7 +51,7 @@ odoo.define("bemo_theme.AppsMenu", function (require) {
 				});
 				const app = _.find(
 					this._apps,
-					(_app) => text.indexOf(_app.name + suffix) === 0
+					(_app) => text.indexOf(_app.name + suffix) === 0,
 				);
 				core.bus.trigger("change_menu_section", app.menuID);
 			},
@@ -80,6 +80,6 @@ odoo.define("bemo_theme.AppsMenu", function (require) {
 					$(".oe_wait").length === 0 && !this.$("input").is(":focus")
 				);
 			},
-		})
+		}),
 	);
 });

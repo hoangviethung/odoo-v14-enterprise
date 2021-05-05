@@ -40,6 +40,10 @@ a:not([href]):not([class]):hover {
 	text-decoration: none;
 }
 
+:focus-visible {
+	outline: none;
+}
+
 img {
 	vertical-align: middle;
 	border-style: none;

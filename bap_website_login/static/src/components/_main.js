@@ -43,10 +43,10 @@ const initSliderBemoHeroBanner = () => {
 		".bemo-hero-banner .swiper-container",
 		{
 			speed: 1000,
-			autoplay: true,
 			autoplay: {
 				delay: 5000,
 			},
+			resizeObserver: true,
 			loop: true,
 			effect: "fade",
 			simulateTouch: false,
@@ -60,6 +60,11 @@ const initSliderBemoHeroBanner = () => {
 					".bemo-hero-banner .bemo-button-navigation-slider.next-slider",
 				prevEl:
 					".bemo-hero-banner .bemo-button-navigation-slider.prev-slider",
+			},
+			on: {
+				init: function () {
+					stopAutoPlaySlider(".bemo-hero-banner", this);
+				},
 			},
 		},
 	);
@@ -93,15 +98,16 @@ const initSliderBemoNotification = () => {
 			},
 		},
 	);
+	return BemoSliderNotification;
 };
 
 const initSliderBemoHomeNews = () => {
 	const BemoSliderHomeNews = new Swiper(".bemo-home-news .swiper-container", {
 		speed: 1500,
-		autoplay: true,
 		autoplay: {
 			delay: 5000,
 		},
+		simulateTouch: false,
 		slidesPerView: 1,
 		spaceBetween: 16,
 		breakpoints: {
@@ -118,6 +124,22 @@ const initSliderBemoHomeNews = () => {
 			prevEl:
 				".bemo-home-news .bemo-button-navigation-slider.prev-slider",
 		},
+		on: {
+			init: function () {
+				stopAutoPlaySlider(".bemo-home-news", this);
+			},
+		},
+	});
+	return BemoSliderHomeNews;
+};
+
+const stopAutoPlaySlider = (el, swiper) => {
+	document.querySelector(el).addEventListener("mouseenter", (e) => {
+		swiper.autoplay.stop();
+	});
+
+	document.querySelector(el).addEventListener("mouseleave", (e) => {
+		swiper.autoplay.start();
 	});
 };
 
@@ -125,7 +147,6 @@ odoo.define("bap_website_login", function (require) {
 	"use strict";
 
 	const BemoWebsite = document.querySelector("#wrapwrap");
-
 	(function (e) {
 		initSliderBemoHeroBanner();
 		initSliderBemoNotification();

@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <img class="img-content" t-att-src="'/bap_website_login/static/src/images/bemo_company_intention.png'"/>
+                        <img class="img-content" src="/bap_website_login/static/src/images/bemo_company_intention.png"/>
                     </div>
                 </div>
             </div>

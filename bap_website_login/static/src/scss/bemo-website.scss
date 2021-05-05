@@ -1,3 +1,24 @@
+body {
+	&.o_connected_user {
+		&.editor_enable {
+			:not(div) {
+				:focus-visible {
+					outline: none;
+					background-color: rgba(
+						$color: map-get($o-theme-color-palette, primary),
+						$alpha: 0.4
+					);
+				}
+			}
+		}
+	}
+}
+
+#oe_manipulators {
+	.oe_overlay {
+	}
+}
+
 #wrapwrap {
 	transition: transform 0.5s ease-in-out;
 	#wrap {
