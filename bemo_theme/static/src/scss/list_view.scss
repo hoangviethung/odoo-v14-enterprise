@@ -28,8 +28,10 @@
 
 .table-hover tbody tr {
 	transition: $bemo-transition;
-	&:hover {
-		background: $bemo-primary-blue-light-color-05;
+	&:not(.o_selected_row) {
+		&:hover {
+			background-color: $bemo-primary-blue-light-color-05;
+		}
 	}
 }
 
@@ -127,6 +129,28 @@
 			right: $bemo-spacing-level-1;
 			top: 50%;
 			transform: translateY(-50%);
+		}
+		.o_list_button {
+			.btn-link {
+				&[name="action_approve"] {
+					color: $bemo-semantic-positive-light-color;
+					&:hover {
+						color: $bemo-semantic-positive-color;
+					}
+				}
+				&[name="action_refuse"] {
+					color: $bemo-semantic-negative-light-color;
+					&:hover {
+						color: $bemo-semantic-negative-color;
+					}
+				}
+				&[name="action_validate"] {
+					color: $bemo-semantic-critical-light-color;
+					&:hover {
+						color: $bemo-semantic-critical-color;
+					}
+				}
+			}
 		}
 	}
 
@@ -244,5 +268,53 @@
 		right: 0;
 		transform: translateY(-50%);
 		padding-bottom: $bemo-spacing-level-1;
+	}
+}
+
+.o_list_view
+	.o_list_table
+	.o_data_row.o_selected_row
+	> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier)
+	.o_input_dropdown
+	> .o_dropdown_button,
+.o_list_view
+	.o_list_table
+	.o_data_row.o_selected_row
+	> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier)
+	.o_input_dropdown
+	.o_datepicker_button,
+.o_list_view
+	.o_list_table
+	.o_data_row.o_selected_row
+	> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier)
+	.o_datepicker
+	> .o_dropdown_button,
+.o_list_view
+	.o_list_table
+	.o_data_row.o_selected_row
+	> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier)
+	.o_datepicker
+	.o_datepicker_button {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.o_list_view
+	.o_list_table
+	.o_data_row.o_selected_row
+	> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier)
+	> .o_field_widget
+	> .o_external_button {
+	width: 22px;
+	height: 22px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	&:before {
+		line-height: 1;
+		position: absolute;
+		left: 50%;
+		top: 65%;
+		transform: translate(-50%, -50%);
 	}
 }

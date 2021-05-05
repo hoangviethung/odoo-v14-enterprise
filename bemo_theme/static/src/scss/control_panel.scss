@@ -118,6 +118,7 @@
 					&.btn-time-off {
 						border-radius: $bemo-border-radius-medium;
 						margin-left: $bemo-spacing-level-2;
+						font-weight: 400;
 					}
 					&.o_calendar_button_prev {
 						border-top-left-radius: $bemo-border-radius-medium;
@@ -132,6 +133,7 @@
 					height: 32px;
 					text-transform: unset;
 					margin-left: $bemo-spacing-level-2;
+					font-weight: 400;
 					&:hover {
 						background-color: $bemo-primary-blue-light-color-05;
 					}

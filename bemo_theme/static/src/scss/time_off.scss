@@ -1,0 +1,27 @@
+.o_timeoff_calendar {
+	.o_content {
+		.o_timeoff_container {
+			height: 8rem;
+			background-color: $bemo-neutral-white;
+			border-radius: $bemo-border-radius-medium;
+		}
+		.o_calendar_container {
+			height: calc(100% - 8rem);
+			padding-top: $bemo-spacing-level-3;
+		}
+		.o_timeoff_card {
+			margin-top: 0;
+			justify-content: center;
+			padding: $bemo-spacing-level-1;
+			border-right: 1px solid $bemo-neutral-lighter-border-color;
+			> .mt-2,
+			> .mb-4 {
+				margin-top: 0 !important;
+				margin-bottom: 0 !important;
+			}
+		}
+		.o_timeoff_card_last {
+			border-right: 0;
+		}
+	}
+}
