@@ -11,7 +11,8 @@ odoo.define("bemo_theme.AppsBar", function (require) {
 		init(parent, menu) {
 			this._super(...arguments);
 			this._apps = _.map(menu.children, (app) => ({
-				actionID: parseInt(app.action.split(",")[1]),
+				categ_id: app.ir_ui_menu_category_id,
+				actionID: parseInt(app.action.split(',')[1]),
 				web_icon_data: app.web_icon_data,
 				menuID: app.id,
 				category_name: app.ir_ui_menu_category_id,

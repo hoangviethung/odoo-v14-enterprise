@@ -19,10 +19,9 @@ odoo.define("bemo_theme.AppsMenu", function (require) {
 			init(parent, menuData) {
 				this._super(...arguments);
 				for (let n in this._apps) {
-					this._apps[n].web_icon_data =
-						menuData.children[n].web_icon_data;
-					this._apps[n].ir_ui_menu_category_id =
-						menuData.children[n].ir_ui_menu_category_id;
+					this._apps[n].web_icon_data = menuData.children[n].web_icon_data;
+					this._apps[n].ir_ui_menu_category_id = menuData.children[n].ir_ui_menu_category_id;
+					this._apps[n].order_sequence = menuData.children[n].order_sequence;
 				}
 				this._searchableMenus = _.reduce(
 					menuData.children,
@@ -38,6 +37,29 @@ odoo.define("bemo_theme.AppsMenu", function (require) {
 				this.$search_results = this.$(".bemo_search_results");
 				return this._super(...arguments);
 			},
+
+			getAppsCateg() {
+                const Apps = this._apps;
+                const CategIDs = [];
+                const CategIDs_tmp = [];
+                for (let item in Apps) {
+                    if (Apps[item].ir_ui_menu_category_id) {
+                        if (!CategIDs_tmp.includes(Apps[item].ir_ui_menu_category_id[0])) {
+                            CategIDs.push(Apps[item].ir_ui_menu_category_id);
+                            CategIDs_tmp.push(Apps[item].ir_ui_menu_category_id[0]);
+                        }
+                    }
+                }
+                debugger;
+                CategIDs.sort((a, b) => {
+                    if (a[2] < b[2]) { return -1; }
+                    if (a[2] > b[2]) { return 1; }
+                    return 0;
+                });
+
+                return CategIDs;
+            },
+
 			_onSearchResultChosen(event) {
 				event.preventDefault();
 				const $result = $(event.currentTarget),

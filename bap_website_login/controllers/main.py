@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 import ast
 import logging
+import json
 
 from odoo import http
 from odoo.http import request
@@ -27,3 +28,12 @@ class BAPLoginHome(Home):
         request.params['in_form_background_src'] = param_obj.get_param('login_form_background_in_form_login') or ''
 
         return super(BAPLoginHome, self).web_login(redirect, **kw)
+
+
+    @http.route(['/submit_feedback'],type='http', csrf=False, auth="public", methods=['POST'], website=True)
+    def submit_feedback(self, **kw):
+
+        request.env['internal.feedback'].sudo().create({'name': kw.get('title'),
+                                                         'description': kw.get('description')
+                                                         })
+        return request.redirect('/')

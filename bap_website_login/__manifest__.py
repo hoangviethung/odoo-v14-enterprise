@@ -17,6 +17,8 @@
 	'data': [
 		# Datas
 		'data/ir_config_parameter.xml',
+		# Security
+		'security/ir.model.access.csv',
 		#Components
 		'static/src/components/bemo-hero-banner.xml',
 		'static/src/components/bemo-notification.xml',
@@ -29,6 +31,9 @@
 		'templates/footer.xml',
 		'templates/home.xml',
 		'templates/login.xml',
+		#view
+		'views/internal_feedback_views.xml',
+
 	],
 	'qweb': [],
 	'installable': True,

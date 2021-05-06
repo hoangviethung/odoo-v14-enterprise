@@ -25,3 +25,6 @@ from . import res_users
 from . import ir_http
 from . import scss_editor
 from . import res_config_settings
+from . import res_config_settings
+from . import res_district
+from . import res_wards

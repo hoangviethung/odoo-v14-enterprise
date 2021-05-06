@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="internal_feedback_search_view" model="ir.ui.view">
+        <field name="name">internal.feedback.search.view</field>
+        <field name="model">internal.feedback</field>
+        <field name="arch" type="xml">
+            <search string="Internal Feedback Search">
+                <field name="name" string="Title" filter_domain="[('name', 'ilike', self)]"/>
+                <field name="description" string="Description" filter_domain="[('description', 'ilike', self)]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="internal_feedback_form_view" model="ir.ui.view">
+        <field name="name">internal.feedback.form.view</field>
+        <field name="model">internal.feedback</field>
+        <field name="arch" type="xml">
+            <form string="Internal Feedback">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="internal_feedback_tree_view" model="ir.ui.view">
+        <field name="name">internal.feedback.tree.view</field>
+        <field name="model">internal.feedback</field>
+        <field name="arch" type="xml">
+            <tree string="Internal Feedback">
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="act_view_internal_feedback" model="ir.actions.act_window">
+        <field name="name">Internal Feedback</field>
+        <field name="res_model">internal.feedback</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            id="menu_internal_feedback_root"
+            name="Internal Feedback" web_icon="bap_website_login,static/description/icon_feedback.png"
+            sequence="90"/>
+
+    <menuitem
+            id="menu_internal_feedback"
+            name="Internal Feedback"
+            parent="menu_internal_feedback_root"
+
+            action="act_view_internal_feedback"
+            sequence="0"/>
+</odoo>

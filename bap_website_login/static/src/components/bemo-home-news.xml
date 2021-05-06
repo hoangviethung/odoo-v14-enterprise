@@ -8,7 +8,7 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a href="/" class="item-home-news">
+                                <a href="#" class="item-home-news">
                                     <div class="home-news-thumbnail">
                                         <img t-att-src="'/bap_website_login/static/src/images/home_news_01.jpg'"/>
                                         <span>Xem thêm<i class="fa fa-search"></i>
@@ -21,7 +21,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="/" class="item-home-news">
+                                <a href="#" class="item-home-news">
                                     <div class="home-news-thumbnail">
                                         <img t-att-src="'/bap_website_login/static/src/images/home_news_01.jpg'"/>
                                         <span>Xem thêm<i class="fa fa-search"></i>
@@ -34,7 +34,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="/" class="item-home-news">
+                                <a href="#" class="item-home-news">
                                     <div class="home-news-thumbnail">
                                         <img t-att-src="'/bap_website_login/static/src/images/home_news_01.jpg'"/>
                                         <span>Xem thêm<i class="fa fa-search"></i>
@@ -47,7 +47,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="/" class="item-home-news">
+                                <a href="#" class="item-home-news">
                                     <div class="home-news-thumbnail">
                                         <img t-att-src="'/bap_website_login/static/src/images/home_news_01.jpg'"/>
                                         <span>Xem thêm<i class="fa fa-search"></i>
