@@ -1,11 +1,88 @@
 .form-control {
-	height: 40px;
-	border: 1px solid $bemo-neutral-lighter-border-color;
 	&:focus {
 		box-shadow: unset;
 		border-color: $bemo-primary-color;
 	}
 	&::placeholder {
 		color: $bemo-neutral-medium-sub-color;
+	}
+}
+
+.custom-checkbox {
+	position: relative;
+	height: 16px;
+	width: 16px;
+	input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		appearance: none;
+		border: 1px solid $bemo-primary-color;
+		border-radius: 2px;
+		outline: none;
+		transition-duration: 0.2s;
+		cursor: pointer;
+		&:active {
+			transform: scale(1.05);
+			border-radius: 50%;
+		}
+		&:after {
+			content: "\2713";
+			position: absolute;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			left: 50%;
+			pointer-events: none;
+			opacity: 0;
+			color: $bemo-neutral-white;
+			transition: 0.3s all ease-in-out;
+			line-height: 1;
+		}
+		&[type="radio"] {
+			border-radius: 50%;
+			&:after {
+				content: "";
+				width: calc(100% + 2px);
+				height: calc(100% + 2px);
+				border: 4px solid transparent;
+				border-radius: 50%;
+			}
+			&:checked {
+				background-color: $bemo-primary-blue-light-color-05;
+				&:after {
+					border: 4px solid $bemo-primary-color;
+				}
+			}
+		}
+	}
+	input:checked {
+		background: $bemo-primary-blue-medium-color-02;
+		border: 1px solid transparent;
+		&:after {
+			opacity: 1;
+		}
+	}
+}
+
+.group-custom-checkbox {
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	align-items: center;
+	span {
+		margin-left: 8px;
+		font-weight: 700;
+		i {
+			margin-right: 4px;
+		}
+	}
+}
+
+.input-group {
+	.input-group-text {
+		font-size: 1rem;
+		background-color: $bemo-primary-blue-light-color-05;
 	}
 }

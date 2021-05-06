@@ -17,7 +17,7 @@
                         <div class="loign-wrapper col-12">
                             <div class="row no-gutters">
                                 <div class="col-lg-6">
-                                    <div class="wrapper-say-hi" t-attf-style="background-image: url('#{in_form_background_src}');">
+                                    <div class="wrapper-say-hi" t-attf-style="--data-bg: url('#{in_form_background_src}');">
                                         <h1>Hi!!</h1>
                                         <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
                                     </div>

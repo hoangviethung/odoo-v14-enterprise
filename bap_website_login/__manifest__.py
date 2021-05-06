@@ -21,9 +21,11 @@
 		'security/ir.model.access.csv',
 		#Components
 		'static/src/components/bemo-hero-banner.xml',
+		'static/src/components/bemo-banner-title-page.xml',
 		'static/src/components/bemo-notification.xml',
 		'static/src/components/bemo-company-intention.xml',
 		'static/src/components/bemo-home-news.xml',
+		'static/src/components/bemo-pricing.xml',
 		'static/src/components/employees-feedback.xml',
 		# Templates
 		'templates/assets.xml',
@@ -31,6 +33,7 @@
 		'templates/footer.xml',
 		'templates/home.xml',
 		'templates/login.xml',
+		'templates/pricing.xml',
 		#view
 		'views/internal_feedback_views.xml',
 
