@@ -1,0 +1,104 @@
+.hvh-payment {
+	background: $bemo-primary-blue-light-color-06;
+	padding-bottom: $bemo-spacing-level-4;
+}
+
+.hvh-form-checkout {
+	background: $bemo-neutral-white;
+	border-radius: $bemo-border-radius-hight;
+	.tab__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: $bemo-spacing-level-4;
+		margin-right: $bemo-spacing-level-4;
+		padding-top: $bemo-spacing-level-3;
+		border-bottom: 2px solid $bemo-neutral-lighter-border-color;
+		.item {
+			color: $bemo-neutral-medium-sub-color;
+			display: inline-flex;
+			align-items: center;
+			padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
+			font-weight: 500;
+			background: transparent;
+			transition: $bemo-transition;
+			i {
+				font-size: 1.8rem;
+				margin-right: $bemo-spacing-level-2;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				width: 0;
+				left: 50%;
+				height: 2px;
+				background-color: $bemo-primary-color;
+				transform: translateX(-50%);
+				transition: $bemo-transition;
+			}
+			&.active {
+				color: $bemo-primary-color;
+				&:after {
+					width: 100%;
+				}
+			}
+			+ .item {
+				margin-left: $bemo-spacing-level-3;
+			}
+		}
+	}
+	.block-form {
+		padding: $bemo-spacing-level-4;
+		.form-row {
+			+ .form-row {
+				margin-top: $bemo-spacing-level-4;
+			}
+		}
+	}
+	.hvh-checkout-head {
+		margin-bottom: $bemo-spacing-level-3;
+		h3 {
+			font-size: 1.8rem;
+		}
+	}
+	.hvh-payments {
+		margin-top: $bemo-spacing-level-3;
+		.hvh-item-payment {
+			+ .hvh-item-payment {
+				margin-top: $bemo-spacing-level-3;
+			}
+		}
+		.hvh-item-payment-online {
+			font-size: 1.8rem;
+			+ .hvh-item-payment-online {
+				margin-top: $bemo-spacing-level-3;
+			}
+			.images {
+				margin-top: $bemo-spacing-level-3;
+				padding-left: $bemo-spacing-level-4;
+				img {
+					box-shadow: 0 3px 6px
+						rgba($color: $bemo-neutral-black, $alpha: 0.16);
+					+ img {
+						margin-left: $bemo-spacing-level-3;
+					}
+				}
+			}
+			.note {
+				display: inline-flex;
+				align-items: center;
+				font-size: 1.2rem;
+				margin-top: $bemo-spacing-level-3;
+				i {
+					color: $bemo-semantic-information-color;
+					padding-right: $bemo-spacing-level-2;
+				}
+			}
+		}
+	}
+	.buttons-form {
+		display: flex;
+		justify-content: space-between;
+		padding: $bemo-spacing-level-4;
+	}
+}

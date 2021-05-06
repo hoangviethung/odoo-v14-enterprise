@@ -216,6 +216,7 @@ odoo.define("bap_website_login", function (require) {
 		showNavSlideBar(BemoWebsite);
 		closeNavSlideBar(BemoWebsite);
 		const PricingBoard = new Tab(".hvh-pricing-board .tab-container");
+		const FormCheckout = new Tab(".hvh-form-checkout .tab-container");
 	})();
 
 	BemoWebsite.addEventListener("scroll", (e) => {

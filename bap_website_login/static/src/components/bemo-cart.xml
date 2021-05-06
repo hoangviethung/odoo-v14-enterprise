@@ -8,7 +8,7 @@
                     <div class="col-12">
                         <!-- *** PROGRESS WIZARD *** //-->
                         <div class="hvh-progress-wizard">
-                            <a class="no-decoration active" href="cart.html">
+                            <a class="no-decoration active" href="/cart">
                                 <div class="hvh-progress-wizard-step">
                                     <div class="hvh-progress-wizard-icon">
                                         <i class="fa fa-circle"></i>
@@ -18,7 +18,7 @@
                                     <div class="hvh-progress-wizard-steplabel">Xem đơn hàng</div>
                                 </div>
                             </a>
-                            <a class="no-decoration" href="payment.html">
+                            <a class="no-decoration" href="/payment">
                                 <div class="hvh-progress-wizard-step">
                                     <div class="hvh-progress-wizard-icon">
                                         <i class="fa fa-circle"></i>
@@ -28,7 +28,7 @@
                                     <div class="hvh-progress-wizard-steplabel">Thanh toán</div>
                                 </div>
                             </a>
-                            <a class="no-decoration" href="payment-complete.html">
+                            <a class="no-decoration" href="/payment-complete">
                                 <div class="hvh-progress-wizard-step">
                                     <div class="hvh-progress-wizard-icon">
                                         <i class="fa fa-circle"></i>
@@ -225,11 +225,11 @@
                     </div>
                     <div class="col-12">
                         <div class="d-flex justify-content-between mt-5">
-                            <a class="btn btn-secondary border-primary" href="index.html">
+                            <a class="btn btn-secondary border-primary" href="/pricing">
                                 <i class="fa fa-long-arrow-left"></i>
                                 <span>Tiếp tục mua hàng</span>
                             </a>
-                            <a class="btn btn-primary" href="payment.html">
+                            <a class="btn btn-primary" href="/payment">
                                 <span>Tiến hành thanh toán</span>
                                 <i class="fa fa-long-arrow-right"></i>
                             </a>

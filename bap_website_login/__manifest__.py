@@ -27,6 +27,7 @@
 		'static/src/components/bemo-home-news.xml',
 		'static/src/components/bemo-pricing.xml',
 		'static/src/components/bemo-cart.xml',
+		'static/src/components/bemo-payment.xml',
 		'static/src/components/employees-feedback.xml',
 		# Templates
 		'templates/assets.xml',
@@ -36,6 +37,7 @@
 		'templates/login.xml',
 		'templates/pricing.xml',
 		'templates/cart.xml',
+		'templates/payment.xml',
 		#view
 		'views/internal_feedback_views.xml',
 

@@ -1,5 +1,5 @@
 .hvh-cart-shopping {
-	padding-bottom: 24px;
+	padding-bottom: $bemo-spacing-level-4;
 	background-color: $bemo-primary-blue-light-color-06;
 }
 
@@ -16,7 +16,7 @@
 		}
 	}
 	.table-cart-head {
-		padding: 0 8px;
+		padding: 0 $bemo-spacing-level-2;
 		h3 {
 			font-size: 2.2rem;
 			font-weight: 400;
@@ -54,7 +54,7 @@
 			justify-content: center;
 			align-items: center;
 			background: $bemo-primary-color;
-			border-radius: 4px;
+			border-radius: $bemo-border-radius-low;
 			overflow: hidden;
 		}
 	}
@@ -122,5 +122,5 @@
 .table-order-total {
 	margin-top: auto;
 	background: $bemo-primary-blue-light-color-05;
-	padding: 8px;
+	padding: $bemo-spacing-level-2;
 }

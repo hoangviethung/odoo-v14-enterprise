@@ -45,3 +45,8 @@ class BAPLoginHome(Home):
 	def cart(self, **opt):
 
 		return request.render("bap_website_login.layout_bemo_cart")
+
+	@http.route(['/payment'], type='http', auth="public", website=True, sitemap=True)
+	def payment(self, **opt):
+
+		return request.render("bap_website_login.layout_bemo_payment")
