@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="layout_bemo_payment" name="BEMO: Layout Payment">
+    <template id="layout_bemo_payment_complete" name="BEMO: Layout Payment Complete">
         <t t-call="website.layout">
             <t t-call="bap_website_login.bemo_banner_title_page"/>
-            <t t-call="bap_website_login.bemo_payment"/>
+            <t t-call="bap_website_login.bemo_payment_complete"/>
         </t>
     </template>
 </odoo>

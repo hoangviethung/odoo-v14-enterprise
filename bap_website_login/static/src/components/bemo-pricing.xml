@@ -78,7 +78,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -98,7 +98,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -118,7 +118,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -138,7 +138,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -158,7 +158,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -178,7 +178,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -198,154 +198,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
-                                                                        </div>
-                                                                        <div class="hvh-pricing-app-name">
-                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
-                                                                            <div class="hvh-pricing-app-price">
-                                                                                <b>
-                                                                                    <span class="amount_to_localize">8.00 </span>
-                                                                                    <span class="hvh-pricing-currency">USD</span>
-                                                                                </b>/tháng</div>
-                                                                        </div>
-                                                                        <div class="hvh-form-checkbox-module">
-                                                                            <div class="custom-checkbox">
-                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
-                                                                            </div>
-                                                                        </div>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="group-module">
-                                                        <div class="group-module-name">Nhân sự</div>
-                                                        <div class="form-container">
-                                                            <div class="form-row">
-                                                                <div class="col-12 col-sm-6">
-                                                                    <label class="app-item">
-                                                                        <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
-                                                                        </div>
-                                                                        <div class="hvh-pricing-app-name">
-                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
-                                                                            <div class="hvh-pricing-app-price">
-                                                                                <b>
-                                                                                    <span class="amount_to_localize">8.00 </span>
-                                                                                    <span class="hvh-pricing-currency">USD</span>
-                                                                                </b>/tháng</div>
-                                                                        </div>
-                                                                        <div class="hvh-form-checkbox-module">
-                                                                            <div class="custom-checkbox">
-                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
-                                                                            </div>
-                                                                        </div>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="col-12 col-sm-6">
-                                                                    <label class="app-item">
-                                                                        <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
-                                                                        </div>
-                                                                        <div class="hvh-pricing-app-name">
-                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
-                                                                            <div class="hvh-pricing-app-price">
-                                                                                <b>
-                                                                                    <span class="amount_to_localize">8.00 </span>
-                                                                                    <span class="hvh-pricing-currency">USD</span>
-                                                                                </b>/tháng</div>
-                                                                        </div>
-                                                                        <div class="hvh-form-checkbox-module">
-                                                                            <div class="custom-checkbox">
-                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
-                                                                            </div>
-                                                                        </div>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="col-12 col-sm-6">
-                                                                    <label class="app-item">
-                                                                        <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
-                                                                        </div>
-                                                                        <div class="hvh-pricing-app-name">
-                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
-                                                                            <div class="hvh-pricing-app-price">
-                                                                                <b>
-                                                                                    <span class="amount_to_localize">8.00 </span>
-                                                                                    <span class="hvh-pricing-currency">USD</span>
-                                                                                </b>/tháng</div>
-                                                                        </div>
-                                                                        <div class="hvh-form-checkbox-module">
-                                                                            <div class="custom-checkbox">
-                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
-                                                                            </div>
-                                                                        </div>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="col-12 col-sm-6">
-                                                                    <label class="app-item">
-                                                                        <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
-                                                                        </div>
-                                                                        <div class="hvh-pricing-app-name">
-                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
-                                                                            <div class="hvh-pricing-app-price">
-                                                                                <b>
-                                                                                    <span class="amount_to_localize">8.00 </span>
-                                                                                    <span class="hvh-pricing-currency">USD</span>
-                                                                                </b>/tháng</div>
-                                                                        </div>
-                                                                        <div class="hvh-form-checkbox-module">
-                                                                            <div class="custom-checkbox">
-                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
-                                                                            </div>
-                                                                        </div>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="col-12 col-sm-6">
-                                                                    <label class="app-item">
-                                                                        <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
-                                                                        </div>
-                                                                        <div class="hvh-pricing-app-name">
-                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
-                                                                            <div class="hvh-pricing-app-price">
-                                                                                <b>
-                                                                                    <span class="amount_to_localize">8.00 </span>
-                                                                                    <span class="hvh-pricing-currency">USD</span>
-                                                                                </b>/tháng</div>
-                                                                        </div>
-                                                                        <div class="hvh-form-checkbox-module">
-                                                                            <div class="custom-checkbox">
-                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
-                                                                            </div>
-                                                                        </div>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="col-12 col-sm-6">
-                                                                    <label class="app-item">
-                                                                        <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
-                                                                        </div>
-                                                                        <div class="hvh-pricing-app-name">
-                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
-                                                                            <div class="hvh-pricing-app-price">
-                                                                                <b>
-                                                                                    <span class="amount_to_localize">8.00 </span>
-                                                                                    <span class="hvh-pricing-currency">USD</span>
-                                                                                </b>/tháng</div>
-                                                                        </div>
-                                                                        <div class="hvh-form-checkbox-module">
-                                                                            <div class="custom-checkbox">
-                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
-                                                                            </div>
-                                                                        </div>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="col-12 col-sm-6">
-                                                                    <label class="app-item">
-                                                                        <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -372,7 +225,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -392,7 +245,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -412,7 +265,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -432,7 +285,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -452,7 +305,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -472,7 +325,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -492,7 +345,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -519,7 +372,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -539,7 +392,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -559,7 +412,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -579,7 +432,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -599,7 +452,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -619,7 +472,7 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -639,7 +492,154 @@
                                                                 <div class="col-12 col-sm-6">
                                                                     <label class="app-item">
                                                                         <div class="hvh-pricing-app-icon">
-                                                                            <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        </div>
+                                                                        <div class="hvh-pricing-app-name">
+                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
+                                                                            <div class="hvh-pricing-app-price">
+                                                                                <b>
+                                                                                    <span class="amount_to_localize">8.00 </span>
+                                                                                    <span class="hvh-pricing-currency">USD</span>
+                                                                                </b>/tháng</div>
+                                                                        </div>
+                                                                        <div class="hvh-form-checkbox-module">
+                                                                            <div class="custom-checkbox">
+                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
+                                                                            </div>
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="group-module">
+                                                        <div class="group-module-name">Nhân sự</div>
+                                                        <div class="form-container">
+                                                            <div class="form-row">
+                                                                <div class="col-12 col-sm-6">
+                                                                    <label class="app-item">
+                                                                        <div class="hvh-pricing-app-icon">
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        </div>
+                                                                        <div class="hvh-pricing-app-name">
+                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
+                                                                            <div class="hvh-pricing-app-price">
+                                                                                <b>
+                                                                                    <span class="amount_to_localize">8.00 </span>
+                                                                                    <span class="hvh-pricing-currency">USD</span>
+                                                                                </b>/tháng</div>
+                                                                        </div>
+                                                                        <div class="hvh-form-checkbox-module">
+                                                                            <div class="custom-checkbox">
+                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
+                                                                            </div>
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-12 col-sm-6">
+                                                                    <label class="app-item">
+                                                                        <div class="hvh-pricing-app-icon">
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        </div>
+                                                                        <div class="hvh-pricing-app-name">
+                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
+                                                                            <div class="hvh-pricing-app-price">
+                                                                                <b>
+                                                                                    <span class="amount_to_localize">8.00 </span>
+                                                                                    <span class="hvh-pricing-currency">USD</span>
+                                                                                </b>/tháng</div>
+                                                                        </div>
+                                                                        <div class="hvh-form-checkbox-module">
+                                                                            <div class="custom-checkbox">
+                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
+                                                                            </div>
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-12 col-sm-6">
+                                                                    <label class="app-item">
+                                                                        <div class="hvh-pricing-app-icon">
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        </div>
+                                                                        <div class="hvh-pricing-app-name">
+                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
+                                                                            <div class="hvh-pricing-app-price">
+                                                                                <b>
+                                                                                    <span class="amount_to_localize">8.00 </span>
+                                                                                    <span class="hvh-pricing-currency">USD</span>
+                                                                                </b>/tháng</div>
+                                                                        </div>
+                                                                        <div class="hvh-form-checkbox-module">
+                                                                            <div class="custom-checkbox">
+                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
+                                                                            </div>
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-12 col-sm-6">
+                                                                    <label class="app-item">
+                                                                        <div class="hvh-pricing-app-icon">
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        </div>
+                                                                        <div class="hvh-pricing-app-name">
+                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
+                                                                            <div class="hvh-pricing-app-price">
+                                                                                <b>
+                                                                                    <span class="amount_to_localize">8.00 </span>
+                                                                                    <span class="hvh-pricing-currency">USD</span>
+                                                                                </b>/tháng</div>
+                                                                        </div>
+                                                                        <div class="hvh-form-checkbox-module">
+                                                                            <div class="custom-checkbox">
+                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
+                                                                            </div>
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-12 col-sm-6">
+                                                                    <label class="app-item">
+                                                                        <div class="hvh-pricing-app-icon">
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        </div>
+                                                                        <div class="hvh-pricing-app-name">
+                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
+                                                                            <div class="hvh-pricing-app-price">
+                                                                                <b>
+                                                                                    <span class="amount_to_localize">8.00 </span>
+                                                                                    <span class="hvh-pricing-currency">USD</span>
+                                                                                </b>/tháng</div>
+                                                                        </div>
+                                                                        <div class="hvh-form-checkbox-module">
+                                                                            <div class="custom-checkbox">
+                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
+                                                                            </div>
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-12 col-sm-6">
+                                                                    <label class="app-item">
+                                                                        <div class="hvh-pricing-app-icon">
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        </div>
+                                                                        <div class="hvh-pricing-app-name">
+                                                                            <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
+                                                                            <div class="hvh-pricing-app-price">
+                                                                                <b>
+                                                                                    <span class="amount_to_localize">8.00 </span>
+                                                                                    <span class="hvh-pricing-currency">USD</span>
+                                                                                </b>/tháng</div>
+                                                                        </div>
+                                                                        <div class="hvh-form-checkbox-module">
+                                                                            <div class="custom-checkbox">
+                                                                                <input class="hvh-pricing-app-checkbox" type="checkbox"/>
+                                                                            </div>
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-12 col-sm-6">
+                                                                    <label class="app-item">
+                                                                        <div class="hvh-pricing-app-icon">
+                                                                            <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                         </div>
                                                                         <div class="hvh-pricing-app-name">
                                                                             <div class="hvh-pricing-app-real-name lcl lcl-2">CRM - Quản lý quan hệ khách hàng</div>
@@ -679,7 +679,7 @@
                                                             <div class="col-12 col-sm-6">
                                                                 <label class="app-item">
                                                                     <div class="hvh-pricing-app-icon">
-                                                                        <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                     </div>
                                                                     <div class="hvh-pricing-app-name">
                                                                         <div class="hvh-pricing-app-real-name lcl lcl-1">CRM - Quản lý quan hệ khách hàng</div>
@@ -699,7 +699,7 @@
                                                             <div class="col-12 col-sm-6">
                                                                 <label class="app-item">
                                                                     <div class="hvh-pricing-app-icon">
-                                                                        <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                     </div>
                                                                     <div class="hvh-pricing-app-name">
                                                                         <div class="hvh-pricing-app-real-name lcl lcl-1">CRM - Quản lý quan hệ khách hàng</div>
@@ -719,7 +719,7 @@
                                                             <div class="col-12 col-sm-6">
                                                                 <label class="app-item">
                                                                     <div class="hvh-pricing-app-icon">
-                                                                        <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                     </div>
                                                                     <div class="hvh-pricing-app-name">
                                                                         <div class="hvh-pricing-app-real-name lcl lcl-1">CRM - Quản lý quan hệ khách hàng</div>
@@ -739,7 +739,7 @@
                                                             <div class="col-12 col-sm-6">
                                                                 <label class="app-item">
                                                                     <div class="hvh-pricing-app-icon">
-                                                                        <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                     </div>
                                                                     <div class="hvh-pricing-app-name">
                                                                         <div class="hvh-pricing-app-real-name lcl lcl-1">CRM - Quản lý quan hệ khách hàng</div>
@@ -759,7 +759,7 @@
                                                             <div class="col-12 col-sm-6">
                                                                 <label class="app-item">
                                                                     <div class="hvh-pricing-app-icon">
-                                                                        <img class="lazyload blur-up" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                                        <img class="" src="/bap_website_login/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
                                                                     </div>
                                                                     <div class="hvh-pricing-app-name">
                                                                         <div class="hvh-pricing-app-real-name lcl lcl-1">CRM - Quản lý quan hệ khách hàng</div>

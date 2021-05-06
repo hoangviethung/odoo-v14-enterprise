@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-12">
                         <section class="hvh-form-checkout">
-                            <form action="payment-complete.html" autocomplete="off">
+                            <form action="/payment-complete" autocomplete="off">
                                 <!-- TAB 2 FOMRS WRAPPER-->
                                 <div class="tab-container">
                                     <ul class="tab__list">
