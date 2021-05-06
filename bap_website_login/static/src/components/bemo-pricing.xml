@@ -894,7 +894,7 @@
                                         </div>
                                         <div class="hvh-pricing-price-is-not-free-trial">
                                             <div class="hvh-pricing-form-button">
-                                                <a class="btn btn-primary btn-lg btn-block" href="cart.html">MUA NGAY</a>
+                                                <a class="btn btn-primary btn-lg btn-block" href="/cart">MUA NGAY</a>
                                             </div>
                                         </div>
                                         <i class="hvh-pricing-board-note">
@@ -966,7 +966,7 @@
                                         </div>
                                         <div class="hvh-pricing-price-is-not-free-trial">
                                             <div class="hvh-pricing-form-button">
-                                                <a class="btn btn-primary btn-lg btn-block" href="cart.html">MUA NGAY</a>
+                                                <a class="btn btn-primary btn-lg btn-block" href="/cart">MUA NGAY</a>
                                             </div>
                                         </div>
                                         <i class="hvh-pricing-board-note">

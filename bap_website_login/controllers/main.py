@@ -40,3 +40,8 @@ class BAPLoginHome(Home):
 	def pricing(self, **opt):
 
 		return request.render("bap_website_login.layout_bemo_pricing")
+
+	@http.route(['/cart'], type='http', auth="public", website=True, sitemap=True)
+	def cart(self, **opt):
+
+		return request.render("bap_website_login.layout_bemo_cart")

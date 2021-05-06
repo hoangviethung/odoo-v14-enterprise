@@ -86,3 +86,12 @@
 		background-color: $bemo-primary-blue-light-color-05;
 	}
 }
+
+.btn {
+	i ~ span {
+		margin-left: $bemo-spacing-level-2;
+	}
+	span ~ i {
+		margin-left: $bemo-spacing-level-2;
+	}
+}
