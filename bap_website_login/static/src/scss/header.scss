@@ -38,6 +38,14 @@ body {
 			}
 		}
 		.bemo-header-login-wrapper {
+			.btn-login {
+				color: $bemo-primary-color;
+				border: 2px solid $bemo-primary-color;
+				&:hover {
+					color: $bemo-neutral-white;
+					background-color: $bemo-primary-color;
+				}
+			}
 			.account_avatar {
 				border: 2px solid map-get($o-theme-color-palette, primary);
 			}
