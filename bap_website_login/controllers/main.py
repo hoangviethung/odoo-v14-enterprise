@@ -51,6 +51,11 @@ class BAPLoginHome(Home):
 
 		return request.render("bap_website_login.layout_bemo_payment")
 
+	@http.route(['/payment_online'], type='http', auth="public", website=True, sitemap=True)
+	def payment_online(self, **opt):
+
+		return request.render("bap_website_login.layout_bemo_payment_online")
+
 	@http.route(['/payment-complete'], type='http', auth="public", website=True, sitemap=True)
 	def payment_complete(self, **opt):
 

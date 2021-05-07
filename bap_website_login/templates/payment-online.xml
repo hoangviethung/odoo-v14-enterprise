@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="layout_bemo_payment_online" name="BEMO: Layout Payment Online">
+        <t t-call="website.layout">
+            <t t-call="bap_website_login.bemo_banner_title_page"/>
+            <t t-call="bap_website_login.bemo_payment_online"/>
+        </t>
+    </template>
+</odoo>
