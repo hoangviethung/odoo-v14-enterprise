@@ -11,6 +11,15 @@ body {
 				}
 			}
 		}
+		&.hiden-nav-main-navbar {
+			padding-top: 0 !important;
+			.o_main_navbar {
+				display: none;
+			}
+			.bemo-header-login-wrapper {
+				display: none;
+			}
+		}
 	}
 	.modal {
 		&.oe_mobile_preview {
@@ -43,6 +52,9 @@ body {
 				}
 			}
 		}
+	}
+	.o_invisible_modifier {
+		display: none;
 	}
 }
 

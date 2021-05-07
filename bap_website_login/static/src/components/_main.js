@@ -67,12 +67,22 @@ const headerVerify = (BemoWebsite, isInverted) => {
 	}
 };
 
+const navVerify = (BemoWebsite, nameCurrentPage) => {
+	if (nameCurrentPage == "login-page") {
+		document
+			.querySelector(".o_connected_user")
+			.classList.add("hiden-nav-main-navbar");
+	}
+};
+
 const pageVerify = (BemoWebsite) => {
 	const blockData = BemoWebsite.querySelector("#page-verify-template");
 	if (blockData) {
 		const isInverted = blockData.getAttribute("header-inverted");
+		const nameCurrentPage = blockData.getAttribute("current-page");
 		//ACTION
 		headerVerify(BemoWebsite, isInverted);
+		navVerify(BemoWebsite, nameCurrentPage);
 	} else {
 		console.log('Bemo Debug: ["#page-verify-template"] is not define');
 	}
