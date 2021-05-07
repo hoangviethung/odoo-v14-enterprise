@@ -12,6 +12,38 @@ body {
 			}
 		}
 	}
+	.modal {
+		&.oe_mobile_preview {
+			.modal-dialog {
+				.modal-content {
+					width: 100%;
+					padding: 0;
+					.modal-header {
+						padding: $bemo-spacing-level-3;
+					}
+					.modal-body {
+						width: auto;
+						height: auto;
+						padding: $bemo-spacing-level-3;
+						iframe {
+							width: 375px;
+							height: 677px;
+							border-width: 0;
+							transition: $bemo-transition;
+						}
+						&.o_invert_orientation {
+							width: auto;
+							height: auto;
+							iframe {
+								width: 768px;
+								height: 600px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 #wrapwrap {
