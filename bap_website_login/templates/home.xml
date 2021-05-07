@@ -8,6 +8,8 @@
             <t t-call="bap_website_login.bemo_company_intention"/>
             <t t-call="bap_website_login.bemo_home_news"/>
             <t t-call="bap_website_login.employees_feedback"/>
+            <!-- *** PAGE VERIFY TEMPLATE *** //-->
+            <input id="page-verify-template" hidden="hidden" current-page="home-page" header-inverted="false"/>
         </xpath>
     </template>
 </odoo>

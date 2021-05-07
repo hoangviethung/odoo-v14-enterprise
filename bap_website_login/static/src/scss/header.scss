@@ -57,6 +57,12 @@ body {
 			}
 		}
 	}
+	&.bemo-header-inverted {
+		&:not(.bemo-main-header-sticky) {
+			background-color: $bemo-primary-dark-color-02;
+			color: $bemo-neutral-white;
+		}
+	}
 	@media (max-width: 1024.98px) {
 		> .container {
 			max-width: 100%;

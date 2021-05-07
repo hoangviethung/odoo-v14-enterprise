@@ -59,6 +59,25 @@ class Tab {
 	}
 }
 
+const headerVerify = (BemoWebsite, isInverted) => {
+	if (isInverted == "true") {
+		BemoWebsite.querySelector(".bemo-main-header").classList.add(
+			"bemo-header-inverted",
+		);
+	}
+};
+
+const pageVerify = (BemoWebsite) => {
+	const blockData = BemoWebsite.querySelector("#page-verify-template");
+	if (blockData) {
+		const isInverted = blockData.getAttribute("header-inverted");
+		//ACTION
+		headerVerify(BemoWebsite, isInverted);
+	} else {
+		console.log('Bemo Debug: ["#page-verify-template"] is not define');
+	}
+};
+
 const fixedBemoHeader = (BemoWebsite) => {
 	const header = document.querySelector(".bemo-main-header");
 	if (header) {
@@ -209,6 +228,7 @@ odoo.define("bap_website_login", function (require) {
 
 	const BemoWebsite = document.querySelector("#wrapwrap");
 	(function (e) {
+		pageVerify(BemoWebsite);
 		initSliderBemoHeroBanner();
 		initSliderBemoNotification();
 		initSliderBemoHomeNews();

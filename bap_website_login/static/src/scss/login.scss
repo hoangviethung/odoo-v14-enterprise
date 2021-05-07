@@ -1,10 +1,13 @@
 .bemo-login {
 	height: 100vh;
-	background-color: $bemo-primary-dark-color-01;
+	background-color: $bemo-primary-blue-light-color-06;
 	background-image: var(--data-bg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
+	&[bemo-theme-login="dark"] {
+		background-color: $bemo-primary-dark-color-01;
+	}
 }
 
 .loign-wrapper {

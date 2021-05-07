@@ -4,6 +4,8 @@
         <t t-call="website.layout">
             <t t-call="bap_website_login.bemo_banner_title_page"/>
             <t t-call="bap_website_login.bemo_payment_online"/>
+            <!-- *** PAGE VERIFY TEMPLATE *** //-->
+            <input id="page-verify-template" hidden="hidden" current-page="payment-online-page" header-inverted="false"/>
         </t>
     </template>
 </odoo>

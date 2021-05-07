@@ -4,10 +4,14 @@
     <template id="login_layout" inherit_id="web.login_layout" name="BEMO: Login Layout Inherit">
         <xpath expr="//t[@t-set='body_classname']" position="after">
             <t t-set="body_classname" t-value="''"/>
+            <!-- *** PAGE VERIFY TEMPLATE *** //-->
+            <input id="page-verify-template" hidden="hidden" current-page="login-page" header-inverted="true"/>
         </xpath>
 
         <xpath expr="//t[@t-set='no_footer']" position="attributes">
             <attribute name="t-value">False</attribute>
+            <!-- *** PAGE VERIFY TEMPLATE *** //-->
+            <input id="page-verify-template" hidden="hidden" current-page="login-page" header-inverted="true"/>
         </xpath>
 
         <div class="container py-5" position="replace">
@@ -36,7 +40,6 @@
             </section>
         </div>
     </template>
-
     <!-- FORM LOGIN -->
     <template id="login" inherit_id="web.login" name="BAP: Login Inherit">
         <xpath expr="//form" position="replace">
