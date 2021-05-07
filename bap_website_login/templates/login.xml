@@ -15,7 +15,7 @@
         </xpath>
 
         <div class="container py-5" position="replace">
-            <section class="bemo-login" t-attf-style="--data-bg: url('#{default_background_src}')">
+            <section class="bemo-login" data-theme-login="light" t-attf-style="--data-bg: url('#{default_background_src}')">
                 <div class="container h-100">
                     <div class="row no-gutters h-100 align-items-center">
                         <div class="loign-wrapper col-12">
