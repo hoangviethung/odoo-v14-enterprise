@@ -163,6 +163,40 @@
                                 </table>
                             </div>
                         </section>
+                        <div class="hvh-pricing-form">
+                            <div class="hvh-pricing-step">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hvh-pricing-wrapper">
+                                            <div class="hvh-pricing-step-head">
+                                                <h3>Chọn ứng dụng của bạn</h3>
+                                            </div>
+                                            <div class="hvh-pricing-step-body">
+                                                <ul class="hvh-payments">
+                                                    <li class="hvh-item-payment">
+                                                        <label class="group-custom-checkbox">
+                                                            <div class="custom-checkbox">
+                                                                <input type="radio" name="enterprise_payment" value="send_mail"/>
+                                                            </div>
+                                                            <span>Thanh toán bằng hình thức gửi hóa đơn về email
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="hvh-item-payment">
+                                                        <label class="group-custom-checkbox">
+                                                            <div class="custom-checkbox">
+                                                                <input type="radio" name="enterprise_payment" value="payment_online"/>
+                                                            </div>
+                                                            <span>Thanh toán bằng hình thức online</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-xl-4">
                         <section class="hvh-cart-summary">
@@ -225,7 +259,7 @@
                     </div>
                     <div class="col-12">
                         <div class="d-flex justify-content-between mt-5">
-                            <a class="btn btn-secondary border-primary" href="/pricing">
+                            <a class="btn btn-secondary" href="/pricing">
                                 <i class="fa fa-long-arrow-left"></i>
                                 <span>Tiếp tục mua hàng</span>
                             </a>

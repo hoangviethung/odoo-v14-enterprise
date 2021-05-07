@@ -115,7 +115,7 @@
 	}
 	.hvh-pricing-hosting-list {
 		.hvh-pricing-item-hosting {
-			transition: 0.3s all ease-in-out;
+			transition: $bemo-transition;
 			label {
 				display: flex;
 				align-items: center;

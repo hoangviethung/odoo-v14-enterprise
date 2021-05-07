@@ -1,13 +1,15 @@
 .hvh-cart-shopping {
 	padding-bottom: $bemo-spacing-level-4;
 	background-color: $bemo-primary-blue-light-color-06;
+	.hvh-pricing-form {
+		margin-top: $bemo-spacing-level-3;
+	}
 }
 
 .hvh-cart-products,
 .hvh-cart-summary {
 	background-color: $bemo-neutral-white;
 	border-radius: $bemo-border-radius-hight;
-	height: 100%;
 	overflow: hidden;
 	table {
 		width: 100%;
@@ -123,4 +125,25 @@
 	margin-top: auto;
 	background: $bemo-primary-blue-light-color-05;
 	padding: $bemo-spacing-level-2;
+}
+
+.hvh-payments {
+	.hvh-item-payment {
+		transition: $bemo-transition;
+		label {
+			display: flex;
+			align-items: center;
+			padding: $bemo-spacing-level-3 $bemo-spacing-level-4;
+		}
+		small {
+			margin-left: $bemo-spacing-level-3;
+			> a {
+				color: $bemo-primary-color;
+				font-weight: 700;
+			}
+		}
+		&:hover {
+			background: $bemo-primary-blue-light-color-05;
+		}
+	}
 }
