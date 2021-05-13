@@ -39,7 +39,7 @@ class ResUsers(models.Model):
 		], 
 		required=True,
 		string="Chatter Position", 
-		default=lambda self: self._default_chatter_position()
+		default='sided'
 	)
 	
 	#----------------------------------------------------------
