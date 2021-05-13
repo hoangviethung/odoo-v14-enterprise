@@ -226,6 +226,9 @@ body {
 			}
 		}
 	}
+	@media (max-width: 575.98px) {
+		margin: $bemo-spacing-level-3 0;
+	}
 }
 
 .hvh-progress-wizard-icon,
@@ -233,6 +236,9 @@ body {
 	text-align: center;
 	font-size: 1.33334rem;
 	color: $bemo-neutral-medium-sub-color;
+	@media (max-width: 767.98px) {
+		font-size: 1rem;
+	}
 }
 
 .hvh-progress-wizard-icon {
@@ -250,6 +256,13 @@ body {
 			width: 24px;
 			height: 24px;
 			display: inline-block;
+		}
+		@media (max-width: 575.98px) {
+			font-size: 16px;
+			&:before {
+				width: 16px;
+				height: 16px;
+			}
 		}
 	}
 	&:after,

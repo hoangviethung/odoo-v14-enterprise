@@ -22,6 +22,13 @@
 				padding-right: $bemo-spacing-level-2;
 			}
 		}
+		@media (max-width: 991.98px) {
+			&:first-child {
+				[class*="col-"]:last-child {
+					margin-top: $bemo-spacing-level-3;
+				}
+			}
+		}
 	}
 	.hvh-pricing-step-head {
 		padding: 0 $bemo-spacing-level-3;
@@ -40,6 +47,7 @@
 			.hvh-result-pricing-users {
 				position: relative;
 				display: inline-flex;
+				flex-wrap: wrap;
 				align-items: center;
 				background: $bemo-primary-color;
 				color: $bemo-neutral-white;
@@ -57,6 +65,13 @@
 				}
 				.hvh-pricing-user-pricing-yearly {
 					margin-right: $bemo-spacing-level-2;
+				}
+				@media (max-width: 767.98px) {
+					color: $bemo-primary-color;
+					background-color: transparent;
+					&:after {
+						content: none;
+					}
 				}
 			}
 		}
@@ -100,7 +115,7 @@
 			left: 50%;
 			width: 32px;
 			height: 32px;
-			transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%) !important;
 		}
 	}
 	.hvh-pricing-app-real-name {
@@ -183,7 +198,6 @@
 			flex: 0 0 50%;
 			max-width: 50%;
 			padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
-			text-align: center;
 			span {
 				font-weight: 700;
 			}

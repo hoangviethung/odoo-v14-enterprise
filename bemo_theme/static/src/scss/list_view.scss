@@ -107,10 +107,14 @@
 				&.o_group_header {
 					> th,
 					> td {
-						padding-top: $bemo-spacing-level-3;
-						padding-bottom: $bemo-spacing-level-3;
-						padding-left: $bemo-spacing-level-3;
-						padding-right: $bemo-spacing-level-3;
+						padding-top: (
+							$bemo-spacing-level-2 + $bemo-spacing-level-1
+						);
+						padding-bottom: (
+							$bemo-spacing-level-2 + $bemo-spacing-level-1
+						);
+						padding-left: $bemo-spacing-level-2;
+						padding-right: $bemo-spacing-level-2;
 					}
 				}
 				> td {
@@ -217,7 +221,6 @@
 	&.o_group_header {
 		background-image: none;
 		background: $bemo-neutral-white;
-		box-shadow: inset 0 1px 0 $bemo-neutral-lighter-border-color;
 	}
 	&:hover {
 		background-color: $bemo-primary-blue-light-color-05;

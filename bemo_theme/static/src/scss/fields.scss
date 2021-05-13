@@ -86,7 +86,7 @@
 	}
 	.o_input_dropdown {
 		.o_dropdown_button {
-			right: 0;
+			right: $bemo-spacing-level-1;
 			top: 50%;
 			transform: translateY(-50%);
 			line-height: 1;

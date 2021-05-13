@@ -49,6 +49,7 @@
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/dropdown_menu.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/web.zoomodoo.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/hr_org_chart.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/datepicker.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/message_list.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/time_off.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/systray.scss"/>

@@ -254,6 +254,11 @@
 					transition: $bemo-transition;
 				}
 			}
+			.o_group_skills {
+				.o_group_name {
+					padding-top: $bemo-spacing-level-5;
+				}
+			}
 		}
 		.o_field_widget {
 			&.o_field_boolean {

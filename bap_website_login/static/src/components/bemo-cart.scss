@@ -22,6 +22,17 @@
 		h3 {
 			font-size: 2.2rem;
 			font-weight: 400;
+			@media (max-width: 575.98px) {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+.hvh-cart-products {
+	table {
+		@media (max-width: 767.98px) {
+			width: 768px;
 		}
 	}
 }
@@ -34,10 +45,14 @@
 
 .table-cart-products {
 	padding: $bemo-spacing-level-3;
+	overflow-x: auto;
 	table {
 		td,
 		th {
 			padding: $bemo-spacing-level-3 $bemo-spacing-level-2;
+			@media (max-width: 575.98px) {
+				padding: $bemo-spacing-level-2;
+			}
 		}
 		tbody {
 			tr {
@@ -96,6 +111,9 @@
 			}
 		}
 	}
+	@media (max-width: 575.98px) {
+		padding: $bemo-spacing-level-2;
+	}
 }
 
 .table-order-total,
@@ -132,6 +150,7 @@
 		transition: $bemo-transition;
 		label {
 			display: flex;
+			flex-wrap: wrap;
 			align-items: center;
 			padding: $bemo-spacing-level-3 $bemo-spacing-level-4;
 		}
