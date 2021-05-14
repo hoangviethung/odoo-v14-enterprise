@@ -85,6 +85,7 @@
 		}
 	}
 	.o_input_dropdown {
+		width: auto;
 		.o_dropdown_button {
 			right: $bemo-spacing-level-1;
 			top: 50%;
@@ -183,6 +184,7 @@
 }
 
 .custom-control {
+	min-height: 16px;
 	&.custom-checkbox {
 		.custom-control-input {
 			&:not(:checked) {
@@ -198,7 +200,7 @@
 	}
 	.custom-control-label {
 		cursor: pointer;
-		padding-left: $bemo-spacing-level-1;
+		padding-left: $bemo-spacing-level-4;
 	}
 }
 
@@ -211,6 +213,7 @@
 	&:after {
 		top: 50%;
 		transform: translateY(-50%);
+		left: 0;
 	}
 	i {
 		margin-left: $bemo-spacing-level-2;

@@ -55,6 +55,7 @@
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/systray.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/webclient_extra.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/webclient.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/gamification.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/kanban_view.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/activity_view.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/composer.scss"/>
