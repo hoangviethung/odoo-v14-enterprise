@@ -1,6 +1,12 @@
 .hvh-payment-complete {
 	padding: $bemo-spacing-level-7 0;
 	background: $bemo-primary-blue-light-color-06;
+	@media (max-width: 767.98px) {
+		padding: $bemo-spacing-level-5 0;
+	}
+	@media (max-width: 575.98px) {
+		padding: $bemo-spacing-level-3 0;
+	}
 }
 
 .hvh-payment-complete-wrapper {
@@ -10,6 +16,12 @@
 	.hvh-progress-wizard {
 		max-width: 650px;
 		margin: 0 auto;
+	}
+	@media (max-width: 767.98px) {
+		padding: $bemo-spacing-level-5;
+	}
+	@media (max-width: 575.98px) {
+		padding: $bemo-spacing-level-3;
 	}
 }
 
@@ -22,6 +34,11 @@
 			margin: 0 auto;
 			max-width: 120px;
 		}
+		@media (max-width: 575.98px) {
+			img {
+				max-width: 60px;
+			}
+		}
 	}
 	.content {
 		text-align: center;
@@ -30,16 +47,34 @@
 			color: $bemo-primary-color;
 			font-size: 3.4rem;
 			margin-bottom: $bemo-spacing-level-3;
+			@media (max-width: 767.98px) {
+				font-size: 2.8rem;
+			}
+			@media (max-width: 575.98px) {
+				font-size: 1.8rem;
+			}
 		}
 		p {
 			color: $bemo-neutral-medium-sub-color;
 			+ p {
 				margin-top: $bemo-spacing-level-2;
 			}
+			@media (max-width: 575.98px) {
+				font-size: 1rem;
+			}
+		}
+		@media (max-width: 575.98px) {
+			margin-bottom: $bemo-spacing-level-3;
 		}
 	}
 	.buttons {
 		display: flex;
 		justify-content: center;
+	}
+	@media (max-width: 767.98px) {
+		margin-top: $bemo-spacing-level-5;
+	}
+	@media (max-width: 575.98px) {
+		margin-top: $bemo-spacing-level-3;
 	}
 }

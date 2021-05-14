@@ -70,13 +70,27 @@
 	cursor: pointer;
 	user-select: none;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	span {
-		margin-left: 8px;
+		-ms-flex-preferred-size: 0;
+		flex-basis: 0;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+		max-width: 100%;
+		padding-left: 8px;
 		font-weight: 700;
 		i {
 			margin-right: 4px;
 		}
+		@media (max-width: 575.98px) {
+			font-size: 1rem;
+		}
+	}
+	.custom-checkbox {
+		-ms-flex: 0 0 16px;
+		flex: 0 0 16px;
+		max-width: 16px;
 	}
 }
 
