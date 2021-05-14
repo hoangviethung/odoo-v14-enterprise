@@ -29,6 +29,14 @@
 		box-shadow: inset 3px 0 0 $bemo-primary-color;
 		background-color: $bemo-primary-blue-light-color-05;
 	}
+	&.o-starred-box {
+		.o_DiscussSidebarItem_counter {
+			font-size: 10px;
+			color: $bemo-neutral-white;
+			background-color: $bemo-primary-color;
+			border-color: $bemo-primary-color;
+		}
+	}
 }
 
 .o_DiscussSidebarItem_activeIndicator {

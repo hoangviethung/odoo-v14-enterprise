@@ -59,6 +59,7 @@
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/kanban_view.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/activity_view.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/composer.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/activity.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/pivot_view.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/form_view.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme/static/src/scss/fields.scss"/>

@@ -1,8 +1,4 @@
 .o_field_widget {
-	&.o_field_many2one .o_external_button {
-		color: $bemo-primary-color;
-		padding: 0 $bemo-spacing-level-2;
-	}
 	&.o_field_image {
 		.o_form_image_controls {
 			position: absolute;
@@ -68,9 +64,12 @@
 		.o_external_button {
 			color: $bemo-neutral-medium-sub-color;
 			font-size: $bemo-font-size-default;
-			position: relative;
-			z-index: 100;
 			transition: $bemo-transition;
+			padding: 0 0 0 $bemo-spacing-level-3;
+			margin-left: 0;
+			-ms-flex: 0 0 30px;
+			flex: 0 0 30px;
+			max-width: 30px;
 			&:hover {
 				color: $bemo-primary-color;
 			}
@@ -123,6 +122,10 @@
 			color: $bemo-primary-dark-color-01;
 			background: $bemo-primary-blue-light-color-04;
 			box-shadow: unset;
+		}
+		.o_tag_color_5,
+		.o_tag_color_5:after {
+			background-color: $bemo-primary-color;
 		}
 		.badge {
 			padding: $bemo-spacing-level-1 $bemo-spacing-level-2;
