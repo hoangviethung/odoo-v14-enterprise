@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="bemo_assets_frontend" inherit_id="web.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <!-- Bemo Resources -->
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/reset.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/navbar.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/bemo_website.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/utilities.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/forms.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/header.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/footer.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/login.scss"/>
+            <!-- Snippets -->
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/snippets/bemo_hero_banner.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/snippets/bemo_banner_title_page.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/snippets/bemo_notification.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/snippets/bemo_company_intention.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/snippets/bemo_home_news.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/scss/snippets/employees_feedback.scss"/>
+            <!-- Pages -->
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/pages/p_bemo_pricing/p_bemo_pricing.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/pages/p_bemo_payment/p_bemo_payment.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/pages/p_bemo_payment_online/p_bemo_payment_online.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/pages/p_bemo_payment_complete/p_bemo_payment_complete.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/pages/p_bemo_cart/p_bemo_cart.scss"/>
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/bap_website_login/static/src/js/bemo_website.js"/>
+        </xpath>
+    </template>
+
+    <template id="beme_libs_css_frontend" inherit_id="web._assets_helpers">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/bap_website_login/static/src/libs/swiper/swiper_bundle.scss"/>
+        </xpath>
+    </template>
+
+    <template id="bemo_libs_js_frontend" inherit_id="web._assets_common_minimal_js">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/bap_website_login/static/src/libs/swiper/swiper_bundle.js"></script>
+        </xpath>
+    </template>
+</odoo>

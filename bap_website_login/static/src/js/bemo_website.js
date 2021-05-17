@@ -146,10 +146,8 @@ const initSliderBemoHeroBanner = () => {
 				clickable: true,
 			},
 			navigation: {
-				nextEl:
-					".bemo-hero-banner .bemo-button-navigation-slider.next-slider",
-				prevEl:
-					".bemo-hero-banner .bemo-button-navigation-slider.prev-slider",
+				nextEl: ".bemo-hero-banner .bemo-button-navigation-slider.next-slider",
+				prevEl: ".bemo-hero-banner .bemo-button-navigation-slider.prev-slider",
 			},
 			on: {
 				init: function () {
@@ -181,10 +179,8 @@ const initSliderBemoNotification = () => {
 				},
 			},
 			navigation: {
-				nextEl:
-					".bemo-notification .bemo-button-navigation-slider.next-slider",
-				prevEl:
-					".bemo-notification .bemo-button-navigation-slider.prev-slider",
+				nextEl: ".bemo-notification .bemo-button-navigation-slider.next-slider",
+				prevEl: ".bemo-notification .bemo-button-navigation-slider.prev-slider",
 			},
 		},
 	);
@@ -209,10 +205,8 @@ const initSliderBemoHomeNews = () => {
 			},
 		},
 		navigation: {
-			nextEl:
-				".bemo-home-news .bemo-button-navigation-slider.next-slider",
-			prevEl:
-				".bemo-home-news .bemo-button-navigation-slider.prev-slider",
+			nextEl: ".bemo-home-news .bemo-button-navigation-slider.next-slider",
+			prevEl: ".bemo-home-news .bemo-button-navigation-slider.prev-slider",
 		},
 		on: {
 			init: function () {
@@ -235,7 +229,6 @@ const stopAutoPlaySlider = (el, swiper) => {
 
 odoo.define("bap_website_login", function (require) {
 	"use strict";
-
 	const BemoWebsite = document.querySelector("#wrapwrap");
 	(function (e) {
 		pageVerify(BemoWebsite);
