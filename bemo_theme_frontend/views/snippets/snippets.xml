@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <template id="place_into_bar" inherit_id="website.snippets" name="Bemo place into bar">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <!-- BEMO HERO BANNER -->
+            <t t-snippet="bemo_theme_frontend.bemo_hero_banner" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo.svg">
+                <keywords>bemo slider hero banner, slider hero banner</keywords>
+            </t>
+            <!-- BEMO BANNER TITLE PAGE -->
+            <t t-snippet="bemo_theme_frontend.bemo_banner_title_page" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo.svg">
+                <keywords>bemo banner title page, banner title page</keywords>
+            </t>
+            <!-- BEMO COMPANY INTENTION -->
+            <t t-snippet="bemo_theme_frontend.bemo_company_intention" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo.svg">
+                <keywords>bemo banner company intention, company intention</keywords>
+            </t>
+            <!-- BEMO SLIDE ITEM (HOME NEWS) -->
+            <t t-snippet="bemo_theme_frontend.bemo_home_news" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo.svg">
+                <keywords>bemo slider items home news, slider items home news</keywords>
+            </t>
+            <!-- BEMO SLIDE NOTIFICATION -->
+            <t t-snippet="bemo_theme_frontend.bemo_notification" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo.svg">
+                <keywords>bemo slider notification, slider notification</keywords>
+            </t>
+            <!-- BEMO EMPLOYESS FEEDBACK -->
+            <t t-snippet="bemo_theme_frontend.employees_feedback" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo.svg">
+                <keywords>bemo employees feedback, employees feedback</keywords>
+            </t>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,75 @@
+.o_hr_attendance_kiosk_mode_container {
+	.o_hr_attendance_kiosk_backdrop {
+		background-color: $bemo-primary-dark-color-01;
+	}
+
+	.o_hr_attendance_kiosk_mode {
+		max-width: 650px;
+		background-color: $bemo-neutral-white;
+		border-radius: $bemo-border-radius-higher $bemo-border-radius-higher;
+		overflow: hidden;
+		padding: 0 0 $bemo-spacing-level-5 0;
+		h3 {
+			font-weight: 400;
+			b {
+				font-weight: 400;
+			}
+		}
+		.o_hr_attendance_user_badge {
+			+ h1 {
+				margin-top: $bemo-spacing-level-3;
+			}
+			@media (min-width: 768px) {
+				position: relative;
+				top: unset;
+				left: unset;
+				bottom: unset;
+				right: unset;
+				height: auto;
+				transform: unset;
+				padding: $bemo-spacing-level-5 0;
+				background: $bemo-primary-blue-medium-color-01;
+				background-image: url("/bemo_theme_backend/static/src/images/background_bemo_apps_default.png");
+				background-size: cover;
+				pointer-events: none;
+				border: 0;
+				img {
+					position: relative;
+					width: auto;
+					height: auto;
+					transform: unset;
+					border: 0;
+					border: 5px solid $bemo-neutral-white;
+				}
+			}
+		}
+		.o_hr_attendance_sign_in_out_icon {
+			font-size: 80px;
+			color: $bemo-neutral-white;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			padding: 0;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			margin: $bemo-spacing-level-3 0;
+			transition: $bemo-transition;
+			background-color: $bemo-semantic-information-light-color;
+			box-shadow: 0 0 30px rgba($color: #57abf9, $alpha: 0.19);
+		}
+		> button {
+			width: auto;
+		}
+		a:not([href]):not([tabindex]):hover,
+		a:not([href]):not([tabindex]):focus {
+			color: $bemo-neutral-white;
+			transform: translateX($bemo-spacing-level-2);
+		}
+		img {
+			&.o_hr_attendance_kiosk_company_image {
+				width: auto;
+			}
+		}
+	}
+}

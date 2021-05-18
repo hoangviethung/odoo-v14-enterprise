@@ -1,0 +1,75 @@
+.bemo-login {
+	height: 100vh;
+	background-color: $bemo-primary-blue-light-color-06;
+	background-image: var(--data-bg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	&[bemo-theme-login="dark"] {
+		background-color: $bemo-primary-dark-color-01;
+	}
+}
+
+.loign-wrapper {
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.bemo-form-login {
+	background: $bemo-neutral-white;
+	h3 {
+		color: $bemo-primary-color;
+		font-size: 28px;
+		margin-bottom: 16px;
+	}
+	h5 {
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 24px;
+		color: $bemo-neutral-medium-sub-color;
+	}
+	.col-form-label {
+		font-size: 12px;
+		font-weight: 400;
+		color: $bemo-neutral-medium-sub-color;
+	}
+	.form-control {
+		height: 40px;
+	}
+	.buttons-form {
+		margin-top: 16px;
+	}
+	.forget-password {
+		text-align: right;
+		margin-top: 16px;
+		> a {
+			color: $bemo-semantic-information-color;
+			font-size: 14px;
+		}
+	}
+}
+
+.wrapper-say-hi,
+.bemo-form-login {
+	background: $bemo-neutral-white;
+	padding: 100px 32px;
+	height: 100%;
+}
+
+.wrapper-say-hi {
+	background-color: $bemo-primary-color;
+	background-image: var(--data-bg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	h1,
+	p {
+		color: $bemo-neutral-white;
+	}
+	h1 {
+		font-size: 60px;
+	}
+	p {
+		margin-top: 24px;
+	}
+}

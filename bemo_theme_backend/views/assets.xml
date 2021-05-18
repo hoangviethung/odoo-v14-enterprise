@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <template id="_assets_utils" name="Mixins" inherit_id="web._assets_utils" priority="15">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/mixins.scss"/>
+        </xpath>
+    </template>
+
+    <template id="_assets_primary_variables" name="Colors" inherit_id="web._assets_primary_variables" priority="15">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/colors.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/variables.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/reset_variables_odoo.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_common" name="Common Assets" inherit_id="web_editor.assets_common">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/fonts.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/wysiwyg.scss"/>
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/js/core/search.js" />
+        </xpath>
+    </template>
+
+    <template id="assets_backend" name="Backend Assets" inherit_id="web.assets_backend">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/attachment.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/activity_box.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/ui.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/base_settings.scss" />
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/discuss.scss" />
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/layout.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/navbar.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/_nav.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/apps.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/hr_attendance.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/appsbar.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/control_panel.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/search_panel.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/search_view.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/list_view.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/messaging_menu.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/chatter.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/dropdown.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/dropdown_menu.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/web.zoomodoo.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/hr_org_chart.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/datepicker.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/message_list.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/time_off.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/systray.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/webclient_extra.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/webclient.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/gamification.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/kanban_view.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/activity_view.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/composer.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/activity.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/pivot_view.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/form_view.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/fields.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/message.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/fields_extra.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/web_calendar.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/modal.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/notification.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/settings.scss"/>
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/js/chrome/actions.js" />
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/js/chrome/menu.js" />
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/js/chrome/apps.js" />
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/js/chrome/appsbar.js" />
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/js/fields/relational.js" />
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/js/views/form_view.js" />
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/js/views/form_renderer.js" />
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/js/views/kanban_column.js" />
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/js/views/kanban_renderer.js" />
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/js/views/kanban_quick_create.js" />
+            <script type="text/javascript" src="/bemo_theme_backend/static/src/components/control_panel.js" />
+        </xpath>
+    </template>
+
+</odoo>

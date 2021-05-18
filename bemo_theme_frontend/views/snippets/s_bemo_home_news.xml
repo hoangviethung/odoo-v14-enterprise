@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="bemo_home_news" name="BEMO: Home News">
+        <section class="bemo-home-news">
+            <div class="container">
+                <h2 class="bemo-title text-center">Tin tức</h2>
+                <div class="position-relative">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="item-home-news">
+                                    <div class="home-news-thumbnail">
+                                        <img t-att-src="'/bemo_theme_frontend/static/src/images/home_news_01.jpg'"/>
+                                        <span>Xem thêm<i class="fa fa-search"></i>
+                                        </span>
+                                    </div>
+                                    <div class="home-news-content">
+                                        <h3 class="home-news-title lcl lcl-2">The reason lab type development is recommended</h3>
+                                        <p class="lcl lcl-4">In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. The term "testimonial" most commonly applies to the sales-pitches attributed to ordinary citizens, whereas the word "endorsement" usually applies to pitches by celebrities.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="item-home-news">
+                                    <div class="home-news-thumbnail">
+                                        <img t-att-src="'/bemo_theme_frontend/static/src/images/home_news_01.jpg'"/>
+                                        <span>Xem thêm<i class="fa fa-search"></i>
+                                        </span>
+                                    </div>
+                                    <div class="home-news-content">
+                                        <h3 class="home-news-title lcl lcl-2">The reason lab type development is recommended</h3>
+                                        <p class="lcl lcl-4">In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. The term "testimonial" most commonly applies to the sales-pitches attributed to ordinary citizens, whereas the word "endorsement" usually applies to pitches by celebrities.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="item-home-news">
+                                    <div class="home-news-thumbnail">
+                                        <img t-att-src="'/bemo_theme_frontend/static/src/images/home_news_01.jpg'"/>
+                                        <span>Xem thêm<i class="fa fa-search"></i>
+                                        </span>
+                                    </div>
+                                    <div class="home-news-content">
+                                        <h3 class="home-news-title lcl lcl-2">The reason lab type development is recommended</h3>
+                                        <p class="lcl lcl-4">In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. The term "testimonial" most commonly applies to the sales-pitches attributed to ordinary citizens, whereas the word "endorsement" usually applies to pitches by celebrities.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="item-home-news">
+                                    <div class="home-news-thumbnail">
+                                        <img t-att-src="'/bemo_theme_frontend/static/src/images/home_news_01.jpg'"/>
+                                        <span>Xem thêm<i class="fa fa-search"></i>
+                                        </span>
+                                    </div>
+                                    <div class="home-news-content">
+                                        <h3 class="home-news-title lcl lcl-2">The reason lab type development is recommended</h3>
+                                        <p class="lcl lcl-4">In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. The term "testimonial" most commonly applies to the sales-pitches attributed to ordinary citizens, whereas the word "endorsement" usually applies to pitches by celebrities.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bemo-button-navigation-slider next-slider offsetY-center">
+                        <div class="icon">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="bemo-button-navigation-slider prev-slider offsetY-center">
+                        <div class="icon">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

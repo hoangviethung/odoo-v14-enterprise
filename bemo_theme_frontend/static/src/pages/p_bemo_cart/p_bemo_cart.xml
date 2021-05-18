@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="bemo_cart" name="BEMO: Cart">
+        <!-- *** CART *** //-->
+        <section class="hvh-cart-shopping">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- *** PROGRESS WIZARD *** //-->
+                        <div class="hvh-progress-wizard">
+                            <a class="no-decoration active" href="/cart">
+                                <div class="hvh-progress-wizard-step">
+                                    <div class="hvh-progress-wizard-icon">
+                                        <i class="fa fa-circle"></i>
+                                        <i class="fa fa-stop-circle-o icon-active"></i>
+                                        <i class="fa fa-check-circle icon-complete"></i>
+                                    </div>
+                                    <div class="hvh-progress-wizard-steplabel">Xem đơn hàng</div>
+                                </div>
+                            </a>
+                            <a class="no-decoration" href="/payment">
+                                <div class="hvh-progress-wizard-step">
+                                    <div class="hvh-progress-wizard-icon">
+                                        <i class="fa fa-circle"></i>
+                                        <i class="fa fa-stop-circle-o icon-active"></i>
+                                        <i class="fa fa-check-circle icon-complete"></i>
+                                    </div>
+                                    <div class="hvh-progress-wizard-steplabel">Thanh toán</div>
+                                </div>
+                            </a>
+                            <a class="no-decoration" href="/payment-complete">
+                                <div class="hvh-progress-wizard-step">
+                                    <div class="hvh-progress-wizard-icon">
+                                        <i class="fa fa-circle"></i>
+                                        <i class="fa fa-stop-circle-o icon-active"></i>
+                                        <i class="fa fa-check-circle icon-complete"></i>
+                                    </div>
+                                    <div class="hvh-progress-wizard-steplabel">Xác nhận đơn hàng</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-8">
+                        <section class="hvh-cart-products">
+                            <div class="table-cart-products">
+                                <div class="table-cart-head">
+                                    <h3>Đơn hàng</h3>
+                                </div>
+                                <table id="cart_products">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Số lượng người dùng</th>
+                                            <th>Giá</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td-num-users" colspan="2">
+                                                <div class="hvh-pricing-users">
+                                                    <div class="input-group">
+                                                        <input class="form-control border-primary-blue-light-color-05" type="number" min="1" value="1"/>
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text bg-primary-blue-light-5 border-primary-blue-light-color-05">Người sử dụng</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-result-pricing-users">
+                                                <b>1.600.000.000</b>
+                                                <span>đ</span>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td-img">
+                                                <div>
+                                                    <img class="" src="/bemo_theme_frontend/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                </div>
+                                            </td>
+                                            <td class="td-product">CRM - Quản lý quan hệ khách hàng</td>
+                                            <td class="td-price">
+                                                <b>120.000</b>
+                                                <span>đ</span>
+                                            </td>
+                                            <td class="td-action">
+                                                <a href="#" aria-label="Xóa khỏi giỏ hàng">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-img">
+                                                <div>
+                                                    <img class="" src="/bemo_theme_frontend/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                </div>
+                                            </td>
+                                            <td class="td-product">CRM - Quản lý quan hệ khách hàng</td>
+                                            <td class="td-price">
+                                                <b>120.000</b>
+                                                <span>đ</span>
+                                            </td>
+                                            <td class="td-action">
+                                                <a href="#" aria-label="Xóa khỏi giỏ hàng">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-img">
+                                                <div>
+                                                    <img class="" src="/bemo_theme_frontend/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                </div>
+                                            </td>
+                                            <td class="td-product">CRM - Quản lý quan hệ khách hàng</td>
+                                            <td class="td-price">
+                                                <b>120.000</b>
+                                                <span>đ</span>
+                                            </td>
+                                            <td class="td-action">
+                                                <a href="#" aria-label="Xóa khỏi giỏ hàng">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-img">
+                                                <div>
+                                                    <img class="" src="/bemo_theme_frontend/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                </div>
+                                            </td>
+                                            <td class="td-product">CRM - Quản lý quan hệ khách hàng</td>
+                                            <td class="td-price">
+                                                <b>120.000</b>
+                                                <span>đ</span>
+                                            </td>
+                                            <td class="td-action">
+                                                <a href="#" aria-label="Xóa khỏi giỏ hàng">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-img">
+                                                <div>
+                                                    <img class="" src="/bemo_theme_frontend/static/src/images/icon_module.png" alt="CRM - Quản lý quan hệ khách hàng"/>
+                                                </div>
+                                            </td>
+                                            <td class="td-product">CRM - Quản lý quan hệ khách hàng</td>
+                                            <td class="td-price">
+                                                <b>120.000</b>
+                                                <span>đ</span>
+                                            </td>
+                                            <td class="td-action">
+                                                <a href="#" aria-label="Xóa khỏi giỏ hàng">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <div class="hvh-pricing-form">
+                            <div class="hvh-pricing-step">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hvh-pricing-wrapper">
+                                            <div class="hvh-pricing-step-head">
+                                                <h3>Chọn ứng dụng của bạn</h3>
+                                            </div>
+                                            <div class="hvh-pricing-step-body">
+                                                <ul class="hvh-payments">
+                                                    <li class="hvh-item-payment">
+                                                        <label class="group-custom-checkbox">
+                                                            <div class="custom-checkbox">
+                                                                <input type="radio" name="enterprise_payment" value="send_mail"/>
+                                                            </div>
+                                                            <span>Thanh toán bằng hình thức gửi hóa đơn về email
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="hvh-item-payment">
+                                                        <label class="group-custom-checkbox">
+                                                            <div class="custom-checkbox">
+                                                                <input type="radio" name="enterprise_payment" value="payment_online"/>
+                                                            </div>
+                                                            <span>Thanh toán bằng hình thức online</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <section class="hvh-cart-summary">
+                            <div class="table-cart-summary">
+                                <div class="table-cart-head">
+                                    <h3>Tổng đơn hàng</h3>
+                                </div>
+                                <table id="cart_total">
+                                    <tbody>
+                                        <tr>
+                                            <td>Thành tiền</td>
+                                            <td>
+                                                <b>1.600.000.000</b>
+                                                <span>đ</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Các loại thuế</td>
+                                            <td>
+                                                <b>0</b>
+                                                <span>đ</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thành tiền</td>
+                                            <td>
+                                                <b>-200.000</b>
+                                                <span>đ</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-order-total">
+                                <table id="order_total">
+                                    <tbody>
+                                        <tr>
+                                            <td>TỔNG TIỀN</td>
+                                            <td>
+                                                <b>1.580.000.000</b>
+                                                <span>đ</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="hvh-pricing-price-discount-code">
+                                                    <div class="input-group">
+                                                        <input class="form-control" type="text" placeholder="Nhập mã khuyến mãi"/>
+                                                        <div class="input-group-append">
+                                                            <button class="input-group-text cl-white bg-primary">ÁP DỤNG</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between mt-5">
+                            <a class="btn btn-secondary" href="/pricing">
+                                <i class="fa fa-long-arrow-left"></i>
+                                <span>Tiếp tục mua hàng</span>
+                            </a>
+                            <a class="btn btn-primary" href="/payment">
+                                <span>Tiến hành thanh toán</span>
+                                <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,323 @@
+.o_view_controller {
+	> .o_content {
+		> .o_list_view {
+			> .table-responsive {
+				overflow-x: hidden;
+				overflow-y: auto;
+				max-height: 100%;
+				height: 100%;
+				border-radius: $bemo-border-radius-medium;
+				box-shadow: $bemo-box-shadow;
+				background: $bemo-neutral-white;
+			}
+		}
+	}
+}
+
+.table {
+	thead {
+		th {
+			border-bottom: 0;
+		}
+	}
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: $bemo-neutral-lightest-background-color;
+}
+
+.table-hover tbody tr {
+	transition: $bemo-transition;
+	&:not(.o_selected_row) {
+		&:hover {
+			background-color: $bemo-primary-blue-light-color-05;
+		}
+	}
+}
+
+.o_list_view {
+	background: $bemo-neutral-white;
+	table {
+		position: relative;
+		overflow-x: hidden;
+	}
+	table,
+	thead,
+	tfoot,
+	td,
+	th {
+		border: none;
+		transition: $bemo-transition;
+	}
+	thead {
+		color: $bemo-neutral-white;
+		border-bottom: 0;
+		background-color: $bemo-primary-color;
+		th.o_column_sortable:hover {
+			background-color: $bemo-primary-dark-color-01;
+		}
+	}
+	th,
+	td {
+		outline: none;
+		padding: ($bemo-spacing-level-2 + $bemo-spacing-level-1)
+			$bemo-spacing-level-2;
+		border-bottom: 1px solid $bemo-neutral-lighter-border-color;
+	}
+	.o_list_table {
+		thead {
+			color: $bemo-neutral-white;
+			border-bottom: 0;
+			th {
+				position: sticky;
+				top: 0;
+				background: $bemo-primary-color;
+				z-index: 100;
+				&.o_column_sortable:not(.o_handle_cell) {
+					position: sticky;
+					top: 0;
+					background: $bemo-primary-color;
+					&.o_color_picker_cell {
+						padding: ($bemo-spacing-level-2 + $bemo-spacing-level-1)
+							$bemo-spacing-level-4 $bemo-spacing-level-2
+							$bemo-spacing-level-2;
+					}
+				}
+				&:focus-within {
+					background: inherit;
+				}
+			}
+		}
+		tfoot {
+			display: none;
+			color: $bemo-primary-color;
+			background-color: $bemo-primary-blue-light-color-05;
+			border-top: 0;
+			border-bottom: 0;
+		}
+		tbody {
+			&.o_keyboard_navigation {
+				td {
+					&:focus-within {
+						background: inherit;
+					}
+				}
+			}
+			> tr {
+				&.o_group_header {
+					> th,
+					> td {
+						padding-top: (
+							$bemo-spacing-level-2 + $bemo-spacing-level-1
+						);
+						padding-bottom: (
+							$bemo-spacing-level-2 + $bemo-spacing-level-1
+						);
+						padding-left: $bemo-spacing-level-2;
+						padding-right: $bemo-spacing-level-2;
+					}
+				}
+				> td {
+					&:not(.o_list_record_selector):not(.o_handle_cell):not(.o_list_button) {
+						position: relative;
+					}
+				}
+			}
+		}
+		tr:focus-within,
+		.o_list_view .o_list_table.table-striped tr:focus-within {
+			background: inherit !important;
+		}
+		.o_column_sortable:not(.o_handle_cell)::after {
+			position: absolute;
+			right: $bemo-spacing-level-1;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.o_list_button {
+			.btn-link {
+				&[name="action_approve"] {
+					color: $bemo-semantic-positive-light-color;
+					&:hover {
+						color: $bemo-semantic-positive-color;
+					}
+				}
+				&[name="action_refuse"] {
+					color: $bemo-semantic-negative-light-color;
+					&:hover {
+						color: $bemo-semantic-negative-color;
+					}
+				}
+				&[name="action_validate"] {
+					color: $bemo-semantic-critical-light-color;
+					&:hover {
+						color: $bemo-semantic-critical-color;
+					}
+				}
+			}
+		}
+	}
+
+	.o_optional_columns_dropdown_toggle {
+		font-size: 16px;
+		color: $bemo-neutral-white;
+		line-height: 46px;
+		z-index: 200;
+	}
+	.o_optional_columns_dropdown_toggle,
+	.o_list_view .o_optional_columns {
+		right: $bemo-spacing-level-1;
+	}
+	&.o_list_optional_columns {
+		th,
+		td {
+			&:last-child {
+				padding-right: $bemo-spacing-level-6;
+				&:after {
+					right: $bemo-spacing-level-4 !important;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	.o_list_table thead > tr > th:not(.o_list_record_selector) {
+		border-left: 0;
+	}
+}
+
+.tab-pane {
+	.o_list_view {
+		table {
+			border: 1px solid $bemo-neutral-lighter-border-color;
+			border-bottom: 0;
+			th,
+			td {
+				font-size: 12px;
+				padding: $bemo-spacing-level-2;
+				border-bottom: 1px solid $bemo-neutral-lighter-border-color;
+			}
+			.o_optional_columns_dropdown_toggle {
+				font-size: 12px;
+				line-height: 36px;
+			}
+		}
+	}
+	.o_hr_skills_group {
+		.o_list_view {
+			table {
+				th,
+				td {
+					font-size: $bemo-font-size-default;
+				}
+			}
+		}
+	}
+}
+
+.o_list_table_grouped.table tbody tr {
+	&:nth-of-type(2n + 1) {
+		background-color: $bemo-neutral-lightest-background-color;
+	}
+	&.o_group_header {
+		background-image: none;
+		background: $bemo-neutral-white;
+	}
+	&:hover {
+		background-color: $bemo-primary-blue-light-color-05;
+	}
+}
+
+.o_content,
+.modal-content {
+	> div > .table-responsive {
+		> .o_list_view {
+			thead,
+			thead tr:nth-child(1) th {
+				border-bottom: solid 1px gray("300");
+				background-color: $bemo-neutral-white;
+				position: sticky;
+				z-index: 1;
+				top: 0;
+			}
+			tfoot,
+			tfoot tr:nth-child(1) td {
+				position: sticky;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+.o_list_view {
+	.o_list_table {
+		.o_data_row.o_selected_row {
+			> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier):not(.o_remaining_days_cell) {
+				padding: ($bemo-spacing-level-2 + $bemo-spacing-level-1)
+					$bemo-spacing-level-2;
+				&.o_list_button {
+					padding: $bemo-spacing-level-3;
+				}
+				.o_input {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+.o_forecast_widget_cell {
+	button {
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		padding-bottom: $bemo-spacing-level-1;
+	}
+}
+
+.o_list_view
+	.o_list_table
+	.o_data_row.o_selected_row
+	> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier)
+	.o_input_dropdown
+	> .o_dropdown_button,
+.o_list_view
+	.o_list_table
+	.o_data_row.o_selected_row
+	> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier)
+	.o_input_dropdown
+	.o_datepicker_button,
+.o_list_view
+	.o_list_table
+	.o_data_row.o_selected_row
+	> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier)
+	.o_datepicker
+	> .o_dropdown_button,
+.o_list_view
+	.o_list_table
+	.o_data_row.o_selected_row
+	> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier)
+	.o_datepicker
+	.o_datepicker_button {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.o_list_view
+	.o_list_table
+	.o_data_row.o_selected_row
+	> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier)
+	> .o_field_widget
+	> .o_external_button {
+	width: 22px;
+	height: 22px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	&:before {
+		line-height: 1;
+		position: absolute;
+		left: 50%;
+		top: 65%;
+		transform: translate(-50%, -50%);
+	}
+}

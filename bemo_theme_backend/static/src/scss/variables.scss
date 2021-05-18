@@ -1,0 +1,117 @@
+//----------------------------------------------------------
+// Fonts
+//----------------------------------------------------------
+$font-family-sans-serif: "Inter", "Roboto", "Noto";
+$bemo-root-font-size: 12px;
+$bemo-font-size-default: 14rem * (1px / $bemo-root-font-size);
+$bemo-line-height-default: 1.6;
+
+//----------------------------------------------------------
+// AppBarMenu
+//----------------------------------------------------------
+$bemo-sidebar-large-width: 220px;
+$bemo-sidebar-small-width: 64px;
+$bemo-sidebar-invisible-width: 64px;
+
+//----------------------------------------------------------
+// Sided Chatter
+//----------------------------------------------------------
+$bemo-form-min-width: 835px;
+$bemo-chatter-position-sided-width: 600px;
+
+//----------------------------------------------------------
+// Root Transition
+//----------------------------------------------------------
+$bemo-transition: 0.3s all ease-in-out;
+
+//----------------------------------------------------------
+// Root BoxShadow
+//----------------------------------------------------------
+$bemo-box-shadow: 0px 0px 12px rgba(12, 50, 85, 0.06);
+
+//----------------------------------------------------------
+// Root Button Icon
+//----------------------------------------------------------
+$bemo-width-button-icon-only: 36px;
+$bemo-height-button-icon-only: 36px;
+
+//----------------------------------------------------------
+// Root Navigation
+//----------------------------------------------------------
+$bemo-navbar-height: 56px;
+$bemo-navbar-website-client-height: 100px;
+$bemo-navbar-website-client-height-sticky: 64px;
+
+//----------------------------------------------------------
+// Root Padding Button
+//----------------------------------------------------------
+$bemo-button-vertical-padding: 16px;
+$bemo-button-height: 40px;
+
+//----------------------------------------------------------
+// Root Bemo Spacing
+//----------------------------------------------------------
+$bemo-spacing-level-1: 4px;
+$bemo-spacing-level-2: 8px;
+$bemo-spacing-level-3: 16px;
+$bemo-spacing-level-4: 24px;
+$bemo-spacing-level-5: 32px;
+$bemo-spacing-level-6: 40px;
+$bemo-spacing-level-7: 56px;
+$bemo-spacing-level-8: 72px;
+$bemo-spacing-level-9: 80px;
+$bemo-spacing-level-10: 96px;
+$bemo-spacing-level-11: 120px;
+
+//----------------------------------------------------------
+// Root Breakpoints Media
+//----------------------------------------------------------
+$bemo-extra-grid-breakpoints: (
+	xs: 0,
+	vsm: 475px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1534px,
+);
+
+//----------------------------------------------------------
+// Root Border Radius
+//----------------------------------------------------------
+$bemo-button-border-radius: 0.667rem;
+$bemo-border-radius-low: 4px;
+$bemo-border-radius-medium: 8px;
+$bemo-border-radius-hight: 16px;
+$bemo-border-radius-higher: 24px;
+
+//----------------------------------------------------------
+// % Width View Item
+//----------------------------------------------------------
+$bemo-view-5: 20%;
+$bemo-view-4: 25%;
+$bemo-view-3: 33.333333%;
+$bemo-view-2: 50%;
+
+//----------------------------------------------------------
+// Root Card Kanban
+//----------------------------------------------------------
+$bemo-kanban-view-5: calc(#{$bemo-view-5} - #{$bemo-spacing-level-2} * 5);
+$bemo-kanban-view-4: calc(#{$bemo-view-4} - #{$bemo-spacing-level-2} * 4);
+$bemo-kanban-view-3: calc(#{$bemo-view-3} - #{$bemo-spacing-level-2} * 3);
+$bemo-kanban-view-2: calc(#{$bemo-view-2} - #{$bemo-spacing-level-2} * 2);
+
+//Root Size Icon And Avatar Small
+$width-icon-small: 32px;
+$height-icon-small: 32px;
+
+// Browser
+$bemo-height-tab-browser: 56px;
+
+// Button Box
+$bemo-height-form-statusbar: 40px;
+$bemo-height-oe-button-box: 48px;
+
+// Toggle Checkbox
+$bemo-width-toggle-switch: 44px;
+$bemo-height-toggle-switch: 24px;

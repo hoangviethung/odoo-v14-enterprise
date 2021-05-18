@@ -1,0 +1,92 @@
+.o_Discuss {
+	padding: $bemo-spacing-level-3;
+	background-color: $bemo-primary-blue-light-color-06;
+}
+
+.o_DiscussSidebar {
+	color: $bemo-neutral-darker-color;
+	margin-right: $bemo-spacing-level-3;
+	border-radius: $bemo-border-radius-medium;
+	box-shadow: $bemo-box-shadow;
+	background: $bemo-neutral-white;
+	padding: $bemo-spacing-level-3;
+	@media (min-width: 1200px) {
+		width: 220px;
+	}
+}
+
+.o_DiscussSidebarItem {
+	transition: $bemo-transition;
+	padding: 0;
+	height: 40px;
+	padding: 0 $bemo-spacing-level-2;
+	margin-bottom: $bemo-spacing-level-2;
+
+	&:hover {
+		background-color: $bemo-primary-blue-light-color-06;
+	}
+	&.o-active {
+		box-shadow: inset 3px 0 0 $bemo-primary-color;
+		background-color: $bemo-primary-blue-light-color-05;
+	}
+	&.o-starred-box {
+		.o_DiscussSidebarItem_counter {
+			font-size: 10px;
+			color: $bemo-neutral-white;
+			background-color: $bemo-primary-color;
+			border-color: $bemo-primary-color;
+		}
+	}
+}
+
+.o_DiscussSidebarItem_activeIndicator {
+	display: none;
+}
+
+.o_DiscussSidebar_separator {
+	background-color: $bemo-neutral-lighter-border-color;
+}
+
+.o_DiscussSidebar_groupHeader {
+	font-size: $bemo-font-size-default;
+	margin: $bemo-spacing-level-2 0 $bemo-spacing-level-3;
+	.o_DiscussSidebar_groupTitle.o-clickable:not(:hover),
+	.o_DiscussSidebar_groupTitle:not(.o-clickable),
+	.o_DiscussSidebar_groupHeaderItemAdd:not(:hover) {
+		color: $bemo-neutral-medium-sub-color;
+		transition: $bemo-transition;
+	}
+}
+
+.o_DiscussSidebar_groupHeaderItem {
+	margin-right: 0;
+	margin-left: 0;
+	&:first-child {
+		margin-left: 0;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.o_DiscussSidebarItem_item {
+	margin-right: $bemo-spacing-level-1;
+	margin-left: $bemo-spacing-level-1;
+}
+
+.o_widget_Discuss {
+	.o_Discuss_content {
+		border-top: 0;
+	}
+}
+
+.o_Discuss_content {
+	box-shadow: $bemo-box-shadow;
+	padding: $bemo-spacing-level-3;
+	border-radius: $bemo-border-radius-medium;
+	background: $bemo-neutral-white;
+}
+
+.o_MessageList_empty {
+	padding: 0;
+}

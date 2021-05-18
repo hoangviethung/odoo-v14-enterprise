@@ -1,0 +1,85 @@
+.o_AttachmentBox_content {
+	padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
+}
+
+.o_Attachment_aside {
+	margin-left: auto;
+	&.o-has-multiple-action {
+		.o_Attachment_asideItem {
+			+ .o_Attachment_asideItem {
+				margin-top: $bemo-spacing-level-2;
+			}
+		}
+	}
+}
+
+.o_Attachment_asideItemUnlink,
+.o_Attachment_asideItemDownload {
+	color: $bemo-neutral-medium-sub-color;
+	transition: $bemo-transition;
+	&[title="Remove"] {
+		color: $bemo-semantic-negative-lighter-color;
+		i {
+			&:before {
+				content: "\f1f8";
+			}
+		}
+		&:hover {
+			color: $bemo-semantic-negative-color;
+		}
+	}
+	&[title="Download"] {
+		color: $bemo-semantic-information-lighter-color;
+		&:hover {
+			color: $bemo-semantic-information-color;
+		}
+	}
+	&:not(.o-pretty):hover {
+		background-color: transparent;
+	}
+}
+
+.o_Attachment {
+	margin: 0;
+	padding: $bemo-spacing-level-2;
+	&.o-has-card-details {
+		background-color: $bemo-primary-blue-light-color-05;
+		border-radius: $bemo-border-radius-low;
+	}
+	+ .o_Attachment {
+		margin-left: $bemo-spacing-level-2;
+	}
+}
+
+.o_AttachmentList_partialListNonImages {
+	margin: 0;
+}
+
+.o_Attachment_details {
+	padding-right: $bemo-spacing-level-2;
+	padding-left: $bemo-spacing-level-2;
+}
+
+.o_AttachmentBox_buttonAdd {
+	margin-top: $bemo-spacing-level-3;
+}
+
+.o_Attachment_image {
+	margin: 0;
+	border-radius: $bemo-border-radius-low;
+	&.o-details-overlay {
+		&.o-medium {
+			background-size: contain !important;
+		}
+	}
+}
+
+.o_Attachment_filename {
+	font-size: 12px;
+}
+
+.o_AttachmentList_partialList {
+	+ .o_AttachmentList_partialList {
+		margin-top: $bemo-spacing-level-3;
+	}
+}

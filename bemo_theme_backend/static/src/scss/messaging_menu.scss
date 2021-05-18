@@ -1,0 +1,16 @@
+.o_MessagingMenu_dropdownMenuHeader {
+	background: $bemo-primary-blue-light-color-06;
+	border-bottom: 0;
+	padding: 0 $bemo-spacing-level-3;
+	button {
+		height: 40px;
+		padding: 0;
+		+ button {
+			margin-left: $bemo-spacing-level-3;
+		}
+	}
+}
+
+.o_MessagingMenu_counter {
+	background: $bemo-semantic-negative-color;
+}

@@ -1,0 +1,175 @@
+:root {
+	font-size: 12px;
+}
+::selection {
+	background: $bemo-primary-blue-light-color-04;
+}
+
+#wrapwrap {
+	overflow-x: hidden;
+}
+
+ol,
+ul,
+dl {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	color: unset;
+	text-decoration: none;
+	background-color: transparent;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+p {
+	margin-bottom: 0;
+}
+
+a:not([href]):not([class]) {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:not([href]):not([class]):hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+:focus-visible {
+	outline: none;
+}
+
+img {
+	vertical-align: middle;
+	border-style: none;
+	max-width: 100%;
+	height: auto;
+}
+
+.o_cc5 .btn-outline-secondary:focus,
+.o_footer .btn-outline-secondary:focus,
+.o_cc5 .btn-outline-secondary.focus,
+.o_footer .btn-outline-secondary.focus,
+.o_colored_level .o_cc5 .btn-outline-secondary:focus,
+.o_colored_level .o_footer .btn-outline-secondary:focus,
+.o_colored_level .o_cc5 .btn-outline-secondary.focus,
+.o_colored_level .o_footer .btn-outline-secondary.focus {
+	box-shadow: unset;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-secondary.dropdown-toggle:focus {
+	box-shadow: unset;
+}
+
+.o_cc5 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.o_footer .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.o_cc5 .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.o_footer .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .o_cc5 .btn-outline-secondary.dropdown-toggle:focus,
+.show > .o_footer .btn-outline-secondary.dropdown-toggle:focus,
+.o_colored_level
+	.o_cc5
+	.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.o_colored_level
+	.o_footer
+	.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.o_colored_level
+	.o_cc5
+	.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.o_colored_level
+	.o_footer
+	.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .o_colored_level .o_cc5 .btn-outline-secondary.dropdown-toggle:focus,
+.show
+	> .o_colored_level
+	.o_footer
+	.btn-outline-secondary.dropdown-toggle:focus {
+	box-shadow: unset;
+}
+
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="edit"]:focus,
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="edit"].focus,
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="translate"]:focus,
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="translate"].focus,
+#oe_main_menu_navbar .o_menu_systray > li > a.css_edit_dynamic:focus,
+#oe_main_menu_navbar .o_menu_systray > li > a.css_edit_dynamic.focus {
+	box-shadow: unset;
+}
+
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="edit"]:not(:disabled):not(.disabled):active:focus,
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="edit"]:not(:disabled):not(.disabled).active:focus,
+.show
+	> #oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="edit"].dropdown-toggle:focus,
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="translate"]:not(:disabled):not(.disabled):active:focus,
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="translate"]:not(:disabled):not(.disabled).active:focus,
+.show
+	> #oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a[data-action="translate"].dropdown-toggle:focus,
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a.css_edit_dynamic:not(:disabled):not(.disabled):active:focus,
+#oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a.css_edit_dynamic:not(:disabled):not(.disabled).active:focus,
+.show
+	> #oe_main_menu_navbar
+	.o_menu_systray
+	> li
+	> a.css_edit_dynamic.dropdown-toggle:focus {
+	box-shadow: unset;
+}
+
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="edit"]:hover,
+#oe_main_menu_navbar .o_menu_systray > li > a[data-action="translate"]:hover,
+#oe_main_menu_navbar .o_menu_systray > li > a.css_edit_dynamic:hover {
+	background-color: inherit;
+}
+
+.o_we_website_top_actions .btn.btn-primary:focus,
+.o_we_website_top_actions .btn.btn-primary.focus {
+	box-shadow: unset !important;
+}
+
+.o_we_website_top_actions .btn.btn-secondary:focus,
+.o_we_website_top_actions .btn.btn-secondary.focus {
+	box-shadow: unset !important;
+}
+
+.o_we_website_top_actions
+	.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
+.o_we_website_top_actions
+	.btn.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .o_we_website_top_actions .btn.btn-primary.dropdown-toggle:focus {
+	box-shadow: unset !important;
+}
+
+body .modal.o_technical_modal .btn:not(.o_btn_preview).btn-primary:focus,
+body .modal.o_technical_modal .btn:not(.o_btn_preview).btn-primary.focus {
+	box-shadow: unset;
+}

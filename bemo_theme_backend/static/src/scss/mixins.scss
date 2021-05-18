@@ -1,0 +1,12 @@
+@mixin bemo-full-screen-sections {
+	width: 100vw;
+	height: 100vh;
+	max-height: 100vh;
+	top: 0;
+	transform: none;
+	position: fixed;
+	overflow: hidden;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+}

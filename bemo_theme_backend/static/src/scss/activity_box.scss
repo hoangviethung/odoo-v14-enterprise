@@ -1,0 +1,88 @@
+.o_Activity {
+	padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
+}
+
+.o_Activity_user {
+	margin-left: 0;
+}
+
+.o_Activity_sidebar {
+	flex: 0 0 50px;
+	margin-right: 0.5rem;
+}
+
+.o_ActivityBox_title {
+	padding: $bemo-spacing-level-3 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.o_ActivityBox_titleText {
+	font-size: 12px;
+	color: $bemo-neutral-medium-sub-color;
+}
+
+.o_ActivityBox_titleLine {
+	border-color: $bemo-neutral-lighter-border-color;
+}
+
+.o_ActivityBox_titleBadge {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 18px;
+	height: 18px;
+}
+
+.o_Activity_toolButton {
+	opacity: 1;
+	font-weight: 400;
+}
+
+.o_Activity_markDoneButton {
+	color: $bemo-semantic-positive-color;
+	&:hover {
+		color: $bemo-semantic-positive-color;
+	}
+}
+
+.o_Activity_editButton {
+	color: $bemo-semantic-information-color;
+	&:hover {
+		color: $bemo-semantic-information-color;
+	}
+}
+
+.o_Activity_cancelButton {
+	color: $bemo-semantic-negative-color;
+	&:hover {
+		color: $bemo-semantic-negative-color;
+	}
+}
+
+.o_Activity_dueDateText {
+	&.o-overdue {
+		color: $bemo-semantic-negative-color;
+	}
+}
+
+.o_Activity_summary {
+	color: $bemo-neutral-darker-color;
+}
+
+.o_Activity_userName {
+	color: $bemo-neutral-medium-sub-color;
+	font-size: 12px;
+}
+
+.o_Activity_details {
+	color: $bemo-neutral-dark-color;
+}
+
+a:not([href]):not([tabindex]).o_Activity_detailsButton {
+	color: $bemo-semantic-information-color;
+	opacity: 1;
+	&:hover {
+		color: $bemo-semantic-information-color;
+	}
+}

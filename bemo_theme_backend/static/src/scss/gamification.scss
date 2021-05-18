@@ -1,0 +1,46 @@
+.o_kanban_view {
+	.oe_kanban_card,
+	.o_kanban_record {
+		&.o_kanban_gamification {
+			.o_kanban_image {
+				float: unset;
+				margin: 0 auto;
+				+ div {
+					padding-left: 0;
+				}
+			}
+			.o_kanban_badge_description {
+				padding-bottom: $bemo-spacing-level-4;
+			}
+			.float-left {
+				float: unset !important;
+			}
+			.oe_kanban_details,
+			.o_kanban_content {
+				div,
+				span {
+					text-align: center;
+				}
+			}
+			.o_kanban_button {
+				button {
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			.o_image_24_cover {
+				display: block;
+				margin: 0 auto;
+				width: 32px;
+				height: 32px;
+			}
+			span {
+				display: block;
+			}
+			p {
+				font-size: 12px;
+				margin-top: 1rem;
+			}
+		}
+	}
+}

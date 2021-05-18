@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="bemo_payment_complete" name="BEMO: Payment Complete">
+        <section class="hvh-payment-complete">
+            <div class="container">
+                <div class="hvh-payment-complete-wrapper">
+                    <!-- *** PROGRESS WIZARD *** //-->
+                    <div class="hvh-progress-wizard">
+                        <a class="no-decoration complete" href="/cart">
+                            <div class="hvh-progress-wizard-step">
+                                <div class="hvh-progress-wizard-icon">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-stop-circle-o icon-active"></i>
+                                    <i class="fa fa-check-circle icon-complete"></i>
+                                </div>
+                                <div class="hvh-progress-wizard-steplabel">Xem đơn hàng</div>
+                            </div>
+                        </a>
+                        <a class="no-decoration complete" href="/payment">
+                            <div class="hvh-progress-wizard-step">
+                                <div class="hvh-progress-wizard-icon">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-stop-circle-o icon-active"></i>
+                                    <i class="fa fa-check-circle icon-complete"></i>
+                                </div>
+                                <div class="hvh-progress-wizard-steplabel">Thanh toán</div>
+                            </div>
+                        </a>
+                        <a class="no-decoration complete" href="/payment-complete">
+                            <div class="hvh-progress-wizard-step">
+                                <div class="hvh-progress-wizard-icon">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-stop-circle-o icon-active"></i>
+                                    <i class="fa fa-check-circle icon-complete"></i>
+                                </div>
+                                <div class="hvh-progress-wizard-steplabel">Xác nhận đơn hàng</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- *** POPUP NOTIFICATION VALID *** //-->
+                    <section class="notification-valid">
+                        <div class="icon">
+                            <img src="/bemo_theme_frontend/static/src/images/complete_notification.png" alt="Complete Notification"/>
+                        </div>
+                        <div class="content">
+                            <h3>Giao dịch thành công</h3>
+                            <p>Đơn hàng #210130MAX4E5G5 của bạn đã được giao dịch thành công</p>
+                            <p>Vui lòng đăng nhập email để xác nhận bạn đã nhận hàng và hài lòng với sản phẩm trong vòng 3 ngày. </p>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-primary btn-lg" href="/">Trở về trang chủ</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,146 @@
+.o_activity_view {
+	border-radius: $bemo-border-radius-medium;
+	overflow: hidden;
+	background: $bemo-neutral-white;
+	max-height: 100%;
+	overflow-y: auto;
+	box-shadow: $bemo-box-shadow;
+	> table {
+		border: 0;
+		thead {
+			tr {
+				background: $bemo-primary-color;
+			}
+			th {
+				color: $bemo-neutral-white;
+				transition: $bemo-transition;
+				border: 0;
+			}
+		}
+		tbody {
+			td {
+				transition: $bemo-transition;
+				border: 1px solid $bemo-neutral-lighter-border-color;
+			}
+		}
+	}
+	.o_activity_record {
+		> img {
+			width: 40px;
+			max-height: 40px;
+			height: 40px;
+			border-radius: 50%;
+			margin-right: 8px;
+		}
+		> div {
+			.o_text_block {
+				font-weight: 700;
+				transition: $bemo-transition;
+				&.text-muted {
+					color: $bemo-neutral-medium-sub-color !important;
+					font-size: 10px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+	.o_activity_summary_cell {
+		&.today {
+			background-color: $bemo-semantic-positive-lighter-color;
+		}
+		&.planned {
+			background-color: $bemo-semantic-information-lighter-color;
+		}
+		&.overdue {
+			background-color: $bemo-semantic-negative-lighter-color;
+		}
+		.dropdown-toggle {
+			.o_closest_deadline {
+				color: $bemo-neutral-darker-color;
+				font-weight: 700;
+			}
+		}
+		.o_activity_btn {
+			> .badge {
+				font-size: 12px;
+				font-weight: 700;
+				background: transparent;
+				&.today {
+					color: $bemo-semantic-positive-color;
+				}
+				&.planned {
+					color: $bemo-semantic-information-color;
+				}
+				&.overdue {
+					color: $bemo-semantic-negative-color;
+				}
+			}
+		}
+		&.o_activity_empty_cell {
+			> i {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0 auto;
+				width: 24px;
+				height: 24px;
+				border: 2px solid $bemo-primary-color;
+				border-radius: 50%;
+				opacity: 0;
+				transition: $bemo-transition;
+			}
+			&[class*="o_activity_filter_"] {
+				pointer-events: none;
+			}
+			&:hover {
+				background: inherit;
+				> i {
+					display: flex;
+					color: $bemo-primary-color;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.o_activity_type_cell {
+		.o_kanban_counter {
+			.progress-bar {
+				&.bg-warning-full {
+					background-color: $bemo-semantic-positive-lighter-color;
+				}
+				&.bg-success-full {
+					background-color: $bemo-semantic-information-lighter-color;
+				}
+				&.bg-danger-full {
+					background-color: $bemo-semantic-negative-lighter-color;
+				}
+			}
+		}
+	}
+	.o_activity_filter_today {
+		background-color: $bemo-semantic-positive-color;
+	}
+	.o_activity_filter_planned {
+		background-color: $bemo-semantic-information-color;
+	}
+	.o_activity_filter_overdue {
+		background-color: $bemo-semantic-negative-color;
+	}
+	.o_record_selector {
+		font-weight: 700;
+		color: $bemo-primary-color;
+		border: 0;
+	}
+	[class*="o_activity_filter_"] {
+		.o_activity_record {
+			> div {
+				.o_text_block {
+					color: $bemo-neutral-white;
+					&.text-muted {
+						color: $bemo-neutral-white !important;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+	<t t-extend="AppsMenu">
+		<t t-jquery=".o_app" t-operation="attributes">
+			<attribute name="t-attf-href">#menu_id=#{app.menuID}&amp;action_id=#{app.actionID}</attribute>
+		</t>
+		<t t-jquery=".full" t-operation="attributes">
+			<attribute name="accesskey">h</attribute>
+		</t>
+		<t t-jquery=".full &gt; i" t-operation="replace">
+			<i class="fa fa-th"></i>
+			<img class="logo logo_bemo_sidebar_type_large" src="/bemo_theme_backend/static/src/images/logo_bemo_sidebar_type_large.svg" alt="BEMO-CLOUD"/>
+			<img class="logo logo_bemo_sidebar_type_small" src="/bemo_theme_backend/static/src/images/logo_bemo_sidebar_type_small.svg" alt="BEMO-CLOUD"/>
+			<img class="logo logo_bemo_sidebar_type_invisible" src="/bemo_theme_backend/static/src/images/logo_bemo_sidebar_type_invisible.svg" alt="BEMO-CLOUD"/>
+		</t>
+		<t t-jquery=".dropdown-menu" t-operation="replace">
+			<div class="dropdown-menu" role="menu">
+				<div class="bemo_logo_company">
+					<img src="/bemo_theme_backend/static/src/images/logo_bemo_company_default.png" alt="LOGO-COMPANY"/>
+				</div>
+				<div class="bemo_search_container">
+					<div class="bemo_search_input">
+						<input type="text" placeholder="Search menus..." class="form-control"/>
+					</div>
+					<div class="bemo_search_results"/>
+				</div>
+				<t t-set="number_module" t-value="5" />
+				<div class="bemo_apps_wrapper">
+					<t t-foreach="widget.getAppsCategory()" t-as="Category">
+						<div class="bemo_apps_group">
+							<div class="bemo_app_title">
+								<h3>
+									<t t-esc="Category[1]"/>
+								</h3>
+							</div>
+							<div class="bemo_apps">
+								<t t-foreach="widget.getApps()" t-as="app">
+									<t t-if="app.ir_ui_menu_category_id[0] === Category[0]">
+										<a role="menuitem" t-attf-href="#menu_id=#{app.menuID}" class="dropdown-item o_app" t-att-data-menu-id="app.menuID" t-att-data-menu-xmlid="app.xmlID" t-att-data-action-id="app.actionID">
+											<t t-call="bemo_theme_backend.AppIcon"/>
+										</a>
+									</t>
+
+								</t>
+							</div>
+						</div>
+					</t>
+				</div>
+			</div>
+		</t>
+	</t>
+
+	<t t-name="bemo_theme_backend.AppIcon">
+		<img class="o-app-icon" t-attf-src="data:image/png;base64,#{app.web_icon_data}"/>
+		<span class="o-app-name">
+			<t t-esc="app.name"/>
+		</span>
+	</t>
+
+	<t t-name="bemo_theme_backend.MenuSearchResults">
+		<t t-foreach="results" t-as="result">
+			<t t-set="menu" t-value="widget._menuInfo(result.original)"/>
+			<a t-attf-class="bemo_menu_search_result dropdown-item col-12 ml-auto mr-auto #{result_first ? 'active' : ''}" t-attf-style="background-image: #{menu.web_icon_data ? 'url(data:image/png;base64,' + menu.web_icon_data + ')' : 'none'}" t-attf-href="#menu_id=#{menu.id}&amp;action_id=#{menu.action_id}" t-att-data-menu-id="menu.id" t-att-data-action-id="menu.action_id" t-att-data-parent-id="menu.parent_id[0]" t-raw="result.string"/>
+		</t>
+	</t>
+</templates>

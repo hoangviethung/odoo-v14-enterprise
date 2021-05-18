@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="layout_bemo_payment_online" name="BEMO: Layout Payment Online">
+        <t t-call="website.layout">
+            <t t-call="bemo_theme_frontend.bemo_banner_title_page"/>
+            <t t-call="bemo_theme_frontend.bemo_payment_online"/>
+            <!-- *** PAGE VERIFY TEMPLATE *** //-->
+            <input id="page-verify-template" hidden="hidden" current-page="payment-online-page" header-inverted="false"/>
+        </t>
+    </template>
+</odoo>

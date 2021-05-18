@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="bemo_category_apps" inherit_id="web.assets_backend" name="BAP Menu Apps Category">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/bemo_category_apps/static/src/js/apps_menu.js"></script>
+        </xpath>
+    </template>
+</odoo>

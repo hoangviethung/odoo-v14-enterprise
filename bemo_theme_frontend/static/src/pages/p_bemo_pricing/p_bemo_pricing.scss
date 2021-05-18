@@ -1,0 +1,269 @@
+.hvh-pricing {
+	padding: $bemo-spacing-level-3 0;
+	background: $bemo-primary-blue-light-color-06;
+}
+
+.hvh-pricing-wrapper {
+	padding: $bemo-spacing-level-3 0;
+	background: $bemo-neutral-white;
+	border-radius: $bemo-border-radius-hight;
+	height: 100%;
+	box-shadow: $bemo-box-shadow;
+}
+
+.hvh-pricing-form {
+	.hvh-pricing-step {
+		margin-bottom: $bemo-spacing-level-3;
+		> .row {
+			margin-left: -$bemo-spacing-level-2;
+			margin-right: -$bemo-spacing-level-2;
+			[class*="col-"] {
+				padding-left: $bemo-spacing-level-2;
+				padding-right: $bemo-spacing-level-2;
+			}
+		}
+		@media (max-width: 991.98px) {
+			&:first-child {
+				[class*="col-"]:last-child {
+					margin-top: $bemo-spacing-level-3;
+				}
+			}
+		}
+	}
+	.hvh-pricing-step-head {
+		padding: 0 $bemo-spacing-level-3;
+		h3 {
+			font-size: 1.6rem;
+			font-weight: 400;
+			margin-bottom: $bemo-spacing-level-3;
+		}
+	}
+	.hvh-pricing-step-body {
+		.hvh-pricing-users {
+			width: 100%;
+			.input-group {
+				padding: 0 $bemo-spacing-level-3;
+			}
+			.hvh-result-pricing-users {
+				position: relative;
+				display: inline-flex;
+				flex-wrap: wrap;
+				align-items: center;
+				background: $bemo-primary-color;
+				color: $bemo-neutral-white;
+				padding: $bemo-spacing-level-1 $bemo-spacing-level-2;
+				margin-top: $bemo-spacing-level-3;
+				&:after {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 100%;
+					border-top: 14.5px solid transparent;
+					border-left: 10px solid $bemo-primary-color;
+					border-bottom: 14.5px solid transparent;
+					background-color: $bemo-neutral-white;
+				}
+				.hvh-pricing-user-pricing-yearly {
+					margin-right: $bemo-spacing-level-2;
+				}
+				@media (max-width: 767.98px) {
+					color: $bemo-primary-color;
+					background-color: transparent;
+					&:after {
+						content: none;
+					}
+				}
+			}
+		}
+		.hvh-pricing-currencies {
+			padding: 0 $bemo-spacing-level-3;
+			width: 100%;
+		}
+	}
+	.app-item {
+		cursor: pointer;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		background-color: $bemo-neutral-white;
+		border: 1px solid $bemo-neutral-lighter-border-color;
+		border-radius: $bemo-border-radius-medium;
+		height: 100%;
+		overflow: hidden;
+		user-select: none;
+		box-shadow: $bemo-box-shadow;
+	}
+	.hvh-pricing-app-name {
+		-ms-flex-preferred-size: 0;
+		flex-basis: 0;
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+		max-width: 100%;
+		padding: $bemo-spacing-level-2;
+	}
+	.hvh-pricing-app-icon {
+		position: relative;
+		-ms-flex: 0 0 48px;
+		flex: 0 0 48px;
+		max-width: 48px;
+		background-color: $bemo-primary-color;
+		overflow: hidden;
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 32px;
+			height: 32px;
+			transform: translate(-50%, -50%) !important;
+		}
+	}
+	.hvh-pricing-app-real-name {
+		font-weight: 700;
+		margin-bottom: $bemo-spacing-level-1;
+	}
+	.hvh-pricing-app-price {
+		font-size: 0.85em;
+	}
+	.hvh-form-checkbox-module {
+		padding: $bemo-spacing-level-2;
+	}
+	.hvh-pricing-hosting-list {
+		.hvh-pricing-item-hosting {
+			transition: $bemo-transition;
+			label {
+				display: flex;
+				align-items: center;
+				padding: $bemo-spacing-level-3;
+			}
+			small {
+				margin-left: $bemo-spacing-level-3;
+				> a {
+					color: $bemo-primary-color;
+					font-weight: 700;
+				}
+			}
+			&:hover {
+				background: $bemo-primary-blue-light-color-05;
+			}
+		}
+	}
+	.list-module-items-container {
+		.form-container {
+			padding: 0 $bemo-spacing-level-3;
+		}
+		.group-module {
+			+ .group-module {
+				margin-top: $bemo-spacing-level-2;
+			}
+		}
+		[class*="col-"] {
+			margin-bottom: $bemo-spacing-level-3;
+		}
+	}
+	.group-module-name {
+		position: relative;
+		display: inline-block;
+		color: $bemo-primary-color;
+		font-size: 1.33334rem;
+		font-weight: 700;
+		background: $bemo-primary-blue-light-color-05;
+		padding: $bemo-spacing-level-1 $bemo-spacing-level-3;
+		margin-bottom: $bemo-spacing-level-3;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 100%;
+			height: 100%;
+			border-top: 16px solid transparent;
+			border-left: 10px solid $bemo-primary-blue-light-color-05;
+			border-bottom: 16px solid transparent;
+			background-color: $bemo-neutral-white;
+		}
+	}
+}
+
+.hvh-pricing-board {
+	position: sticky;
+	top: $bemo-navbar-website-client-height-sticky + $bemo-spacing-level-4;
+	background: $bemo-neutral-white;
+	border-radius: $bemo-border-radius-hight;
+	.tab__list {
+		display: flex;
+		flex-wrap: wrap;
+		.item {
+			position: relative;
+			-ms-flex: 0 0 50%;
+			flex: 0 0 50%;
+			max-width: 50%;
+			padding: $bemo-spacing-level-2 $bemo-spacing-level-3;
+			text-align: center;
+			span {
+				font-weight: 700;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				height: 4px;
+				width: 0;
+				background-color: $bemo-primary-blue-light-color-02;
+				border-radius: 2px;
+				transition: 0.3s all ease-in-out;
+			}
+			&.active {
+				&:after {
+					width: 50%;
+				}
+			}
+		}
+	}
+	.tab__content {
+		padding: $bemo-spacing-level-3;
+		width: 100%;
+		table {
+			width: 100%;
+			td {
+				padding: $bemo-spacing-level-4 0;
+				word-break: break-word;
+				border-bottom: 1px solid $bemo-neutral-lighter-border-color;
+			}
+			a {
+				display: inline-block;
+				font-weight: 600;
+				color: $bemo-primary-color;
+				margin: 0 2px;
+			}
+		}
+	}
+	.hvh-pricing-price-yearly-in-year-wrapper {
+		margin: $bemo-spacing-level-3 0;
+		text-align: right;
+		font-size: 1.2rem;
+	}
+	.hvh-pricing-price-discount-code {
+		margin: $bemo-spacing-level-3 0;
+	}
+	.hvh-pricing-price-is-not-free-trial,
+	.hvh-pricing-price-is-free-trial {
+		margin-bottom: $bemo-spacing-level-3;
+		p {
+			margin-bottom: $bemo-spacing-level-3;
+		}
+		.hvh-pricing-form-button {
+			.btn {
+				flex-direction: column;
+				margin-bottom: $bemo-spacing-level-3;
+				span {
+					margin-top: $bemo-spacing-level-2;
+				}
+			}
+		}
+	}
+	.hvh-pricing-board-note {
+		margin-top: $bemo-spacing-level-3;
+	}
+}
