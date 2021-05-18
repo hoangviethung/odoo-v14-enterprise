@@ -1,0 +1,24 @@
+#wrapwrap {
+	.o_editable {
+		&.oe_structure.oe_empty,
+		&[data-oe-type="html"],
+		.oe_structure.oe_empty {
+			&#wrap:empty,
+			&#wrap > .oe_drop_zone.oe_insert:not(.oe_vertical):only-child {
+				padding: 50vh 0;
+				margin: 0;
+				width: 100%;
+				background-color: $bemo-primary-dark-color-02;
+				background-image: url("/bemo_theme_frontend/static/src/images/bg_login.png");
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+	}
+}
+%o-editor-messages {
+	&:after {
+		color: $bemo-neutral-white;
+	}
+}

@@ -30,7 +30,7 @@
         </xpath>
     </template>
 
-    <template id="beme_libs_css_frontend" inherit_id="web._assets_helpers">
+    <template id="bemo_libs_css_frontend" inherit_id="web._assets_helpers">
         <xpath expr="//link[last()]" position="after">
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/libs/swiper/swiper_bundle.scss"/>
         </xpath>
@@ -39,6 +39,24 @@
     <template id="bemo_libs_js_frontend" inherit_id="web._assets_common_minimal_js">
         <xpath expr="//script[last()]" position="after">
             <script type="text/javascript" src="/bemo_theme_frontend/static/src/libs/swiper/swiper_bundle.js"></script>
+        </xpath>
+    </template>
+
+    <template id="bemo_website_assets_editor" inherit_id="website.assets_editor">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/website.editor.ui.scss"/>
+        </xpath>
+    </template>
+
+    <template id="bemo_website_assets_wysiwyg" inherit_id="website.assets_wysiwyg">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/website.edit_mode.scss"/>
+        </xpath>
+    </template>
+
+    <template id="bemo_web_editor_assets_wysiwyg" inherit_id="web_editor.assets_wysiwyg">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/wysiwyg_snippets.scss"/>
         </xpath>
     </template>
 </odoo>

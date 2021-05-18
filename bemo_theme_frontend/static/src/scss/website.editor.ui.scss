@@ -1,0 +1,24 @@
+.o_homepage_editor_welcome_message {
+	padding-top: 30vh;
+	padding-bottom: 30vh;
+	background-color: $bemo-primary-dark-color-02;
+	&:after {
+		content: "";
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+		background-color: $bemo-primary-dark-color-02;
+		background-image: url("/bemo_theme_frontend/static/src/images/bg_login.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	h2,
+	p {
+		color: $bemo-neutral-white;
+		position: relative;
+		z-index: 10;
+	}
+}
