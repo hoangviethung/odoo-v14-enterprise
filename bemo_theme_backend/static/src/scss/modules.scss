@@ -1,0 +1,24 @@
+.oe_module_name {
+	> span {
+		font-size: 12px;
+		min-height: 13px;
+		overflow: hidden;
+		display: -webkit-box;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+	}
+}
+.oe_module_desc {
+	p {
+		margin: $bemo-spacing-level-1 0;
+	}
+}
+
+.oe_module_action {
+	margin-top: 11px;
+}
+
+.oe_module_icon {
+	border-radius: $bemo-border-radius-low;
+}
