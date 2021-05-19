@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <odoo>
-    <template id="_assets_utils" name="Mixins" inherit_id="web._assets_utils" priority="15">
+    <template id="bemo_assets_utils" inherit_id="web._assets_utils" name="Bemo Assests Utils" priority="15">
         <xpath expr="//link[last()]" position="after">
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/mixins.scss"/>
         </xpath>
     </template>
 
-    <template id="_assets_primary_variables" name="Colors" inherit_id="web._assets_primary_variables" priority="15">
+    <template id="bemo_assets_primary_variables" inherit_id="web._assets_primary_variables" name="Bemo Assest Primary Variables " priority="15">
         <xpath expr="//link[last()]" position="after">
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/colors.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/variables.scss"/>
@@ -15,7 +15,13 @@
         </xpath>
     </template>
 
-    <template id="assets_common" name="Common Assets" inherit_id="web_editor.assets_common">
+    <template id="bemo_request_kanban_css_assets_backend" inherit_id="web.assets_backend" name="Bemo Request Kanban Css Assests Backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/request_kanban.scss"/>
+        </xpath>
+    </template>
+
+    <template id="bemo_assets_common" inherit_id="web_editor.assets_common" name="Bemo Assets Common">
         <xpath expr="//link[last()]" position="after">
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/fonts.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/wysiwyg.scss"/>
@@ -26,7 +32,7 @@
         </xpath>
     </template>
 
-    <template id="assets_backend" name="Backend Assets" inherit_id="web.assets_backend">
+    <template id="bemo_assets_backend" inherit_id="web.assets_backend" name="Bemo Assets Backend">
         <xpath expr="//link[last()]" position="after">
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/attachment.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/activity_box.scss"/>

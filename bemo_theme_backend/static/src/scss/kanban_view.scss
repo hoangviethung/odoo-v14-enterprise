@@ -90,6 +90,11 @@
 				object-position: center;
 			}
 		}
+		.o_field_many2manytags,
+		.o_kanban_tags {
+			line-height: $bemo-line-height-default;
+			margin-bottom: $bemo-spacing-level-2;
+		}
 	}
 	.o_kanban_group {
 		margin: $bemo-spacing-level-3;
@@ -515,6 +520,3 @@
 .o_kanban_examples {
 	padding: 0;
 }
-
-
-
