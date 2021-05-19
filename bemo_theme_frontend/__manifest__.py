@@ -20,12 +20,12 @@
 		# Security
 		'security/ir.model.access.csv',
 		#Snippets
-		'views/snippets/s_bemo_hero_banner.xml',
-		'views/snippets/s_bemo_banner_title_page.xml',
-		'views/snippets/s_bemo_notification.xml',
-		'views/snippets/s_bemo_company_intention.xml',
-		'views/snippets/s_bemo_home_news.xml',
-		'views/snippets/s_bemo_employees_feedback.xml',
+		'views/snippets/s_bemo_hero_banner__v1.xml',
+		'views/snippets/s_bemo_banner_title_page__v1.xml',
+		'views/snippets/s_bemo_notification__v1.xml',
+		'views/snippets/s_bemo_company_intention__v1.xml',
+		'views/snippets/s_bemo_home_news__v1.xml',
+		'views/snippets/s_bemo_employees_feedback__v1.xml',
 		'views/snippets/snippets.xml',
 		# Pages
 		'static/src/pages/p_bemo_pricing/p_bemo_pricing.xml',

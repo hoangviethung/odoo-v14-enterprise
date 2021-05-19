@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="bemo_notification" name="BEMO: Notification">
+    <template id="s_bemo_notification__v1" name="BEMO: Notification Version 01">
         <section class="bemo-notification">
             <div class="container">
                 <div class="bemo-notification-title">

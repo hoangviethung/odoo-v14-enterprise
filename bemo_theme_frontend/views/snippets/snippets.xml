@@ -7,27 +7,27 @@
                 <div class="o_panel_header">Bemo Snippet</div>
                 <div class="o_panel_body">
                     <!-- BEMO HERO BANNER -->
-                    <t t-snippet="bemo_theme_frontend.bemo_hero_banner" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_hero_banner.svg">
+                    <t t-snippet="bemo_theme_frontend.s_bemo_hero_banner__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/bemo_hero_banner__v1.svg">
                         <keywords>bemo slider hero banner, slider hero banner</keywords>
                     </t>
                     <!-- BEMO BANNER TITLE PAGE -->
-                    <t t-snippet="bemo_theme_frontend.bemo_banner_title_page" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_banner_title_page.svg">
+                    <t t-snippet="bemo_theme_frontend.s_bemo_banner_title_page__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_banner_title_page__v1.svg">
                         <keywords>bemo banner title page, banner title page</keywords>
                     </t>
                     <!-- BEMO COMPANY INTENTION -->
-                    <t t-snippet="bemo_theme_frontend.bemo_company_intention" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_company_intention.svg">
+                    <t t-snippet="bemo_theme_frontend.s_bemo_company_intention__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_company_intention__v1.svg">
                         <keywords>bemo banner company intention, company intention</keywords>
                     </t>
                     <!-- BEMO SLIDE ITEM (HOME NEWS) -->
-                    <t t-snippet="bemo_theme_frontend.bemo_home_news" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_home_news.svg">
+                    <t t-snippet="bemo_theme_frontend.s_bemo_home_news__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_home_news__v1.svg">
                         <keywords>bemo slider items home news, slider items home news</keywords>
                     </t>
                     <!-- BEMO SLIDE NOTIFICATION -->
-                    <t t-snippet="bemo_theme_frontend.bemo_notification" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_notification.svg">
+                    <t t-snippet="bemo_theme_frontend.s_bemo_notification__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_notification__v1.svg">
                         <keywords>bemo slider notification, slider notification</keywords>
                     </t>
                     <!-- BEMO EMPLOYESS FEEDBACK -->
-                    <t t-snippet="bemo_theme_frontend.employees_feedback" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_employees_feedback.svg">
+                    <t t-snippet="bemo_theme_frontend.s_employees_feedback__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_employees_feedback__v1.svg">
                         <keywords>bemo employees feedback, employees feedback</keywords>
                     </t>
                 </div>

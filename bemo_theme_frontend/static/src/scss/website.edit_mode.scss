@@ -17,8 +17,13 @@
 		}
 	}
 }
+
 %o-editor-messages {
 	&:after {
 		color: $bemo-neutral-white;
 	}
+}
+
+body.o_connected_user.editor_enable :not(div) :focus-visible {
+	background-color: transparent;
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="bemo_banner_title_page" name="BEMO: Banner Title Page">
+    <template id="s_bemo_banner_title_page__v1" name="Bemo: Banner Title Page Version 01">
         <section class="banner-title-page" t-attf-style="--data-bg: url('/bemo_theme_frontend/static/src/images/bg_banner_title_default.png')">
             <div class="container">
                 <h1>Edit Your Title Page Here.</h1>

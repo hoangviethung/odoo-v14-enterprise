@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="bemo_home_news" name="BEMO: Home News">
+    <template id="s_bemo_home_news__v1" name="BEMO: Home News Version 01">
         <section class="bemo-home-news">
             <div class="container">
                 <h2 class="bemo-title text-center">Tin tức</h2>

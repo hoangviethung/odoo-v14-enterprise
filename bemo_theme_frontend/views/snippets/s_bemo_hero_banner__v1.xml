@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="bemo_hero_banner" name="BEMO: Hero Banner">
+    <template id="s_bemo_hero_banner__v1" name="BEMO: Hero Banner Version 01">
         <section class="bemo-hero-banner">
             <div class="swiper-container">
                 <div class="swiper-wrapper">

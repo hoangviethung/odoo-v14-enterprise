@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="employees_feedback" name="BEMO: Employees Feedback">
+    <template id="s_employees_feedback__v1" name="Bemo: Employees Feedback Version 01">
         <section class="employees-feedback">
             <div class="container">
                 <h2 class="bemo-title text-center">Employees’s Feedback</h2>

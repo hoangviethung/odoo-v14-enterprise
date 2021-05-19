@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="bemo_company_intention" name="BEMO: Company Intention">
+    <template id="s_bemo_company_intention__v1" name="Bemo: Company Intention Version 01">
         <section class="bemo-company-intention">
             <div class="container">
                 <h2 class="bemo-title text-center">Định hướng công ty</h2>
