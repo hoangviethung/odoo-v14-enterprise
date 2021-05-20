@@ -420,6 +420,17 @@
 				}
 			}
 		}
+		.o_form_sheet_bg {
+			.oe_title {
+				&.request_title {
+					h2 {
+						div.request-kanban-state {
+							margin-bottom: $bemo-spacing-level-2;
+						}
+					}
+				}
+			}
+		}
 		@media (min-width: 475px) {
 			.o_row {
 				> input {
