@@ -188,6 +188,7 @@
 
 .custom-control {
 	min-height: 16px;
+	padding-left: 0;
 	&.custom-checkbox {
 		.custom-control-input {
 			&:not(:checked) {

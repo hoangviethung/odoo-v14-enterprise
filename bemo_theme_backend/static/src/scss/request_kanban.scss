@@ -51,6 +51,9 @@
 		}
 		.o_header_icons_info {
 			margin-left: 0;
+			.icon {
+				color: $bemo-neutral-medium-sub-color;
+			}
 		}
 		.o_header_right_info {
 			> .o_header_stage {
@@ -68,16 +71,25 @@
 	}
 	.o_request_kanban_content {
 		.o_request_kanban_row {
-			padding-bottom: $bemo-spacing-level-3;
+			padding-bottom: $bemo-spacing-level-2;
 			align-items: flex-start;
 			border-bottom: 1px dashed $bemo-neutral-lighter-border-color;
 			+ .o_request_kanban_row {
-				margin-top: $bemo-spacing-level-3;
+				margin-top: $bemo-spacing-level-2;
 			}
 			.o_partner_icon {
 				border-radius: 50%;
 				border: 2px solid $bemo-neutral-lighter-border-color;
 				overflow: hidden;
+				width: 30px;
+				height: 30px;
+				min-width: 30px;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+				}
 			}
 			.o_request_kanban_text {
 				font-size: 12px;
@@ -120,7 +132,7 @@ div.request_kanban_tags {
 			min-width: 40px;
 			min-height: 8px;
 			padding-bottom: 1px;
-			padding-right: $bemo-spacing-level-2;
+			padding-right: 12px;
 			text-indent: unset;
 			position: relative;
 			margin-right: 0 !important;
@@ -132,6 +144,56 @@ div.request_kanban_tags {
 			}
 			+ span.o_tag {
 				margin-left: $bemo-spacing-level-2;
+			}
+		}
+	}
+}
+
+.o_request_dashboard_kanban {
+	overflow: hidden;
+	.o_request_dashboard_kanban_main {
+		padding: $bemo-spacing-level-2;
+		.o_request_dashboard_content {
+			div:not(.o_primary) {
+				font-size: 12px;
+			}
+			.o_primary {
+				font-size: $bemo-font-size-default;
+				font-weight: 500;
+			}
+			.o_buttons {
+				margin-top: $bemo-spacing-level-2;
+				a {
+					margin: 0;
+					+ a {
+						margin-left: $bemo-spacing-level-2;
+					}
+					&:hover {
+						color: $bemo-primary-color;
+					}
+				}
+			}
+		}
+		&[style*="background-color"] {
+			background-color: $bemo-neutral-white !important;
+		}
+	}
+	.o_request_dashboard_kanban_boxes {
+		.o_request_dashboard_kanban_box {
+			transition: $bemo-transition;
+			&:nth-child(1) {
+				background-color: $bemo-semantic-information-lighter-color;
+				border-top-right-radius: $bemo-border-radius-low;
+				&:hover {
+					background-color: $bemo-semantic-information-light-color;
+				}
+			}
+			&:nth-child(2) {
+				background-color: $bemo-semantic-positive-lighter-color;
+				border-bottom-right-radius: $bemo-border-radius-low;
+				&:hover {
+					background-color: $bemo-semantic-positive-light-color;
+				}
 			}
 		}
 	}
