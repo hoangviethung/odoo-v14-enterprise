@@ -76,8 +76,10 @@
 			border-bottom: 1px dashed $bemo-neutral-lighter-border-color;
 			+ .o_request_kanban_row {
 				margin-top: $bemo-spacing-level-2;
-				flex-flow: wrap;
-				flex-wrap: wrap;
+				&.o_request_kanban_dates {
+					flex-flow: wrap;
+					flex-wrap: wrap;
+				}
 			}
 			.o_partner_icon {
 				border-radius: 50%;
@@ -99,7 +101,7 @@
 				display: -webkit-box;
 				text-overflow: ellipsis;
 				-webkit-box-orient: vertical;
-				-webkit-line-clamp: 3;
+				-webkit-line-clamp: 2;
 			}
 			&.o_request_kanban_info {
 				font-size: 12px;
