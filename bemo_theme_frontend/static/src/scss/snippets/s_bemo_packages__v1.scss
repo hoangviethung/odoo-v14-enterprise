@@ -1,0 +1,74 @@
+.bemo-packages {
+	padding: $bemo-spacing-level-8 0;
+	.bemo-title {
+		margin-bottom: $bemo-spacing-level-5;
+	}
+	.item-package {
+		background-color: $bemo-primary-blue-medium-color-01;
+		padding: $bemo-spacing-level-3 $bemo-spacing-level-4;
+		border-radius: $bemo-border-radius-hight;
+		height: 100%;
+	}
+	.package-img {
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+		@media (max-width: 575.98px) {
+			display: none;
+		}
+	}
+	.package-content {
+		margin-top: $bemo-spacing-level-4;
+		h2,
+		p {
+			color: $bemo-neutral-white;
+			text-align: center;
+		}
+		h2 {
+			font-size: 1.5rem;
+			font-weight: 700;
+		}
+		p {
+			font-size: 1rem;
+			margin-top: $bemo-spacing-level-3;
+			min-height: 36px;
+		}
+		@media (max-width: 575.98px) {
+			margin-top: 0;
+		}
+	}
+	.package-action {
+		margin-top: $bemo-spacing-level-4;
+		text-align: center;
+		.btn-outline-light {
+			color: $bemo-neutral-white;
+			border-color: $bemo-neutral-white;
+			&:hover {
+				color: $bemo-neutral-dark-color;
+				background-color: $bemo-neutral-white;
+			}
+		}
+		@media (max-width: 575.98px) {
+			margin-top: $bemo-spacing-level-2;
+		}
+	}
+	.packages {
+		@media (max-width: 1024.98px) {
+			[class*="col-"] {
+				margin-bottom: 30px;
+			}
+		}
+		@media (max-width: 575.98px) {
+			[class*="col-"] {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	@media (max-width: 1024.98px) {
+		padding: $bemo-spacing-level-7 0;
+	}
+	@media (max-width: 575.98px) {
+		padding: $bemo-spacing-level-6 0;
+	}
+}

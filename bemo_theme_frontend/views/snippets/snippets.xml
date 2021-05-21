@@ -7,7 +7,7 @@
                 <div class="o_panel_header">Bemo Snippet</div>
                 <div class="o_panel_body">
                     <!-- BEMO HERO BANNER -->
-                    <t t-snippet="bemo_theme_frontend.s_bemo_hero_banner__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/bemo_hero_banner__v1.svg">
+                    <t t-snippet="bemo_theme_frontend.s_bemo_hero_banner__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_hero_banner__v1.svg">
                         <keywords>bemo slider hero banner, slider hero banner</keywords>
                     </t>
                     <!-- BEMO BANNER TITLE PAGE -->
@@ -29,6 +29,10 @@
                     <!-- BEMO EMPLOYESS FEEDBACK -->
                     <t t-snippet="bemo_theme_frontend.s_employees_feedback__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_employees_feedback__v1.svg">
                         <keywords>bemo employees feedback, employees feedback</keywords>
+                    </t>
+                    <!-- BEMO EMPLOYESS FEEDBACK -->
+                    <t t-snippet="bemo_theme_frontend.s_bemo_packages__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_packages__v1.svg">
+                        <keywords>bemo packages, packages</keywords>
                     </t>
                 </div>
             </div>

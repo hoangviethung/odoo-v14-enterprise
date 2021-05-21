@@ -1,0 +1,9 @@
+.why-bemo {
+	padding: $bemo-spacing-level-4 0 $bemo-spacing-level-8;
+	@media (max-width: 1024.98px) {
+		padding: $bemo-spacing-level-7 0;
+	}
+	@media (max-width: 575.98px) {
+		padding: $bemo-spacing-level-6 0;
+	}
+}

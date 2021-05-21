@@ -1,16 +1,5 @@
 body {
 	&.o_connected_user {
-		&.editor_enable {
-			:not(div) {
-				:focus-visible {
-					outline: none;
-					background-color: rgba(
-						$color: map-get($o-theme-color-palette, primary),
-						$alpha: 0.4
-					);
-				}
-			}
-		}
 		&.hiden-nav-main-navbar {
 			padding-top: 0 !important;
 			.o_main_navbar {

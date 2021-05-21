@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_bemo_why_bemo__v1" name="BEMO: Why Bemo Version 01">
+        <section class="why-bemo">
+            <div class="container">
+                <h2 class="bemo-title">Tại sao nên chọn Bemo?</h2>
+            </div>
+        </section>
+    </template>
+</odoo>

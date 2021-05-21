@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_bemo_packages__v1" name="BEMO: Packages Version 01">
+        <section class="bemo-packages">
+            <div class="container">
+                <h2 class="bemo-title text-center">Một ứng dụng cho mỗi nhu cầu</h2>
+                <div class="row packages">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item-package">
+                            <div class="package-img">
+                                <img src="/bemo_theme_frontend/static/src/images/bemo_package_01.png" atl="package-bemo"/>
+                            </div>
+                            <div class="package-content">
+                                <h2 class="lcl lcl-1">Quản trị nguồn nhân lực</h2>
+                                <p class="lcl lcl-2">Phát triển nhân sự toàn diện trong kỷ nguyên số</p>
+                            </div>
+                            <div class="package-action">
+                                <a href="#" class="btn btn-outline-light">XEM THÊM</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item-package">
+                            <div class="package-img">
+                                <img src="/bemo_theme_frontend/static/src/images/bemo_package_02.png" atl="package-bemo"/>
+                            </div>
+                            <div class="package-content">
+                                <h2 class="lcl lcl-1">Quản lý bán hàng</h2>
+                                <p class="lcl lcl-2">Giải pháp thông minh quản trị bán hàng</p>
+                            </div>
+                            <div class="package-action">
+                                <a href="#" class="btn btn-outline-light">XEM THÊM</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item-package">
+                            <div class="package-img">
+                                <img src="/bemo_theme_frontend/static/src/images/bemo_package_03.png" atl="package-bemo"/>
+                            </div>
+                            <div class="package-content">
+                                <h2 class="lcl lcl-1">Chăm sóc khách hàng</h2>
+                                <p class="lcl lcl-2">Vũ khí sắc bén phát triển kinh doanh</p>
+                            </div>
+                            <div class="package-action">
+                                <a href="#" class="btn btn-outline-light">XEM THÊM</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item-package">
+                            <div class="package-img">
+                                <img src="/bemo_theme_frontend/static/src/images/bemo_package_04.png" atl="package-bemo"/>
+                            </div>
+                            <div class="package-content">
+                                <h2 class="lcl lcl-1">Quản lý tài sản</h2>
+                                <p class="lcl lcl-2">Tối ưu chi phí và hiệu quả sử dụng</p>
+                            </div>
+                            <div class="package-action">
+                                <a href="#" class="btn btn-outline-light">XEM THÊM</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

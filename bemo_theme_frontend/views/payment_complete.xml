@@ -2,7 +2,7 @@
 <odoo>
     <template id="layout_bemo_payment_complete" name="BEMO: Layout Payment Complete">
         <t t-call="website.layout">
-            <t t-call="bemo_theme_frontend.bemo_banner_title_page"/>
+            <t t-call="bemo_theme_frontend.s_bemo_banner_title_page__v1"/>
             <t t-call="bemo_theme_frontend.bemo_payment_complete"/>
             <!-- *** PAGE VERIFY TEMPLATE *** //-->
             <input id="page-verify-template" hidden="hidden" current-page="payment-complete-page" header-inverted="false"/>
