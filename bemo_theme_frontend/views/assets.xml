@@ -21,6 +21,9 @@
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/snippets/s_bemo_packages__v1.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/snippets/s_bemo_why_bemo__v1.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/snippets/s_bemo_liberate__v1.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/snippets/s_bemo_home_clients__v1.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/snippets/s_bemo_home_connect__v1.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/snippets/s_bemo_cta_contact__v1.scss"/>
             <!-- Pages -->
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/pages/p_bemo_pricing/p_bemo_pricing.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/pages/p_bemo_payment/p_bemo_payment.scss"/>

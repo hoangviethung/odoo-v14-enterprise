@@ -42,6 +42,18 @@
                     <t t-snippet="bemo_theme_frontend.s_bemo_liberate__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_liberate__v1.svg">
                         <keywords>bemo liberate, liberate</keywords>
                     </t>
+                    <!-- BEMO HOME CLIENTS -->
+                    <t t-snippet="bemo_theme_frontend.s_bemo_home_clients__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_home_clients__v1.svg">
+                        <keywords>bemo home clinets, home clinets</keywords>
+                    </t>
+                    <!-- BEMO HOME CONNECT -->
+                    <t t-snippet="bemo_theme_frontend.s_bemo_home_connect__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_home_connect__v1.svg">
+                        <keywords>bemo home connect, home connect</keywords>
+                    </t>
+                    <!-- BEMO CTA CONTACT -->
+                    <t t-snippet="bemo_theme_frontend.s_bemo_cta_contact__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_cta_contact__v1.svg">
+                        <keywords>bemo cta contact, cta contact</keywords>
+                    </t>
                 </div>
             </div>
         </xpath>

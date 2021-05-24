@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_bemo_home_connect__v1" name="BEMO: Home Connect Version 01">
+        <section class="bemo-home-connect-v1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 image">
+                        <img src="/bemo_theme_frontend/static/src/images/bemo_home_connect__v1.png"/>
+                    </div>
+                    <div class="col-md-6 content">
+                        <h2 class="bemo-title">Kết nối tích hợp không còn khó khăn</h2>
+                        <p>Nếu doanh nghiệp của bạn đang vận hành trên các giải pháp phần mềm riêng lẻ nhưng không tương thích với nhau, bạn phải tốn thời gian nhập dữ liệu nhiều lần và đang thiếu cái nhìn tổng quan về những gì đang diễn ra.</p>
+                        <p>Bemo tạo ra nền tảng giải quyết mọi nhu cầu kinh doanh của doanh nghiệp tích hợp tất cả các module quản trị bằng một giải pháp duy nhất. Giúp doanh nghiệp tiết kiệm chi phí và tích hợp: doanh nghiệp không cần phải làm thêm bất cứ việc gì để phối hợp với các công nghệ khác nhau.</p>
+                        <p>Bemo được tích hợp toàn diện, cho phép doanh nghiệp tự động hóa hoàn toàn các quy trình kinh doanh và thu về các khoản tiết kiệm và lợi ích cho doanh nghiệp.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

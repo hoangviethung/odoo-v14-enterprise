@@ -41,7 +41,7 @@
                             <t t-if="is_connected">
                                 <div t-attf-class="account">
                                     <a role="button" data-toggle="dropdown" t-attf-class="dropdown-toggle">
-                                        <img t-att-src="'/bemo_theme_frontend/static/src/images/avatar_user_default.jpg'" t-attf-class="account_avatar"/>
+                                        <img t-att-src="'/bemo_theme_frontend/static/src/images/avatar_user_default.png'" t-attf-class="account_avatar"/>
                                         <span t-attf-class="account_name">Tài khoản của bạn</span>
                                     </a>
                                     <div t-attf-class="dropdown-menu js_usermenu" role="menu">

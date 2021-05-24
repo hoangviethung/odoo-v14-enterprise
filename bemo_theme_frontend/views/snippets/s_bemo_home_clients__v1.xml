@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_bemo_home_clients__v1" name="BEMO: Home Clients Version 01">
+        <section class="bemo-home-clients-v1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 content">
+                        <h2 class="bemo-title">Một đề xuất giá trị độc nhất</h2>
+                        <p>Mọi thứ bạn cần cùng với trải nghiệm người dùng hàng đầu.</p>
+                        <p>Bộ ứng dụng của chúng tôi phối hợp nhịp nhàng cùng nhau - cho phép bạn có thể tự động hóa và theo dõi mọi thứ mà bạn đang làm - tập trung, trực tuyến và có thể truy cập từ bất cứ đâu với bất kỳ thiết bị nào.</p>
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="/bemo_theme_frontend/static/src/images/bemo_home_clients__v1.png"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

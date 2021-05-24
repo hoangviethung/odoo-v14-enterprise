@@ -1,7 +1,7 @@
 .bemo-main-footer {
 	position: relative;
 	padding: 24px 0;
-	background-color: $bemo-primary-color;
+	background-color: $bemo-primary-dark-color-02;
 	overflow: hidden;
 	&:after {
 		content: "";
@@ -95,7 +95,7 @@
 
 .o_footer {
 	.o_footer_copyright {
-		background-color: $bemo-primary-dark-color-02;
+		background-color: $bemo-primary-color;
 	}
 }
 

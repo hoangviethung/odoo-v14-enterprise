@@ -32,17 +32,11 @@
 			max-width: 45%;
 		}
 		@media (max-width: 1199.98px) {
-			padding: $bemo-spacing-level-5;
-			background-color: rgba(
-				$color: map-get($o-theme-color-palette, primary),
-				$alpha: 0.1
-			);
-			border-radius: $bemo-border-radius-hight;
+			padding: 0;
 		}
 		@media (max-width: 1024.98px) {
 			max-width: 100%;
 			background-color: transparent;
-			padding: 0;
 		}
 	}
 	@media (max-width: 1439.98px) {

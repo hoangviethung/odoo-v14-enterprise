@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_bemo_cta_contact__v1" name="BEMO: Call to action - Contact Version 01">
+        <section class="bemo-cta-contact-v1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 content">
+                        <h2 class="bemo-title cl-white">Giải phóng tiềm năng phát triển của bạn</h2>
+                        <p>Truy cập nhanh - Không yêu cầu thẻ tín dụng</p>
+                        <div class="call-to-actions">
+                            <a href="#" class="btn btn-light">LIÊN HỆ NGAY VỚI CHÚNG TÔI</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 image">
+                        <img src="/bemo_theme_frontend/static/src/images/bemo_cta_contact__v1.png" alt="BEMO-CALL-TO-ACTION"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

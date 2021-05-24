@@ -1,0 +1,34 @@
+.bemo-cta-contact-v1 {
+	padding: $bemo-spacing-level-4 0;
+	background-color: map-get($o-theme-color-palette, primary);
+	.bemo-title {
+		font-size: 2.2rem;
+		margin-bottom: $bemo-spacing-level-3;
+		@media (max-width: 1024.98px) {
+			font-size: 1.8rem;
+		}
+		@media (max-width: 767.98px) {
+		}
+	}
+	.content {
+		margin-top: $bemo-spacing-level-5;
+		@media (max-width: 767.98px) {
+			margin-top: 0;
+		}
+	}
+	.image {
+		@media (max-width: 767.98px) {
+			display: none;
+		}
+	}
+	.call-to-actions {
+		margin-top: $bemo-spacing-level-4;
+		.btn-light {
+			color: $bemo-neutral-darker-color;
+			background-color: $bemo-neutral-white;
+		}
+	}
+	p {
+		color: $bemo-neutral-white;
+	}
+}

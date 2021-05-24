@@ -1,0 +1,30 @@
+.bemo-home-connect-v1 {
+	padding: $bemo-spacing-level-8 0;
+	background-color: $bemo-primary-blue-light-color-05;
+	.row {
+		align-items: center;
+	}
+	.bemo-title {
+		margin-bottom: $bemo-spacing-level-4;
+		@media (max-width: 1024.98px) {
+			font-size: 2rem;
+			margin-bottom: $bemo-spacing-level-2;
+		}
+	}
+	p {
+		+ p {
+			margin-top: $bemo-spacing-level-2;
+		}
+	}
+	.content {
+		@media (max-width: 767.98px) {
+			margin-top: $bemo-spacing-level-4;
+		}
+	}
+	@media (max-width: 1024.98px) {
+		padding: $bemo-spacing-level-7 0;
+	}
+	@media (max-width: 575.98px) {
+		padding: $bemo-spacing-level-6 0;
+	}
+}

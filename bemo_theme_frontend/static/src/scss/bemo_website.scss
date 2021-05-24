@@ -123,6 +123,9 @@ body {
 	@media (max-width: 575.98px) {
 		font-size: 2.4rem;
 	}
+	&.cl-white {
+		color: $bemo-neutral-white;
+	}
 }
 
 .bemo-button-navigation-slider {
