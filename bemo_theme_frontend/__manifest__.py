@@ -28,6 +28,7 @@
 		'views/snippets/s_bemo_employees_feedback__v1.xml',
 		'views/snippets/s_bemo_packages__v1.xml',
 		'views/snippets/s_bemo_why_bemo__v1.xml',
+		'views/snippets/s_bemo_liberate__v1.xml',
 		'views/snippets/snippets.xml',
 		# Pages
 		'static/src/pages/p_bemo_pricing/p_bemo_pricing.xml',

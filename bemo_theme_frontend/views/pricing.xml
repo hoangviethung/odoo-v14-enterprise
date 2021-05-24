@@ -3,7 +3,6 @@
     <template id="layout_bemo_pricing" name="BEMO: Layout Pricing">
         <t t-call="website.layout">
             <t t-call="bemo_theme_frontend.s_bemo_banner_title_page__v1"/>
-            <t t-call="bemo_theme_frontend.s_bemo_why_bemo__v1"/>
             <t t-call="bemo_theme_frontend.bemo_pricing"/>
             <!-- *** PAGE VERIFY TEMPLATE *** //-->
             <input id="page-verify-template" hidden="hidden" current-page="pricing-page" header-inverted="false"/>

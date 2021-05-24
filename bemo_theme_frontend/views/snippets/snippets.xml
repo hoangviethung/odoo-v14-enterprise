@@ -30,9 +30,17 @@
                     <t t-snippet="bemo_theme_frontend.s_employees_feedback__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_employees_feedback__v1.svg">
                         <keywords>bemo employees feedback, employees feedback</keywords>
                     </t>
-                    <!-- BEMO EMPLOYESS FEEDBACK -->
+                    <!-- BEMO PACKAGES -->
                     <t t-snippet="bemo_theme_frontend.s_bemo_packages__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_packages__v1.svg">
                         <keywords>bemo packages, packages</keywords>
+                    </t>
+                    <!-- BEMO WHY BEMO -->
+                    <t t-snippet="bemo_theme_frontend.s_bemo_why_bemo__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_why_bemo__v1.svg">
+                        <keywords>bemo why bemo, why bemo</keywords>
+                    </t>
+                    <!-- BEMO LIBERATE -->
+                    <t t-snippet="bemo_theme_frontend.s_bemo_liberate__v1" t-thumbnail="/bemo_theme_frontend/static/src/images/snippets_thumbs/s_bemo_liberate__v1.svg">
+                        <keywords>bemo liberate, liberate</keywords>
                     </t>
                 </div>
             </div>

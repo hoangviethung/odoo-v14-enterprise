@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="s_bemo_why_bemo__v1" name="BEMO: Why Bemo Version 01">
-        <section class="why-bemo">
+        <section class="bemo-why-bemo">
             <div class="container">
                 <h2 class="bemo-title">Tại sao nên chọn Bemo?</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul>
+                            <li>
+                                <i class="fa fa-laptop"></i>
+                                <p>Giao diện hiện đại, mẫu chuẩn thế giới giúp hệ thống thân thiện hơn với người dùng</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-sitemap"></i>
+                                <p>Mang quy trình chuẩn của thế giới tới doanh nghiệp Việt Nam, có khả năng tuỳ chỉnh phù hợp cho doanh nghiệp Việt Nam</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-money"></i>
+                                <p>Chi phí triển khai lắp đặt nhanh chóng, cạnh tranh so với các giải pháp ERP khác trên thị trường</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-check"></i>
+                                <p>Có thể dùng thử, trải nghiệm miễn phí trong một khoảng thời gian, đây là lợi ích giúp các doanh nghiệp ra quyết định triển khai cho doanh nghiệp nhanh chóng.</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-user-md"></i>
+                                <p>Đội ngũ chăm sóc khách hàng được trang bị chuyên môn vững chắc, sẽ nhiệt tình giải đáp các thắc mắc của doanh nghiệp 24/7</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-linode"></i>
+                                <p>Không ngừng phát triển để đem tới cho khách hàng những trải nghiệm với các công nghệ mới nhất: AI, IOT, VR/AR,..</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 section-img">
+                        <img src="/bemo_theme_frontend/static/src/images/bemo_why_bemo.png" alt="WHY-BEMO" />
+                    </div>
+                </div>
             </div>
         </section>
     </template>

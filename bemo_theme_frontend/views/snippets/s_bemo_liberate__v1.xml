@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_bemo_liberate__v1" name="BEMO: Liberate Version 01">
+        <section class="bemo-liberate" style='--data-bg-pc-large:url(/bemo_theme_frontend/static/src/images/bemo_liberate_pc_large.png);--data-bg-pc-small:url(/bemo_theme_frontend/static/src/images/bemo_liberate_pc_small.png);--data-bg-mobile:url(/bemo_theme_frontend/static/src/images/bemo_liberate_mobile.png)'>
+            <div class="container">
+                <div class="block-content">
+                    <h2 class="bemo-title">Giải phóng tiềm năng phát triển
+                        <br/>
+của doanh nghiệp
+                    </h2>
+                    <p>Nếu vận hành trên các giải pháp phần mềm riêng lẻ nhưng không tương thích với nhau, bạn có thể phải nhập dữ liệu nhiều lần và thiếu cái nhìn tổng quan về những gì đang diễn ra. Giữa ứng dụng Odoo và hàng chục ngàn ứng dụng Cộng đồng khác, hiện có một số tính năng giúp giải quyết mọi nhu cầu kinh doanh của bạn chỉ bằng một giải pháp đơn lẻ, tiết kiệm chi phí và tích hợp: không cần phải làm thêm bất cứ việc gì để phối hợp với các công nghệ khác nhau.</p>
+                    <p>Các ứng dụng Odoo được tích hợp hoàn hảo với nhau, cho phép bạn tự động hóa hoàn toàn các quy trình kinh doanh và thu về các khoản tiết kiệm và lợi ích.</p>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>
