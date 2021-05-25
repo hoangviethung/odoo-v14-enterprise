@@ -50,4 +50,7 @@
 			border-top: 1px solid $bemo-neutral-lighter-border-color;
 		}
 	}
+	@media (max-width: 1024.98px) {
+		display: none;
+	}
 }

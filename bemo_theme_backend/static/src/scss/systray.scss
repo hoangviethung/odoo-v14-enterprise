@@ -9,5 +9,35 @@
 				color: $bemo-semantic-negative-color;
 			}
 		}
+		.o_mail_systray_dropdown_items {
+			@media (max-width: 767.98px) {
+				padding-bottom: 0;
+			}
+		}
+	}
+	.dropdown-menu {
+		&.o_mail_systray_dropdown {
+			@media (max-width: 767.98px) {
+				display: block;
+				position: fixed;
+				top: $bemo-navbar-height;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				width: 100%;
+				margin: 0;
+				max-height: unset;
+				opacity: 0;
+				pointer-events: none;
+				visibility: hidden;
+				transition: $bemo-transition;
+				border-radius: 0;
+				&.show {
+					opacity: 1;
+					visibility: visible;
+					pointer-events: visible;
+				}
+			}
+		}
 	}
 }

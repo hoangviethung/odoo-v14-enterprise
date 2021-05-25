@@ -1,5 +1,11 @@
+.o_MessagingMenu {
+	&.o-is-open {
+		background-color: transparent;
+	}
+}
+
 .o_MessagingMenu_dropdownMenuHeader {
-	background: $bemo-primary-blue-light-color-06;
+	background-color: $bemo-primary-blue-light-color-06;
 	border-bottom: 0;
 	padding: 0 $bemo-spacing-level-3;
 	button {
@@ -9,8 +15,28 @@
 			margin-left: $bemo-spacing-level-3;
 		}
 	}
+	&.o-mobile {
+		padding: $bemo-spacing-level-2;
+	}
 }
-
+.o_MessagingMenu_dropdownMenu {
+	&.o-mobile {
+		top: $bemo-navbar-height;
+		border-radius: 0;
+		box-shadow: 0 3px 6px rgba($color: $bemo-neutral-black, $alpha: 0.16);
+		opacity: 0;
+		pointer-events: none;
+		visibility: hidden;
+		transition: $bemo-transition;
+	}
+}
 .o_MessagingMenu_counter {
 	background: $bemo-semantic-negative-color;
+}
+.o_MessagingMenu_newMessageButton {
+	&.o-mobile {
+		font-size: 12px;
+		padding: 0 $bemo-spacing-level-2;
+		height: 32px;
+	}
 }

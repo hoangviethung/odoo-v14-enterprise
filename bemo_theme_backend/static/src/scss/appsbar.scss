@@ -30,110 +30,80 @@
 	}
 }
 
-@include media-breakpoint-up(lg) {
-	.bemo_sidebar_type_large {
-		.bemo_apps_sidebar_panel,
-		.o_menu_apps {
-			width: $bemo-sidebar-large-width;
-		}
-		.logo_bemo_sidebar_type_large {
-			display: block;
-		}
-		.o_action_manager {
-			padding-left: $bemo-sidebar-large-width;
-		}
-		.nav-item {
-			> a {
-				&:hover {
-					transform: translateX($bemo-spacing-level-2);
-				}
-			}
-		}
-	}
-	.bemo_sidebar_type_small {
-		.bemo_apps_sidebar_panel,
-		.o_menu_apps {
-			width: $bemo-sidebar-small-width;
-			.bemo_apps_sidebar_name {
-				display: none;
-			}
-			.bemo_apps_sidebar {
-				.bemo_apps_sidebar_menu {
-					> li {
-						> a {
-							.bemo_apps_sidebar_icon {
-								margin-right: 0;
-							}
-						}
-					}
-				}
-			}
-		}
-		.logo_bemo_sidebar_type_small {
-			display: block;
-		}
-		.o_action_manager {
-			padding-left: $bemo-sidebar-small-width;
-		}
-		.nav-item {
-			> a {
-				&:hover {
-					transform: scale(1.08);
-				}
-			}
-		}
-	}
-	.bemo_sidebar_type_invisible {
-		.bemo_apps_sidebar_panel {
-			display: none;
-		}
-		.o_menu_apps {
-			width: $bemo-sidebar-invisible-width;
-		}
-		.logo_bemo_sidebar_type_invisible {
-			display: block;
-		}
-	}
-}
-
-@include media-breakpoint-only(md) {
-	.bemo_sidebar_type_large,
-	.bemo_sidebar_type_small {
-		.bemo_apps_sidebar_panel {
-			width: $bemo-sidebar-small-width;
-			.bemo_apps_sidebar_name {
-				display: none;
-			}
-			.bemo_apps_sidebar_icon {
-				margin-right: 0 !important;
-			}
-		}
-		.o_action_manager {
-			padding-left: $bemo-sidebar-small-width;
-		}
-	}
-
-	.bemo_sidebar_type_invisible {
-		.bemo_apps_sidebar_panel {
-			display: none;
-		}
-	}
-}
-
-@include media-breakpoint-down(sm) {
-	.bemo_apps_sidebar_panel {
-		display: none;
-	}
-	.o_action_manager {
-		padding-left: 0;
-	}
-}
-
 .o_fullscreen {
 	.bemo_apps_sidebar_panel {
 		display: none;
 	}
 	.o_action_manager {
 		padding-left: 0;
+	}
+}
+
+.bemo_sidebar_type_large {
+	.bemo_apps_sidebar_panel,
+	.o_menu_apps {
+		width: $bemo-sidebar-large-width;
+	}
+	.logo_bemo_sidebar_type_large {
+		display: block;
+	}
+	.o_action_manager {
+		padding-left: $bemo-sidebar-large-width;
+	}
+	.nav-item {
+		> a {
+			&:hover {
+				transform: translateX($bemo-spacing-level-2);
+			}
+		}
+	}
+}
+
+.bemo_sidebar_type_small {
+	.bemo_apps_sidebar_panel,
+	.o_menu_apps {
+		width: $bemo-sidebar-small-width;
+		.bemo_apps_sidebar_name {
+			display: none;
+		}
+		.bemo_apps_sidebar {
+			.bemo_apps_sidebar_menu {
+				> li {
+					> a {
+						.bemo_apps_sidebar_icon {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.logo_bemo_sidebar_type_small {
+		display: block;
+	}
+	.o_action_manager {
+		padding-left: $bemo-sidebar-small-width;
+	}
+	.nav-item {
+		> a {
+			&:hover {
+				transform: scale(1.08);
+			}
+		}
+	}
+}
+
+.bemo_sidebar_type_invisible {
+	.bemo_apps_sidebar_panel {
+		display: none;
+	}
+	.o_menu_apps {
+		width: $bemo-sidebar-invisible-width;
+		@media (max-width: 767.98px) {
+			width: $bemo-sidebar-invisible-mobile-width;
+		}
+	}
+	.logo_bemo_sidebar_type_invisible {
+		display: block;
 	}
 }

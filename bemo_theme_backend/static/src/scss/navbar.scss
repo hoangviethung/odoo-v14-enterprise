@@ -36,6 +36,17 @@
 					}
 				}
 			}
+			&.o_debug_manager {
+				@media (max-width: 1024.98px) {
+					display: none;
+				}
+			}
+			&.o_MessagingMenu,
+			&.o_mail_systray_item {
+				@media (max-width: 350.98px) {
+					display: none;
+				}
+			}
 			> a,
 			> label {
 				padding: 0 $bemo-spacing-level-2;
@@ -50,6 +61,38 @@
 						right: $bemo-spacing-level-2;
 						top: 50%;
 						transform: translateY(-50%);
+					}
+					> .fa-chevron-right.float-right,
+					.fa-chevron-down.float-right {
+						display: none !important;
+					}
+					~ .dropdown-menu {
+						> li {
+							&.bemo_menu_mobile_section {
+								padding: $bemo-spacing-level-1
+									$bemo-spacing-level-3;
+							}
+							> a,
+							> label {
+								&.o_menu_header_lvl_2 {
+									position: relative;
+									padding-right: $bemo-spacing-level-4;
+									&:before {
+										content: "\f078";
+										font-size: 10px;
+										font-family: "FontAwesome";
+										position: absolute;
+										right: $bemo-spacing-level-2;
+										top: 50%;
+										transform: translateY(-50%);
+									}
+									> .fa-chevron-right.float-right,
+									.fa-chevron-down.float-right {
+										display: none !important;
+									}
+								}
+							}
+						}
 					}
 				}
 				&:hover {
@@ -216,6 +259,15 @@
 					max-width: 200px;
 					height: auto;
 					margin: 0 auto;
+					@media (max-width: 1024.98px) {
+						max-width: 150px;
+					}
+					@media (max-width: 575.98px) {
+						max-width: 100px;
+					}
+				}
+				@media (max-width: 575.98px) {
+					margin-bottom: $bemo-spacing-level-3;
 				}
 			}
 			.bemo_apps_wrapper {
@@ -287,11 +339,17 @@
 				pointer-events: none;
 			}
 		}
+		@media (max-width: 767.98px) {
+			padding: 0 $bemo-spacing-level-2;
+		}
 	}
 	> .o_menu_brand {
 		margin-right: 0;
 		padding: 0 $bemo-spacing-level-3;
 		transition: $bemo-transition;
+		@media (max-width: 1024.98px) {
+			display: none !important;
+		}
 	}
 	> .o_menu_sections {
 		> li {
@@ -306,6 +364,26 @@
 				@media (max-width: 1439.98px) {
 					margin-left: $bemo-spacing-level-4;
 				}
+			}
+		}
+		@media (max-width: 1024.98px) {
+			position: fixed;
+			left: 0;
+			top: $bemo-navbar-height;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			flex-direction: column;
+			background-color: rgba($color: $bemo-neutral-black, $alpha: 0.8);
+			opacity: 0;
+			pointer-events: none;
+			visibility: hidden;
+			z-index: 400;
+			transition: $bemo-transition;
+			&.show {
+				opacity: 1;
+				visibility: visible;
+				pointer-events: visible;
 			}
 		}
 	}
@@ -345,6 +423,9 @@
 				@media (max-width: 1439.98px) {
 					display: none;
 				}
+			}
+			> span.fa-building-o {
+				display: none;
 			}
 			@media (max-width: 1439.98px) {
 				&:before {
@@ -430,5 +511,14 @@
 		.dropdown-toggle {
 			background-color: inherit;
 		}
+	}
+	.bemo_menu_sections_toggle {
+		display: none;
+		@media (max-width: 1024.98px) {
+			display: block;
+		}
+	}
+	@media (max-width: 767.98px) {
+		padding-right: $bemo-spacing-level-2;
 	}
 }
