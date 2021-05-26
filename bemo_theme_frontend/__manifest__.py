@@ -19,6 +19,10 @@
 		'data/ir_config_parameter.xml',
 		# Security
 		'security/ir.model.access.csv',
+		#Header
+		'views/header/bemo_header__v1.xml',
+		#Footer
+		'views/footer/bemo_footer__v1.xml',
 		#Snippets
 		'views/snippets/s_bemo_hero_banner__v1.xml',
 		'views/snippets/s_bemo_banner_title_page__v1.xml',
@@ -41,8 +45,6 @@
 		'static/src/pages/p_bemo_payment_complete/p_bemo_payment_complete.xml',
 		#View
 		'views/assets.xml',
-		'views/header.xml',
-		'views/footer.xml',
 		'views/login.xml',
 		'views/pricing.xml',
 		'views/cart.xml',

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-    <template id="place_into_bar" inherit_id="website.snippets" name="Bemo place into bar">
+    <template id="bemo_place_into_bar" inherit_id="website.snippets" name="Bemo place into bar">
         <xpath expr="//div[@id='snippet_custom']" position="before">
             <div id="snippet_bemo" class="o_panel">
                 <div class="o_panel_header">Bemo Snippet</div>

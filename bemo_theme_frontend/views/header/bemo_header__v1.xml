@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- LAYOUT HOMEPAGE -->
-    <template id="header" inherit_id="website.layout" name="Custom Header">
-        <!-- Add an element after the top menu  -->
+    <template id="bemo_header__v1" inherit_id="website.layout" name="BEMO: Header Template Version 01">
         <xpath expr="//header" position="replace">
             <!-- *** HEADER *** //-->
             <header class="bemo-main-header">

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- LAYOUT HOMEPAGE -->
-    <template id="footer" inherit_id="website.footer_custom" name="BEMO: Footer Inherit">
+    <template id="bemo_footer__v1" inherit_id="website.footer_custom" name="BEMO: Footer Template Version 01">
         <xpath expr="//div[@id='footer']" position="replace">
-            <!-- *** FOOTER *** //-->
             <footer class="bemo-main-footer">
                 <div class="container">
                     <a class="bemo-logo-main-footer" href="index.html">
