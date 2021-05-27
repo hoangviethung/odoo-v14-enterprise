@@ -4,9 +4,10 @@
         <xpath expr="//div[@id='footer']" position="replace">
             <footer class="bemo-main-footer-v1">
                 <div class="container">
-                    <a class="bemo-logo-main-footer" href="index.html">
-                        <img src="/bemo_theme_frontend/static/src/images/logo_bemo_company_default.png" alt="LOGO-BEMO"/>
-                    </a>
+                    <!-- Brand -->
+                    <t t-call="website.placeholder_header_brand">
+                        <t t-set="_link_class" t-value="'bemo-logo-main-footer'"/>
+                    </t>
                     <div class="row">
                         <div class="col-12 col-lg-7 col-xl-6">
                             <div class="row">
