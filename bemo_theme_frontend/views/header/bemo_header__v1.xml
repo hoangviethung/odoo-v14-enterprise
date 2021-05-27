@@ -36,23 +36,21 @@
                         <div class="bemo-header-login-wrapper">
                             <t t-set="is_connected" t-value="not user_id._is_public()"/>
                             <t t-if="is_connected">
-                                <div t-attf-class="bemo-account">
-                                    <ul class="bemo-account-information">
-                                        <li class="bemo-account-avatar">
-                                            <img t-att-src="'/bemo_theme_frontend/static/src/images/avatar_user_default.png'"/>
-                                        </li>
-                                        <t t-call="portal.placeholder_user_sign_in">
-                                            <t t-set="_item_class" t-value="'bemo-nav-item'"/>
-                                            <t t-set="_link_class" t-value="'bemo-nav-link'"/>
-                                        </t>
-                                        <t t-call="portal.user_dropdown">
-                                            <t t-set="_user_name" t-value="true"/>
-                                            <t t-set="_item_class" t-value="'bemo-nav-item dropdown'"/>
-                                            <t t-set="_link_class" t-value="'bemo-nav-link'"/>
-                                            <t t-set="_dropdown_menu_class" t-value="'dropdown-menu-right'"/>
-                                        </t>
-                                    </ul>
-                                </div>
+                                <ul class="bemo-account">
+                                    <li class="bemo-account-avatar">
+                                        <img t-att-src="'/bemo_theme_frontend/static/src/images/avatar_user_default.png'"/>
+                                    </li>
+                                    <t t-call="portal.placeholder_user_sign_in">
+                                        <t t-set="_item_class" t-value="'bemo-nav-item'"/>
+                                        <t t-set="_link_class" t-value="'bemo-nav-link'"/>
+                                    </t>
+                                    <t t-call="portal.user_dropdown">
+                                        <t t-set="_user_name" t-value="true"/>
+                                        <t t-set="_item_class" t-value="'bemo-account-information dropdown'"></t>
+                                        <t t-set="_link_class" t-value="'bemo-nav-link'"/>
+                                        <t t-set="_dropdown_menu_class" t-value="'dropdown-menu-right'"/>
+                                    </t>
+                                </ul>
                             </t>
                             <t t-else="">
                                 <a t-attf-class="btn btn-login" t-attf-href="/web/login">
