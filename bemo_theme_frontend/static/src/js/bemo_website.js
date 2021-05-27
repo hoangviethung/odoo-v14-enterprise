@@ -60,9 +60,12 @@ class Tab {
 }
 
 const headerVerify = (BemoWebsite, isInverted) => {
-	if (isInverted == "true") {
-		BemoWebsite.querySelector(".bemo-main-header").classList.add(
-			"bemo-header-inverted",
+	const BemoHeader__v1 = BemoWebsite.querySelector(".bemo-main-header-v1");
+	if (isInverted == "true" && BemoHeader__v1) {
+		BemoHeader__v1.classList.add("bemo-header-inverted");
+	} else {
+		console.log(
+			'Bemo Debug: [".bemo-main-header-v1"] is not define or "isInverted" == False',
 		);
 	}
 };
@@ -81,15 +84,15 @@ const pageVerify = (BemoWebsite) => {
 		const isInverted = blockData.getAttribute("header-inverted");
 		const nameCurrentPage = blockData.getAttribute("current-page");
 		//ACTION
-		headerVerify(BemoWebsite, isInverted);
 		navVerify(BemoWebsite, nameCurrentPage);
+		headerVerify(BemoWebsite, isInverted);
 	} else {
 		console.log('Bemo Debug: ["#page-verify-template"] is not define');
 	}
 };
 
 const fixedBemoHeader = (BemoWebsite) => {
-	const header = document.querySelector(".bemo-main-header");
+	const header = document.querySelector(".bemo-main-header-v1");
 	if (header) {
 		if (window.innerWidth > 1025) {
 			if (BemoWebsite.scrollTop > header.clientHeight) {
@@ -235,18 +238,13 @@ odoo.define("bemo_theme_frontend", function (require) {
 		initSliderBemoHeroBanner();
 		initSliderBemoNotification();
 		initSliderBemoHomeNews();
-		fixedBemoHeader(BemoWebsite);
 		showNavSlideBar(BemoWebsite);
 		closeNavSlideBar(BemoWebsite);
 		const PricingBoard = new Tab(".hvh-pricing-board .tab-container");
 		const FormCheckout = new Tab(".hvh-form-checkout .tab-container");
 	})();
 
-	BemoWebsite.addEventListener("scroll", (e) => {
-		fixedBemoHeader(BemoWebsite);
-	});
+	BemoWebsite.addEventListener("scroll", (e) => {});
 
-	window.addEventListener("resize", (e) => {
-		fixedBemoHeader(BemoWebsite);
-	});
+	window.addEventListener("resize", (e) => {});
 });

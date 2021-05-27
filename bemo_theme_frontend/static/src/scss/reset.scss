@@ -9,6 +9,25 @@
 	overflow-x: hidden;
 }
 
+body {
+	&.o_connected_user {
+		@media (max-width: 1024.98px) {
+			.bemo-primary-nav {
+				height: calc(100vh - #{$bemo-navbar-height});
+			}
+		}
+	}
+}
+
+#wrapwrap {
+	header {
+		transition: $bemo-transition;
+		&.o_header_affixed {
+			background: transparent;
+		}
+	}
+}
+
 ol,
 ul,
 dl {

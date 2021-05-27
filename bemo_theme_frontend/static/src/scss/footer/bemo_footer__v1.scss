@@ -1,4 +1,4 @@
-.bemo-main-footer {
+.bemo-main-footer-v1 {
 	position: relative;
 	padding: 24px 0;
 	background-color: $bemo-primary-dark-color-02;
@@ -53,42 +53,41 @@
 			}
 		}
 	}
-}
-
-.bemo-desc-footer {
-	color: $bemo-neutral-white;
-	+ .bemo-desc-footer {
-		margin-top: 4px;
-	}
-}
-
-.bemo-logo-main-footer {
-	display: inline-block;
-	max-width: 120px;
-	margin-bottom: $bemo-spacing-level-4;
-	img {
-		filter: brightness(0) invert(1);
-	}
-}
-
-.bemo-footer-title {
-	color: $bemo-neutral-white;
-	font-size: 1.8rem;
-}
-
-.bemo-footer-links {
-	margin: 8px 0 16px;
-	a {
-		&:not(.btn) {
-			color: $bemo-neutral-white;
-			&:hover {
-				color: $bemo-neutral-white;
-			}
+	.bemo-desc-footer {
+		color: $bemo-neutral-white;
+		+ .bemo-desc-footer {
+			margin-top: 4px;
 		}
 	}
-	li {
-		+ li {
-			margin-top: 8px;
+
+	.bemo-logo-main-footer {
+		display: inline-block;
+		max-width: 120px;
+		margin-bottom: $bemo-spacing-level-4;
+		img {
+			filter: brightness(0) invert(1);
+		}
+	}
+
+	.bemo-footer-title {
+		color: $bemo-neutral-white;
+		font-size: 1.8rem;
+	}
+
+	.bemo-footer-links {
+		margin: 8px 0 16px;
+		a {
+			&:not(.btn) {
+				color: $bemo-neutral-white;
+				&:hover {
+					color: $bemo-neutral-white;
+				}
+			}
+		}
+		li {
+			+ li {
+				margin-top: 8px;
+			}
 		}
 	}
 }
@@ -96,21 +95,18 @@
 .o_footer {
 	.o_footer_copyright {
 		background-color: $bemo-primary-color;
-	}
-}
-
-.o_footer_copyright {
-	.js_language_selector {
-		display: none;
-	}
-	.o_footer_copyright_name {
-		margin-left: 0.5rem;
-	}
-	.row {
-		> div {
-			display: flex;
-			align-items: center;
-			justify-content: center;
+		.js_language_selector {
+			display: none;
+		}
+		.o_footer_copyright_name {
+			margin-left: 0.5rem;
+		}
+		.row {
+			> div {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
 		}
 	}
 }

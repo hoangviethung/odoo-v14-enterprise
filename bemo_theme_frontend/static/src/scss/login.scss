@@ -1,5 +1,6 @@
 .bemo-login {
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 	background-color: $bemo-primary-blue-light-color-06;
 	background-image: var(--data-bg);
 	background-size: 100% 100%;
@@ -8,10 +9,13 @@
 	&[bemo-theme-login="dark"] {
 		background-color: $bemo-primary-dark-color-01;
 	}
+	@media (max-width: 1024.98px) {
+		min-height: 80vh;
+	}
 }
 
 .loign-wrapper {
-	border-radius: 8px;
+	border-radius: $bemo-border-radius-low;
 	overflow: hidden;
 }
 
@@ -20,13 +24,17 @@
 	h3 {
 		color: $bemo-primary-color;
 		font-size: 28px;
-		margin-bottom: 16px;
+		margin-bottom: $bemo-spacing-level-3;
 	}
 	h5 {
 		font-size: 18px;
 		font-weight: 500;
-		margin-bottom: 24px;
+		margin-bottom: $bemo-spacing-level-4;
 		color: $bemo-neutral-medium-sub-color;
+		@media (max-width: 575.98px) {
+			font-size: $bemo-font-size-default;
+			margin-bottom: $bemo-spacing-level-2;
+		}
 	}
 	.col-form-label {
 		font-size: 12px;
@@ -37,23 +45,32 @@
 		height: 40px;
 	}
 	.buttons-form {
-		margin-top: 16px;
+		margin-top: $bemo-spacing-level-3;
 	}
 	.forget-password {
 		text-align: right;
-		margin-top: 16px;
+		margin-top: $bemo-spacing-level-3;
 		> a {
 			color: $bemo-semantic-information-color;
 			font-size: 14px;
 		}
+	}
+	@media (max-width: 991.98px) {
+		border-radius: $bemo-border-radius-hight;
 	}
 }
 
 .wrapper-say-hi,
 .bemo-form-login {
 	background: $bemo-neutral-white;
-	padding: 100px 32px;
+	padding: $bemo-spacing-level-10 $bemo-spacing-level-5;
 	height: 100%;
+	@media (max-width: 1024.98px) {
+		padding: $bemo-spacing-level-5;
+	}
+	@media (max-width: 575.98px) {
+		padding: $bemo-spacing-level-3;
+	}
 }
 
 .wrapper-say-hi {
@@ -70,6 +87,19 @@
 		font-size: 60px;
 	}
 	p {
-		margin-top: 24px;
+		margin-top: $bemo-spacing-level-4;
+	}
+}
+
+.col-wrapper-say-hi {
+	@media (max-width: 991.98px) {
+		display: none;
+	}
+}
+
+.col-bemo-form-login {
+	@media (max-width: 991.98px) {
+		padding-top: 10vh;
+		padding-bottom: 10vh;
 	}
 }

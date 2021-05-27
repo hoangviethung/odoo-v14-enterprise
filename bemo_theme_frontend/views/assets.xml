@@ -8,9 +8,10 @@
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/bemo_website.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/utilities.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/forms.scss"/>
-            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/header.scss"/>
-            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/footer.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/login.scss"/>
+            <!-- Bemo Header & Footer -->
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/header/bemo_header__v1.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/footer/bemo_footer__v1.scss"/>
             <!-- Snippets -->
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/snippets/s_bemo_hero_banner__v1.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/snippets/s_bemo_banner_title_page__v1.scss"/>
@@ -64,6 +65,11 @@
         <xpath expr="//link[last()]" position="after">
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/wysiwyg_snippets.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/wysiwyg.scss"/>
+        </xpath>
+    </template>
+    <template id="bemo_portal_assets_frontend" inherit_id="portal.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/website.ui.scss"/>
         </xpath>
     </template>
 </odoo>

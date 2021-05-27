@@ -1,0 +1,42 @@
+body {
+	.modal {
+		&.o_technical_modal {
+			.modal-body {
+				.row {
+					margin-left: -1rem;
+					margin-right: -1rem;
+				}
+				[class*="col-"] {
+					padding-right: 1rem;
+					padding-left: 1rem;
+				}
+			}
+			.input-group-text {
+				color: $bemo-primary-color;
+				background-color: $bemo-primary-blue-light-color-05;
+			}
+			.btn:not(.o_btn_preview).btn-danger {
+				color: $bemo-neutral-white;
+				&.js_delete_menu {
+					border-top-right-radius: 0.25rem;
+					border-bottom-right-radius: 0.25rem;
+				}
+			}
+			.js_add_menu {
+				display: inline-flex;
+				align-items: center;
+				margin-top: $bemo-spacing-level-3;
+				i {
+					margin-right: $bemo-spacing-level-1;
+				}
+			}
+			.oe_menu_editor {
+				li {
+					+ li {
+						margin-top: $bemo-spacing-level-2;
+					}
+				}
+			}
+		}
+	}
+}
