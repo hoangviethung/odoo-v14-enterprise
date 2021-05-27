@@ -23,7 +23,7 @@
                                 <div class="col-lg-5 col-wrapper-say-hi">
                                     <div class="wrapper-say-hi" t-attf-style="--data-bg: url('#{in_form_background_src}');">
                                         <h1>Hi!!</h1>
-                                        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                                        <p>Break The Limits</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-7 col-bemo-form-login">

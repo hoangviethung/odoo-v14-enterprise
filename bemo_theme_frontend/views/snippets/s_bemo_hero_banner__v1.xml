@@ -37,7 +37,8 @@
                                     <div class="hero-banner-content-wrapper">
                                         <div class="hero-banner-content">
                                             <div class="contents">
-                                                <h2>Think Outside The Box</h2>
+                                                <h2 class="title-hero-banner-sm">DIGITAL TRANSFORMATION</h2>
+                                                <h2 class="title-hero-banner-sm">SOLUTION FOR BUSINESSES</h2>
                                                 <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ittis sem nibh id elit. sDuis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
                                             </div>
                                             <div class="call-to-actions">
