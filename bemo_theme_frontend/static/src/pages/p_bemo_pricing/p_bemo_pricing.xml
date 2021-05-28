@@ -58,6 +58,14 @@
                                                     </select>
                                                 </div>
                                             </div>
+                                            <div class="hvh-pricing-step-head">
+                                                <h3>Nhập tên CSDL</h3>
+                                            </div>
+                                            <div class="hvh-pricing-step-body">
+                                                <div class="hvh-name-database">
+                                                    <input type="text" class="form-control" placeholder="Nhập tên cơ sở dữ liệu"/>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

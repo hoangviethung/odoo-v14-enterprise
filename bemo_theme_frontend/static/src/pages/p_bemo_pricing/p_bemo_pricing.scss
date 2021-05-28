@@ -29,13 +29,16 @@
 				}
 			}
 		}
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 	.hvh-pricing-step-head {
 		padding: 0 $bemo-spacing-level-3;
 		h3 {
 			font-size: 1.6rem;
 			font-weight: 400;
-			margin-bottom: $bemo-spacing-level-3;
+			margin-bottom: $bemo-spacing-level-2;
 		}
 	}
 	.hvh-pricing-step-body {
@@ -75,9 +78,13 @@
 				}
 			}
 		}
-		.hvh-pricing-currencies {
+		.hvh-pricing-currencies,
+		.hvh-name-database {
 			padding: 0 $bemo-spacing-level-3;
 			width: 100%;
+		}
+		~ .hvh-pricing-step-head {
+			margin-top: $bemo-spacing-level-3;
 		}
 	}
 	.app-item {
