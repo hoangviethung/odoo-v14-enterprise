@@ -120,10 +120,10 @@
 		padding: $bemo-spacing-level-3;
 		background-color: $bemo-primary-blue-light-color-05;
 		border-radius: $bemo-border-radius-medium;
-		transition: $bemo-transition;
+		transition: background-color 0.3s linear;
 		.o_kanban_header {
-			background: $bemo-primary-blue-light-color-05;
-			transition: $bemo-transition;
+			background-color: $bemo-primary-blue-light-color-05;
+			transition: 0.3s all linear;
 			.o_kanban_counter {
 				.bg-muted-full {
 					background-color: $bemo-neutral-white;
@@ -145,8 +145,8 @@
 			}
 		}
 		&.o_kanban_group_show_muted {
-			transition: $bemo-transition;
-			background: $bemo-primary-blue-light-color-04;
+			transition: background-color 0.3s linear;
+			background-color: $bemo-primary-blue-light-color-04;
 			.o_kanban_header {
 				background-color: transparent;
 			}
@@ -169,10 +169,14 @@
 			overflow-y: auto;
 		}
 		&.o_column_folded {
-			margin: 16px;
-			transition: $bemo-transition;
+			cursor: e-resize;
+			margin: $bemo-spacing-level-3;
+			transition: background-color 0.3s linear;
 			.o_kanban_header_title {
-				transition: $bemo-transition;
+				transition: 0.3s all linear;
+				.o_column_unfold {
+					cursor: e-resize;
+				}
 			}
 		}
 		&.o_kanban_has_progressbar:not(.o_column_folded) {
@@ -273,6 +277,20 @@
 			.oe_kanban_bottom_left {
 				.o_priority_star {
 					font-size: $bemo-font-size-default;
+				}
+				.o_activity_btn {
+					~ .o_activity {
+						.o_schedule_activity {
+							.btn {
+								border: 0;
+								border-radius: unset;
+								font-size: 12px;
+								&:hover {
+									background-color: $bemo-primary-blue-light-color-06;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -384,7 +402,7 @@
 	&.ui-sortable {
 		.o_kanban_header_title {
 			.o_column_title {
-				cursor: e-resize;
+				cursor: move;
 			}
 		}
 	}
@@ -465,6 +483,7 @@
 		}
 	}
 }
+
 .tab-pane {
 	.o_kanban_view {
 		&.o_kanban_ungrouped {
@@ -544,4 +563,9 @@
 
 .o_kanban_examples {
 	padding: 0;
+}
+
+.o_kanban_record .o_mail_activity div.o_activity,
+.o_view_controller .o_mail_activity div.o_activity {
+	min-width: unset;
 }
