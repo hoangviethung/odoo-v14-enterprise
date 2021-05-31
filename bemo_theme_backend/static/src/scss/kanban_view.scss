@@ -22,6 +22,17 @@
 				.o_kanban_image_fill_left {
 					flex: 1 0 100px;
 					min-height: 120px;
+					@media (max-width: 767.98px) {
+						flex: 0 0 56px;
+						height: 56px;
+						min-height: 56px;
+						margin-top: 0;
+						margin-bottom: 0;
+						margin-left: 0;
+						border-radius: 50%;
+						border: 2px solid $bemo-neutral-lighter-border-color;
+						margin-right: $bemo-spacing-level-2;
+					}
 				}
 			}
 			.o_kanban_record_title {
@@ -59,6 +70,10 @@
 			}
 			@media (max-width: 575.98px) {
 				width: 100%;
+				margin: $bemo-spacing-level-1 $bemo-spacing-level-2;
+				&:first-child {
+					margin-top: $bemo-spacing-level-2;
+				}
 			}
 		}
 	}
@@ -441,6 +456,12 @@
 					margin-left: $bemo-spacing-level-1;
 				}
 			}
+		}
+	}
+	.o_kanban_record,
+	.o_kanban_quick_create {
+		@media (max-width: 767.98px) {
+			padding: $bemo-spacing-level-2;
 		}
 	}
 }

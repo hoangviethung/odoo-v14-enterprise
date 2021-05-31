@@ -47,7 +47,6 @@
 			top: 0;
 			border-bottom: 1px solid $bemo-neutral-lighter-border-color;
 			height: $bemo-height-form-statusbar;
-			overflow: hidden;
 			> .o_statusbar_buttons {
 				> .btn {
 					margin: 0 $bemo-spacing-level-4 0 0;
@@ -70,6 +69,11 @@
 						box-shadow: unset;
 					}
 				}
+			}
+			@media (max-width: 768px) {
+				padding-top: $bemo-spacing-level-2;
+				padding-bottom: $bemo-spacing-level-2;
+				height: unset;
 			}
 		}
 		.oe_button_box {
@@ -472,10 +476,23 @@
 	}
 	.oe_button_box {
 		height: $bemo-height-oe-button-box;
-		overflow: hidden;
 		@media (min-width: 992px) and (max-width: 1533.98px) {
 			margin-right: -16px;
 			margin-left: -16px;
+		}
+		.btn.oe_stat_button {
+			&:hover,
+			&:focus {
+				background-color: transparent;
+			}
+		}
+		&.o_full {
+			.oe_stat_button:not(.o_invisible_modifier) ~ .oe_stat_button {
+				&.dropdown-item {
+					border-left: 0;
+					border-top: 1px solid $bemo-neutral-lighter-border-color;
+				}
+			}
 		}
 	}
 	select {
