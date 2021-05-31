@@ -40,7 +40,6 @@ odoo.define("bemo_theme_backend.AppsMenu", function (require) {
 				this.$search_results = this.$(".bemo_search_results");
 				return this._super(...arguments);
 			},
-
 			getAppsCateg() {
 				const Apps = this._apps;
 				const CategIDs = [];
@@ -59,7 +58,6 @@ odoo.define("bemo_theme_backend.AppsMenu", function (require) {
 						}
 					}
 				}
-				debugger;
 				CategIDs.sort((a, b) => {
 					if (a[2] < b[2]) {
 						return -1;
@@ -72,7 +70,6 @@ odoo.define("bemo_theme_backend.AppsMenu", function (require) {
 
 				return CategIDs;
 			},
-
 			_onSearchResultChosen(event) {
 				event.preventDefault();
 				const $result = $(event.currentTarget),

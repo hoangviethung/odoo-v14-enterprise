@@ -316,6 +316,7 @@
 				font-size: $bemo-font-size-default;
 			}
 			div {
+				font-size: 12px;
 				span {
 					font-size: 12px;
 				}
@@ -480,6 +481,7 @@
 	.o_kanban_quick_create {
 		@media (max-width: 767.98px) {
 			padding: $bemo-spacing-level-2;
+			transition: $bemo-transition;
 		}
 	}
 }

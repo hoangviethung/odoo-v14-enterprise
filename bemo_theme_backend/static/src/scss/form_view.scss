@@ -175,6 +175,7 @@
 			> .o_arrow_button {
 				font-size: 10px;
 				min-height: 100%;
+				transition: $bemo-transition;
 				&.btn-primary {
 					&.disabled {
 						font-weight: 700;
@@ -192,6 +193,7 @@
 					border-top: 20px solid transparent;
 					border-bottom: 20px solid transparent;
 					border-left: 10px solid $bemo-neutral-white;
+					transition: $bemo-transition;
 				}
 			}
 		}
@@ -389,6 +391,14 @@
 			&.o_readonly_modifier {
 				margin-bottom: $bemo-spacing-level-2;
 				margin-top: $bemo-spacing-level-2;
+			}
+		}
+		.oe_button_box {
+			.o_field_widget {
+				&.o_readonly_modifier {
+					margin-bottom: 0;
+					margin-top: 0;
+				}
 			}
 		}
 		.o_address_format {
