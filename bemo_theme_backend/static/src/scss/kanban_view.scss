@@ -304,8 +304,6 @@
 			border-radius: $bemo-border-radius-medium;
 			margin-bottom: $bemo-spacing-level-2;
 			box-shadow: $bemo-box-shadow;
-			padding: $bemo-spacing-level-2 $bemo-spacing-level-2
-				$bemo-spacing-level-2 $bemo-spacing-level-3;
 			transition: 0.3s opacity ease-in-out;
 			.o_form_view {
 				background: $bemo-neutral-white;
@@ -479,6 +477,11 @@
 	}
 	.o_kanban_record,
 	.o_kanban_quick_create {
+		&[class*="oe_kanban_color_"] {
+			&:not(.oe_kanban_color_0) {
+				padding-left: $bemo-spacing-level-3;
+			}
+		}
 		@media (max-width: 767.98px) {
 			padding: $bemo-spacing-level-2;
 			transition: $bemo-transition;

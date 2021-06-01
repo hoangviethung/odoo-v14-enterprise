@@ -36,6 +36,14 @@
 					}
 				}
 			}
+			> div {
+				.badge {
+					&.float-right {
+						margin: $bemo-spacing-level-1 0px 0px
+							$bemo-spacing-level-2;
+					}
+				}
+			}
 			@media (min-width: 992px) and (max-width: 1533.98px) {
 				padding-right: $bemo-spacing-level-3;
 				padding-left: $bemo-spacing-level-3;
@@ -220,8 +228,10 @@
 		flex-wrap: wrap;
 		margin: $bemo-spacing-level-3 -16px;
 		width: unset;
-		&.o_inner_group {
+		.o_group {
 			display: flex;
+		}
+		&.o_inner_group {
 			margin: 0;
 			> tbody {
 				width: 100%;
@@ -261,19 +271,41 @@
 				}
 			}
 		}
-		.o_td_label {
-			border-right: 0;
-			.o_form_label {
-				padding: $bemo-spacing-level-2 0 0 0;
-			}
+		&[class*="o_group_col_"] {
+			margin-bottom: $bemo-spacing-level-3;
+			padding-right: $bemo-spacing-level-3;
+			padding-left: $bemo-spacing-level-3;
 		}
 		.o_group_col_6 {
 			-ms-flex: 0 0 50%;
 			flex: 0 0 50%;
 			max-width: 50%;
-			margin-bottom: $bemo-spacing-level-3;
-			padding-right: $bemo-spacing-level-3;
-			padding-left: $bemo-spacing-level-3;
+			@media (max-width: 1024.98px) {
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+		}
+		.o_group_col_12 {
+			-ms-flex: 0 0 100%;
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		div {
+			&.o_group_col_12 {
+				margin-left: auto;
+				margin-right: auto;
+				padding: 0;
+				.o_horizontal_separator {
+					padding: 0 $bemo-spacing-level-3;
+				}
+			}
+		}
+		.o_td_label {
+			border-right: 0;
+			.o_form_label {
+				padding: $bemo-spacing-level-2 0 0 0;
+			}
 		}
 		.o_field_widget {
 			> .btn {
@@ -480,9 +512,10 @@
 	}
 
 	.o_horizontal_separator {
+		display: block;
+		width: 100%;
 		font-size: 1.4rem;
-		margin: 0;
-		margin-bottom: $bemo-spacing-level-3;
+		margin: 0 0 $bemo-spacing-level-3 0;
 	}
 	.oe_button_box {
 		height: $bemo-height-oe-button-box;

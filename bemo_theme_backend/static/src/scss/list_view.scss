@@ -333,6 +333,7 @@
 	> .o_data_cell:not(.o_readonly_modifier):not(.o_invisible_modifier)
 	> .o_field_widget
 	> .o_external_button {
+	position: relative;
 	width: 22px;
 	height: 22px;
 	display: inline-flex;
