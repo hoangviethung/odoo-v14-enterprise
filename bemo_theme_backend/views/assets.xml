@@ -71,6 +71,7 @@
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/form_view.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/fields.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/message.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/form_renderer.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/fields_extra.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/web_calendar.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_backend/static/src/scss/modal.scss"/>

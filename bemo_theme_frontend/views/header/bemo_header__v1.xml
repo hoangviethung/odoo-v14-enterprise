@@ -6,6 +6,10 @@
             <div id="bemo_header" class="bemo-main-header-v1">
                 <div class="container">
                     <div class="bemo-main-header-main">
+                        <!-- Brand -->
+                        <t t-call="website.placeholder_header_brand">
+                            <t t-set="_link_class" t-value="'bemo-logo-main-header'"/>
+                        </t>
                         <div class="button-open-nav-sidebar-wrapper">
                             <div class="button-open-nav-sidebar">
                                 <i class="fa fa-bars"></i>
@@ -29,10 +33,6 @@
                                 </t>
                             </ul>
                         </nav>
-                        <!-- Brand -->
-                        <t t-call="website.placeholder_header_brand">
-                            <t t-set="_link_class" t-value="'bemo-logo-main-header'"/>
-                        </t>
                         <div class="bemo-header-login-wrapper">
                             <t t-set="is_connected" t-value="not user_id._is_public()"/>
                             <t t-if="is_connected">
