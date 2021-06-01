@@ -2,6 +2,10 @@
 	.bemo-404-wrapper {
 		position: relative;
 		min-height: 500px;
+		@media (max-width: 1024.98px) {
+			min-height: auto;
+			padding: 2vh 0 8vh;
+		}
 	}
 	.block-content {
 		position: absolute;
@@ -9,6 +13,13 @@
 		top: 50%;
 		transform: translateY(-50%);
 		max-width: 70%;
+		@media (max-width: 1024.98px) {
+			position: static;
+			left: unset;
+			top: unset;
+			transform: unset;
+			max-width: unset;
+		}
 	}
 	.content-text {
 		text-align: center;
@@ -16,12 +27,27 @@
 			color: map-get($o-theme-color-palette, primary);
 			font-size: 10rem;
 			font-weight: 900;
+			@media (max-width: 767.98px) {
+				font-size: 8rem;
+			}
+			@media (max-width: 575.98px) {
+				font-size: 6rem;
+			}
 		}
 		h3 {
 			font-size: 1.88rem;
+			@media (max-width: 767.98px) {
+				font-size: 1.6rem;
+			}
+			@media (max-width: 575.98px) {
+				font-size: 1.4rem;
+			}
 		}
 		p {
 			color: $bemo-neutral-medium-sub-color;
+			@media (max-width: 575.98px) {
+				font-size: $bemo-font-size-default;
+			}
 		}
 	}
 	.content-action {
@@ -38,6 +64,9 @@
 		img {
 			display: block;
 			margin-left: auto;
+		}
+		@media (max-width: 1024.98px) {
+			display: none;
 		}
 	}
 }
