@@ -1,0 +1,8 @@
+.o_ThreadIcon_online {
+	color: $bemo-semantic-positive-color;
+}
+.o_PartnerImStatusIcon_icon {
+	&.o-online {
+		color: $bemo-semantic-positive-color;
+	}
+}

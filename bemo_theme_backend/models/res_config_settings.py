@@ -4,9 +4,8 @@ import base64
 
 from odoo import api, fields, models
 
-XML_ID = "bemo_theme_backend._assets_primary_variables"
+XML_ID = "bemo_theme_backend.bemo_assets_primary_variables"
 SCSS_URL = "/bemo_theme_backend/static/src/scss/colors.scss"
-
 
 class ResConfigSettings(models.TransientModel):
 
