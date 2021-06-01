@@ -410,7 +410,19 @@
 			.o_group {
 				.o_td_label {
 					.o_form_label {
-						padding: 0;
+						padding: 0 0 $bemo-spacing-level-2 0;
+					}
+				}
+			}
+		}
+		.o_action {
+			&.o_view_controller {
+				~ div {
+					margin-top: $bemo-spacing-level-3;
+					.btn {
+						&:focus {
+							box-shadow: unset;
+						}
 					}
 				}
 			}
