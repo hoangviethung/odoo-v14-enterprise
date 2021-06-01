@@ -9,6 +9,7 @@
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/utilities.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/forms.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/login.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/http_routing_template.scss"/>
             <!-- Bemo Header & Footer -->
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/header/bemo_header__v1.scss"/>
             <link rel="stylesheet" type="text/scss" href="/bemo_theme_frontend/static/src/scss/footer/bemo_footer__v1.scss"/>

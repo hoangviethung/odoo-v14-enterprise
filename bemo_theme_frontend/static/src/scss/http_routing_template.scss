@@ -1,0 +1,43 @@
+.bemo-404 {
+	.bemo-404-wrapper {
+		position: relative;
+		min-height: 500px;
+	}
+	.block-content {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width: 70%;
+	}
+	.content-text {
+		text-align: center;
+		h1 {
+			color: map-get($o-theme-color-palette, primary);
+			font-size: 10rem;
+			font-weight: 900;
+		}
+		h3 {
+			font-size: 1.88rem;
+		}
+		p {
+			color: $bemo-neutral-medium-sub-color;
+		}
+	}
+	.content-action {
+		margin-top: $bemo-spacing-level-3;
+		display: flex;
+		justify-content: center;
+		.btn {
+			+ .btn {
+				margin-left: $bemo-spacing-level-3;
+			}
+		}
+	}
+	.bemo-image-404 {
+		img {
+			display: block;
+			margin-left: auto;
+		}
+	}
+}

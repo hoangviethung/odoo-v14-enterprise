@@ -51,8 +51,8 @@
 		'views/payment.xml',
 		'views/payment_online.xml',
 		'views/payment_complete.xml',
+		'views/http_routing_template.xml',
 		'views/internal_feedback_views.xml',
-
 	],
 	'qweb': [],
 	'installable': True,

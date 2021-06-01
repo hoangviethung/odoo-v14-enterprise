@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <template id="bemo_404" inherit_id="http_routing.404" name="Bemo Page Not Found">
+        <xpath expr="//*[@class='oe_structure oe_empty']" position="replace">
+            <div class="oe_structure oe_empty">
+                <section class="bemo-404">
+                    <div class="container">
+                        <div class="bemo-404-wrapper">
+                            <div class="block-content">
+                                <div class="content-text">
+                                    <h1>404</h1>
+                                    <h3>We couldn't find the page you're looking for!</h3>
+                                    <p>Don't panic. If you think it's our mistake, please send us a message on this page.</p>
+                                    <p>Maybe you were looking for one of these popular pages?</p>
+                                </div>
+                                <div class="content-action">
+                                    <a href="/" class="btn btn-primary">GO TO HOME</a>
+                                </div>
+                            </div>
+                            <div class="bemo-image-404">
+                                <img src="bemo_theme_frontend/static/src/images/bemo_page_404.png" alt="BEMO-404-PAGE"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- *** PAGE VERIFY TEMPLATE *** //-->
+            <input id="page-verify-template" hidden="hidden" current-page="404-page" header-inverted="false"/>
+        </xpath>
+    </template>
+</odoo>
