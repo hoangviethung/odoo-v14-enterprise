@@ -148,7 +148,7 @@
 			transition: background-color 0.3s linear;
 			background-color: $bemo-primary-blue-light-color-04;
 			.o_kanban_header {
-				background-color: transparent;
+				background-color: $bemo-primary-blue-light-color-04;
 			}
 			.oe_kanban_card_muted {
 				margin-bottom: $bemo-spacing-level-2;
@@ -161,6 +161,12 @@
 			.progress-bar {
 				&[class*="bg-"] {
 					border: 0;
+				}
+			}
+			.oe_kanban_card_success {
+				margin-bottom: $bemo-spacing-level-2;
+				~ .oe_kanban_card_success {
+					margin-top: 0;
 				}
 			}
 		}
