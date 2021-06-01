@@ -103,16 +103,10 @@
 			align-self: center;
 		}
 		img {
-			height: 36px;
-			width: auto;
 			margin: auto 0;
-			transition: 0.3s all ease-in-out;
 			filter: brightness(0) invert(1);
 			@media (max-width: 1024.98px) {
 				filter: unset;
-			}
-			@media (max-width: 320.98px) {
-				height: 24px;
 			}
 		}
 		@media (max-width: 1024.98px) {
