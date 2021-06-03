@@ -70,11 +70,27 @@ const headerVerify = (BemoWebsite, isInverted) => {
 	}
 };
 
+const navVerify = (BemoWebsite, nameCurrentPage) => {
+	if (nameCurrentPage == "login-page") {
+		document
+			.querySelector(".o_connected_user")
+			.classList.add("hiden-nav-main-navbar");
+	}
+};
+
+const footerVerify = (BemoWebsite, nameCurrentPage) => {
+	if (nameCurrentPage == "login-page") {
+		document.querySelector("footer").classList.add("d-none");
+	}
+};
+
 const pageVerify = (BemoWebsite) => {
 	const blockData = BemoWebsite.querySelector("#page-verify-template");
 	if (blockData) {
 		const isInverted = blockData.getAttribute("header-inverted");
 		const nameCurrentPage = blockData.getAttribute("current-page");
+		navVerify(BemoWebsite, nameCurrentPage);
+		footerVerify(BemoWebsite, nameCurrentPage);
 		headerVerify(BemoWebsite, isInverted);
 	} else {
 		console.log('Bemo Debug: ["#page-verify-template"] is not define');

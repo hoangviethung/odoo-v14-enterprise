@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <odoo>
-    <template id="bemo_404" inherit_id="http_routing.404" name="Bemo Page Not Found">
+    <template id="bemo_http_routing_404" inherit_id="http_routing.404" name="Bemo Http Routing 404">
         <xpath expr="//*[@class='oe_structure oe_empty']" position="replace">
             <div class="oe_structure oe_empty">
                 <section class="bemo-404">
