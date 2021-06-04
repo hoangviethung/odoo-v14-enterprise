@@ -383,7 +383,7 @@
 			}
 			.o_favorite {
 				top: $bemo-spacing-level-2;
-				left: 12px;
+				left: $bemo-spacing-level-1;
 				padding: $bemo-spacing-level-1;
 				line-height: 1;
 			}
@@ -527,6 +527,9 @@
 		&[class*="oe_kanban_color_"] {
 			&:not(.oe_kanban_color_0) {
 				padding-left: $bemo-spacing-level-3;
+				.o_favorite {
+					left: $bemo-spacing-level-3 - $bemo-spacing-level-1;
+				}
 			}
 		}
 		@media (max-width: 767.98px) {

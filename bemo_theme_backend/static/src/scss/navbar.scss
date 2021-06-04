@@ -190,6 +190,16 @@
 			.o-app-name {
 				color: $bemo-neutral-white;
 				margin-top: $bemo-spacing-level-2;
+				margin-left: $bemo-spacing-level-3;
+				margin-right: $bemo-spacing-level-3;
+				overflow: hidden;
+				display: -webkit-box;
+				text-overflow: ellipsis;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 1;
+				width: 100%;
+				text-align: center;
+				white-space: normal;
 			}
 			.form-row {
 				width: 100%;
