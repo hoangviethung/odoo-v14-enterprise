@@ -281,8 +281,26 @@
 				}
 			}
 		}
+		.o_kanban_record_top {
+			.o_kanban_record_title {
+				span {
+					font-size: 1.2rem;
+				}
+			}
+			span {
+				display: inline-block;
+				margin-bottom: $bemo-spacing-level-2;
+				span {
+					font-size: 12px;
+					margin-bottom: 0;
+				}
+			}
+		}
 		.o_kanban_record_bottom {
 			.oe_kanban_bottom_left {
+				> * {
+					font-size: 12px;
+				}
 				.o_priority_star {
 					font-size: $bemo-font-size-default;
 				}
@@ -315,17 +333,6 @@
 			transition: 0.3s opacity ease-in-out;
 			.o_form_view {
 				background: $bemo-neutral-white;
-			}
-		}
-		.o_kanban_record {
-			.o_kanban_record_title {
-				font-size: $bemo-font-size-default;
-			}
-			div {
-				font-size: 12px;
-				span {
-					font-size: 12px;
-				}
 			}
 		}
 	}
