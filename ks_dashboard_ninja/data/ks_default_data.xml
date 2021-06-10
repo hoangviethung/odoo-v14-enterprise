@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <data>
+    <data noupdate="1">
         <!--        Default Templates -->
         <record id="ks_blank" model="ks_dashboard_ninja.board_template">
             <field name="name">Blank</field>
@@ -9,7 +9,7 @@
         </record>
 
         <record id="ks_template_1" model="ks_dashboard_ninja.board_template">
-            <field name="name">Template 1</field>
+            <field name="name">Bemo Dashboard • Template 1</field>
             <field name="ks_gridstack_config">[
                 {"item_id":"ks_dashboard_ninja.ks_default_item_1", "data": {"x": 0, "y": 0, "width": 8, "height": 2}},
                 {"item_id":"ks_dashboard_ninja.ks_default_item_2", "data": {"x": 8, "y": 0, "width": 8, "height": 2}},
@@ -61,7 +61,7 @@
         </record>
 
         <record id="ks_template_2" model="ks_dashboard_ninja.board_template">
-            <field name="name">Template 2</field>
+            <field name="name">Bemo Dashboard • Template 2</field>
             <field name="ks_gridstack_config">[
                 {"item_id":"ks_dashboard_ninja.ks_default_item_1", "data": {"x": 0, "y": 0, "width": 8, "height": 2}},
                 {"item_id":"ks_dashboard_ninja.ks_default_item_2", "data": {"x": 8, "y": 0, "width": 8, "height": 2}},
@@ -115,7 +115,7 @@
         </record>
 
         <record id="ks_template_3" model="ks_dashboard_ninja.board_template">
-            <field name="name">Template 3</field>
+            <field name="name">Bemo Dashboard • Template 3</field>
             <field name="ks_gridstack_config">[
                 {"item_id":"ks_dashboard_ninja.ks_default_item_1", "data": {"x": 0, "y": 0, "width": 13, "height": 2}},
                 {"item_id":"ks_dashboard_ninja.ks_default_item_2", "data": {"x": 0, "y": 6, "width": 13, "height": 2}},
@@ -577,8 +577,7 @@
         <field name="ks_chart_relation_groupby" eval="ref('base.field_res_country__name')"/>
         <field name="ks_list_view_type">ungrouped</field>
         <field name="ks_list_view_group_fields" eval="[(6, 0, [ref('base.field_res_country__phone_code')])]"/>
-        <field name="ks_list_view_fields"
-               eval="[(6, 0, [ref('base.field_res_country__phone_code'),ref('base.field_res_country__name')])]"/>
+        <field name="ks_list_view_fields" eval="[(6, 0, [ref('base.field_res_country__phone_code'),ref('base.field_res_country__name')])]"/>
         <field name="ks_domain">[["id","&lt;",10]]</field>
         <field name="ks_dashboard_item_type">ks_list_view</field>
         <field name="ks_company_id" eval="0"/>

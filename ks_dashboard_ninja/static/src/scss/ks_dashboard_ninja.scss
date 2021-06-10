@@ -117,13 +117,21 @@
 	height: 50px;
 }
 
-.ks_dashboard_item_header > button {
-	visibility: hidden;
-	background: transparent;
-	border: none;
+.ks_dashboard_item_header {
+	> button {
+		color: $bemo-neutral-white;
+		background: transparent;
+		border: none;
+	}
 }
-.ks_dashboard_item_hover:hover .ks_dashboard_item_header_hover > button {
-	visibility: visible;
+
+.ks_dashboard_item_hover {
+	&:hover {
+		.ks_dashboard_item_button_container {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
 }
 
 .ks_dashboard_item_menu_show > button {
@@ -131,9 +139,7 @@
 }
 
 .ks_dashboard_item_header_hover > button:hover {
-	transition: 0.2s linear;
-	transform: scale(1.1);
-	cursor: pointer !important;
+	transition: $bemo-transition;
 }
 
 .ks_item_not_click {
@@ -188,12 +194,10 @@
 	position: absolute;
 	right: 5px;
 	top: 5px;
-}
-
-.ks_dashboard_item_header_l2 > button {
-	visibility: hidden;
-	background: transparent;
-	border: none;
+	> button {
+		background: transparent;
+		border: none;
+	}
 }
 
 .ks_dashboard_item_domain_count_l2 {
@@ -357,12 +361,10 @@
 	position: absolute;
 	right: 25px;
 	top: 20px;
-}
-
-.ks_dashboard_item_header_l6 > button {
-	visibility: hidden;
-	background: transparent;
-	border: none;
+	> button {
+		background: transparent;
+		border: none;
+	}
 }
 
 .ks_item_click {
