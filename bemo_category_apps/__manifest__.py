@@ -9,7 +9,7 @@
 	'company': 'BAP Ventures',
 	'maintainer': 'BAP Ventures',
 	'support': 'service@bap.jp',
-	'website': 'https://index.bemo.cloud/',
+	'website': 'https://bemo.cloud/',
 	'depends': [
 		# Odoo
 		'base',

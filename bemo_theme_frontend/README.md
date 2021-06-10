@@ -12,3 +12,5 @@
 	- Bước 10: python odoo-bin -c ../odoo_conf/odoo14.conf
 	- Bước 10.1: python odoo-bin -c ../odoo_conf/odoo14.conf -d odoo14 -u bemo_theme_backend --dev xml
 - Note khi sử dụng git nếu push không được thì gõ "rm -rf"
+- select id from ir_module_module where name ='ks_dn_advance';
+- delete  from ir_module_module  where name ='ks_dn_advance';

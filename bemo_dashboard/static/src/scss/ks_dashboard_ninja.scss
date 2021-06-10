@@ -1,0 +1,544 @@
+/* TO make whole page in white ks_dashboard_linkbackground(below grey screen start) : Hiding it for now */
+.ks_dashboard_form {
+	min-height: 100%;
+}
+.ks_dashboard_ninja {
+	margin-bottom: 20px;
+}
+
+.ks_dashboard_content {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100%;
+	padding: $bemo-spacing-level-3;
+	background-color: $bemo-primary-blue-light-color-06;
+}
+
+.ks_dashboard_main_content {
+	padding: $bemo-spacing-level-3 $bemo-spacing-level-2;
+	background-color: $bemo-neutral-white;
+	border-radius: $bemo-border-radius-medium;
+}
+.ks_dashboard_ninja_header {
+	text-align: right;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 15px 8px;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.ks_overflow {
+	overflow: auto;
+}
+
+.ks_dashboard_header_name {
+	margin: 0;
+	max-width: 35%;
+}
+
+.ks_header_container_div {
+	float: none;
+	background: #f2f2f2;
+	margin-top: -20px;
+	box-shadow: 2px 3px 6px #bbb5b5;
+}
+
+.ks_white_background {
+	background-color: white;
+}
+
+.ks_dashboard_header_name {
+	margin: 0;
+	width: 80vmin;
+	overflow-wrap: break-word;
+	text-align: left;
+}
+
+.ks_layout_color {
+	background-color: #f9f9f9;
+	margin-left: 35px;
+	margin-top: 20px;
+}
+
+.ks_dashboard_item {
+	padding: $bemo-spacing-level-2;
+	/*border : 1px solid #CDD1D9;*/
+	color: black;
+	margin-top: 15px;
+	border-radius: 6px;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	overflow: visible !important;
+}
+.ks_dashboard_item:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.ks_dashboard_item_header {
+	text-align: right;
+}
+
+.ks_dashboard_item_main_body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ks_dashboard_item_info {
+	margin-left: 10px;
+	width: calc(100% - 100px);
+}
+
+.ks_dashboard_item_name {
+	font-weight: bold;
+	font-size: 23px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: none;
+	min-height: 34px;
+}
+
+.ks_dashboard_item_domain_count {
+	font-size: 28px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ks_dashboard_icon {
+	display: block;
+	margin: auto;
+}
+
+.ks_dashboard_icon > img {
+	width: 50px;
+	height: 50px;
+}
+
+.ks_dashboard_item_header {
+	> button {
+		color: $bemo-neutral-white;
+		background: transparent;
+		border: none;
+	}
+}
+
+.ks_item_not_click {
+	.ks_dashboard_item_hover {
+		&:hover {
+			.ks_dashboard_item_button_container {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.ks_dashboard_item_menu_show > button {
+	visibility: visible !important;
+}
+
+.ks_dashboard_item_header_hover > button:hover {
+	transition: $bemo-transition;
+}
+
+.ks_item_not_click {
+	cursor: move;
+}
+
+/* For Layout 2 Css */
+
+.ks_dashboard_item_l2 {
+	display: flex;
+	border-radius: 6px;
+	margin-top: 15px;
+	height: 132px;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.ks_dashboard_item_l2:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.ks_dashboard_icon_l2 {
+	padding: 20px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	width: 100px;
+	/* width: 36%; */
+	padding-top: 35px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+/* font awesome resposive CSS for layou 2*/
+.ks_dashboard_icon_l2 > span {
+	font-size: 5em;
+}
+
+.ks_dashboard_icon_l2 > img {
+	width: 60px;
+	height: 60px;
+}
+
+.ks_dashboard_item_main_body_l2 {
+	position: relative;
+	width: calc(100% - 100px);
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.ks_dashboard_item_header_l2 {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	> button {
+		background: transparent;
+		border: none;
+	}
+}
+
+.ks_dashboard_item_domain_count_l2 {
+	font-size: 35px;
+	margin-left: 20px;
+	margin-top: 25px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ks_dashboard_item_name_l2 {
+	font-weight: bold;
+	font-size: medium;
+	width: 80%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	text-transform: none;
+}
+
+/* layout 3 */
+
+.ks_dashboard_item_info_l3 {
+	padding-left: 10px;
+	width: calc(100% - 60px);
+	margin-left: 0px;
+}
+
+.ks_dashboard_icon_l3 {
+	display: block;
+	max-width: 70px;
+}
+
+.ks_dashboard_icon_l3 > img {
+	width: 50px;
+	height: 50px;
+}
+
+.ks_dashboard_item_name_l3 {
+	text-transform: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: right;
+	font-size: medium;
+	min-height: 24px;
+}
+
+.ks_dashboard_item_domain_count_l3 {
+	text-align: right;
+	font-weight: bold;
+	font-size: 35px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Item Layout 4 */
+
+.ks_dashboard_item_l4 {
+	display: flex;
+	border-radius: 6px;
+	margin-top: 15px;
+	height: 132px;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.ks_dashboard_item_l4:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.ks_dashboard_icon_l4 {
+	padding: 20px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	width: 100px;
+	padding-top: 35px;
+	display: flex;
+	justify-content: center;
+}
+
+.ks_dashboard_icon_l4 > img {
+	width: 60px;
+	height: 60px;
+}
+
+.ks_dashboard_item_main_body_l5 {
+	display: flex;
+	width: 100%;
+}
+
+.ks_dashboard_item_l5 {
+	position: relative;
+	margin-top: 15px;
+	height: 132px;
+	border-radius: 6px;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.ks_dashboard_item_l5:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.ks_dashboard_icon_l5 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.ks_dashboard_icon_l5 > img {
+	width: 20px !important;
+	height: 20px;
+	margin: 10px;
+}
+
+.ks_dashboard_item_main_body_l5 {
+	text-align: center;
+	padding: 0 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.ks_dashboard_item_domain_count_l5 {
+	font-size: 50px;
+	margin-left: 10px;
+	margin-top: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ks_dashboard_item_name_l5 {
+	font-weight: bold;
+	font-size: medium;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	text-transform: none;
+}
+
+.ks_dashboard_item_header_l5 {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+.ks_dashboard_icon_l5 span {
+	font-size: 20px;
+	margin: 10px;
+}
+
+.ks_dashboard_item_header_l6 {
+	position: absolute;
+	right: 25px;
+	top: 20px;
+	> button {
+		background: transparent;
+		border: none;
+	}
+}
+
+.ks_item_click {
+	cursor: pointer;
+}
+
+/* Dashboard filter related CSS */
+
+.ks_action_btns {
+	display: flex;
+	align-items: center;
+}
+@media (max-width: 1075px) {
+	.ks_dashboard_header_name {
+		max-width: 100%;
+	}
+	.ks_dashboard_top_menu {
+		margin-top: 10px;
+	}
+}
+
+.ks_dashboard_header_sticky {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+}
+
+.ks_dashboard_datepicker_z-index {
+	z-index: 10 !important;
+}
+
+/* Date Filter Selection CSS*/
+#ks_date_filter_selection,
+#ks_dn_filter_selection {
+	font-family: inherit;
+	padding: 0px $bemo-spacing-level-2;
+}
+
+.ks_date_filter_selection_input {
+	display: flex;
+	flex-direction: row;
+}
+
+.ks_date_selection_box {
+	display: flex;
+	align-items: center;
+}
+
+.ks_date_input_fields {
+	display: flex;
+	align-items: center;
+}
+
+.ks_date_filter_selected > span,
+.ks_layout_selected > span {
+	font-weight: bold;
+}
+.ks_date_filter_selected > span::before,
+.ks_layout_selected > span::before {
+	font-family: FontAwesome;
+	position: absolute;
+	left: 6px;
+	content: "\f00c";
+}
+
+.df_selection_text {
+	display: block;
+	padding: 3px 25px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.df_selection_text:hover {
+	color: #333333;
+	background-color: #f5f5f5;
+}
+
+.ks_date_filter_dropdown {
+	padding: 0.375rem 0.75rem;
+	border-color: #dee2e6;
+	border-radius: 3px !important;
+}
+
+.ks_btn_first_child_radius {
+	border-bottom-right-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-left-radius: 3px !important;
+	border-top-left-radius: 3px !important;
+}
+
+.ks_btn_middle_child {
+	border-radius: 0 !important;
+	height: 100%;
+	margin-right: 10px;
+}
+
+.ks_btn_middle_child input,
+.ks_btn_last_child input {
+	padding: inherit !important;
+}
+
+.ks_btn_last_child {
+	border-bottom-left-radius: 0 !important;
+	border-top-left-radius: 0 !important;
+	height: 100%;
+}
+
+.ks_hide {
+	display: none !important;
+}
+
+.ks_dashboard_item_action {
+	background-color: inherit;
+}
+
+/* Dev Code here */
+.ks_dashboard_header {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: $bemo-spacing-level-3;
+	background-color: $bemo-neutral-white;
+	border-bottom: 1px solid $bemo-neutral-lighter-border-color;
+}
+
+.ks_select_none {
+	-webkit-user-select: none; /* Chrome all / Safari all */
+	-moz-user-select: none; /* Firefox all */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none;
+}
+
+#ks_dashboard_title_input {
+	width: 300px;
+	&:focus {
+		border-color: $bemo-primary-color;
+	}
+}
+
+.ks_dashboard_ninja_toggle_menu {
+	position: relative;
+}
+
+.ks_dashboard_ninja_toggle_menu:before {
+	font-family: FontAwesome;
+	top: 0;
+	left: -5px;
+	padding-right: 10px;
+	content: "\f013";
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.ks_bg_white {
+	background: white;
+}
+
+#ks_dashboard_title_label {
+	color: $bemo-primary-color;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+@media (max-width: 992px) {
+	.ks_dashboard_ninja_toggle_menu:before {
+		content: "\f142";
+	}
+
+	#ks_dashboard_title {
+		display: flex;
+		justify-content: space-between;
+	}
+}
