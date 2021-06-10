@@ -125,11 +125,13 @@
 	}
 }
 
-.ks_dashboard_item_hover {
-	&:hover {
-		.ks_dashboard_item_button_container {
-			opacity: 1;
-			visibility: visible;
+.ks_item_not_click {
+	.ks_dashboard_item_hover {
+		&:hover {
+			.ks_dashboard_item_button_container {
+				opacity: 1;
+				visibility: visible;
+			}
 		}
 	}
 }
