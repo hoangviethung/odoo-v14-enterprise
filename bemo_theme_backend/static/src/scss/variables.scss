@@ -29,6 +29,7 @@ $bemo-transition: 0.3s all linear;
 // Root BoxShadow
 //----------------------------------------------------------
 $bemo-box-shadow: 0px 0px 12px rgba(12, 50, 85, 0.06);
+$bemo-box-shadow-ks-dashboard-item: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 
 //----------------------------------------------------------
 // Root Button Icon
@@ -105,6 +106,10 @@ $bemo-kanban-view-2: calc(#{$bemo-view-2} - #{$bemo-spacing-level-2} * 2);
 //Root Size Icon And Avatar Small
 $width-icon-small: 32px;
 $height-icon-small: 32px;
+
+//Dashboard
+$width-icon-ks-dashboard: 48px;
+$height-icon-ks-dashboard: 48px;
 
 // Browser
 $bemo-height-tab-browser: 56px;

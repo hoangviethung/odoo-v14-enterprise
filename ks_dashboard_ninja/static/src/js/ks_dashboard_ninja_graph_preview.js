@@ -117,20 +117,22 @@ odoo.define(
 								!this.recordData.ks_chart_relation_groupby)
 						) {
 							this.$el.append(
-								$("<div>").text(
+								$("<span>").text(
 									"Select Measure and Group By to create chart view",
 								),
 							);
 						} else if (!this.recordData.ks_chart_data_count_type) {
 							this.$el.append(
-								$("<div>").text("Select Chart Data Count Type"),
+								$("<span>").text(
+									"Select Chart Data Count Type",
+								),
 							);
 						} else {
 							this._getChartData();
 						}
 					} else {
 						this.$el.append(
-							$("<div>").text("Select a Model first."),
+							$("<span>").text("Select a Model first."),
 						);
 					}
 				}

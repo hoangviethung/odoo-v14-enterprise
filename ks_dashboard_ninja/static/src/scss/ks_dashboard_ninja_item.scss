@@ -11,7 +11,9 @@
 }
 
 .ks_db_item_preview {
-	width: 280px;
+	max-width: 450px;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .ks_not_click {
@@ -40,7 +42,8 @@
 
 /* Preview Footer Note */
 .ks_db_item_preview_footer_note {
-	margin-top: 10px;
+	color: $bemo-neutral-medium-sub-color;
+	margin-top: $bemo-spacing-level-5;
 }
 
 /*Container CSS*/

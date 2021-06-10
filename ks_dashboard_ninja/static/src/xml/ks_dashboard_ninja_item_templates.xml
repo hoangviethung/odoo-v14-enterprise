@@ -7,11 +7,9 @@
         <div class="o_field_image" aria-atomic="true">
             <t t-if="widget.mode !== 'readonly'">
                 <div class="o_form_image_controls">
-                    <button type="button" class=" fa fa-image fa-lg ks_image_widget_icon_container float-left"
-                            title="Select Icons">
+                    <button type="button" class=" fa fa-image fa-lg ks_image_widget_icon_container float-left" title="Select Icons">
                     </button>
-                    <button class="fa fa-trash-o fa-lg float-right o_clear_file_button" title="Clear"
-                            aria-label="Clear"/>
+                    <button class="fa fa-trash-o fa-lg float-right o_clear_file_button" title="Clear" aria-label="Clear"/>
                     <span class="o_form_binary_progress">Uploading...</span>
                 </div>
             </t>
@@ -31,16 +29,13 @@
                     <div class="modal-body">
                         <div class="ks_modal_icon_input_div">
                             <div class="ks_search_modal_container">
-                                <input type="search" id="site-search" placeholder="Search fa-icon.."
-                                       name="fa Icon Input" aria-label="Search through site content"
-                                       class="ks_modal_icon_input"/>
+                                <input type="search" id="site-search" placeholder="Search fa-icon.." name="fa Icon Input" aria-label="Search through site content" class="ks_modal_icon_input"/>
 
                                 <button class="ks_fa_icon_search">
                                     <i class="fa fa-search"/>
                                 </button>
                             </div>
-                            <section
-                                    style="margin-top: 12px;font-size: 14px;text-align: justify;color: black;background:transparent;">
+                            <section style="margin-top: 12px;font-size: 14px;text-align: justify;color: black;background:transparent;">
                                 <strong>
                                     Note:
                                 </strong>
@@ -59,8 +54,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary ks_icon_container_open_button"
-                                data-dismiss="modal">Select
+                        <button type="button" class="btn btn-primary ks_icon_container_open_button" data-dismiss="modal">Select
                         </button>
                     </div>
                 </div>
@@ -74,8 +68,7 @@
         <input class='ks_color_picker'/>
         <!--        <input class="ks_color_picker" type="color" t-att-value="ks_color_value"/>-->
         Transparency :
-        <input type="range" t-att-value="ks_color_opacity" class="ks_color_opacity" name="ks_db_item_opacity" min="0"
-               max="0.99" step="0.01"/>
+        <input type="range" t-att-value="ks_color_opacity" class="ks_color_opacity" name="ks_db_item_opacity" min="0" max="0.99" step="0.01"/>
     </t>
 
     <!--Template Layouts-->
@@ -111,8 +104,7 @@
                         </t>
                     </t>
                     <t t-elif="icon_select=='Default'">
-                        <span t-att-style="'color:'+ icon_color + ';'"
-                              t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                        <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                     </t>
                 </div>
                 <div class="ks_dashboard_item_info">
@@ -136,7 +128,7 @@
                     </t>
                 </t>
                 <t t-elif="icon_select=='Default'">
-                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                 </t>
             </div>
 
@@ -182,8 +174,7 @@
                         </t>
                     </t>
                     <t t-elif="icon_select=='Default'">
-                        <span t-att-style="'color:'+ icon_color + ';'"
-                              t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                        <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                     </t>
                 </div>
                 <div class="ks_dashboard_item_info ks_dashboard_item_info_l3">
@@ -207,7 +198,7 @@
                     </t>
                 </t>
                 <t t-elif="icon_select=='Default'">
-                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                 </t>
             </div>
 
@@ -242,7 +233,7 @@
                     </t>
                 </t>
                 <t t-elif="icon_select=='Default'">
-                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                 </t>
             </div>
             <div class="ks_dashboard_item_main_body_l5">
@@ -283,7 +274,7 @@
                     </t>
                 </t>
                 <t t-elif="icon_select=='Default'">
-                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                 </t>
 
                 <div class="ks_dashboard_item_header_l2 ks_dashboard_item_header_hover">
@@ -307,7 +298,7 @@
                     </t>
                 </t>
                 <t t-elif="icon_select=='Default'">
-                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                 </t>
             </div>
             <div class="ks_dashboard_item_main_body_l5">
@@ -361,7 +352,7 @@
                     </t>
                 </t>
                 <t t-elif="icon_select=='Default'">
-                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                 </t>
             </div>
             <div class="ks_dashboard_item_main_body_l5">
@@ -383,7 +374,8 @@
                     <progress id="ks_progressbar" value="0" max="100"/>
                 </div>
                 <div class="text-center">
-                    <t t-esc="target_progress_deviation"/>%
+                    <t t-esc="target_progress_deviation"/>
+%
                 </div>
             </div>
             <t t-if="ks_previous_period and previous_period_data">
@@ -412,7 +404,7 @@
                     </t>
                 </t>
                 <t t-elif="icon_select=='Default'">
-                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                 </t>
             </div>
             <div class="ks_dashboard_item_main_body_l5">

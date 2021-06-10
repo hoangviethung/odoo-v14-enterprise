@@ -1,12 +1,28 @@
-.ks_dashboard_item {
-	height: 132px;
-}
-
 /* Form pie chart no data */
 .ks_dn_graph_preview > .nv-noData > .ks_pie_chart_nocontent {
 	padding: 100px 0 0 137px;
 	min-height: 327px;
 	font-size: 125%;
+}
+
+.ks_dashboard_item_preview,
+.ks_dashboard_graph_preview {
+	padding: $bemo-spacing-level-4;
+	border: 2px dashed $bemo-primary-blue-light-color-04;
+	background-color: $bemo-primary-blue-light-color-06;
+}
+
+.ks_dashboard_item_preview {
+	.ks_dashboard_item_header,
+	.ks_dashboard_item_header_l2 {
+		display: none;
+	}
+}
+
+.ks_dashboard_graph_preview {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .ks_dashboard_item_action {
@@ -101,18 +117,10 @@ table#ksListViewTable {
 	text-overflow: ellipsis;
 }
 
-.ks_dashboard_item_drill_up {
-	min-width: 89px;
-}
-
 .ks_list_view_heading {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-}
-
-.ks_pager {
-	min-width: 98px;
 }
 
 .ks_chart_color_options,

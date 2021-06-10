@@ -310,7 +310,7 @@
                         </t>
                     </t>
                     <t t-elif="item.ks_icon_select=='Default'">
-                        <span t-att-style="'color:'+ ks_rgba_default_icon_color + ';'" t-att-class="'fa fa-' + item.ks_default_icon + ' fa-5x'"/>
+                        <span t-att-style="'color:'+ ks_rgba_default_icon_color + ';'" t-att-class="'fa fa-' + item.ks_default_icon"/>
                     </t>
                     <!--<img t-att-src="ks_icon_url"/>-->
                 </div>
@@ -480,7 +480,7 @@
                         </t>
                     </t>
                     <t t-elif="item.ks_icon_select=='Default'">
-                        <span t-att-style="'color:'+ ks_rgba_default_icon_color + ';'" t-att-class="'fa fa-' + item.ks_default_icon + ' fa-5x'"/>
+                        <span t-att-style="'color:'+ ks_rgba_default_icon_color + ';'" t-att-class="'fa fa-' + item.ks_default_icon"/>
                     </t>
                 </div>
                 <div class="ks_dashboard_item_info ks_dashboard_item_info_l3">
@@ -507,7 +507,7 @@
                     </t>
                 </t>
                 <t t-elif="item.ks_icon_select=='Default'">
-                    <span t-att-style="'color:'+ ks_rgba_default_icon_color + ';'" t-att-class="'fa fa-' + item.ks_default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ ks_rgba_default_icon_color + ';'" t-att-class="'fa fa-' + item.ks_default_icon"/>
                 </t>
             </div>
 
@@ -592,7 +592,7 @@
                     </t>
                 </t>
                 <t t-elif="item.ks_icon_select=='Default'">
-                    <span t-att-style="'color:'+ ks_rgba_default_icon_color + ';'" t-att-class="'fa fa-' + item.ks_default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ ks_rgba_default_icon_color + ';'" t-att-class="'fa fa-' + item.ks_default_icon"/>
                 </t>
             </div>
             <div class="ks_dashboard_item_main_body_l5">
@@ -688,7 +688,7 @@
                     </t>
                 </t>
                 <t t-elif="item.ks_icon_select=='Default'">
-                    <span t-att-style="'color:'+ ks_rgba_default_icon_color + ';'" t-att-class="'fa fa-' + item.ks_default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ ks_rgba_default_icon_color + ';'" t-att-class="'fa fa-' + item.ks_default_icon"/>
                 </t>
             </div>
 
@@ -783,7 +783,7 @@
                     </t>
                 </t>
                 <t t-elif="icon_select=='Default'">
-                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                 </t>
             </div>
             <div class="ks_dashboard_item_main_body_l5 ks_kpi_main_body">
@@ -895,7 +895,7 @@
                     </t>
                 </t>
                 <t t-elif="icon_select=='Default'">
-                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                 </t>
             </div>
             <div class="ks_dashboard_item_main_body_l5 ks_kpi_main_body">
@@ -1006,7 +1006,7 @@
                     </t>
                 </t>
                 <t t-elif="icon_select=='Default'">
-                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon + ' fa-5x'"/>
+                    <span t-att-style="'color:'+ icon_color + ';'" t-att-class="'fa fa-' + default_icon"/>
                 </t>
             </div>
             <div class="ks_dashboard_item_main_body_l5 ks_kpi_main_body">
