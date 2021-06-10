@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 {
 	'name': "Bemo Theme Frontend",
-	'summary': 'This is module custom Bemo Theme Frontend.',
+	'summary': 'This is module Bemo Theme Frontend.',
 	'version': '14.0.0.1.0',
 	'license': 'LGPL-3',
-	'category': 'Bemo Modules/Menu Theme Frontend',
+	'category': 'Bemo Modules/Theme Frontend',
 	'author': 'BAP Odoo Developer',
 	'company': 'BAP Ventures',
 	'maintainer': 'BAP Ventures',

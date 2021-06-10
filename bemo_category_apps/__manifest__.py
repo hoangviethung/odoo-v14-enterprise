@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
 	'name': "Bemo Category Apps",
-	'summary': 'This is module custom Bemo Category Apps',
+	'summary': 'This is module Bemo Category Apps',
 	'version': '14.0.0.1.0',
 	'license': 'LGPL-3',
 	'category': 'Bemo Modules/Bemo Category Apps',

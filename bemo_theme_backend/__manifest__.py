@@ -1,7 +1,7 @@
 {
 	'name': 'Bemo Theme Backend',
-	'summary': 'This is module custom Bemo Theme Backend.',
-	'version': '14.0.1.0.0', 
+	'summary': 'This is module Bemo Theme Backend.',
+	'version': '14.0.1.0.0',
 	'license': 'LGPL-3',
 	'category': 'Bemo Modules/Bemo Theme Backend',
 	'author': 'BAP Odoo Developer',
