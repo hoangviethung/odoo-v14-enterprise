@@ -4309,11 +4309,11 @@ odoo.define("ks_dashboard_ninja.ks_dashboard", function (require) {
 				) {
 					if (pre_acheive) {
 						$kpi_preview.find(".pre_deviation").css({
-							color: "green",
+							color: "#27ae60",
 						});
 					} else {
 						$kpi_preview.find(".pre_deviation").css({
-							color: "red",
+							color: "#eb5757",
 						});
 					}
 				}

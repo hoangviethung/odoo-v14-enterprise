@@ -37,8 +37,11 @@
 			width: auto;
 			overflow-x: hidden;
 			overflow-y: hidden;
-			&.ks_list_view_container {
+			.ks_list_view_container {
 				overflow-y: auto;
+				.table-responsive {
+					padding: 0;
+				}
 			}
 		}
 		> .ui-resizable-handle {

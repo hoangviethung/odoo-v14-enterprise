@@ -16,7 +16,7 @@
                 <input id="ks_dashboard_title_input" typ="text" maxlength="30" class="form-control form-control-lg ks_em_element ks_hide" />
                 <t t-if="ks_dashboard_manager">
                     <div class="ks_dashboard_top_settings dropdown d-md-block d-lg-none">
-                        <span class="ks_dashboard_ninja_toggle_menu  m-2" title="Customize Dashboard" data-toggle="dropdown" aria-expanded="false"/>
+                        <span class="ks_dashboard_ninja_toggle_menu" title="Customize Dashboard" data-toggle="dropdown" aria-expanded="false"/>
                         <ul class="oe_dashboard_links ks_dashboard_links dropdown-menu dropdown-menu-right" role="menu">
                             <li class="ks_dashboard_setting_container ks_dashboard_add_layout" title="Add Item">
                                 <i class="fa fa-plus-circle"/>
@@ -511,7 +511,7 @@
                 </t>
             </div>
 
-            <div class="ks_dashboard_item_main_body_l2 ks_bg_white">
+            <div class="ks_dashboard_item_main_body_l2">
                 <div class="ks_dashboard_item_domain_count_l2" t-att-title="count">
                     <t t-esc="data_count"/>
                 </div>
@@ -797,7 +797,7 @@
             <div class=" d-flex ks_target_previous">
                 <t t-if="ks_enable_goal">
                     <div>
-                        <div style="color: rgba(0, 0, 0, 0.61);; ">
+                        <div style="color: rgba(0, 0, 0, 0.5);; ">
                             <span>vs Target</span>
                         </div>
                         <div>
@@ -812,11 +812,11 @@
                 </t>
                 <t t-if="ks_previous_period">
                     <div style="text-align: center;">
-                        <div style="color: rgba(0, 0, 0, 0.61);">
+                        <div style="color: rgba(0, 0, 0, 0.5);">
                             <span>vs Prev</span>
                         </div>
                         <div>
-                            <span class="pre_deviation " style="font-size:medium;">
+                            <span class="pre_deviation">
                                 <t t-esc="pre_deviation"/>
                                 <i t-att-class="'fa fa-arrow-'+ pre_arrow"/>
                             </span>

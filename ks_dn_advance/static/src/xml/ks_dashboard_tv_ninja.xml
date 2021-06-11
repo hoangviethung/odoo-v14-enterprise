@@ -4,7 +4,7 @@
     <t t-name="ks_owl_carssel">
         <div class="d-none ks_float_tv">
             <div class="tv-modal-overlay"></div>
-            <button class="btn  ks_stop_tv_dashboard  mr-2" aria-expanded="false">
+            <button class="btn  ks_stop_tv_dashboard" aria-expanded="false">
                 <span class="fa fa-times"/>
             </button>
             <div class="owl-carousel owl-theme ">

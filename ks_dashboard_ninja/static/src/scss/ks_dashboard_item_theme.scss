@@ -59,16 +59,10 @@
 	display: none !important;
 }
 
-/*
-  Define here the CSS styles applied only to Safari browsers
-  (any version and any device)
- */
 .ks_dashboard_theme_input {
 	-webkit-appearance: none;
 }
 
-/*Kpi CSS here*/
 .ks_kpi_target_grey {
-	color: #777777;
+	color: rgba($color: $bemo-neutral-black, $alpha: 0.5);
 }
-

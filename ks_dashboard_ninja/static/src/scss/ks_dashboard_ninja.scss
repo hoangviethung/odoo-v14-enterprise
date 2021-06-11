@@ -168,11 +168,11 @@
 	align-items: center;
 	height: $height-icon-ks-dashboard;
 	border-radius: $bemo-border-radius-low;
-	box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-	overflow: hidden;
+	box-shadow: $bemo-box-shadow-ks-dashboard-icon;
+	background-color: rgba($color: $bemo-neutral-white, $alpha: 0.2);
 	> img {
-		height: 100%;
-		width: 100%;
+		width: $width-image-ks-dashboard;
+		height: $height-image-ks-dashboard;
 	}
 }
 
@@ -231,16 +231,6 @@
 	cursor: move;
 }
 
-.ks_dashboard_item_header_l6 {
-	position: absolute;
-	right: 25px;
-	top: 20px;
-	> button {
-		background: transparent;
-		border: none;
-	}
-}
-
 .ks_item_click {
 	cursor: pointer;
 }
@@ -254,26 +244,20 @@
 		max-width: 100%;
 	}
 	.ks_dashboard_top_menu {
-		margin-top: 10px;
+		margin-top: $bemo-spacing-level-2;
 	}
 }
 
 .ks_dashboard_header_sticky {
-	position: -webkit-sticky; /* Safari */
 	position: sticky;
-	top: 0px;
+	top: 0;
 	z-index: 10;
 }
 
-.ks_dashboard_datepicker_z-index {
-	z-index: 10 !important;
-}
-
-/* Date Filter Selection CSS*/
 #ks_date_filter_selection,
 #ks_dn_filter_selection {
 	font-family: inherit;
-	padding: 0px $bemo-spacing-level-2;
+	padding: 0 $bemo-spacing-level-2;
 }
 
 .ks_date_filter_selection_input {
@@ -293,56 +277,41 @@
 
 .ks_date_filter_selected > span,
 .ks_layout_selected > span {
-	font-weight: bold;
+	color: $bemo-primary-color;
+	font-weight: 700;
+	background-color: $bemo-primary-blue-light-color-05;
 }
 .ks_date_filter_selected > span::before,
 .ks_layout_selected > span::before {
+	content: "\f00c";
 	font-family: FontAwesome;
 	position: absolute;
-	left: 6px;
-	content: "\f00c";
+	left: $bemo-spacing-level-2;
+}
+
+.ks_dashboard_layout_event {
+	+ .ks_dashboard_layout_event {
+		margin-top: $bemo-spacing-level-2;
+	}
 }
 
 .df_selection_text {
 	display: block;
-	padding: 3px 25px;
-	font-weight: normal;
-	line-height: 1.42857143;
-	white-space: nowrap;
+	padding: $bemo-spacing-level-1 $bemo-spacing-level-4 $bemo-spacing-level-1
+		$bemo-spacing-level-5;
 	cursor: pointer;
-}
-.df_selection_text:hover {
-	color: #333333;
-	background-color: #f5f5f5;
-}
-
-.ks_date_filter_dropdown {
-	padding: 0.375rem 0.75rem;
-	border-color: #dee2e6;
-	border-radius: 3px !important;
-}
-
-.ks_btn_first_child_radius {
-	border-bottom-right-radius: 0 !important;
-	border-top-right-radius: 0 !important;
-	border-bottom-left-radius: 3px !important;
-	border-top-left-radius: 3px !important;
+	transition: $bemo-transition;
+	&:hover {
+		background-color: $bemo-primary-blue-light-color-06;
+	}
 }
 
 .ks_btn_middle_child {
-	border-radius: 0 !important;
 	height: 100%;
-	margin-right: 10px;
-}
-
-.ks_btn_middle_child input,
-.ks_btn_last_child input {
-	padding: inherit !important;
+	margin-right: $bemo-spacing-level-2;
 }
 
 .ks_btn_last_child {
-	border-bottom-left-radius: 0 !important;
-	border-top-left-radius: 0 !important;
 	height: 100%;
 }
 
@@ -379,21 +348,16 @@
 }
 
 .ks_dashboard_ninja_toggle_menu {
+	display: inline-block;
 	position: relative;
+	padding: $bemo-spacing-level-1;
 }
 
 .ks_dashboard_ninja_toggle_menu:before {
-	font-family: FontAwesome;
-	top: 0;
-	left: -5px;
-	padding-right: 10px;
+	font-family: "FontAwesome";
 	content: "\f013";
-	font-size: 2em;
+	font-size: 1.8rem;
 	cursor: pointer;
-}
-
-.ks_bg_white {
-	background: white;
 }
 
 #ks_dashboard_title_label {
