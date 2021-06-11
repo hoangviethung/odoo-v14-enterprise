@@ -32,6 +32,7 @@
 .ks_group_width {
 	width: 40% !important;
 }
+
 .ks_dashboard_quick_edit_action_popup {
 	color: $bemo-neutral-black;
 }
@@ -42,6 +43,11 @@
 			color: $bemo-neutral-white;
 		}
 	}
+}
+
+.ks_pager_name {
+	margin-left: auto;
+	padding: 0.75rem;
 }
 
 /* Chart No Content Css */
@@ -68,30 +74,27 @@
 	transform: translateX(-50%) translateY(-50%);
 }
 
-.ks_dashboarditem_id,
-.ks_dashboarditem_chart_container {
-	overflow-x: visible !important;
-	overflow-y: visible !important;
-}
-
-.ks_dashboard_kpi {
-	overflow-y: auto !important;
-}
-
-.ks_dashboarditem_chart_container {
-	background: white;
-}
-
 .ks_chart_json_export {
 	padding-right: 10px !important;
 }
 
+.ks_chart_card_header {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 .ks_chart_card_body {
 	position: absolute;
-	top: 50px;
-	left: 8px;
-	right: 8px;
-	bottom: 8px;
+	top: $bemo-spacing-level-7;
+	left: $bemo-spacing-level-2;
+	right: $bemo-spacing-level-2;
+	bottom: $bemo-spacing-level-2;
+	padding: 0;
+	&:last-child {
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
 }
 
 /*---------------------------------------------------*/
@@ -118,9 +121,12 @@ table#ksListViewTable {
 }
 
 .ks_list_view_heading {
-	white-space: nowrap;
 	overflow: hidden;
+	display: -webkit-box;
 	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	padding: 0.75rem;
 }
 
 .ks_chart_color_options,
@@ -153,12 +159,8 @@ table#ksListViewTable {
 	max-height: 300px;
 }
 
-.ks_list_view_container {
-	background: white;
-}
-
 .ks_chart_export_menu {
-	padding: 6px 0 6px 0;
+	padding: $bemo-spacing-level-2 0 $bemo-spacing-level-2 0;
 }
 
 .ks_chart_export_menu_header {

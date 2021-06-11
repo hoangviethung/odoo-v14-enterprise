@@ -14,14 +14,12 @@
 
     <t t-name="ks_gridstack_tv_container">
         <div class="ks-tv-item ks_chart_container" t-att-data-id="chart_id">
-            <div class="grid-stack-item-content ks_dashboarditem_chart_container ks_dashboard_item_hover card shadow">
-
-                <div class="p-3 py-3 d-flex flex-row align-items-center justify-content-between ">
-                    <div class="d-flex align-items-center w-50">
-                        <h6 class="m-0 font-weight-bold h3 ks_chart_heading mr-3" t-att-title="ks_chart_title">
+            <div class="grid-stack-item-content ks_dashboarditem_chart_container ks_dashboard_item_hover">
+                <div class="ks_chart_card_header">
+                    <div class="ks_chart_card_header_wrapper">
+                        <div class="ks_chart_heading" t-att-title="ks_chart_title">
                             <t t-esc="ks_chart_title"/>
-                        </h6>
-                        <!--                    <div >-->
+                        </div>
                         <button class="ks_dashboard_item_drill_up d-none btn btn-primary" title="Drill Up" type="button" t-att-data-item-id="chart_id">Drill Up
                             <i class="fa fa-arrow-circle-up"/>
                         </button>
@@ -31,20 +29,20 @@
                     </div>
 
                 </div>
-                <div class="card-body ks_chart_card_body" style="height:80vh"/>
+                <div class="ks_chart_card_body card-body" style="height:80vh"/>
             </div>
         </div>
     </t>
 
     <t t-name="ks_gridstack_list_tv_view_container">
         <div class="ks-tv-item ks_chart_container ks_list_view" t-att-data-id="item_id">
-            <div class="grid-stack-item-content ks_list_view_container ks_dashboard_item_hover card shadow">
+            <div class="grid-stack-item-content ks_list_view_container ks_dashboard_item_hover">
 
-                <div class="p-3 py-3 d-flex flex-row align-items-center justify-content-between ">
-                    <div class="d-flex align-items-center  w-50">
-                        <h6 class="m-0 font-weight-bold h3 mr-3 ks_list_view_heading" t-att-title="ks_chart_title">
+                <div class="ks_chart_card_header">
+                    <div class="d-flex align-items-center w-50">
+                        <div class="ks_list_view_heading" t-att-title="ks_chart_title">
                             <t t-esc="ks_chart_title"/>
-                        </h6>
+                        </div>
                         <button class="ks_dashboard_item_drill_up d-none btn btn-primary" title="Drill Up" type="button" t-att-data-item-id="item_id">Drill Up
                             <i class="fa fa-arrow-circle-up"/>
                         </button>

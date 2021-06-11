@@ -24,9 +24,9 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 15px 8px;
+	padding: $bemo-spacing-level-3 $bemo-spacing-level-2;
 	align-items: center;
-	margin-bottom: 25px;
+	margin-bottom: $bemo-spacing-level-4;
 }
 
 .ks_overflow {
@@ -62,14 +62,23 @@
 	margin-top: 20px;
 }
 
-.ks_dashboard_item {
+.ks_dashboard_item,
+.ks_list_view_container,
+.ks_dashboarditem_chart_container {
 	background-color: $bemo-neutral-white;
 }
 
+.ks_list_view_container {
+	box-shadow: $bemo-box-shadow-ks-dashboard-item;
+	border-radius: $bemo-border-radius-medium;
+}
+
 .ks_dashboard_item,
+.ks_dashboarditem_chart_container,
 .ks_dashboard_item_l2,
 .ks_dashboard_item_l4,
-.ks_dashboard_item_l5 {
+.ks_dashboard_item_l5,
+.ks_dashboard_kpi {
 	padding: $bemo-spacing-level-3;
 	color: $bemo-neutral-darker-color;
 	border-radius: $bemo-border-radius-medium;
@@ -96,24 +105,28 @@
 .ks_dashboard_item_name,
 .ks_dashboard_item_name_l2,
 .ks_dashboard_item_name_l3,
-.ks_dashboard_item_name_l5 {
+.ks_dashboard_item_name_l5,
+.ks_dashboard_kpi_name_preview {
 	font-size: 1.8rem;
 	font-weight: 700;
-	white-space: nowrap;
 	overflow: hidden;
+	display: -webkit-box;
 	text-overflow: ellipsis;
-	text-transform: none;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
 }
 
 .ks_dashboard_item_name {
 	margin-bottom: $bemo-spacing-level-3;
 }
 
-.ks_dashboard_item_name_l2 {
+.ks_dashboard_item_name_l2,
+.ks_dashboard_kpi_name_preview {
 	margin-top: $bemo-spacing-level-1;
 }
 
-.ks_dashboard_item_name_l5 {
+.ks_dashboard_item_name_l5,
+.ks_dashboard_kpi_name_preview {
 	text-align: center;
 }
 
@@ -124,9 +137,11 @@
 	font-size: 4rem;
 	line-height: 1;
 	font-weight: 900;
-	white-space: nowrap;
 	overflow: hidden;
+	display: -webkit-box;
 	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
 }
 
 .ks_dashboard_item_domain_count_l3 {
@@ -208,21 +223,12 @@
 	}
 }
 
-.ks_dashboard_item_menu_show > button {
-	visibility: visible !important;
-}
-
 .ks_dashboard_item_header_hover > button:hover {
 	transition: $bemo-transition;
 }
 
 .ks_item_not_click {
 	cursor: move;
-}
-
-.ks_dashboard_icon_l5 span {
-	font-size: 20px;
-	margin: 10px;
 }
 
 .ks_dashboard_item_header_l6 {
@@ -238,8 +244,6 @@
 .ks_item_click {
 	cursor: pointer;
 }
-
-/* Dashboard filter related CSS */
 
 .ks_action_btns {
 	display: flex;
