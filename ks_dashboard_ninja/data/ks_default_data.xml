@@ -12,9 +12,28 @@
             <field name="name">Bemo Dashboard • Template 1</field>
             <field name="ks_gridstack_config">[
 				{"item_id":"ks_dashboard_ninja.ks_default_item_1", "data": {"x": 0, "y": 0, "width": 9, "height": 2}},
-				{"item_id":"ks_dashboard_ninja.ks_default_item_2", "data": {"x": 0, "y": 9, "width": 9, "height": 2}},
-				{"item_id":"ks_dashboard_ninja.ks_default_item_3", "data": {"x": 0, "y": 6, "width": 9, "height": 2}},
-				{"item_id":"ks_dashboard_ninja.ks_default_item_4", "data": {"x": 18, "y": 2, "width": 9, "height": 2}},
+				{"item_id":"ks_dashboard_ninja.ks_default_item_2", "data": {"x": 9, "y": 0, "width": 9, "height": 2}},
+				{"item_id":"ks_dashboard_ninja.ks_default_item_3", "data": {"x": 18, "y": 0, "width": 9, "height": 2}},
+				{"item_id":"ks_dashboard_ninja.ks_default_item_12", "data": {"x": 27, "y": 0, "width": 9, "height":
+				2}},
+
+
+				{"item_id":"ks_dashboard_ninja.ks_default_item_4", "data": {"x": 0, "y": 2, "width": 9, "height": 2}},
+				{"item_id":"ks_dashboard_ninja.ks_default_item_13", "data": {"x": 9, "y": 2, "width": 9, "height":
+				2}},
+				{"item_id":"ks_dashboard_ninja.ks_default_item_19", "data": {"x": 18, "y": 2, "width": 9, "height": 2}},
+				{"item_id":"ks_dashboard_ninja.ks_default_item_18", "data": {"x": 27, "y": 2, "width": 9, "height": 2}},
+
+
+				{"item_id":"ks_dashboard_ninja.ks_default_item_16", "data": {"x": 0, "y": 4, "width": 9, "height":
+				2}},
+				{"item_id":"ks_dashboard_ninja.ks_default_item_17", "data": {"x": 9, "y": 4, "width": 9, "height": 2}},
+				{"item_id":"ks_dashboard_ninja.ks_default_item_26", "data": {"x": 18, "y": 4, "width": 9, "height":
+				2}},
+				{"item_id":"ks_dashboard_ninja.ks_default_item_27", "data": {"x": 27, "y": 4, "width": 9, "height":
+				2}},
+
+
 				{"item_id":"ks_dashboard_ninja.ks_default_item_5", "data": {"x": 0, "y": 12, "width": 36, "height": 4}},
 				{"item_id":"ks_dashboard_ninja.ks_default_item_6", "data": {"x": 18, "y": 43, "width": 18, "height":
 				4}},
@@ -26,17 +45,8 @@
 				4}},
 				{"item_id":"ks_dashboard_ninja.ks_default_item_11", "data": {"x": 0, "y": 29, "width": 18, "height":
 				5}},
-				{"item_id":"ks_dashboard_ninja.ks_default_item_12", "data": {"x": 16, "y": 6, "width": 9, "height":
-				2}},
-				{"item_id":"ks_dashboard_ninja.ks_default_item_13", "data": {"x": 0, "y": 4, "width": 9, "height":
-				2}},
 				{"item_id":"ks_dashboard_ninja.ks_default_item_15", "data": {"x": 0, "y": 25, "width": 36, "height":
 				4}},
-				{"item_id":"ks_dashboard_ninja.ks_default_item_16", "data": {"x": 16, "y": 0, "width": 9, "height":
-				2}},
-				{"item_id":"ks_dashboard_ninja.ks_default_item_17", "data": {"x": 8, "y": 2, "width": 9, "height": 2}},
-				{"item_id":"ks_dashboard_ninja.ks_default_item_18", "data": {"x": 8, "y": 4, "width": 9, "height": 2}},
-				{"item_id":"ks_dashboard_ninja.ks_default_item_19", "data": {"x": 0, "y": 2, "width": 9, "height": 2}},
 				{"item_id":"ks_dashboard_ninja.ks_default_item_20", "data": {"x": 0, "y": 8, "width": 18, "height":
 				4}},
 				{"item_id":"ks_dashboard_ninja.ks_default_item_21", "data": {"x": 18, "y": 16, "width": 18, "height":
@@ -49,10 +59,6 @@
 				5}},
 				{"item_id":"ks_dashboard_ninja.ks_default_item_25", "data": {"x": 18, "y": 29, "width": 18, "height":
 				5}},
-				{"item_id":"ks_dashboard_ninja.ks_default_item_26", "data": {"x": 18, "y": 4, "width": 9, "height":
-				2}},
-				{"item_id":"ks_dashboard_ninja.ks_default_item_27", "data": {"x": 9, "y": 6, "width": 9, "height":
-				2}},
 				{"item_id":"ks_dashboard_ninja.ks_default_item_28", "data": {"x": 18, "y": 8, "width": 18, "height":
 				4}}
 				]
@@ -68,8 +74,8 @@
             <field name="ks_model_id" eval="ref('base.model_res_country')"/>
             <field name="ks_domain">[["id","&gt;",150]]</field>
             <field name="ks_default_icon">bar-chart</field>
-            <field name="ks_dashboard_item_theme">blue</field>
-            <field name="ks_background_color">#337ab7,0.99</field>
+            <field name="ks_dashboard_item_theme">bemo</field>
+            <field name="ks_background_color">#0c3255,0.99</field>
             <field name="ks_font_color">#ffffff,0.99</field>
             <field name="ks_default_icon_color">#ffffff,0.99</field>
             <field name="ks_layout">layout1</field>
@@ -82,8 +88,8 @@
             <field name="ks_record_count_type">count</field>
             <field name="ks_model_id" eval="ref('base.model_res_country')"/>
             <field name="ks_default_icon">users</field>
-            <field name="ks_dashboard_item_theme">red</field>
-            <field name="ks_background_color">#d9534f,0.99</field>
+            <field name="ks_dashboard_item_theme">bemo</field>
+            <field name="ks_background_color">#0c3255,0.99</field>
             <field name="ks_font_color">#ffffff,0.99</field>
             <field name="ks_default_icon_color">#ffffff,0.99</field>
             <field name="ks_layout">layout2</field>
@@ -98,8 +104,8 @@
             <field name="ks_domain">[["id","&lt;",50]]</field>
             <field name="ks_default_icon">money</field>
             <field name="ks_dashboard_item_theme">green</field>
-            <field name="ks_background_color">#5cb85c,0.99</field>
-            <field name="ks_font_color">#000000,0.99</field>
+            <field name="ks_background_color">#0c3255,0.99</field>
+            <field name="ks_font_color">#ffffff,0.99</field>
             <field name="ks_default_icon_color">#ffffff,0.99</field>
             <field name="ks_layout">layout3</field>
             <field name="ks_company_id" eval="0"/>
@@ -113,13 +119,12 @@
             <field name="ks_model_id" eval="ref('base.model_res_country')"/>
             <field name="ks_domain">[["id","&lt;",100]]</field>
             <field name="ks_default_icon">paper-plane</field>
-            <field name="ks_dashboard_item_theme">yellow</field>
-            <field name="ks_background_color">#623D0A,0.99</field>
-            <field name="ks_font_color">#ffffff,0.99</field>
-            <field name="ks_default_icon_color">#ffffff,0.99</field>
+            <field name="ks_dashboard_item_theme">bemo</field>
+            <field name="ks_background_color">#0c3255,0.99</field>
+            <field name="ks_font_color">#0c3255,0.99</field>
+            <field name="ks_default_icon_color">#0c3255,0.99</field>
             <field name="ks_layout">layout5</field>
             <field name="ks_company_id" eval="0"/>
-
         </record>
 
         <record id="ks_default_item_5" model="ks_dashboard_ninja.item">
@@ -134,7 +139,6 @@
             <field name="ks_chart_item_color">warm</field>
             <field name="ks_dashboard_item_type">ks_bar_chart</field>
             <field name="ks_company_id" eval="0"/>
-
         </record>
 
 
@@ -150,7 +154,6 @@
             <field name="ks_chart_item_color">warm</field>
             <field name="ks_dashboard_item_type">ks_line_chart</field>
             <field name="ks_company_id" eval="0"/>
-
         </record>
 
         <record id="ks_default_item_7" model="ks_dashboard_ninja.item">
@@ -163,7 +166,6 @@
             <field name="ks_domain">[["id","&lt;",10]]</field>
             <field name="ks_dashboard_item_type">ks_pie_chart</field>
             <field name="ks_company_id" eval="0"/>
-
         </record>
 
         <record id="ks_default_item_8" model="ks_dashboard_ninja.item">
@@ -228,10 +230,10 @@
             <field name="ks_model_id" eval="ref('base.model_res_country')"/>
             <field name="ks_domain">[["id","&lt;",50]]</field>
             <field name="ks_default_icon">shopping-cart</field>
-            <field name="ks_dashboard_item_theme">red</field>
-            <field name="ks_background_color">#D9534F,0.99</field>
-            <field name="ks_font_color">#D9534F,0.99</field>
-            <field name="ks_default_icon_color">#FFFFFF,0.99</field>
+            <field name="ks_dashboard_item_theme">bemo</field>
+            <field name="ks_background_color">#0c3255,0.99</field>
+            <field name="ks_font_color">#ffffff,0.99</field>
+            <field name="ks_default_icon_color">#ffffff,0.99</field>
             <field name="ks_layout">layout4</field>
             <field name="ks_company_id" eval="0"/>
         </record>
@@ -243,10 +245,10 @@
             <field name="ks_model_id" eval="ref('base.model_res_country')"/>
             <field name="ks_domain">[["id","&lt;",100]]</field>
             <field name="ks_default_icon">car</field>
-            <field name="ks_dashboard_item_theme">red</field>
-            <field name="ks_background_color">#D9534F,0.53</field>
-            <field name="ks_font_color">#FFFFFF,0.70</field>
-            <field name="ks_default_icon_color">#FFFFFF,0.99</field>
+            <field name="ks_dashboard_item_theme">bemo</field>
+            <field name="ks_background_color">#0c3255,0.99</field>
+            <field name="ks_font_color">#ffffff,0.70</field>
+            <field name="ks_default_icon_color">#ffffff,0.99</field>
             <field name="ks_layout">layout6</field>
             <field name="ks_company_id" eval="0"/>
         </record>
@@ -287,8 +289,8 @@
         <field name="ks_data_comparison">Ratio</field>
         <field name="ks_domain">[["id","&lt;",100]]</field>
         <field name="ks_default_icon">user</field>
-        <field name="ks_dashboard_item_theme">blue</field>
-        <field name="ks_background_color">#03104E,0.99</field>
+        <field name="ks_dashboard_item_theme">bemo</field>
+        <field name="ks_background_color">#0c3255,0.99</field>
         <field name="ks_font_color">#ffffff,0.99</field>
         <field name="ks_default_icon_color">#ffffff,0.99</field>
         <field name="ks_company_id" eval="0"/>
@@ -304,10 +306,10 @@
         <field name="ks_domain">[["id","&lt;",100]]</field>
         <field name="ks_data_comparison">Percentage</field>
         <field name="ks_default_icon">paper-plane</field>
-        <field name="ks_dashboard_item_theme">red</field>
-        <field name="ks_background_color">#ED9922,0.99</field>
-        <field name="ks_font_color">#000000,0.99</field>
-        <field name="ks_default_icon_color">#000000,0.99</field>
+        <field name="ks_dashboard_item_theme">bemo</field>
+        <field name="ks_background_color">#0c3255,0.99</field>
+        <field name="ks_font_color">#ffffff,0.99</field>
+        <field name="ks_default_icon_color">#ffffff,0.99</field>
         <field name="ks_company_id" eval="0"/>
     </record>
 
@@ -323,10 +325,10 @@
         <field name="ks_domain">[["id","&lt;",100]]</field>
         <field name="ks_data_comparison">Sum</field>
         <field name="ks_default_icon">money</field>
-        <field name="ks_dashboard_item_theme">green</field>
-        <field name="ks_background_color">#5CB85C,0.63</field>
-        <field name="ks_font_color">#000000,0.99</field>
-        <field name="ks_default_icon_color">#000000,0.99</field>
+        <field name="ks_dashboard_item_theme">bemo</field>
+        <field name="ks_background_color">#0c3255,0.99</field>
+        <field name="ks_font_color">#ffffff,0.99</field>
+        <field name="ks_default_icon_color">#ffffff,0.99</field>
         <field name="ks_company_id" eval="0"/>
     </record>
 
@@ -340,8 +342,8 @@
         <field name="ks_data_comparison">Sum</field>
         <field name="ks_domain">[["id","&lt;",100]]</field>
         <field name="ks_default_icon">bar-chart</field>
-        <field name="ks_dashboard_item_theme">yellow</field>
-        <field name="ks_background_color">#f0ad4e,0.99</field>
+        <field name="ks_dashboard_item_theme">bemo</field>
+        <field name="ks_background_color">#0c3255,0.99</field>
         <field name="ks_font_color">#ffffff,0.99</field>
         <field name="ks_default_icon_color">#ffffff,0.99</field>
         <field name="ks_company_id" eval="0"/>
@@ -455,10 +457,10 @@
         <field name="ks_domain">[["id","&lt;",100]]</field>
         <field name="ks_data_comparison">Sum</field>
         <field name="ks_default_icon">money</field>
-        <field name="ks_dashboard_item_theme">blue</field>
-        <field name="ks_background_color">#2DC9B3,0.99</field>
-        <field name="ks_font_color">#000000,0.99</field>
-        <field name="ks_default_icon_color">#000000,0.99</field>
+        <field name="ks_dashboard_item_theme">bemo</field>
+        <field name="ks_background_color">#0c3255,0.99</field>
+        <field name="ks_font_color">#ffffff,0.99</field>
+        <field name="ks_default_icon_color">#ffffff,0.99</field>
         <field name="ks_company_id" eval="0"/>
     </record>
 
@@ -471,10 +473,10 @@
         <field name="ks_previous_period">1</field>
         <field name="ks_date_filter_selection">t_week</field>
         <field name="ks_default_icon">money</field>
-        <field name="ks_dashboard_item_theme">green</field>
-        <field name="ks_background_color">#17D817,0.59</field>
-        <field name="ks_font_color">#000000,0.99</field>
-        <field name="ks_default_icon_color">#000000,0.99</field>
+        <field name="ks_dashboard_item_theme">bemo</field>
+        <field name="ks_background_color">#0c3255,0.99</field>
+        <field name="ks_font_color">#ffffff,0.99</field>
+        <field name="ks_default_icon_color">#ffffff,0.99</field>
         <field name="ks_company_id" eval="0"/>
     </record>
 
