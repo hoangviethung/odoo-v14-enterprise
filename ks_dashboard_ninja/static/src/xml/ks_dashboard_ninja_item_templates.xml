@@ -290,7 +290,7 @@
     </t>
 
     <t t-name="ks_kpi_preview_template">
-        <div class="ks_dashboard_kpi ks_dashboard_custom_srollbar  ks_db_kpi_preview ks_db_item_preview_color_picker">
+        <div class="ks_dashboard_kpi ks_dashboard_custom_srollbar ks_db_kpi_preview ks_db_item_preview_color_picker">
             <div class="ks_dashboard_icon_l5 ks_dashboard_icon_color_picker">
                 <t t-if="icon_select=='Custom'">
                     <t t-if="img_src">
@@ -343,7 +343,7 @@
     </t>
 
     <t t-name="ks_kpi_preview_template_3">
-        <div class="ks_dashboard_kpi ks_dashboard_custom_srollbar  ks_db_kpi_preview ks_db_item_preview_color_picker">
+        <div class="ks_dashboard_kpi ks_dashboard_custom_srollbar ks_db_kpi_preview ks_db_item_preview_color_picker">
             <div class="ks_dashboard_icon_l5 ks_dashboard_icon_color_picker">
                 <t t-if="icon_select=='Custom'">
                     <t t-if="img_src">
@@ -395,7 +395,7 @@
     </t>
 
     <t t-name="ks_kpi_preview_template_2">
-        <div class="ks_dashboard_kpi ks_dashboard_custom_srollbar  ks_db_kpi_preview ks_db_item_preview_color_picker">
+        <div class="ks_dashboard_kpi ks_dashboard_custom_srollbar ks_db_kpi_preview ks_db_item_preview_color_picker">
             <div class="ks_dashboard_icon_l5 ks_dashboard_icon_color_picker">
                 <t t-if="icon_select=='Custom'">
                     <t t-if="img_src">

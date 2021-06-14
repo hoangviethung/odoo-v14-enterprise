@@ -173,7 +173,7 @@
                             <field name="ks_preview" widget="ks_dashboard_item_preview" class="ks_dashboard_item_preview" attrs="{'invisible':[('ks_dashboard_item_type','!=','ks_tile')]}" />
                             <field name="ks_graph_preview" string="Preview" widget="ks_dashboard_graph_preview" class="ks_dashboard_graph_preview" attrs="{'invisible':['|','|','|',('ks_dashboard_item_type','=','ks_to_do'),('ks_dashboard_item_type','=','ks_tile'),('ks_dashboard_item_type','=','ks_list_view'),('ks_dashboard_item_type','=','ks_kpi')]}"/>
                             <field name="ks_list_view_preview" widget="ks_dashboard_list_view_preview" attrs="{'invisible':[('ks_dashboard_item_type','!=','ks_list_view')]}"/>
-                            <field name="ks_kpi_preview" string="Preview" widget="ks_dashboard_kpi_preview" attrs="{'invisible' : [('ks_dashboard_item_type','!=','ks_kpi')]}"/>
+                            <field name="ks_kpi_preview" string="Preview" widget="ks_dashboard_kpi_preview" class="ks_dashboard_graph_preview" attrs="{'invisible' : [('ks_dashboard_item_type','!=','ks_kpi')]}"/>
                             <field name="ks_to_do_preview" string="Preview" widget="ks_dashboard_to_do_preview" attrs="{'invisible' : [('ks_dashboard_item_type','!=','ks_to_do')]}" />
                         </section>
                     </group>

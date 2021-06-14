@@ -4,7 +4,7 @@
     <t t-name="ks_dashboard_theme_view">
         <div class="ks_dashboard_theme_view_render">
             <div class="ks_dashboard_theme_input_container">
-                <input class="ks_dashboard_theme_input ks_color_white" type="checkbox" name="White Theme"
+                <input class="ks_dashboard_theme_input" type="checkbox" name="White Theme"
                        value="white"/>
                 <span class="ks_checkmark"/>
             </div>

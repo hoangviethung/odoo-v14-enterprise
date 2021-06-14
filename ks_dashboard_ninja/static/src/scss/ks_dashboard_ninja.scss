@@ -133,7 +133,8 @@
 .ks_dashboard_item_domain_count,
 .ks_dashboard_item_domain_count_l2,
 .ks_dashboard_item_domain_count_l3,
-.ks_dashboard_item_domain_count_l5 {
+.ks_dashboard_item_domain_count_l5,
+.ks_dashboard_kpi_count_preview {
 	font-size: 4rem;
 	line-height: 1;
 	font-weight: 900;
@@ -148,7 +149,8 @@
 	text-align: right;
 }
 
-.ks_dashboard_item_domain_count_l5 {
+.ks_dashboard_item_domain_count_l5,
+.ks_dashboard_kpi_count_preview {
 	margin-top: $bemo-spacing-level-2;
 	text-align: center;
 }

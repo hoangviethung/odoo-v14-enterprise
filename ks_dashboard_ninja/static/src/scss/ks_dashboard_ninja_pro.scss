@@ -26,7 +26,12 @@
 }
 
 .ks_dashboard_item_action {
-	color: $bemo-neutral-black;
+	color: $bemo-neutral-white;
+	border: 0;
+	&:focus {
+		box-shadow: unset;
+		outline: none;
+	}
 }
 
 .ks_group_width {
@@ -102,9 +107,11 @@
 }
 
 .ks_chart_heading {
-	white-space: nowrap;
 	overflow: hidden;
+	display: -webkit-box;
 	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
 }
 
 .ks_list_view_heading {
@@ -143,6 +150,7 @@
 }
 
 .ksMaxTableContent {
+	padding: 0;
 	max-height: 300px;
 }
 

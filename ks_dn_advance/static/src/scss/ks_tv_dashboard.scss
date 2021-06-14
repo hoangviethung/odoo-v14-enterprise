@@ -39,14 +39,30 @@
 			outline: none;
 		}
 	}
-	.owl-nav .owl-prev {
-		left: -60px;
-	}
-	.owl-nav .owl-next {
-		right: -60px;
+	.owl-nav {
+		.owl-prev {
+			left: -60px;
+		}
+		.owl-next {
+			right: -60px;
+		}
 	}
 	.ks_dashboarditem_chart_container {
 		height: 100%;
+	}
+	.owl-carousel {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 90vh;
+		width: 80vw;
+		&.owl-rtl {
+			direction: ltr;
+			.fa-angle-left {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -74,36 +90,38 @@
 	background: rgba($color: $bemo-neutral-black, $alpha: 0.8);
 }
 
-.ks_float_tv .owl-carousel {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	height: 90vh;
-	width: 80vw;
-}
-
-.ks-tv-item .ks_list_view_container {
-	height: 100%;
-}
-
-.ks-tv-item .ks_dashboard_kpi {
-	height: 132px !important;
+.ks-tv-item {
+	.ks_list_view_container {
+		height: 100%;
+	}
+	.ks_dashboard_kpi {
+		height: 150px;
+	}
 }
 
 @media (min-width: 1440px) {
-	.ks-tv-item .ks_dashboard_item_hover {
-		min-width: 350px;
+	.ks-tv-item {
+		.ks_dashboard_item_hover {
+			min-width: 350px;
+		}
+		.ks_dashboard_item_hover {
+			margin: $bemo-spacing-level-3;
+			min-width: 400px;
+		}
 	}
-	.ks-tv-kpi .ks_dashboard_item_hover {
-		min-width: 350px;
-		min-height: 208px;
+	.ks-tv-kpi {
+		.ks_dashboard_item_hover {
+			min-width: 350px;
+			min-height: 208px;
+		}
+		.ks_dashboard_icon_l5 {
+			> img {
+				width: 36px;
+				height: 36px;
+			}
+		}
 	}
 
-	.ks-tv-item .ks_dashboard_item_hover {
-		margin: 14px;
-		min-width: 400px;
-	}
 	.ks-tv-item .ks_dashboard_kpi_name_preview,
 	.ks-tv-item .ks_dashboard_item_name_l5,
 	.ks-tv-item .ks_dashboard_item_name_l3,
@@ -114,14 +132,11 @@
 	.ks-tv-kpi .ks_dashboard_icon_l5 span {
 		font-size: 36px;
 	}
-	.ks-tv-kpi .ks_dashboard_icon_l5 > img {
-		width: 36px !important;
-		height: 36px;
-	}
+
 	.ks-tv-item .ks_dashboard_item_hover #ksListViewTable td,
 	.ks-tv-item .ks_dashboard_item_hover #ksListViewTable th,
 	.ks-tv-item .ks_dashboard_item_hover .ks_list_view_heading {
-		font-size: 20px !important;
+		font-size: 20px;
 	}
 	.ks-tv-kpi .ks_dashboard_item_hover.ks_dashboard_kpi .text-center.mt-1,
 	.ks-tv-kpi
@@ -133,76 +148,108 @@
 	}
 }
 
-.ks_dn_table .ks_dn_thead .ks_dn_th {
-	position: sticky;
-	top: -5px;
+.ks_nodata_list_view_preview {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
-@media (min-width: 1820px) {
-	.ks-tv-item .ks_dashboard_item_hover {
-		min-height: 164px;
+.ks_nodata_to_do_view {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: $bemo-spacing-level-4;
+}
+
+.o_field_widget {
+	&[name="ks_list_view_preview"],
+	&[name="ks_to_do_preview"] {
+		padding: $bemo-spacing-level-4;
+		border: 2px dashed $bemo-primary-blue-light-color-04;
+		background-color: $bemo-primary-blue-light-color-06;
+		margin-bottom: 0;
+		.ks_chart_card_header {
+			padding: 0.75rem;
+		}
+	}
+	&[name="ks_graph_preview"] {
+		.card {
+			width: 100%;
+			border-radius: $bemo-border-radius-medium;
+			border: 0;
+			box-shadow: $bemo-box-shadow-ks-dashboard-item;
+			overflow: hidden;
+		}
+		.ks_chart_card_header {
+			padding: $bemo-spacing-level-3;
+		}
+		.card-body {
+			padding: $bemo-spacing-level-3;
+		}
+	}
+	&[name="ks_to_do_preview"] {
+		.ks_chart_card_header {
+			.ks_chart_heading {
+				color: $bemo-neutral-white;
+			}
+		}
 	}
 }
 
-#ksListViewTable.ks_list_view_layout_4 thead th,
-#ksListViewTable.ks_list_view_layout_3 thead th {
-	color: #ffffff;
-	background: #324960;
-	text-align: center;
+#ksListViewTable {
+	margin-bottom: 0;
+	.ks_dn_th {
+		color: $bemo-neutral-white;
+		background-color: $bemo-primary-color;
+		position: sticky;
+		top: 0;
+		.ks_list_heder_hover {
+			opacity: 0;
+			transition: $bemo-transition;
+		}
+		&:hover {
+			.ks_list_heder_hover {
+				opacity: 1;
+			}
+		}
+	}
+	&.ks_list_view_layout_2 {
+		.ks_dn_th {
+			color: $bemo-neutral-dark-color;
+			background-color: $bemo-primary-blue-light-color-06;
+		}
+	}
+	&.ks_list_view_layout_3 {
+		.ks_table_body {
+			td {
+				border-right: 0;
+				border-left: 0;
+			}
+		}
+	}
 }
 
-#ksListViewTable.ks_list_view_layout_4 thead th:nth-child(even) {
-	background: #4fc3a1;
-}
-
-#ksListViewTable.ks_list_view_layout_2 thead th {
-	color: #bfa829;
-	background-color: #343a40;
-}
-
-#ksListViewTable.ks_list_view_layout_1 thead th {
-	background-color: #f7f9fa !important;
-}
-
-.ks_table_layput_3 {
-	table-layout: auto !important;
-}
-
-/*RTL Crowsel related CSS */
-.owl-carousel.owl-rtl {
-	direction: ltr !important;
-}
-
-/*monkey patch : RTL right click not updating chart*/
-.owl-carousel.owl-rtl .fa-angle-left {
-	display: none !important;
+@media (min-width: 1820px) {
+	.ks-tv-item {
+		.ks_dashboard_item_hover {
+			min-height: 164px;
+		}
+	}
 }
 
 .ks_minus {
-	display: none !important;
+	display: none;
 }
 
 .ks_plus {
-	display: none !important;
-}
-
-.ks_border_aliceblue {
-	border: aliceblue !important;
+	display: none;
 }
 
 .list_header {
-	white-space: nowrap !important;
-}
-
-.table thead button.ks_list_heder_hover {
-	opacity: 0;
-	transition: all ease-in-out 0.5s;
-}
-
-.table thead th:hover button.ks_list_heder_hover {
-	opacity: 1;
+	white-space: nowrap;
 }
 
 .ks_hide_display {
-	display: none !important;
+	display: none;
 }
