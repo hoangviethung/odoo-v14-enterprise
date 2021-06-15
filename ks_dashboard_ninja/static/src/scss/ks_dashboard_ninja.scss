@@ -18,6 +18,7 @@
 	padding: $bemo-spacing-level-3 $bemo-spacing-level-2;
 	background-color: $bemo-neutral-white;
 	border-radius: $bemo-border-radius-medium;
+	min-height: 100%;
 }
 .ks_dashboard_ninja_header {
 	text-align: right;
@@ -206,7 +207,9 @@
 	max-width: 100%;
 }
 
-.ks_dashboard_item_header {
+.ks_dashboard_item_header,
+.ks_dashboard_item_header_l2,
+.ks_dashboard_item_header_l6 {
 	> button {
 		color: $bemo-neutral-white;
 		background: transparent;
@@ -319,10 +322,6 @@
 
 .ks_hide {
 	display: none !important;
-}
-
-.ks_dashboard_item_action {
-	background-color: inherit;
 }
 
 /* Dev Code here */

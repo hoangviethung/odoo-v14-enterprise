@@ -26,6 +26,7 @@
 	opacity: 0;
 	visibility: hidden;
 	transition: $bemo-transition;
+	border-radius: $bemo-border-radius-medium;
 }
 
 .ks_dashboard_quick_edit_action > button {
