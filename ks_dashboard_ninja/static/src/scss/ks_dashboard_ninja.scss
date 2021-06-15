@@ -214,6 +214,13 @@
 		color: $bemo-neutral-white;
 		background: transparent;
 		border: none;
+		&:hover {
+			color: $bemo-primary-blue-light-color-03;
+		}
+		&:focus {
+			outline: 0;
+			box-shadow: unset;
+		}
 	}
 }
 

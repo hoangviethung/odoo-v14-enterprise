@@ -26,12 +26,14 @@
 }
 
 .ks_dashboard_item_action {
-	color: $bemo-neutral-white;
-	border: 0;
-	background-color: transparent;
-	&:focus {
-		box-shadow: unset;
-		outline: none;
+	&.ks_sort_icon {
+		color: $bemo-neutral-white;
+		border: 0;
+		background-color: transparent;
+		&:focus {
+			box-shadow: unset;
+			outline: none;
+		}
 	}
 }
 
@@ -47,6 +49,9 @@
 	.ks_chart_inner_buttons {
 		> button {
 			color: $bemo-neutral-white;
+			&:hover {
+				color: $bemo-primary-blue-light-color-03;
+			}
 		}
 	}
 }

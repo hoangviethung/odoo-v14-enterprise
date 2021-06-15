@@ -331,7 +331,7 @@
                                 <button class="ks_dashboard_item_customize d-block text-white d-sm-none" title="Customize Item" t-att-style="'color:'+ ks_rgba_button_color + ' !important' + ';'" type="button">
                                     <i class="fa fa-pencil"/>
                                 </button>
-                                <button class="ks_dashboard_item_delete text-white" t-att-style="'color:'+ ks_rgba_button_color + ' !important' + ';'" title="Remove Item" type="button">
+                                <button class="ks_dashboard_item_delete" title="Remove Item" type="button">
                                     <i class="fa fa-times"/>
                                 </button>
                                 <div class="ks_chart_inner_buttons">
