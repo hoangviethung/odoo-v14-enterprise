@@ -11,14 +11,11 @@
 			max-width: 100%;
 			border: 0;
 			.oe_avatar {
-				position: absolute;
-				right: $bemo-spacing-level-3;
-				top: $bemo-height-form-statusbar + $bemo-height-oe-button-box;
 				img {
-					min-width: 100px;
-					min-height: 100px;
-					max-height: 100px;
-					max-width: 100px;
+					min-width: $bemo-avatar-circle-large;
+					min-height: $bemo-avatar-circle-large;
+					max-height: $bemo-avatar-circle-large;
+					max-width: $bemo-avatar-circle-large;
 					border-radius: 50%;
 					object-fit: cover;
 					object-position: center center;
@@ -64,6 +61,11 @@
 					font-weight: 700;
 					text-transform: uppercase;
 					min-height: unset;
+					> i.fa {
+						~ span {
+							margin-left: $bemo-spacing-level-1;
+						}
+					}
 					&.btn-primary {
 						color: $bemo-primary-color;
 					}
@@ -85,12 +87,19 @@
 			}
 		}
 		.oe_button_box {
+			display: flex;
+			justify-content: flex-end;
+			flex-wrap: wrap;
 			.btn.oe_stat_button {
 				border-top: 0;
 				border-bottom: 0;
+				width: auto;
+				max-width: 33.33333333%;
+				transition: $bemo-transition;
 				> .o_button_icon {
 					color: $bemo-primary-color;
 					height: $bemo-height-oe-button-box;
+					width: auto;
 					display: inline-flex;
 					justify-content: center;
 					align-items: center;
@@ -99,6 +108,18 @@
 				> span {
 					color: $bemo-primary-color;
 					font-size: 12px;
+					max-width: calc(100% - 20px);
+					padding-right: 0;
+					padding-left: $bemo-spacing-level-2;
+				}
+				@media (min-width: 768px) {
+					max-width: 20%;
+				}
+				@media (min-width: 992px) {
+					max-width: 14.28571429%;
+				}
+				@media (min-width: 1200px) {
+					max-width: 12.5%;
 				}
 			}
 		}
