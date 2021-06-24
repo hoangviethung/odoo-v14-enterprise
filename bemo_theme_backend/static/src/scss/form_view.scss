@@ -454,6 +454,14 @@
 				}
 			}
 		}
+		.o_statusbar_status {
+			&.o_field_widget {
+				&.o_readonly_modifier {
+					margin-bottom: 0;
+					margin-top: 0;
+				}
+			}
+		}
 		.o_address_format {
 			.o_address_city {
 				width: 100%;

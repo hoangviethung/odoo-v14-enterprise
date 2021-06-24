@@ -2,7 +2,6 @@
 	> .o_content {
 		> .o_list_view {
 			> .table-responsive {
-				overflow-x: hidden;
 				overflow-y: auto;
 				max-height: 100%;
 				height: 100%;
@@ -22,8 +21,14 @@
 	}
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-	background-color: $bemo-neutral-lightest-background-color;
+.table-striped {
+	tbody {
+		tr {
+			&:nth-of-type(odd) {
+				background-color: $bemo-neutral-lightest-background-color;
+			}
+		}
+	}
 }
 
 .table-hover tbody tr {
@@ -37,24 +42,26 @@
 
 .o_list_view {
 	background: $bemo-neutral-white;
-	table {
-		position: relative;
-		overflow-x: hidden;
-	}
 	table,
 	thead,
 	tfoot,
 	td,
 	th {
 		border: none;
-		transition: $bemo-transition;
+		transition: opacity 0.3s ease-in-out, backgroup-color 0.3s ease-in-out;
+	}
+
+	table {
+		overflow-x: hidden;
 	}
 	thead {
 		color: $bemo-neutral-white;
 		border-bottom: 0;
 		background-color: $bemo-primary-color;
-		th.o_column_sortable:hover {
-			background-color: $bemo-primary-dark-color-01;
+		th.o_column_sortable {
+			&:hover {
+				background-color: $bemo-primary-dark-color-01;
+			}
 		}
 	}
 	th,
@@ -127,6 +134,9 @@
 				}
 			}
 		}
+		.o_column_sortable:not(.o_handle_cell):not(:empty)::after {
+			margin-left: 0;
+		}
 		tr:focus-within,
 		.o_list_view .o_list_table.table-striped tr:focus-within {
 			background: inherit !important;
@@ -195,6 +205,15 @@
 			}
 		}
 	}
+	.o_optional_columns {
+		.o_optional_columns_dropdown {
+			.dropdown-item {
+				label {
+					padding-left: $bemo-spacing-level-4;
+				}
+			}
+		}
+	}
 	.o_list_table thead > tr > th:not(.o_list_record_selector) {
 		border-left: 0;
 	}
@@ -242,13 +261,28 @@
 	}
 }
 
+.o_list_selection_box {
+	color: $bemo-primary-color;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	font-weight: 700;
+	padding: 0 16px;
+	border-radius: 0.667rem;
+	margin-right: 8px;
+	line-height: 40px;
+	border: 0;
+	background-color: $bemo-primary-blue-light-color-04;
+}
+
 .o_content,
 .modal-content {
 	> div > .table-responsive {
 		> .o_list_view {
 			thead,
 			thead tr:nth-child(1) th {
-				border-bottom: solid 1px gray("300");
+				border-bottom: 1px solid $bemo-neutral-lighter-border-color;
 				background-color: $bemo-neutral-white;
 				position: sticky;
 				z-index: 1;

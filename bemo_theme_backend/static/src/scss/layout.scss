@@ -32,11 +32,11 @@ html {
 	.o_web_client {
 		> .o_action_manager {
 			> .o_action {
+				background: $bemo-primary-blue-light-color-06;
 				> .o_content {
-					padding: $bemo-spacing-level-3;
-					background: $bemo-primary-blue-light-color-06;
+					margin: $bemo-spacing-level-3;
 					@media (max-width: 575.98px) {
-						padding: $bemo-spacing-level-2;
+						margin: $bemo-spacing-level-2;
 					}
 				}
 			}
