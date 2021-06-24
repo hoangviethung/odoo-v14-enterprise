@@ -34,7 +34,7 @@ html {
 			> .o_action {
 				background: $bemo-primary-blue-light-color-06;
 				> .o_content {
-					margin: $bemo-spacing-level-3;
+					padding: $bemo-spacing-level-3;
 					@media (max-width: 575.98px) {
 						margin: $bemo-spacing-level-2;
 					}
