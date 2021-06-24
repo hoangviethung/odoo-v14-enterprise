@@ -14,6 +14,8 @@
 		'base',
 		'web',
 		'web_editor',
+		'web_editor',
+		"hr_attendance"
 	],
 	'data': [
 		# Views
