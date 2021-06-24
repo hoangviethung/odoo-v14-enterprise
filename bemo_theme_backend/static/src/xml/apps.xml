@@ -27,7 +27,7 @@
                 </div>
                 <t t-set="number_module" t-value="5" />
                 <div class="bemo_apps_wrapper">
-                    <t t-foreach="widget.getAppsCategory()" t-as="Category">
+                    <!-- <t t-foreach="widget.getAppsCategory()" t-as="Category">
                         <div class="bemo_apps_group">
                             <div class="bemo_app_title">
                                 <h3>
@@ -44,7 +44,7 @@
                                 </t>
                             </div>
                         </div>
-                    </t>
+                    </t> -->
                 </div>
             </div>
         </t>
