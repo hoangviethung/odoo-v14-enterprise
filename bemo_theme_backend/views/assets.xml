@@ -92,7 +92,6 @@
             <script type="text/javascript" src="/bemo_theme_backend/static/src/js/views/kanban_renderer.js" />
             <script type="text/javascript" src="/bemo_theme_backend/static/src/js/views/kanban_quick_create.js" />
             <script type="text/javascript" src="/bemo_theme_backend/static/src/components/control_panel.js" />
-            <script type="text/javascript" src="/bemo_theme_backend/static/src/components/my_attendances.js" />
         </xpath>
     </template>
 </odoo>
