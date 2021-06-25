@@ -18,3 +18,53 @@
 	border-radius: 50%;
 	border: 2px solid $bemo-neutral-lighter-border-color;
 }
+
+.bemo_validation_wrapper {
+	position: relative;
+	max-width: 600px;
+	width: 100%;
+	background-color: $bemo-neutral-white;
+	border-radius: $bemo-border-radius-hight;
+	overflow: hidden;
+	&.bemo_validation_warning {
+		.bemo_validation_header {
+			color: $bemo-semantic-critical-color;
+			background-color: $bemo-semantic-critical-lightest-color;
+		}
+	}
+	.bemo_validation_header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: $bemo-spacing-level-3;
+		> i.fa {
+			font-size: 2rem;
+		}
+		span {
+			font-weight: 700;
+			padding-left: $bemo-spacing-level-2;
+		}
+	}
+	.bemo_validation_body {
+		padding: $bemo-spacing-level-3;
+		p {
+			color: $bemo-neutral-medium-sub-color;
+			+ p {
+				margin-top: $bemo-spacing-level-2;
+			}
+		}
+	}
+	.bemo_validation_footer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		padding: $bemo-spacing-level-3;
+		margin-top: $bemo-spacing-level-6;
+		border-top: 1px solid $bemo-neutral-lighter-border-color;
+		.btn {
+			+ .btn {
+				margin-left: $bemo-spacing-level-4;
+			}
+		}
+	}
+}

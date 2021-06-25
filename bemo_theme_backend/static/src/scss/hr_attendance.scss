@@ -10,58 +10,39 @@
 	background-color: $bemo-primary-dark-color-01;
 }
 
-.bemo_hr_attendance_kiosk_mode_warning {
-	background-color: $bemo-semantic-critical-lightest-color;
-	padding: $bemo-spacing-level-4;
-	text-align: center;
-}
-
 .bemo_hr_attendance_kiosk_mode {
 	position: relative;
-	padding: $bemo-spacing-level-5 0;
-	max-width: 936px;
+	max-width: 698px;
 	width: 100%;
 	border-radius: $bemo-border-radius-higher;
 	background-color: $bemo-neutral-white;
+	overflow: hidden;
 }
 
 .bemo_hr_attendance_logo_company {
-	padding: 0 $bemo-spacing-level-4;
+	padding: $bemo-spacing-level-4 $bemo-spacing-level-4 0 $bemo-spacing-level-4;
 	img {
-		display: block;
-		margin: 0 auto;
-		min-width: 180px;
-		max-width: 250px;
+		max-width: 120px;
 		height: auto;
 	}
-}
-
-.bemo_hr_attendance_kiosk_mode_wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 $bemo-spacing-level-4;
 }
 
 .bemo_hr_attendance_employee {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	-ms-flex-preferred-size: 0;
-	flex-basis: 0;
-	-ms-flex-positive: 1;
-	flex-grow: 1;
-	max-width: 100%;
-	padding-right: $bemo-spacing-level-4;
+	align-items: flex-end;
+	margin-top: $bemo-spacing-level-6;
+	padding: 0 $bemo-spacing-level-4;
 }
 
 .bemo_hr_attendance_user_avatar {
-	-ms-flex: 0 0 100px;
-	flex: 0 0 100px;
-	max-width: 100px;
-	height: 100px;
+	-ms-flex: 0 0 120px;
+	flex: 0 0 120px;
+	max-width: 120px;
+	height: 120px;
 	overflow: hidden;
-	border-radius: 50%;
-	border: 4px solid $bemo-neutral-lighter-border-color;
+	border-radius: $bemo-border-radius-hight;
+	border: 1px solid $bemo-neutral-lighter-border-color;
 	img {
 		width: 100%;
 		height: 100%;
@@ -69,77 +50,98 @@
 	}
 }
 
-.bemo_hr_attendance_buttons {
-	-ms-flex: 0 0 178px;
-	flex: 0 0 178px;
-	max-width: 178px;
-	text-align: center;
-	> span {
-		display: inline-block;
-		color: $bemo-neutral-medium-sub-color;
-		margin-top: $bemo-spacing-level-3;
-	}
-}
-
-.bemo_hr_attendance_user_information {
+.bemo_hr_attendance_user_name {
 	-ms-flex-preferred-size: 0;
 	flex-basis: 0;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
 	max-width: 100%;
-	padding-left: $bemo-spacing-level-3;
+	padding-left: $bemo-spacing-level-4;
 	b {
-		font-size: 1.6rem;
+		font-size: 2.88rem;
+		color: $bemo-primary-blue-medium-color-03;
+		display: block;
+		margin-bottom: $bemo-spacing-level-1;
+	}
+	h1 {
+		font-size: 2rem;
+		font-weight: 400;
+		margin-bottom: 0;
+		line-height: $bemo-line-height-default;
 	}
 }
 
-.bemo_hr_attendance_user_name {
-	font-size: 2.88rem;
-	font-weight: 400;
-	margin-bottom: 0;
-	margin-bottom: $bemo-spacing-level-2;
+.bemo_hr_attendance_time {
+	margin-top: $bemo-spacing-level-3;
+	padding: 0 $bemo-spacing-level-4;
+	p {
+		font-size: 1.5rem;
+		color: $bemo-neutral-medium-sub-color;
+		margin-bottom: 0;
+	}
+	b {
+		color: $bemo-neutral-dark-color;
+	}
 }
 
-.o_hr_attendance_sign_in_out_icon {
+.bemo_hr_attendance_button {
+	text-align: center;
+	padding: $bemo-spacing-level-4;
+	margin-top: $bemo-spacing-level-6;
+	h3 {
+		font-size: 2rem;
+		margin-bottom: $bemo-spacing-level-4;
+	}
+	span {
+		display: inline-block;
+		color: $bemo-neutral-medium-sub-color;
+		margin-top: $bemo-spacing-level-3;
+	}
+	&.bemo_hr_attendance_button_checkin {
+		background-color: $bemo-semantic-information-lightest-color;
+		.o_hr_attendance_sign_in_out_icon,
+		.o_hr_attendance_button_dismiss {
+			background-color: $bemo-semantic-information-color;
+			&:hover {
+				background-color: $bemo-semantic-information-light-color;
+			}
+		}
+	}
+	&.bemo_hr_attendance_button_checkout {
+		background-color: $bemo-semantic-critical-lightest-color;
+		.o_hr_attendance_sign_in_out_icon,
+		.o_hr_attendance_button_dismiss {
+			background-color: $bemo-semantic-critical-color;
+			&:hover {
+				background-color: $bemo-semantic-critical-light-color;
+			}
+		}
+	}
+}
+
+.o_hr_attendance_sign_in_out_icon,
+.o_hr_attendance_button_dismiss {
 	cursor: pointer;
 	display: flex;
-	width: 178px;
-	height: 178px;
-	border-radius: 50%;
 	justify-content: center;
 	align-items: center;
+	width: 178px;
+	height: 178px;
+	margin: 0 auto;
+	border-radius: 50%;
 	transition: $bemo-transition;
 	> i.fa {
 		font-size: 8rem;
 		color: $bemo-neutral-white;
-	}
-	&.o_hr_attendance_sign_in {
-		background-color: $bemo-primary-blue-light-color-02;
-		&:hover {
-			background-color: $bemo-primary-blue-light-color-01;
-		}
-	}
-	&.o_hr_attendance_sign_out {
-		background-color: $bemo-semantic-critical-color;
-		&:hover {
-			background-color: $bemo-semantic-critical-light-color;
-		}
 	}
 	&:hover {
 		transform: translateX(8px);
 	}
 }
 
-.bemo_hr_attendance_time {
-	padding: $bemo-spacing-level-3 $bemo-spacing-level-4;
-	margin: $bemo-spacing-level-5 0;
-	text-align: center;
-	background-color: $bemo-primary-blue-light-color-05;
-	> span {
-		color: $bemo-primary-color;
-		font-size: 2.334rem;
-		> b {
-			font-size: 2.88rem;
-		}
+.o_hr_attendance_button_dismiss {
+	border: 0;
+	&:focus {
+		outline: none;
 	}
 }
