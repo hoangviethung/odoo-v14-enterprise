@@ -18,6 +18,7 @@
 	background-color: $bemo-neutral-white;
 	padding-top: $bemo-spacing-level-4;
 	overflow: hidden;
+
 	@media (max-width: 767.98px) {
 		margin: 0 16px;
 	}
@@ -96,6 +97,9 @@
 		font-size: 1.5rem;
 		color: $bemo-neutral-medium-sub-color;
 		margin-bottom: 0;
+		+ p {
+			margin-top: $bemo-spacing-level-1;
+		}
 	}
 	b {
 		color: $bemo-neutral-dark-color;
@@ -113,15 +117,14 @@
 .bemo_hr_attendance_button {
 	text-align: center;
 	padding: $bemo-spacing-level-4;
-	margin-top: $bemo-spacing-level-6;
+	margin-top: $bemo-spacing-level-4;
 	h3 {
 		font-size: 2rem;
-		margin-bottom: $bemo-spacing-level-4;
+		margin-bottom: $bemo-spacing-level-7;
 	}
 	span {
 		display: inline-block;
 		color: $bemo-neutral-medium-sub-color;
-		margin-top: $bemo-spacing-level-3;
 	}
 	&.bemo_hr_attendance_button_checkin {
 		background-color: $bemo-semantic-information-lightest-color;
@@ -148,8 +151,32 @@
 		margin-top: $bemo-spacing-level-2;
 		h3 {
 			font-size: $bemo-font-size-default;
-			margin-bottom: $bemo-spacing-level-3;
+			margin-bottom: $bemo-spacing-level-5;
 		}
+	}
+}
+
+@keyframes jump {
+	0% {
+		transform: translate(0, 0) scale(1.1, 0.9);
+	}
+	50% {
+		transform: translate(0, -15%) scale(1, 1);
+	}
+	55% {
+		transform: translate(0, -15%) rotate(2deg);
+	}
+	60% {
+		transform: translate(0, -15%) rotate(-2deg);
+	}
+	65% {
+		transform: translate(0, -15%) rotate(2deg);
+	}
+	70% {
+		transform: translate(0, -15%) rotate(-2deg);
+	}
+	100% {
+		transform: translate(0, 0) scale(1.1, 0.9);
 	}
 }
 
@@ -164,12 +191,10 @@
 	margin: 0 auto;
 	border-radius: 50%;
 	transition: $bemo-transition;
+	animation: jump 1.2s infinite;
 	> i.fa {
 		font-size: 8rem;
 		color: $bemo-neutral-white;
-	}
-	&:hover {
-		transform: translateX(8px);
 	}
 	@media (max-width: 575.98px) {
 		width: 120px;

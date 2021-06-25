@@ -89,6 +89,11 @@
                                         <t t-esc="widget.attendance.check_out_time"/>
                                     </b>
                                 </p>
+                                <p>Today's work hours:
+                                    <b>
+                                        <t t-esc="widget.hours_today"/>
+                                    </b>
+                                </p>
                             </div>
                             <div class="bemo_hr_attendance_button bemo_hr_attendance_button_checkout">
                                 <h3 class="o_hr_attendance_message_message"></h3>
